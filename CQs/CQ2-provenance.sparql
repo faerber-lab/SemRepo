@@ -1,0 +1,33 @@
+%% CQ2: How can we reconstruct the provenance of research artifacts across papers, repositories, and institutions?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX sr: <https://semrepo.org/property/>
+PREFIX srclass: <https://semrepo.org/class/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX lpwc: <https://linkedpaperswithcode.com/property/>
+
+SELECT *
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?SemRepo_repository rdf:type srclass:repository .
+    ?SemRepo_repository fabio:hasURL ?Github_Url .
+    ?SemRepo_repository sr:hasLpwcUrl ?Lpwc_repository .
+    ?SemRepo_repository dct:creator ?SemRepo_person .
+    ?SemRepo_person sr:hasSoaUrl ?Soa_Author .
+  }
+
+  SERVICE <https://semopenalex.org/sparql> {
+    ?Soa_Author org:memberOf ?Institution .
+  } 
+
+  SERVICE <https://linkedpaperswithcode.com/sparql> {
+    ?Lpwc_paper lpwc:hasOfficialRepository ?Lpwc_repository .
+    ?Lpwc_paper lpwc:hasTask ?Lpwc_Task .
+    ?Lpwc_paper lpwc:hasMethod ?Lpwc_Method .
+    ?Lpwc_paper lpwc:hasEvaluation ?Lpwc_Evaluation .
+    ?Lpwc_paper lpwc:hasConference ?Lpwc_Conference .
+  } 
+}
+LIMIT 100
