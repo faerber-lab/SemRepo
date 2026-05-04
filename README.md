@@ -2,7 +2,7 @@
 
 ### Overview
 
-[**SemRepo**](https://semrepo.org/) is a fine-grained RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. It captures repository-level metadata (e.g., contributors, issues, dependencies, programming languages) and interlinks this information with external scholarly knowledge graphs: repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), repositories are connected to publications in [LinkedPapersWithCode(LPWC)](https://linkedpaperswithcode.com/), and research artifacts (e.g., datasets, experiments) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). This integration supports use cases and analyses that are difficult to perform with existing resources in isolation; for instance, research _provenance_ reconstruction across repositories and publications, and systematic identification of risks to research reproducibility and software sustainability. Overall, SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
+[**SemRepo**](https://semrepo.org/) is a fine-grained RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. It captures repository-level metadata (e.g., contributors, issues, dependencies, programming languages) and interlinks this information with external scholarly knowledge graphs: repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), repositories are connected to publications in [LinkedPapersWithCode(LPWC)](https://linkedpaperswithcode.com/), and research artifacts (e.g., datasets, experiments) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). Overall, SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
 We release **SemRepo** as an open resource at  [https://semrepo.org](https://semrepo.org/), including data, code, and query services:
 
@@ -26,7 +26,7 @@ Adhering to Linked Open Data best practices, we publish the full ontology in OWL
 We demonstrate and evaluate the utility of SemRepo through:
 
 - **Competency Questions (CQs)**  
-  We formulate competency questions and case studies to showcase the analytical capabilities of SemRepo. All SPARQL queries used for the CQs are available in [CQs](./CQs).
+  We formulate competency questions and case studies to demonstrate SemRepo’s analytical capabilities. In particular, its integration within broader scholarly ecosystems enables analyses that are difficult to perform with existing resources in isolation, such as research provenance reconstruction across repositories and publications, and systematic identification of risks to research reproducibility. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
 - **Reproducibility and Sustainability Analysis**  
   We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications, modeling sustainability via maintenance, activity, and community uptake signals computed directly via SPARQL queries.
