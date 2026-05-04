@@ -1,0 +1,31 @@
+%% CQ3: What types of development issues are most prevalent in research repositories, and how do their resolution rates differ? 
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sr: <https://semrepo.org/property/>
+PREFIX srclass: <https://semrepo.org/class/>
+
+SELECT 
+  ?labelName
+  (COUNT(?issue) AS ?totalIssues)
+  (SUM(IF(CONTAINS(LCASE(STR(?state)), "closed"), 1, 0)) AS ?closedIssues)
+  (SUM(IF(CONTAINS(LCASE(STR(?state)), "open"), 1, 0)) AS ?openIssues)
+  (
+    SUM(IF(CONTAINS(LCASE(STR(?state)), "closed"), 1, 0)) * 1.0 /
+    COUNT(?issue)
+  AS ?closureRate)
+WHERE {
+  GRAPH <https://semrepo.org> {
+
+    ?repo rdf:type srclass:repository .
+    ?repo sr:hasIssue ?issue .
+
+    ?issue sr:hasIssueLabelReference ?labelRef .
+    ?labelRef sr:hasIssueLabelName ?labelName .
+
+    OPTIONAL { ?issue sr:issueState ?state . }
+
+  }
+}
+GROUP BY ?labelName
+ORDER BY DESC(?totalIssues)
+LIMIT 20
