@@ -2,7 +2,7 @@
 
 ### Overview
 
-[**SemRepo**](https://semrepo.org/) is a fine-grained RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. It captures repository-level metadata (e.g., contributors, issues, dependencies, programming languages) and interlinks this information with external scholarly knowledge graphs: repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), repositories are connected to publications in [LinkedPapersWithCode(LPWC)](https://linkedpaperswithcode.com/), and research artifacts (e.g., datasets, experiments) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). Overall, SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
+[**SemRepo**](https://semrepo.org/) is a fine-grained RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. It captures repository-level metadata (e.g., contributors, issues, dependencies, programming languages) and interlinks this information with external scholarly knowledge graphs: repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), repositories are connected to publications in [LinkedPapersWithCode (LPWC)](https://linkedpaperswithcode.com/), and research artifacts (e.g., datasets, experiments) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). Overall, SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
 We release **SemRepo** as an open resource at  [https://semrepo.org](https://semrepo.org/):
 
