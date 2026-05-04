@@ -1,0 +1,40 @@
+%% CQ4: Which research repositories exhibit risk of non-reproducibility ?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sr: <https://semrepo.org/property/>
+PREFIX srclass: <https://semrepo.org/class/>
+
+SELECT 
+  ?repo
+  (COUNT(?issue) AS ?totalIssues)
+  (SUM(?isClosed) AS ?closedIssues)
+  (SUM(?isOpen) AS ?openIssues)
+  (
+    SUM(?isClosed) * 1.0 / COUNT(?issue)
+  AS ?closureRate)
+  (
+    1 - (SUM(?isClosed) * 1.0 / COUNT(?issue))
+  AS ?reproducibilityRiskScore)
+WHERE {
+  GRAPH <https://semrepo.org> {
+
+    ?repo rdf:type srclass:repository ;
+          sr:hasIssue ?issue .
+
+    OPTIONAL { ?issue sr:issueState ?state . }
+
+    BIND(
+      IF(CONTAINS(LCASE(STR(?state)), "closed"), 1, 0)
+      AS ?isClosed
+    )
+
+    BIND(
+      IF(CONTAINS(LCASE(STR(?state)), "open"), 1, 0)
+      AS ?isOpen
+    )
+  }
+}
+GROUP BY ?repo
+HAVING (COUNT(?issue) > 20)
+ORDER BY ASC(?closureRate)
+LIMIT 20
