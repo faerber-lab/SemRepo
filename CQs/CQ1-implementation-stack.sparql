@@ -1,5 +1,4 @@
-%%% CQ1: Which programming languages are most prevalent within specific research topics, and how do implementation patterns vary across
-domains?
+%%% CQ1: Which programming languages are most prevalent within specific research topics, and how do implementation patterns vary across domains?
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
