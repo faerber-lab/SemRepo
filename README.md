@@ -4,16 +4,13 @@
 
 [**SemRepo**](https://semrepo.org/) is a fine-grained RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. It captures repository-level metadata (e.g., contributors, issues, dependencies, programming languages) and interlinks this information with external scholarly knowledge graphs: repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), repositories are connected to publications in [LinkedPapersWithCode(LPWC)](https://linkedpaperswithcode.com/), and research artifacts (e.g., datasets, experiments) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). Overall, SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
-We release **SemRepo** as an open resource at  [https://semrepo.org](https://semrepo.org/), including data, code, and query services:
+We release **SemRepo** as an open resource at  [https://semrepo.org](https://semrepo.org/):
 
-1. **Data Access**  
-   RDF data dumps are available via [Zenodo](https://zenodo.org/records/15399468). The dataset is periodically updated (approx. twice per year), subject to upstream data availability.
+1. **Data Access**: RDF data dumps are available via [Zenodo](https://zenodo.org/records/15399468). The dataset is periodically updated (approx. twice per year), subject to upstream data availability.
 
-2. **Query Services**  
-   The dataset is hosted in a public triple store with a SPARQL endpoint at https://semrepo.org/sparql.
+2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at https://semrepo.org/sparql.
 
-3. **Open-source Pipeline**  
-   We provide an open-source pipeline for automated knowledge graph construction and cross-source entity alignment, supporting reproducibility and future extensions. See "SemRepo Construction Pipeline" below.
+3. **Open-source Pipeline**: We provide an open-source pipeline for automated knowledge graph construction and cross-source entity alignment, supporting reproducibility and future extensions. See "SemRepo Construction Pipeline" below.
 
 ### Ontology and Design
 
