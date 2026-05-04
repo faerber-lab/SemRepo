@@ -4,14 +4,14 @@
 Reproducibility in computational research depends not only on the availability of code, but also on whether repositories remain maintained and usable over time, which is closely tied to software sustainability. SemRepo enables large-scale auditing by linking publications to GitHub repositories and exposing signals such as issues, commits, contributors, stars, and forks in a unified graph, allowing systematic detection of inactive or weakly maintained software without ad hoc API queries or manual inspection.
 
 ### Methodology
-we conduct a reproducibility-auditing study on 20,000 research repositories from SemRepo, linked through LPWC. We operationalize sustainability using maintenance, activity, and community uptake signals computed via SPARQL queries.
+we conduct a reproducibility-auditing study on 20,000 research repositories from SemRepo, linked through LPWC. We operationalize sustainability using maintenance, activity, and community uptake signals directly computed via SPARQL queries.
 Prior work identifies key indicators of repository health, including development activity (commits), community engagement (contributors), and maintenance responsiveness (issue resolution). We compute three groups of indicators per repository:
 
 - *Issue Closure Rate*: proportion of closed issues, proxying maintenance responsiveness.  
 - *Activity Indicators*: commits and contributors, capturing development intensity and continuity~\cite{Chelkowski2016InequalitiesOSS,Linaker2026OSSHealth}.  
 - *Popularity Metrics*: stars and forks, reflecting community uptake and visibility.
 
-We provide all resources for this use case: the [20k subset dataset](./semrepo-20k.csv) and the [source code](./reproducibility-auditing.ipynb).
+We provide all resources for this use case: the [20k subset dataset + key indicators](./semrepo-20k.csv) and the [analysis source code](./reproducibility-auditing.ipynb).
 
 The following is SPARQL code to harvest the 20k subset dataset directly from the SPARQL endpoint:
 ```sparql
