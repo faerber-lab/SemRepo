@@ -1,0 +1,22 @@
+%%% CQ1: Which programming languages are most prevalent within specific research topics, and how do implementation patterns vary across
+domains?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX sr: <https://semrepo.org/property/>
+
+
+PREFIX srclass: <https://semrepo.org/class/>
+
+SELECT ?topic ?progLang (COUNT(DISTINCT ?repository) AS ?repoCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?repository rdf:type srclass:repository .
+    ?repository foaf:topic ?topic .
+    ?repository sr:hasLanguageReference ?langref .
+    ?langref sr:hasLanguageName ?progLang .
+  }
+}
+GROUP BY ?topic ?progLang
+ORDER BY ?topic DESC(?repoCount)
+LIMIT 200
