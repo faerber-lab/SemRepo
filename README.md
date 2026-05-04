@@ -26,11 +26,10 @@ Adhering to Linked Open Data best practices, we publish the full ontology in OWL
 We demonstrate and evaluate the utility of SemRepo through:
 
 - [Competency Questions (CQs)](./CQs)  
-  We formulate competency questions and case studies to demonstrate SemRepo’s analytical capabilities. In particular, its integration within broader scholarly ecosystems enables analyses that are difficult to perform with existing resources in isolation, such as research provenance reconstruction across repositories and publications, and systematic identification of risks to research reproducibility. All SPARQL queries used for the CQs are available in [CQs](./CQs).
+We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. Its integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, such as research provenance reconstruction across repositories and publications, and systematic identification of risks to research reproducibility. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
 - [Reproducibility and Sustainability Analysis](./usecase)  
-  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications, modeling sustainability via maintenance, activity, and community uptake signals computed directly via SPARQL queries.
-The code for this analysis is available in [usecase](./usecase). This use case demonstrates how SemRepo supports large-scale empirical analyses of research software reproducibility and sustainability, highlighting systemic challenges in maintaining reproducible research.
+  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase). This use case demonstrates how SemRepo supports large-scale empirical analyses of research reproducibility, highlighting systemic challenges in maintaining reproducible research ecosystems.
 
 ### SemRepo Construction Pipeline
 
