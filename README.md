@@ -34,7 +34,7 @@ We formulate competency questions to demonstrate SemRepo’s analytical capabili
 - **Forked Repository**: 2,468,660  
 - **Person**: 2,916,508  
 - **Topic**: 272,378  
-- **Language**: 387,284
+- **Programming Language**: 387,284
 - **Linkage to LPWC**: 197,566
 - **Linkage to SemOpenAlex**: 11,867
 - **Linkage to MLSea**: 148,185.... (and more)
