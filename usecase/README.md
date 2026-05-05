@@ -1,19 +1,18 @@
-## Reproducibility and Sustainability of Research Software - Use Case
+## Reproducibility and Sustainability of Research Software — Use Case
 
 ### Overview
-Reproducibility in computational research depends not only on the availability of code, but also on whether repositories remain maintained and usable over time, which is closely tied to software sustainability. SemRepo enables large-scale auditing by linking publications to GitHub repositories and exposing signals such as issues, commits, contributors, stars, and forks in a unified graph, allowing systematic detection of inactive or weakly maintained software without ad hoc API queries or manual inspection.
+Reproducibility in computational research depends not just on code availability, but on whether repositories remain maintained and usable over time. This is closely tied to _software sustainability_. SemRepo enables large-scale auditing by linking publications to GitHub repositories and exposing signals such as issues, commits, contributors, stars, and forks in a unified graph, supporting systematic detection of inactive or weakly maintained research software.
 
 ### Methodology
-we conduct a reproducibility-auditing study on 20,000 research repositories from SemRepo, linked through LPWC. We operationalize sustainability using maintenance, activity, and community uptake signals directly computed via SPARQL queries.
-Prior work identifies key indicators of repository health, including development activity (commits), community engagement (contributors), and maintenance responsiveness (issue resolution). We compute three groups of indicators per repository:
+We analyze 20,000 research-linked repositories from SemRepo. Following prior work [[1]](https://link.springer.com/article/10.1007/s10664-026-10846-y), we define key indicators of repository health: development activity (commits), community engagement (contributors), and maintenance responsiveness (issue resolution).
 
-- *Issue Closure Rate*: proportion of closed issues, proxying maintenance responsiveness.  
-- *Activity Indicators*: commits and contributors, capturing development intensity and continuity~\cite{Chelkowski2016InequalitiesOSS,Linaker2026OSSHealth}.  
-- *Popularity Metrics*: stars and forks, reflecting community uptake and visibility.
+Using the SemRepo SPARQL endpoint, we compute three indicator groups per repository:
 
-We provide all resources for this use case: the [20k subset dataset + key indicators](./semrepo-20k.csv) and the [analysis source code](./reproducibility-auditing.ipynb).
+- *Issue Closure Rate*: proportion of closed issues, indicating maintenance responsiveness  
+- *Activity Indicators*: commits and contributors, capturing development intensity and continuity [[1](https://link.springer.com/article/10.1007/s10664-026-10846-y), [2](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152976)]  
+- *Popularity Metrics*: stars and forks, reflecting community uptake and visibility  
 
-The following is SPARQL code to harvest the 20k subset dataset directly from the SPARQL endpoint:
+The SPARQL queries below extract the 20k subset and compute these health indicators:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -93,3 +92,10 @@ GROUP BY
 ORDER BY DESC(?total_commits)
 LIMIT 20000
 ```
+
+### Results and Analysis
+Our analysis (see [source code](./reproducibility-auditing.ipynb)) highlights significant heterogeneity in repository quality. Specifically, 46.4% of repositories fall into the high-risk (non-reproducible) category, 26.9% into medium risk, and only 26.6% into low risk. Additionally, 8.3% show extremely low activity, suggesting likely abandonment. Overall, these findings indicate that a substantial share of research software is poorly maintained, raising serious concerns about long-term usability and reproducibility. Further details are provided in the paper.
+
+[1] Linåker, J., Olsson, T. & Papatheocharous, E. _Assessing open source software health in organizations’ intake processes: A qualitative study on the practitioners’ perspective_. Empir Software Eng 31, 105 (2026). https://doi.org/10.1007/s10664-026-10846-y
+
+[2] Chełkowski, T., Gloor, P.A., Jemielniak, D.: _Inequalities in open source software development: Analysis of contributor’s commits in apache software foundation projects_. PLOS ONE 11(4), e0152976 (2016). https://doi.org/10.1371/journal.pone.0152976 
