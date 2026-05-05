@@ -20,11 +20,12 @@ Adhering to Linked Open Data best practices, we publish the [full ontology in OW
 
 We demonstrate and evaluate the utility of SemRepo through:
 
-- [Competency Questions (CQs)](./CQs)  
-We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, such as research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
-
 - [Reproducibility and Sustainability Analysis Use Case](./usecase)  
-  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase). This use case demonstrates how SemRepo supports large-scale empirical analyses of research reproducibility, highlighting systemic challenges in maintaining reproducible research ecosystems.
+  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase). 
+
+- [Competency Questions (CQs)](./CQs)  
+We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, e.g., research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
+
 
 ## Key Statistics* (as of April 2026)
 - **Repository**: 197,566  
