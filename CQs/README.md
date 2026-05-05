@@ -1,4 +1,8 @@
 ## Competency Questions
+We evaluate SemRepo through a set of competency questions (CQs) designed to test whether the graph supports non-trivial analyses at the intersection of scholarly research, software implementations, and development and maintenance practices. 
+The results and discussion for each CQ are provided in the paper.
+
+Here, we provide the SPARQL queries corresponding to the competency questions.
 
 #### CQ1: How do implementation patterns (e.g., programming languages) vary across research domains and topics?
 ```sparql
