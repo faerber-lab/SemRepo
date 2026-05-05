@@ -1,6 +1,6 @@
 ## Competency Questions
 
-#### CQ1: How do implementation patterns (e.g., programming languages) vary across domains and topics?
+#### CQ1: How do implementation patterns (e.g., programming languages) vary across research domains and topics?
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -23,7 +23,7 @@ ORDER BY ?topic DESC(?repoCount)
 LIMIT 200
 ```
 
-#### CQ2: How can we reconstruct the provenance of research artifacts across papers, repositories, and institutions?
+#### CQ2: How can we reconstruct the provenance of research across papers, repositories, authors, and institutions?
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -58,7 +58,7 @@ WHERE {
 LIMIT 100
 ```
 
-#### CQ3: What types of development issues are most prevalent in research repositories, and how do their resolution rates differ? 
+#### CQ3: What types of development issues are most prevalent in research-related repositories, and how do their resolution rates differ? 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sr: <https://semrepo.org/property/>
