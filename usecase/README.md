@@ -1,7 +1,7 @@
 ## Reproducibility and Sustainability of Research Software — Use Case
 
 ### Overview
-Reproducibility in computational research depends not just on code availability, but on whether repositories remain maintained and usable over time. This is closely tied to _software sustainability_. SemRepo enables large-scale auditing by linking publications to GitHub repositories and exposing signals such as issues, commits, contributors, stars, and forks in a unified graph, supporting systematic detection of inactive or weakly maintained research software.
+Reproducibility in computational research depends not only on code availability, but on whether repositories remain actively maintained and usable over time—a core aspect of _software sustainability_. SemRepo enables large-scale auditing by linking scientific publications to GitHub repositories and exposing fine-grained metadata (e.g., issues, commits, contributors, stars, forks) in a unified graph. This supports systematic identification of inactive or weakly maintained software and enables empirical analysis of research reproducibility, revealing structural challenges in sustaining reliable research ecosystems.
 
 ### Methodology
 We analyze 20,000 research-linked repositories from SemRepo. Following prior work [[1]](https://link.springer.com/article/10.1007/s10664-026-10846-y), we define key indicators of repository health: development activity (commits), community engagement (contributors), and maintenance responsiveness (issue resolution).
