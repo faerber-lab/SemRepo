@@ -1,0 +1,31 @@
+# Core data handling
+pandas>=2.0
+numpy>=1.24
+
+# RDF / Semantic Web stack
+rdflib>=7.0
+pyshacl>=0.24
+
+# SPARQL / querying
+SPARQLWrapper>=2.0
+
+# HTTP requests / crawling
+requests>=2.31
+aiohttp>=3.9
+
+# Parsing / utilities
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# Git / repository processing helpers
+GitPython>=3.1
+
+# JSON / data validation
+jsonschema>=4.20
+
+# Progress / logging
+tqdm>=4.66
+loguru>=0.7
+
+matplotlib>=3.8
+seaborn>=0.13
