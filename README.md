@@ -61,15 +61,14 @@ We demonstrate and evaluate the utility of SemRepo through:
 - [Competency Questions (CQs)](./CQs)  
 We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, e.g., research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
+## FAIR, Sustainability, and Ethical Compliance
 
-## Sustainability, Accessibility, and Ethical Considerations
+SemRepo is designed in accordance with FAIR (Findable, Accessible, Interoperable, Reusable) principles to ensure long-term usability, reproducibility, and integration within the scholarly data ecosystem.
 
-SemRepo is designed as a sustainable and openly accessible dataset resource to support long-term reuse, reproducibility, and extension by the research community. All data, ontology definitions, and construction pipelines are released under open licenses to facilitate transparent and durable scientific use.
+The dataset is publicly available via Zenodo, GitHub, and the project website, with versioned releases and persistent identifiers supporting findability and citation. Accessibility is provided through RDF data dumps and a public SPARQL endpoint, enabling both bulk download and query-based access without barriers. Interoperability is ensured through the use of open standards (RDF, OWL, SPARQL, VoID) and explicit interlinking with external scholarly knowledge graphs. Reusability is supported via open licensing and the release of both data and full construction pipelines, enabling reproduction and extension of the resource.
 
-Accessibility is ensured through multiple access modalities, including downloadable RDF dumps and a public SPARQL endpoint, enabling both lightweight querying and full-scale local deployment. This design lowers barriers to entry for users without extensive computational resources or infrastructure.
+SemRepo follows a versioned release strategy with periodic updates (approximately twice per year, depending on upstream data availability). The release of the full pipeline ensures reproducibility and supports community-driven maintenance and long-term sustainability.
 
-From an ethical perspective, SemRepo is built on publicly available software and scholarly metadata sources. However, we acknowledge that the dataset inherits structural biases and coverage limitations from upstream platforms i.e., GitHub and the linked scholarly knowledge graphs. These include uneven representation across programming languages, geographic regions and languages, and research communities. We therefore emphasize transparent provenance, versioned releases, and periodic updates (**approximately twice per year***) to support responsible interpretation and use of the data.
-
-_*Subject to upstream data availability_
+From an ethical perspective, SemRepo is built exclusively on publicly available software and scholarly metadata. However, we acknowledge that it inherits structural biases and coverage limitations from upstream sources such as GitHub and linked scholarly knowledge graphs, including uneven representation across languages, regions, and research communities. Transparent provenance tracking and regular updates are provided to support responsible interpretation and use of the dataset.
 
 #### 📧 Contact: michael.faerber@tu-dresden.de
