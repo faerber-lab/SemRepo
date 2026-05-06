@@ -1,31 +1,57 @@
-# Core data handling
-pandas>=2.0
-numpy>=1.24
+# =========================
+# Core data stack
+# =========================
+numpy==1.26.4
+pandas==2.2.2
 
-# RDF / Semantic Web stack
-rdflib>=7.0
-pyshacl>=0.24
+# =========================
+# RDF / Semantic Web
+# =========================
+rdflib==7.0.0
+pyshacl==0.25.0
 
-# SPARQL / querying
-SPARQLWrapper>=2.0
+# =========================
+# SPARQL querying
+# =========================
+SPARQLWrapper==2.0.0
 
-# HTTP requests / crawling
-requests>=2.31
-aiohttp>=3.9
+# =========================
+# HTTP / crawling
+# =========================
+requests==2.32.3
+aiohttp==3.9.5
+urllib3==2.2.2
 
-# Parsing / utilities
-beautifulsoup4>=4.12
-lxml>=5.0
+# =========================
+# HTML / parsing
+# =========================
+beautifulsoup4==4.12.3
+lxml==5.2.2
 
-# Git / repository processing helpers
-GitPython>=3.1
+# =========================
+# Git repository handling
+# =========================
+GitPython==3.1.43
 
-# JSON / data validation
-jsonschema>=4.20
+# =========================
+# Data validation
+# =========================
+jsonschema==4.22.0
 
-# Progress / logging
-tqdm>=4.66
-loguru>=0.7
+# =========================
+# Utilities / logging
+# =========================
+tqdm==4.66.4
+loguru==0.7.2
 
-matplotlib>=3.8
-seaborn>=0.13
+# =========================
+# Visualization (optional analysis)
+# =========================
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# =========================
+# Optional RDF/SPARQL helpers
+# =========================
+isodate==0.6.1
+pyparsing==3.1.2
