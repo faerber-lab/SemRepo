@@ -4,13 +4,13 @@
 
 We release SemRepo as an open resource, with services and documentation available at: **[https://semrepo.org](https://semrepo.org/)**:
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://zenodo.org/records/15399468). The dataset is periodically updated (approx. twice per year).
+1. **Data Access**: RDF data dumps are available via [Zenodo](https://zenodo.org/records/15399468), and periodically updated (approx. twice per year).
 
 2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at https://semrepo.org/sparql.
 
-3. **Open-source Pipeline**: We release full source code for the knowledge graph construction and automatic interlinking, enabling future extensions of the dataset. See "SemRepo Construction Pipeline" below.
+3. **Open-source Pipeline**: We release the full source code for the knowledge graph construction and automatic interlinking, enabling future extensions of SemRepo.
 
-## Ontology and Design
+## Ontology Modeling
 
 Adhering to Linked Open Data best practices, we publish the [full ontology in OWL](./ontologies/SemRepo-ontology.owl), along with a [VoID description](./ontologies/VoID.ttl) that documents dataset statistics and interlinks.
 
@@ -31,7 +31,7 @@ Adhering to Linked Open Data best practices, we publish the [full ontology in OW
 
 _*main class_
 
-## SemRepo Construction Pipeline
+## Construction Pipeline
 
 ### Installation
 
