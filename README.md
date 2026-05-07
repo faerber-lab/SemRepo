@@ -13,7 +13,7 @@ SemRepo’s services and documentation are available at: **[https://semrepo.org]
 
 ## Ontology Modeling
 
-Adhering to Linked Open Data best practices, we publish the [full ontology in OWL](./ontologies/SemRepo-ontology.owl). Machine-readable metadata descriptions, including the dataset statistics and interlinks, are provided in [VoID](./ontologies/VoID.ttl) formats.
+Adhering to Linked Open Data best practices, we publish the [full ontology in OWL](./ontologies/SemRepo-ontology.owl) along with a [VoID metadata description](./ontologies/VoID.ttl) documenting dataset statistics, access points, and interlinks.
 
 ![Knowledge Graph Schema](https://raw.githubusercontent.com/faerber-lab/SemRepo/main/assets/kg-schema.png)
 
