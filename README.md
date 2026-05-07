@@ -9,6 +9,7 @@ SemRepo’s services and documentation are available at: **[https://semrepo.org]
 2. **Query Services**: The dataset is hosted in a public triple store with SPARQL endpoint at https://semrepo.org/sparql.
 
 3. **Open-source Pipeline**: We release the full source code for the knowledge graph construction and automatic interlinking, enabling future extensions of SemRepo.
+4. **URI resolution** of the SemRepo Knowledge Graph within the Linked Open Data Cloud.
 
 ## Ontology Modeling
 
