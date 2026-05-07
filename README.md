@@ -52,15 +52,16 @@ Ensure you are using Python 3.10 or higher. The pipeline then follows the follow
 - **RDF Knowledge Graph Construction and Linking**  
   We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs using the provided [scripts](./making-repo-metadata-kg).
 
-## Usage
+## Example Usage
 
 We demonstrate and evaluate the utility of SemRepo through:
-
-- [Reproducibility and Sustainability Analysis Use Case](./usecase)  
-  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase). 
-
 - [Competency Questions (CQs)](./CQs)  
 We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, e.g., research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
+
+- [Reproducibility and Sustainability Analysis Use Case](./usecase)  
+  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase).
+
+- [Additional examples of SPARQL queries](./CQs/example-sparql-queries.pdf) 
 
 ## License
 
