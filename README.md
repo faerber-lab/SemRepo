@@ -4,12 +4,13 @@
 
 SemRepo’s services and documentation are available at: **[https://semrepo.org](https://semrepo.org/)**:
 
-1. **Data Access**: RDF data dumps are available via [Zenodo (https://doi.org/10.5281/zenodo.15399468)](https://zenodo.org/records/15399468), and periodically updated (approx. twice per year).
+1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399468) and are periodically updated (approximately twice per year).
 
-2. **Query Services**: The dataset is hosted in a public triple store with SPARQL endpoint at https://semrepo.org/sparql.
+2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at [https://semrepo.org/sparql](https://semrepo.org/sparql).
 
-3. **Open-source Pipeline**: We release the full source code for the knowledge graph construction and automatic interlinking, enabling future extensions of SemRepo.
-4. **URI resolution** of the SemRepo Knowledge Graph within the Linked Open Data Cloud.
+3. **Open-source Pipeline**: We release the full source code for knowledge graph construction and automatic interlinking, enabling reproducibility and future extensions of SemRepo.
+
+4. **URI Resolution**: SemRepo supports persistent URI resolution for entities within the Linked Open Data cloud.
 
 ## Ontology and Metadata Descriptions
 
@@ -58,21 +59,16 @@ Ensure you are using Python 3.10 or higher. The pipeline then follows the follow
 
 ## Example Usage
 
-We demonstrate and evaluate the utility of SemRepo through:
-- [Competency Questions (CQs)](./CQs)  
-We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, e.g., research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
+We demonstrate and evaluate the utility of SemRepo through the following:
 
-- [Reproducibility and Sustainability Analysis Use Case](./usecase)  
-  We conduct a empirical reproducibility-auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case is available in [usecase](./usecase).
+- **[Competency Questions (CQs)](./CQs)**  
+  We formulate competency questions to illustrate SemRepo’s analytical capabilities for non-trivial queries. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
-- [Additional examples of SPARQL queries](./CQs/example-sparql-queries.pdf) 
+- **[Reproducibility and Sustainability Analysis Use Case](./usecase)**  
+  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case are available in the `usecase` directory.
 
-## License
-
-- Dataset: CC0
-- Ontology: CC0
-- Source code: MIT License
-
+- **[Additional SPARQL Query Examples](./CQs/example-sparql-queries.pdf)**  
+  A collection of additional SPARQL query examples.
 
 ## Repository Structure
 
@@ -84,6 +80,12 @@ We formulate competency questions to demonstrate SemRepo’s analytical capabili
 - `/making-repo-metadata-kg` — kg construction and interlinking
 - `/assets` — figures 
 - requirements.txt
+
+## License
+
+- **Dataset**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Ontology**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Source Code**: [MIT License](https://opensource.org/licenses/MIT)
 
 ## FAIR, Sustainability, and Ethical Compliance
 
