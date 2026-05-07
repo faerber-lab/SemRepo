@@ -63,12 +63,14 @@ We formulate competency questions to demonstrate SemRepo’s analytical capabili
 
 ## FAIR, Sustainability, and Ethical Compliance
 
-SemRepo is designed in accordance with FAIR (Findable, Accessible, Interoperable, Reusable) principles to ensure long-term usability, reproducibility, and integration within the scholarly data ecosystem.
+SemRepo adheres to the FAIR data principles to ensure long-term usability, reproducibility, and integration within the scholarly data ecosystem.
 
 The dataset is publicly available via Zenodo, GitHub, and the project website, with versioned releases and persistent identifiers supporting findability and citation. Accessibility is provided through RDF data dumps and a public SPARQL endpoint, enabling both bulk download and query-based access without barriers. Interoperability is ensured through the use of open standards (RDF, OWL, SPARQL, VoID) and explicit interlinking with external scholarly knowledge graphs. Reusability is supported via open licensing and the release of both data and full construction pipelines, enabling reproduction and extension of the resource.
 
 SemRepo follows a versioned release strategy with periodic updates (approximately twice per year, depending on upstream data availability). The release of the full pipeline ensures reproducibility and supports community-driven maintenance and long-term sustainability.
 
-From an ethical perspective, SemRepo is built exclusively on publicly available software and scholarly metadata. However, we acknowledge that it inherits structural biases and coverage limitations from upstream sources such as GitHub and linked scholarly knowledge graphs, including uneven representation across languages, regions, and research communities. Transparent provenance tracking and regular updates are provided to support responsible interpretation and use of the dataset.
+SemRepo is built exclusively on publicly available software and scholarly metadata. However, we acknowledge that it inherits structural biases and coverage limitations from upstream sources such as GitHub and linked scholarly knowledge graphs, including uneven representation across languages, regions, and research communities. Transparent provenance tracking and regular updates are provided to support responsible interpretation and use of the dataset.
+
+See details:  [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
 
 #### 📧 Contact: michael.faerber@tu-dresden.de
