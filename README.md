@@ -4,7 +4,7 @@
 
 SemRepo’s services and documentation are available at: **[https://semrepo.org](https://semrepo.org/)**:
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399468) and are periodically updated (approximately twice per year).
+1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399468) and are periodically updated (approx. twice per year).
 
 2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at [https://semrepo.org/sparql](https://semrepo.org/sparql).
 
