@@ -1,0 +1,81 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/dataset/semrepo>
+    a dcat:Dataset ;
+    dcterms:title "SemRepo"@en ;
+    dcterms:description "SemRepo is an RDF knowledge graph of GitHub repositories linked to scientific research, integrating repository metadata with scholarly knowledge graphs to support reproducibility studies and software analytics."@en ;
+    dcterms:creator [
+        a foaf:Person ;
+        foaf:name "Michael Färber"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:name "Abdul Rafay"
+    ] ,
+   [
+        a foaf:Person ;
+        foaf:name "Yuni Susanti"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:name "David Lamprecht"
+    ] ;
+ 
+    dcterms:publisher [
+        a foaf:Organization ;
+        foaf:name "ScaDS.AI, TU Dresden"
+    ] ;
+    dcterms:issued "2025-05-13"^^xsd:date ;
+    dcterms:modified "2025-12-15"^^xsd:date ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:identifier "https://doi.org/10.5281/zenodo.15399468" ;
+    dcat:keyword
+        "software repository",
+        "research software",
+        "knowledge graph",
+        "RDF",
+        "GitHub repositories",
+        "scholarly metadata",
+        "research reproducibility" ;
+    dcat:landingPage <https://semrepo.org> ;
+    dcat:contactPoint [
+        a vcard:Kind ;
+        vcard:fn "Michael Färber" ;
+        vcard:hasEmail <mailto:michael.faerber@tu-dresden.de>
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "SemRepo RDF Dump"@en ;
+        dcterms:format "text/turtle" ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.15399468> ;
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "SPARQL Endpoint"@en ;
+        dcat:accessURL <https://semrepo.org/sparql>
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Source Code Repository"@en ;
+        dcat:accessURL <https://github.com/faerber-lab/SemRepo> ;
+        dcterms:license <https://opensource.org/licenses/MIT>
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Ontology File"@en ;
+        dcat:accessURL <https://github.com/faerber-lab/SemRepo/blob/main/ontologies/SemRepo-ontology.owl> ;
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "VoID Description"@en ;
+        dcat:accessURL <https://github.com/faerber-lab/SemRepo/blob/main/ontologies/VoID.ttl>
+    ] ;
+    dcat:themeTaxonomy <http://dbpedia.org/resource/Knowledge_graph> ;
+    dcterms:accrualPeriodicity <http://purl.org/cld/freq/semiannual> .
