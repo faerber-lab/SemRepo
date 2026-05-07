@@ -4,7 +4,7 @@
 
 SemRepo’s services and documentation are available at: **[https://semrepo.org](https://semrepo.org/)**:
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://zenodo.org/records/15399468), and periodically updated (approx. twice per year).
+1. **Data Access**: RDF data dumps are available via [Zenodo (https://doi.org/10.5281/zenodo.15399468)](https://zenodo.org/records/15399468), and periodically updated (approx. twice per year).
 
 2. **Query Services**: The dataset is hosted in a public triple store with SPARQL endpoint at https://semrepo.org/sparql.
 
@@ -62,6 +62,12 @@ We demonstrate and evaluate the utility of SemRepo through:
 - [Competency Questions (CQs)](./CQs)  
 We formulate competency questions to demonstrate SemRepo’s analytical capabilities for non-trivial analyses. SemRepo integration within broader scholarly ecosystems enables tasks that are difficult to perform with existing resources in isolation, e.g., research provenance reconstruction across repositories and publications. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
+## License
+
+- Dataset: CC0
+- Ontology: CC0
+- Source code: MIT License
+
 ## FAIR, Sustainability, and Ethical Compliance
 
 SemRepo adheres to the FAIR data principles to ensure long-term usability, reproducibility, and integration within the scholarly data ecosystem.
@@ -73,5 +79,17 @@ SemRepo follows a versioned release strategy with periodic updates (approximatel
 SemRepo is built exclusively on publicly available software and scholarly metadata. However, we acknowledge that it inherits structural biases and coverage limitations from upstream sources such as GitHub and linked scholarly knowledge graphs, including uneven representation across languages, regions, and research communities. Transparent provenance tracking and regular updates are provided to support responsible interpretation and use of the dataset.
 
 See details:  [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
+
+## Citation
+
+If you use SemRepo, please cite:
+
+```bibtex
+@inproceedings{semrepo,
+  title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem.},
+  author={Rafay, A., Lamprecht, D., Susanti, Y., & Färber, M.},
+  year={2026}
+}
+```
 
 #### 📧 Contact: michael.faerber@tu-dresden.de
