@@ -69,17 +69,27 @@ We formulate competency questions to demonstrate SemRepo’s analytical capabili
 - Ontology: CC0
 - Source code: MIT License
 
+
+## Repository Structure
+
+- `/usecase` — SemRepo use cases i.e., reproducibility analysis
+- `/ontologies` — OWL ontology and VoID files
+- `/CQs` — competency questions
+- `/crawling-gitHub-metadata` — github crawling 
+- `/extract-libraries-from-code` — code dependencies and libraries harvesting
+- `/making-repo-metadata-kg` — kg construction and interlinking
+- `/assets` — figures 
+- requirements.txt
+
 ## FAIR, Sustainability, and Ethical Compliance
 
-SemRepo adheres to the FAIR data principles to ensure long-term usability, reproducibility, and integration within the scholarly data ecosystem.
+SemRepo follows the FAIR data principles to support long-term usability, reproducibility, and integration within the scholarly data ecosystem. The dataset is publicly available via Zenodo, GitHub, and the project website through RDF dumps and a public SPARQL endpoint. Interoperability is ensured through open standards (RDF, OWL, SPARQL, VoID) and interlinking with external scholarly knowledge graphs, while reusability is supported through open licensing and the release of the full construction pipeline.
 
-The dataset is publicly available via Zenodo, GitHub, and the project website, with versioned releases and persistent identifiers supporting findability and citation. Accessibility is provided through RDF data dumps and a public SPARQL endpoint, enabling both bulk download and query-based access without barriers. Interoperability is ensured through the use of open standards (RDF, OWL, SPARQL, VoID) and explicit interlinking with external scholarly knowledge graphs. Reusability is supported via open licensing and the release of both data and full construction pipelines, enabling reproduction and extension of the resource.
+SemRepo provides versioned releases with periodic updates (approximately twice per year), supporting reproducibility and long-term sustainability.
 
-SemRepo follows a versioned release strategy with periodic updates (approximately twice per year, depending on upstream data availability). The release of the full pipeline ensures reproducibility and supports community-driven maintenance and long-term sustainability.
+The resource is constructed exclusively from publicly available software and scholarly metadata. We acknowledge that inherited biases and coverage limitations from upstream sources (e.g., GitHub and linked scholarly knowledge graphs) may affect representation across research communities and regions.
 
-SemRepo is built exclusively on publicly available software and scholarly metadata. However, we acknowledge that it inherits structural biases and coverage limitations from upstream sources such as GitHub and linked scholarly knowledge graphs, including uneven representation across languages, regions, and research communities. Transparent provenance tracking and regular updates are provided to support responsible interpretation and use of the dataset.
-
-See details:  [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
+See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
 
 ## Citation
 
@@ -93,4 +103,7 @@ If you use SemRepo, please cite:
 }
 ```
 
-#### 📧 Contact: michael.faerber@tu-dresden.de
+## Maintenance
+
+SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/team/) at TU Dresden.  
+📧 Contact: [michael.faerber@tu-dresden.de](mailto:michael.faerber@tu-dresden.de)
