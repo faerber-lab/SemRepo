@@ -11,11 +11,13 @@ SemRepo’s services and documentation are available at: **[https://semrepo.org]
 3. **Open-source Pipeline**: We release the full source code for the knowledge graph construction and automatic interlinking, enabling future extensions of SemRepo.
 4. **URI resolution** of the SemRepo Knowledge Graph within the Linked Open Data Cloud.
 
-## Ontology Modeling
+## Ontology and Metadata Descriptions
 
-Adhering to Linked Open Data best practices, we publish the full [OWL ontology](./ontologies/SemRepo-ontology.owl) along with a [VoID metadata description](./ontologies/VoID.ttl):
-- [Ontology (OWL)](./ontologies/SemRepo-ontology.owl)
-- [VoID metadata description](./ontologies/VoID.ttl) for documenting dataset statistics, access points, and interlinks.
+Following Linked Open Data and FAIR best practices, SemRepo provides machine-readable ontology and dataset metadata descriptions:
+
+- [SemRepo Ontology (OWL)](./ontologies/SemRepo-ontology.owl)
+- [VoID Description](./ontologies/VoID.ttl) — dataset statistics, interlinks, and access points
+- [DCAT Metadata Description](./ontologies/SemRepo-DCAT.ttl) — dataset catalog and distribution metadata
 
 ![Knowledge Graph Schema](https://raw.githubusercontent.com/faerber-lab/SemRepo/main/assets/kg-schema.png)
 
