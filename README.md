@@ -29,7 +29,7 @@ Adhering to Linked Open Data best practices, we publish the [full ontology in OW
 - **Linkage to SemOpenAlex**: 11,867
 - **Linkage to MLSea**: 148,185.... (and more)
 
-_*main class_
+_*core classes only_
 
 ## Construction Pipeline
 
