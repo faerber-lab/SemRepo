@@ -65,7 +65,7 @@ We demonstrate and evaluate the utility of SemRepo through the following:
   We formulate competency questions to illustrate SemRepo’s analytical capabilities for non-trivial queries. All SPARQL queries used for the CQs are available in [CQs](./CQs).
 
 - **[Reproducibility and Sustainability Analysis Use Case](./usecase)**  
-  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case are available in the `usecase` directory.
+  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case are available in the [`usecase`](./usecase) directory.
 
 - **[Additional SPARQL Query Examples](./CQs/example-sparql-queries.pdf)**  
   A collection of additional SPARQL query examples.
