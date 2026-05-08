@@ -92,5 +92,5 @@
         dcterms:title "VoID Description"@en ;
         dcat:accessURL <https://github.com/faerber-lab/SemRepo/blob/main/ontologies/VoID.ttl>
     ] ;
-    dcat:themeTaxonomy <http://dbpedia.org/resource/Knowledge_graph> ;
+    dcat:theme <http://dbpedia.org/resource/Knowledge_graph> ;
     dcterms:accrualPeriodicity <http://purl.org/cld/freq/semiannual> .
