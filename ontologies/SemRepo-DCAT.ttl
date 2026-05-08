@@ -51,19 +51,36 @@
     ] ;
     dcat:distribution [
         a dcat:Distribution ;
-        dcterms:title "SemRepo RDF Dump v1"@en ;
+        dcterms:title "SemRepo RDF Dump v1 (Turtle)"@en ;
         dcterms:issued "2025-05-13"^^xsd:date ;
         dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
         dcat:downloadURL <https://doi.org/10.5281/zenodo.15399468> ;
         dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
         owl:versionInfo "v1"
     ] ;
-    
     dcat:distribution [
         a dcat:Distribution ;
-        dcterms:title "SemRepo RDF Dump v2"@en ;
+        dcterms:title "SemRepo RDF Dump v1 (N-Triples)"@en ;
+        dcterms:issued "2025-05-13"^^xsd:date ;
+        dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.15399468> ;
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        owl:versionInfo "v1"
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "SemRepo RDF Dump v2 (Turtle)"@en ;
         dcterms:issued "2026-04-29"^^xsd:date ;
         dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.20084784> ;
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        owl:versionInfo "v2"
+    ] ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "SemRepo RDF Dump v2 (N-Triples)"@en ;
+        dcterms:issued "2026-04-29"^^xsd:date ;
+        dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> ;
         dcat:downloadURL <https://doi.org/10.5281/zenodo.20084784> ;
         dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
         owl:versionInfo "v2"
