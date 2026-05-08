@@ -32,7 +32,8 @@
     dcterms:subject <http://dbpedia.org/resource/Knowledge_graph> ;
     dcterms:subject <http://dbpedia.org/resource/Resource_Description_Framework> ;
 
-    void:feature <http://www.w3.org/ns/formats/Turtle> ;
+	void:feature <http://www.w3.org/ns/formats/Turtle> ;
+	void:feature <http://www.w3.org/ns/formats/N-Triples> ;
 
     void:triples 81485930 ;
 
