@@ -87,6 +87,8 @@ We demonstrate and evaluate the utility of SemRepo through the following:
 - **Ontology**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 - **Source Code**: [MIT License](https://opensource.org/licenses/MIT)
 
+SemRepo is released under the CC0 license to maximize reuse and interoperability; users are nevertheless encouraged to cite the associated publication and dataset.
+
 ## FAIR, Sustainability, and Ethical Compliance
 
 SemRepo follows the FAIR data principles to support long-term usability, reproducibility, and integration within the scholarly data ecosystem. The dataset is publicly available via Zenodo, GitHub, and the project website through RDF dumps and a public SPARQL endpoint. Interoperability is ensured through open standards (RDF, OWL, SPARQL, VoID) and interlinking with external scholarly knowledge graphs, while reusability is supported through open licensing and the release of the full construction pipeline.
