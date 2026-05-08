@@ -35,7 +35,7 @@
 	void:feature <http://www.w3.org/ns/formats/Turtle> ;
 	void:feature <http://www.w3.org/ns/formats/N-Triples> ;
 
-    void:triples 81485930 ;
+    void:triples "81485930"^^xsd:integer ;
 
     void:vocabulary <http://xmlns.com/foaf/0.1/> ;
     void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
@@ -71,7 +71,7 @@
 :Yuni_Susanti
     a foaf:Person ;
     foaf:name "Yuni Susanti" ;
-    rdfs:label "Yuni Susanti" ;
+    rdfs:label "Yuni Susanti" .
 
 :David_Lamprecht
     a foaf:Person ;
