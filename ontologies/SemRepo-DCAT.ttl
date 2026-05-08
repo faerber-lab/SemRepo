@@ -3,11 +3,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://semrepo.org/dataset/semrepo>
     a dcat:Dataset ;
     dcterms:title "SemRepo"@en ;
-    dcterms:description "SemRepo is an RDF knowledge graph of GitHub repositories linked to scientific research, integrating repository metadata with scholarly knowledge graphs to support reproducibility studies and software analytics."@en ;
+    dcterms:description "SemRepo is an RDF knowledge graph of GitHub repositories linked to scientific research, integrating repository metadata with scholarly knowledge graphs for large-scale analysis of software within the broader scientific research ecosystem."@en ;
     dcterms:creator [
         a foaf:Person ;
         foaf:name "Michael Färber"
@@ -30,10 +31,10 @@
         foaf:name "ScaDS.AI, TU Dresden"
     ] ;
     dcterms:issued "2025-05-13"^^xsd:date ;
-    dcterms:modified "2025-12-15"^^xsd:date ;
+    dcterms:modified "2026-04-29"^^xsd:date ;
     dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "https://doi.org/10.5281/zenodo.15399468" ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.15399467> ;
     dcat:keyword
         "software repository",
         "research software",
@@ -50,10 +51,24 @@
     ] ;
     dcat:distribution [
         a dcat:Distribution ;
-        dcterms:title "SemRepo RDF Dump"@en ;
+        dcterms:title "SemRepo RDF Dump v1"@en ;
+        dcterms:issued "2025-05-13"^^xsd:date ;
         dcterms:format "text/turtle" ;
+        dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
         dcat:downloadURL <https://doi.org/10.5281/zenodo.15399468> ;
-        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        owl:versionInfo "v1"
+    ] ;
+    
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "SemRepo RDF Dump v2"@en ;
+        dcterms:issued "2026-04-29"^^xsd:date ;
+        dcterms:format "text/turtle" ;
+        dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.20084784> ;
+        dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        owl:versionInfo "v2"
     ] ;
     dcat:distribution [
         a dcat:Distribution ;
