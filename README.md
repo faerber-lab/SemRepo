@@ -91,9 +91,7 @@ We demonstrate and evaluate the utility of SemRepo through the following:
 
 SemRepo follows the FAIR data principles to support long-term usability, reproducibility, and integration within the scholarly data ecosystem. The dataset is publicly available via Zenodo, GitHub, and the project website through RDF dumps and a public SPARQL endpoint. Interoperability is ensured through open standards (RDF, OWL, SPARQL, VoID) and interlinking with external scholarly knowledge graphs, while reusability is supported through open licensing and the release of the full construction pipeline.
 
-SemRepo provides versioned releases with periodic updates (approximately twice per year), supporting reproducibility and long-term sustainability.
-
-The resource is constructed exclusively from publicly available software and scholarly metadata. We acknowledge that inherited biases and coverage limitations from upstream sources (e.g., GitHub and linked scholarly knowledge graphs) may affect representation across research communities and regions.
+SemRepo provides versioned releases with periodic updates (approximately twice per year), accompanied by dissemination of each release via mailing list. SemRepo is constructed exclusively from publicly available software and scholarly metadata. We acknowledge that inherited biases and coverage limitations from upstream sources (e.g., GitHub and linked scholarly knowledge graphs) may affect representation across research communities and regions.
 
 See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
 
