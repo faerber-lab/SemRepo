@@ -140,6 +140,6 @@ and/or the dataset:
 
 ## Maintenance
 
-SemRepo follows a versioned release cycle with periodic updates (twice per year), with each release announced via project website, Github, and mailing lists.   
+SemRepo follows a versioned release cycle with periodic updates (approximately twice per year, subject on upstream resource availability), with each release announced via project website, Github, and mailing lists.   
 SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/) at ScaDS.AI, TU Dresden.  
 📧 Contact: [michael.faerber@tu-dresden.de](mailto:michael.faerber@tu-dresden.de)
