@@ -1,16 +1,33 @@
 # SemRepo
 
+## Overview
 [**SemRepo**](https://semrepo.org/) is an RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. SemRepo captures fine-grained repository-level metadata (e.g., _contributors, issues, dependencies, programming languages_) and interlinks this information with external scholarly knowledge graphs: repositories are connected to publications in [LPWC](https://linkedpaperswithcode.com/), repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), and research artifacts (e.g., _datasets, experiments_) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
-
-SemRepo’s services and documentation are available at **[https://semrepo.org](https://semrepo.org/)**:
 
 1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (approx. twice per year, see [Maintenance](#maintenance)).
 
-2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at [https://semrepo.org/sparql](https://semrepo.org/sparql).
+2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql).
 
-3. **Open-source Pipeline**: We release the full source code for knowledge graph construction and automatic interlinking, enabling reproducibility and future extensions of SemRepo.
+3. **Open-source Pipeline**: Full source code for knowledge graph construction and interlinking, enabling reproducibility and future extensions of SemRepo.
 
 4. **URI Resolution**: SemRepo supports persistent URI resolution for entities within the Linked Open Data cloud.
+
+🌐 Website: **[https://semrepo.org](https://semrepo.org/)**
+
+## Contents
+
+- [Ontology and Metadata Descriptions](#ontology-and-metadata-descriptions)
+- [Key Statistics](#key-statistics)
+- [Construction Pipeline](#construction-pipeline)
+  - [Installation](#installation)
+- [Example Usage: CQs, Use Cases, Queries](#example-usage)
+- [Repository Structure](#repository-structure)
+- [License](#license)
+- [FAIR, Sustainability, and Ethical Compliance](#fair-sustainability-and-ethical-compliance)
+- [Citation](#citation)
+- [Maintenance](#maintenance)
+
+---
+
 
 ## Ontology and Metadata Descriptions
 
@@ -22,7 +39,7 @@ Following Linked Open Data and FAIR best practices, SemRepo provides machine-rea
 
 ![Knowledge Graph Schema](https://raw.githubusercontent.com/faerber-lab/SemRepo/main/assets/kg-schema.png)
 
-## Key Statistics* (as of April 2026)
+## Key Statistics
 - **Repository**: 197,566  
 - **Issues**: 2,609,510  
 - **Organization**: 12,879  
@@ -35,7 +52,7 @@ Following Linked Open Data and FAIR best practices, SemRepo provides machine-rea
 - **Linkage to SemOpenAlex**: 11,867
 - **Linkage to MLSea**: 148,185.... (and more)
 
-_*core classes only_
+_* as of April 2026, core classes only_
 
 ## Construction Pipeline
 
