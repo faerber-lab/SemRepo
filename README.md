@@ -2,9 +2,9 @@
 
 [**SemRepo**](https://semrepo.org/) is an RDF knowledge graph with over 81 million triples on nearly 200,000 GitHub repositories linked to scientific research. SemRepo captures fine-grained repository-level metadata (e.g., _contributors, issues, dependencies, programming languages_) and interlinks this information with external scholarly knowledge graphs: repositories are connected to publications in [LPWC](https://linkedpaperswithcode.com/), repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), and research artifacts (e.g., _datasets, experiments_) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
-SemRepo’s services and documentation are available at: **[https://semrepo.org](https://semrepo.org/)**:
+SemRepo’s services and documentation are available at **[https://semrepo.org](https://semrepo.org/)**:
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (approx. twice per year, see [Maintenance](#maintenance) below).
+1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (approx. twice per year, see [Maintenance](#maintenance)).
 
 2. **Query Services**: The dataset is hosted in a public triple store with a SPARQL endpoint at [https://semrepo.org/sparql](https://semrepo.org/sparql).
 
