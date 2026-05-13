@@ -99,7 +99,7 @@ See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/
 
 ## Citation
 
-If you use SemRepo, please cite the paper (will be updated upon acceptance):
+If you use SemRepo, please cite the paper (_will be updated upon acceptance_):
 
 ```bibtex
 @inproceedings{semrepo,
