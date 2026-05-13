@@ -7,7 +7,7 @@
 
 2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql).
 
-3. **Open-source Pipeline**: Full source code for SemRepo construction and interlinking, supporting reproducibility and future extensions of SemRepo.
+3. **Open-source Pipeline**: Full source code for SemRepo construction and interlinking, supporting future extensions of SemRepo.
 
 4. **URI Resolution**: SemRepo supports persistent URI resolution for entities within the Linked Open Data cloud.
 
