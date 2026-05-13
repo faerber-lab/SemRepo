@@ -18,7 +18,6 @@
 - [Ontology and Metadata Descriptions](#ontology-and-metadata-descriptions)
 - [Key Statistics](#key-statistics)
 - [Construction Pipeline](#construction-pipeline)
-  - [Installation](#installation)
 - [Example Usage: CQs, Use Cases, Queries](#example-usage)
 - [Repository Structure](#repository-structure)
 - [License](#license)
