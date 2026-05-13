@@ -87,7 +87,7 @@ We demonstrate and evaluate the utility of SemRepo through the following:
 - **Ontology**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 - **Source Code**: [MIT License](https://opensource.org/licenses/MIT)
 
-SemRepo is released under the CC0 license to maximize reuse and interoperability; users are nevertheless encouraged to cite the associated publication and dataset.
+SemRepo is released under the CC0 license to maximize reuse and interoperability; users are nevertheless encouraged to cite the associated publication and dataset, see [Citation](#citation)).
 
 ## FAIR, Sustainability, and Ethical Compliance
 
