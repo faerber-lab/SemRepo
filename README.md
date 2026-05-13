@@ -125,5 +125,5 @@ and/or the dataset:
 ## Maintenance
 
 SemRepo follows a versioned release cycle with periodic updates (twice per year), with each release announced via a mailing list.   
-SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/team/) at TU Dresden.  
+SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/) at TU Dresden.  
 📧 Contact: [michael.faerber@tu-dresden.de](mailto:michael.faerber@tu-dresden.de)
