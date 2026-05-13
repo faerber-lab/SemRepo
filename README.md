@@ -104,18 +104,15 @@ If you use SemRepo, please cite the paper (will be updated upon acceptance):
 ```bibtex
 @inproceedings{semrepo,
   title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem.},
-  author={Rafay, A., Lamprecht, D., Susanti, Y., & Färber, M.},
+  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
   year={2026}
 }
 ```
 
 and/or the dataset:
 ```bibtex
-@dataset{rafay_2026_20084784,
-  author       = {Rafay, Abdul and
-                  Susanti, Yuni and
-                  Lamprecht, David and
-                  Färber, Michael},
+@dataset{semrepo,
+  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
   title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
   month        = apr,
   year         = 2026,
