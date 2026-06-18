@@ -1,0 +1,15 @@
+# Number of Repositories by Organization
+
+SELECT ?Name (COUNT(?Repository) AS ?RepoCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?Repository <http://purl.org/dc/terms/creator> ?Organisation .
+
+    ?Organisation
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://semrepo.org/class/organization> ;
+      <http://xmlns.com/foaf/0.1/name> ?Name .
+  }
+}
+GROUP BY ?Organisation ?Name
+ORDER BY DESC(?RepoCount)
