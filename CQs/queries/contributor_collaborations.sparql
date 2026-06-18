@@ -1,0 +1,30 @@
+# Top Contributor Collaborations
+
+SELECT
+  ?person1
+  ?name1
+  ?person2
+  ?name2
+  (COUNT(?repo) AS ?collaborationCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+
+    ?repo
+      a <https://semrepo.org/class/repository> ;
+      <https://semrepo.org/property/hasContributorReference> ?ref1, ?ref2 .
+
+    ?ref1
+      <https://semrepo.org/property/hasContributor> ?person1 .
+
+    ?ref2
+      <https://semrepo.org/property/hasContributor> ?person2 .
+
+    ?person1 <http://xmlns.com/foaf/0.1/name> ?name1 .
+    ?person2 <http://xmlns.com/foaf/0.1/name> ?name2 .
+
+    FILTER(?person1 != ?person2)
+  }
+}
+GROUP BY ?person1 ?name1 ?person2 ?name2
+ORDER BY DESC(?collaborationCount)
+LIMIT 100
