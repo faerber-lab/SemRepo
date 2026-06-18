@@ -1,0 +1,22 @@
+# Programming Languages Used for Each Topic
+
+SELECT
+  ?topic
+  ?progLang
+  (COUNT(?progLang) AS ?langCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+
+    ?repository
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://semrepo.org/class/repository> ;
+      <http://xmlns.com/foaf/0.1/topic> ?topic ;
+      <https://semrepo.org/property/hasLanguageReference> ?langRef .
+
+    ?langRef
+      <https://semrepo.org/property/hasLanguageName> ?progLang .
+  }
+}
+GROUP BY ?topic ?progLang
+ORDER BY DESC(?langCount)
+LIMIT 100
