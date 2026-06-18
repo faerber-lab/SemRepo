@@ -1,0 +1,21 @@
+# MLSea Linkage via Linked Papers with Code (LPWC)
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX sr: <https://semrepo.org/property/>
+PREFIX srclass: <https://semrepo.org/class/>
+
+SELECT *
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?SemRepo_repository
+      rdf:type srclass:repository ;
+      fabio:hasURL ?Github_Url ;
+      sr:hasLpwcUrl ?Lpwc_repository .
+  }
+
+  SERVICE <https://linkedpaperswithcode.com/sparql> {
+    ?Lpwc_repository <http://www.w3.org/2002/07/owl#sameAs> ?mlsea .
+  }
+}
+LIMIT 10
