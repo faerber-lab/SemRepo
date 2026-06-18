@@ -1,0 +1,15 @@
+# Top Contributors by Total Commits
+
+SELECT
+  ?contributor
+  (SUM(?no_of_commits) AS ?total_commits)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?contRef
+      <https://semrepo.org/property/hasContributor> ?contributor ;
+      <https://semrepo.org/property/hasCommits> ?no_of_commits .
+  }
+}
+GROUP BY ?contributor
+ORDER BY DESC(?total_commits)
+LIMIT 5
