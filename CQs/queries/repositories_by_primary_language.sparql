@@ -1,0 +1,17 @@
+# Number of Repositories by Primary Programming Language
+
+SELECT ?Language (COUNT(?Repository) AS ?RepoCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?Repository
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://semrepo.org/class/repository> ;
+      <https://semrepo.org/property/hasPrimaryProgrammingLanguage> ?langRef .
+
+    ?langRef
+      <https://semrepo.org/property/hasLanguageName> ?Language .
+  }
+}
+GROUP BY ?Language
+ORDER BY DESC(?RepoCount)
+LIMIT 10
