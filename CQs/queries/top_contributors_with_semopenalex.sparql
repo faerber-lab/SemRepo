@@ -1,0 +1,19 @@
+# Top Contributors with SemOpenAlex Profiles
+
+SELECT
+  ?contributor
+  ?soa_url
+  (SUM(?no_of_commits) AS ?total_commits)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?contRef
+      <https://semrepo.org/property/hasContributor> ?contributor ;
+      <https://semrepo.org/property/hasCommits> ?no_of_commits .
+
+    ?contributor
+      <https://semrepo.org/property/hasSoaUrl> ?soa_url .
+  }
+}
+GROUP BY ?contributor ?soa_url
+ORDER BY DESC(?total_commits)
+LIMIT 5
