@@ -1,0 +1,14 @@
+# Number of Repositories for Each Topic
+
+SELECT ?Topic (COUNT(?Repository) AS ?RepoCount)
+WHERE {
+  GRAPH <https://semrepo.org> {
+    ?Repository
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://semrepo.org/class/repository> ;
+      <http://xmlns.com/foaf/0.1/topic> ?Topic .
+  }
+}
+GROUP BY ?Topic
+ORDER BY DESC(?RepoCount)
+LIMIT 10
