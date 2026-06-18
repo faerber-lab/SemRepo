@@ -1,0 +1,33 @@
+# Repository Data for a Specific Organization
+
+SELECT
+  ?OrgName
+  ?Repository
+  ?Package
+  ?Topic
+  ?Language
+  ?Contributors
+  ?Forks
+  ?Stargazers
+WHERE {
+  GRAPH <https://semrepo.org> {
+
+    <https://semrepo.org/organization/serverlessllm>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://semrepo.org/class/organization> ;
+      <http://xmlns.com/foaf/0.1/name> ?OrgName .
+
+    ?Repository
+      <http://purl.org/dc/terms/creator>
+        <https://semrepo.org/organization/serverlessllm> ;
+      <https://semrepo.org/property/usedPackage> ?Package ;
+      <http://xmlns.com/foaf/0.1/topic> ?Topic ;
+      <https://semrepo.org/property/hasLanguageReference> ?langRef ;
+      <https://semrepo.org/property/hasTotalContributor> ?Contributors ;
+      <https://semrepo.org/property/hasTotalForks> ?Forks ;
+      <https://semrepo.org/property/hasTotalStargazers> ?Stargazers .
+
+    ?langRef
+      <https://semrepo.org/property/hasLanguageName> ?Language .
+  }
+}
