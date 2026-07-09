@@ -77,12 +77,12 @@ Ensure you are using Python 3.10 or higher. The pipeline then follows the follow
 
 We demonstrate and evaluate the utility of SemRepo through the following:
 
-- **[Competency Questions (CQs)](./CQs)**  
-  We formulate competency questions to illustrate SemRepo’s analytical capabilities for non-trivial queries. All SPARQL queries used for the CQs are available in [CQs](./CQs).
-
 - **[Reproducibility and Sustainability Analysis Use Case](./usecase)**  
   We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case are available in the [`usecase`](./usecase) directory.
 
+- **[Competency Questions (CQs)](./CQs)**  
+  We formulate competency questions based on expert knowledge from researchers and software engineers working with scientific software ecosystems and scholarly analytics workflows.
+  
 - **[Additional SPARQL Query Examples](./CQs/example-sparql-queries.pdf)**  
   A collection of additional SPARQL query examples.
 
