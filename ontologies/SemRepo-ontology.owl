@@ -6,6 +6,7 @@
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:fabio="http://purl.org/spar/fabio/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
     xml:base="https://semrepo.org/ontology">
     
     <owl:Ontology rdf:about="https://semrepo.org/ontology#">
