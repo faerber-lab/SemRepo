@@ -9,14 +9,79 @@
 <https://semrepo.org/ontology/v2#> rdf:type owl:Ontology .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  https://semrepo.org/ontology/v2#hasSnapshot
+:hasSnapshot rdf:type owl:ObjectProperty ;
+             owl:inverseOf :snapshotOf ;
+             rdfs:domain :Repository ;
+             rdfs:range :RepositorySnapshot .
+
+
+###  https://semrepo.org/ontology/v2#snapshotOf
+:snapshotOf rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :RepositorySnapshot ;
+            rdfs:range :Repository .
+
+
+#################################################################
 #    Data properties
 #################################################################
+
+###  https://semrepo.org/ontology/v2#archived
+:archived rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty .
+
+
+###  https://semrepo.org/ontology/v2#canonicalUrl
+:canonicalUrl rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Repository ;
+              rdfs:range xsd:anyURI .
+
+
+###  https://semrepo.org/ontology/v2#collectedAt
+:collectedAt rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :RepositorySnapshot ;
+             rdfs:range xsd:dateTime .
+
+
+###  https://semrepo.org/ontology/v2#createdAt
+:createdAt rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Repository ;
+           rdfs:range xsd:dateTime .
+
+
+###  https://semrepo.org/ontology/v2#description
+:description rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :RepositorySnapshot ;
+             rdfs:range xsd:string .
+
+
+###  https://semrepo.org/ontology/v2#forksCount
+:forksCount rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :RepositorySnapshot ;
+            rdfs:range xsd:nonNegativeInteger .
+
 
 ###  https://semrepo.org/ontology/v2#githubLogin
 :githubLogin rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :GitHubAccount ;
              rdfs:range xsd:string .
+
+
+###  https://semrepo.org/ontology/v2#githubRepositoryId
+:githubRepositoryId rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Repository ;
+                    rdfs:range xsd:integer .
 
 
 ###  https://semrepo.org/ontology/v2#githubUserId
@@ -26,11 +91,25 @@
               rdfs:range xsd:integer .
 
 
+###  https://semrepo.org/ontology/v2#openIssuesCount
+:openIssuesCount rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :RepositorySnapshot ;
+                 rdfs:range xsd:nonNegativeInteger .
+
+
 ###  https://semrepo.org/ontology/v2#profileUrl
 :profileUrl rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :GitHubAccount ;
             rdfs:range xsd:anyURI .
+
+
+###  https://semrepo.org/ontology/v2#starsCount
+:starsCount rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :RepositorySnapshot ;
+            rdfs:range xsd:nonNegativeInteger .
 
 
 #################################################################
@@ -56,6 +135,18 @@
 ###  https://semrepo.org/ontology/v2#GitHubUser
 :GitHubUser rdf:type owl:Class ;
             rdfs:subClassOf :GitHubAccount .
+
+
+###  https://semrepo.org/ontology/v2#Repository
+:Repository rdf:type owl:Class ;
+            rdfs:comment "A GitHub repository, identified by its stable numeric GitHub ID. Represents only identity-level information; mutable metadata is captured in RepositorySnapshot instances."@en ;
+            rdfs:label "Repository"@en .
+
+
+###  https://semrepo.org/ontology/v2#RepositorySnapshot
+:RepositorySnapshot rdf:type owl:Class ;
+                    rdfs:comment "A dated observation of a Repository's mutable metadata (stars, forks, issues, description, etc.) at a specific collection time."@en ;
+                    rdfs:label "Repository Snapshot"@en .
 
 
 #################################################################
