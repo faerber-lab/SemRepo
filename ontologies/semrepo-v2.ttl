@@ -30,6 +30,20 @@
             rdfs:range :ExternalLink .
 
 
+###  https://semrepo.org/ontology/v2#resolutionStatus
+:resolutionStatus rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :SourceRepositoryLink ;
+                  rdfs:range :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#resolvedRepository
+:resolvedRepository rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :SourceRepositoryLink ;
+                    rdfs:range :Repository .
+
+
 ###  https://semrepo.org/ontology/v2#snapshotOf
 :snapshotOf rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
@@ -81,6 +95,13 @@
                       owl:FunctionalProperty ;
              rdfs:domain :RepositorySnapshot ;
              rdfs:range xsd:string .
+
+
+###  https://semrepo.org/ontology/v2#finalResolvedUrl
+:finalResolvedUrl rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :SourceRepositoryLink ;
+                  rdfs:range xsd:anyURI .
 
 
 ###  https://semrepo.org/ontology/v2#forksCount
@@ -146,6 +167,13 @@
                  rdfs:range xsd:nonNegativeInteger .
 
 
+###  https://semrepo.org/ontology/v2#originalRepositoryUrl
+:originalRepositoryUrl rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :SourceRepositoryLink ;
+                       rdfs:range xsd:anyURI .
+
+
 ###  https://semrepo.org/ontology/v2#profileUrl
 :profileUrl rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
@@ -208,6 +236,57 @@
 :RepositorySnapshot rdf:type owl:Class ;
                     rdfs:comment "A dated observation of a Repository's mutable metadata (stars, forks, issues, description, etc.) at a specific collection time."@en ;
                     rdfs:label "Repository Snapshot"@en .
+
+
+###  https://semrepo.org/ontology/v2#ResolutionStatus
+:ResolutionStatus rdf:type owl:Class ;
+                  rdfs:comment "A controlled set of possible outcomes for resolving a source repository URL to a canonical Repository."@en ;
+                  rdfs:label "Resolution Status"@en .
+
+
+###  https://semrepo.org/ontology/v2#SourceRepositoryLink
+:SourceRepositoryLink rdf:type owl:Class ;
+                      rdfs:comment "Represents the resolution process from an originally recorded LPWC repository URL to a canonical Repository, tracking redirects, renames, or failures."@en ;
+                      rdfs:label "Source Repository Link"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://semrepo.org/ontology/v2#ApiError
+:ApiError rdf:type owl:NamedIndividual ,
+                   :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Deleted
+:Deleted rdf:type owl:NamedIndividual ,
+                  :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Invalid
+:Invalid rdf:type owl:NamedIndividual ,
+                  :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Private
+:Private rdf:type owl:NamedIndividual ,
+                  :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Renamed
+:Renamed rdf:type owl:NamedIndividual ,
+                  :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Resolved
+:Resolved rdf:type owl:NamedIndividual ,
+                   :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Transferred
+:Transferred rdf:type owl:NamedIndividual ,
+                      :ResolutionStatus .
 
 
 #################################################################
