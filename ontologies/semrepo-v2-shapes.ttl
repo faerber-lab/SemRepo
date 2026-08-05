@@ -1,0 +1,42 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+#    GitHubAccount pattern
+#################################################################
+
+:GitHubAccountCoreShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path :githubUserId ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :githubLogin ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :profileUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+    ] .
+
+:GitHubUserShape
+    a sh:NodeShape ;
+    sh:targetClass :GitHubUser ;
+    sh:node :GitHubAccountCoreShape .
+
+:GitHubOrganisationShape
+    a sh:NodeShape ;ß
+    sh:targetClass :GitHubOrganisation ;
+    sh:node :GitHubAccountCoreShape .
+
+:GitHubBotShape
+    a sh:NodeShape ;
+    sh:targetClass :GitHubBot ;
+    sh:node :GitHubAccountCoreShape .
