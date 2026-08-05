@@ -228,3 +228,121 @@
         sh:class :Repository ;
         sh:maxCount 1 ;
     ] .
+
+#################################################################
+#    Contribution pattern
+#################################################################
+
+:ContributionShape
+    a sh:NodeShape ;
+    sh:targetClass :Contribution ;
+    sh:property [
+        sh:path :contributionToSnapshot ;
+        sh:class :RepositorySnapshot ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :contributor ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:or (
+            [ sh:class :GitHubUser ]
+            [ sh:class :GitHubOrganisation ]
+            [ sh:class :GitHubBot ]
+        ) ;
+    ] ;
+    sh:property [
+        sh:path :commitCount ;
+        sh:datatype xsd:nonNegativeInteger ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+#################################################################
+#    LanguageUsage / ProgrammingLanguage pattern
+#################################################################
+
+:LanguageUsageShape
+    a sh:NodeShape ;
+    sh:targetClass :LanguageUsage ;
+    sh:property [
+        sh:path :languageUsageIn ;
+        sh:class :RepositorySnapshot ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :programmingLanguage ;
+        sh:class :ProgrammingLanguage ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :languageBytes ;
+        sh:datatype xsd:nonNegativeInteger ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+:ProgrammingLanguageShape
+    a sh:NodeShape ;
+    sh:targetClass :ProgrammingLanguage ;
+    sh:property [
+        sh:path :languageName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+#################################################################
+#    Issue / PullRequest pattern
+#################################################################
+
+:IssueCoreShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path :githubIssueId ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueNumber ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueState ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueCreatedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueClosedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :belongsToRepository ;
+        sh:class :Repository ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+:IssueShape
+    a sh:NodeShape ;
+    sh:targetClass :Issue ;
+    sh:node :IssueCoreShape .
+
+:PullRequestShape
+    a sh:NodeShape ;
+    sh:targetClass :PullRequest ;
+    sh:node :IssueCoreShape .
