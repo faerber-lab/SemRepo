@@ -32,7 +32,7 @@
     sh:node :GitHubAccountCoreShape .
 
 :GitHubOrganisationShape
-    a sh:NodeShape ;ß
+    a sh:NodeShape ;
     sh:targetClass :GitHubOrganisation ;
     sh:node :GitHubAccountCoreShape .
 
@@ -40,3 +40,73 @@
     a sh:NodeShape ;
     sh:targetClass :GitHubBot ;
     sh:node :GitHubAccountCoreShape .
+
+#################################################################
+#    Repository / RepositorySnapshot pattern
+#################################################################
+
+:RepositoryShape
+    a sh:NodeShape ;
+    sh:targetClass :Repository ;
+    sh:property [
+        sh:path :githubRepositoryId ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :canonicalUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :createdAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :hasSnapshot ;
+        sh:class :RepositorySnapshot ;
+    ] .
+
+:RepositorySnapshotShape
+    a sh:NodeShape ;
+    sh:targetClass :RepositorySnapshot ;
+    sh:property [
+        sh:path :collectedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :starsCount ;
+        sh:datatype xsd:nonNegativeInteger ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :forksCount ;
+        sh:datatype xsd:nonNegativeInteger ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :openIssuesCount ;
+        sh:datatype xsd:nonNegativeInteger ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :description ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :archived ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :snapshotOf ;
+        sh:class :Repository ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
