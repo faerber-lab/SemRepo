@@ -110,3 +110,54 @@
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] .
+
+#################################################################
+#    ExternalLink pattern
+#################################################################
+
+:ExternalLinkShape
+    a sh:NodeShape ;
+    sh:targetClass :ExternalLink ;
+    sh:property [
+        sh:path :linkTarget ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :targetKnowledgeGraph ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :linkRelationType ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :linkingMethod ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :confidenceScore ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :linkDecision ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :linkSource ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:or (
+            [ sh:class :Repository ]
+            [ sh:class :GitHubUser ]
+            [ sh:class :GitHubOrganisation ]
+            [ sh:class :GitHubBot ]
+        ) ;
+    ] .
