@@ -161,3 +161,33 @@
             [ sh:class :GitHubBot ]
         ) ;
     ] .
+
+#################################################################
+#    SourceRepositoryLink / ResolutionStatus pattern
+#################################################################
+
+:SourceRepositoryLinkShape
+    a sh:NodeShape ;
+    sh:targetClass :SourceRepositoryLink ;
+    sh:property [
+        sh:path :originalRepositoryUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :finalResolvedUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :resolutionStatus ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( :Resolved :Renamed :Transferred :Deleted :Private :Invalid :ApiError ) ;
+    ] ;
+    sh:property [
+        sh:path :resolvedRepository ;
+        sh:class :Repository ;
+        sh:maxCount 1 ;
+    ] .
