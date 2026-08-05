@@ -20,6 +20,13 @@
                      rdfs:range :Repository .
 
 
+###  https://semrepo.org/ontology/v2#collectionStatus
+:collectionStatus rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :CollectionActivity ;
+                  rdfs:range :CollectionStatus .
+
+
 ###  https://semrepo.org/ontology/v2#contributionToSnapshot
 :contributionToSnapshot rdf:type owl:ObjectProperty ,
                                  owl:FunctionalProperty ;
@@ -86,6 +93,13 @@
                     rdfs:range :Repository .
 
 
+###  https://semrepo.org/ontology/v2#resultedInRepository
+:resultedInRepository rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :CollectionActivity ;
+                      rdfs:range :Repository .
+
+
 ###  https://semrepo.org/ontology/v2#snapshotOf
 :snapshotOf rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
@@ -104,6 +118,13 @@
           rdfs:range xsd:boolean .
 
 
+###  https://semrepo.org/ontology/v2#attemptedUrl
+:attemptedUrl rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :CollectionActivity ;
+              rdfs:range xsd:anyURI .
+
+
 ###  https://semrepo.org/ontology/v2#canonicalUrl
 :canonicalUrl rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
@@ -116,6 +137,20 @@
                       owl:FunctionalProperty ;
              rdfs:domain :RepositorySnapshot ;
              rdfs:range xsd:dateTime .
+
+
+###  https://semrepo.org/ontology/v2#collectionSource
+:collectionSource rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :CollectionActivity ;
+                  rdfs:range xsd:string .
+
+
+###  https://semrepo.org/ontology/v2#collectionTimestamp
+:collectionTimestamp rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :CollectionActivity ;
+                     rdfs:range xsd:dateTime .
 
 
 ###  https://semrepo.org/ontology/v2#commitCount
@@ -297,6 +332,18 @@
 #    Classes
 #################################################################
 
+###  https://semrepo.org/ontology/v2#CollectionActivity
+:CollectionActivity rdf:type owl:Class ;
+                    rdfs:comment "A single attempt by the data collection pipeline to fetch or resolve data for a target URL, whether or not it succeeded. Supports provenance and completeness tracking."@en ;
+                    rdfs:label "Collection Activity"@en .
+
+
+###  https://semrepo.org/ontology/v2#CollectionStatus
+:CollectionStatus rdf:type owl:Class ;
+                  rdfs:comment "A controlled set of possible outcomes for a single collection attempt, distinct from ResolutionStatus which tracks LPWC URL-to-Repository resolution specifically."@en ;
+                  rdfs:label "Collection Status"@en .
+
+
 ###  https://semrepo.org/ontology/v2#Contribution
 :Contribution rdf:type owl:Class ;
               rdfs:comment "Represents a GitHub account's commit contribution to a specific repository snapshot, replacing v1's duplicated ContributorReference/hasContributorReference classes."@en ;
@@ -393,14 +440,39 @@
                   :ResolutionStatus .
 
 
+###  https://semrepo.org/ontology/v2#Failed
+:Failed rdf:type owl:NamedIndividual ,
+                 :CollectionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Forbidden
+:Forbidden rdf:type owl:NamedIndividual ,
+                    :CollectionStatus .
+
+
 ###  https://semrepo.org/ontology/v2#Invalid
 :Invalid rdf:type owl:NamedIndividual ,
                   :ResolutionStatus .
 
 
+###  https://semrepo.org/ontology/v2#NotFound
+:NotFound rdf:type owl:NamedIndividual ,
+                   :CollectionStatus .
+
+
+###  https://semrepo.org/ontology/v2#PartialSuccess
+:PartialSuccess rdf:type owl:NamedIndividual ,
+                         :CollectionStatus .
+
+
 ###  https://semrepo.org/ontology/v2#Private
 :Private rdf:type owl:NamedIndividual ,
                   :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#RateLimited
+:RateLimited rdf:type owl:NamedIndividual ,
+                      :CollectionStatus .
 
 
 ###  https://semrepo.org/ontology/v2#Renamed
@@ -411,6 +483,11 @@
 ###  https://semrepo.org/ontology/v2#Resolved
 :Resolved rdf:type owl:NamedIndividual ,
                    :ResolutionStatus .
+
+
+###  https://semrepo.org/ontology/v2#Success
+:Success rdf:type owl:NamedIndividual ,
+                  :CollectionStatus .
 
 
 ###  https://semrepo.org/ontology/v2#Transferred
