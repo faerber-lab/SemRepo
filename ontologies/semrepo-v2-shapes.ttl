@@ -191,3 +191,40 @@
         sh:class :Repository ;
         sh:maxCount 1 ;
     ] .
+
+#################################################################
+#    CollectionActivity / CollectionStatus pattern
+#################################################################
+
+:CollectionActivityShape
+    a sh:NodeShape ;
+    sh:targetClass :CollectionActivity ;
+    sh:property [
+        sh:path :collectionTimestamp ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :attemptedUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :collectionSource ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :collectionStatus ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( :Success :Failed :NotFound :RateLimited :Forbidden :PartialSuccess ) ;
+    ] ;
+    sh:property [
+        sh:path :resultedInRepository ;
+        sh:class :Repository ;
+        sh:maxCount 1 ;
+    ] .
