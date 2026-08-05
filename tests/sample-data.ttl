@@ -1,0 +1,145 @@
+@prefix : <https://semrepo.org/ontology/v2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+#    VALID examples (should pass SHACL validation)
+#################################################################
+
+# Valid GitHubUser
+:user1 rdf:type :GitHubUser ;
+    :githubUserId 1001 ;
+    :githubLogin "octocat" ;
+    :profileUrl "https://github.com/octocat"^^xsd:anyURI .
+
+# Valid GitHubOrganisation
+:org1 rdf:type :GitHubOrganisation ;
+    :githubUserId 2001 ;
+    :githubLogin "faerber-lab" .
+
+# Valid GitHubBot
+:bot1 rdf:type :GitHubBot ;
+    :githubUserId 3001 ;
+    :githubLogin "dependabot" .
+
+# Valid Repository WITH a snapshot
+:repo1 rdf:type :Repository ;
+    :githubRepositoryId 5001 ;
+    :canonicalUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
+    :createdAt "2023-01-15T10:00:00Z"^^xsd:dateTime ;
+    :hasSnapshot :snapshot1 .
+
+:snapshot1 rdf:type :RepositorySnapshot ;
+    :collectedAt "2026-08-01T00:00:00Z"^^xsd:dateTime ;
+    :starsCount "42"^^xsd:nonNegativeInteger ;
+    :forksCount "5"^^xsd:nonNegativeInteger ;
+    :openIssuesCount "3"^^xsd:nonNegativeInteger ;
+    :description "SemRepo v2 knowledge graph" ;
+    :archived false ;
+    :snapshotOf :repo1 .
+
+# Valid Repository WITHOUT a snapshot (should still be VALID — hasSnapshot is optional)
+:repo2 rdf:type :Repository ;
+    :githubRepositoryId 5002 ;
+    :canonicalUrl "https://github.com/example/not-yet-collected"^^xsd:anyURI .
+
+# Valid ExternalLink, source = Repository
+:link1 rdf:type :ExternalLink ;
+    :linkTarget "https://semopenalex.org/work/W123"^^xsd:anyURI ;
+    :targetKnowledgeGraph "SemOpenAlex" ;
+    :linkingMethod "title-match" ;
+    :confidenceScore 0.87 ;
+    :linkSource :repo1 .
+
+# Valid ExternalLink, source = GitHubUser
+:link2 rdf:type :ExternalLink ;
+    :linkTarget "https://orcid.org/0000-0001-2345"^^xsd:anyURI ;
+    :targetKnowledgeGraph "ORCID" ;
+    :confidenceScore 0.95 ;
+    :linkSource :user1 .
+
+# Valid SourceRepositoryLink
+:srl1 rdf:type :SourceRepositoryLink ;
+    :originalRepositoryUrl "https://github.com/old-name/old-repo"^^xsd:anyURI ;
+    :finalResolvedUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
+    :resolutionStatus :Renamed ;
+    :resolvedRepository :repo1 .
+
+# Valid CollectionActivity
+:ca1 rdf:type :CollectionActivity ;
+    :collectionTimestamp "2026-08-01T00:00:00Z"^^xsd:dateTime ;
+    :attemptedUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
+    :collectionSource "github-api-crawler-v2" ;
+    :collectionStatus :Success ;
+    :resultedInRepository :repo1 .
+
+# Valid Contribution
+:contrib1 rdf:type :Contribution ;
+    :contributionToSnapshot :snapshot1 ;
+    :contributor :user1 ;
+    :commitCount "17"^^xsd:nonNegativeInteger .
+
+# Valid ProgrammingLanguage + LanguageUsage
+:lang1 rdf:type :ProgrammingLanguage ;
+    :languageName "Python" .
+
+:langusage1 rdf:type :LanguageUsage ;
+    :languageUsageIn :snapshot1 ;
+    :programmingLanguage :lang1 ;
+    :languageBytes "128340"^^xsd:nonNegativeInteger .
+
+# Valid Issue (non-PR)
+:issue1 rdf:type :Issue ;
+    :githubIssueId 9001 ;
+    :issueNumber 42 ;
+    :issueState "open" ;
+    :issueCreatedAt "2026-07-01T00:00:00Z"^^xsd:dateTime ;
+    :belongsToRepository :repo1 .
+
+# Valid PullRequest
+:pr1 rdf:type :PullRequest ;
+    :githubIssueId 9002 ;
+    :issueNumber 43 ;
+    :issueState "closed" ;
+    :issueCreatedAt "2026-07-05T00:00:00Z"^^xsd:dateTime ;
+    :issueClosedAt "2026-07-10T00:00:00Z"^^xsd:dateTime ;
+    :belongsToRepository :repo1 .
+
+
+#################################################################
+#    INVALID examples (should FAIL SHACL validation)
+#################################################################
+
+# INVALID: Repository missing canonicalUrl (minCount 1 violated)
+:repo_bad1 rdf:type :Repository ;
+    :githubRepositoryId 6001 .
+
+# INVALID: GitHubUser missing githubLogin (minCount 1 violated)
+:user_bad1 rdf:type :GitHubUser ;
+    :githubUserId 1099 .
+
+# INVALID: SourceRepositoryLink with resolutionStatus value NOT in the closed sh:in list
+# (using :Success, a CollectionStatus individual, by mistake — a plausible copy-paste error)
+:srl_bad1 rdf:type :SourceRepositoryLink ;
+    :originalRepositoryUrl "https://github.com/broken/example"^^xsd:anyURI ;
+    :resolutionStatus :Success .
+
+# INVALID: CollectionActivity missing collectionSource (mandatory per our WP1-MLSea decision)
+:ca_bad1 rdf:type :CollectionActivity ;
+    :collectionTimestamp "2026-08-02T00:00:00Z"^^xsd:dateTime ;
+    :attemptedUrl "https://github.com/example/missing-source"^^xsd:anyURI ;
+    :collectionStatus :Failed .
+
+# INVALID: ExternalLink whose linkSource points to something outside the allowed sh:or classes
+# (points to a ProgrammingLanguage, which is neither Repository nor a GitHubAccount subclass)
+:link_bad1 rdf:type :ExternalLink ;
+    :linkTarget "https://example.org/bad-link"^^xsd:anyURI ;
+    :targetKnowledgeGraph "Bogus" ;
+    :linkSource :lang1 .
+
+# INVALID: Issue missing belongsToRepository (minCount 1 violated)
+:issue_bad1 rdf:type :Issue ;
+    :githubIssueId 9099 ;
+    :issueNumber 99 ;
+    :issueState "open" ;
+    :issueCreatedAt "2026-08-01T00:00:00Z"^^xsd:dateTime .
