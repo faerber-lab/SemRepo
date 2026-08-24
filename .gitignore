@@ -3,3 +3,4 @@ data/test/
 logs/
 data/intermediate/
 data/output/
+.DS_Store
