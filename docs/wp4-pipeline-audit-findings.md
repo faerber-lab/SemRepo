@@ -85,6 +85,16 @@ graph.add((make_uri('person', X), make_uri('property', 'hasPersonType'), make_ur
 
 ---
 
+## Finding 7: LPWC extraction code does not exist in this repo
+
+**Searched for:** the script that produces `crawling-gitHub-metadata/github_links/*.pkl` (WP4.2's `extract_lpwc_urls.py` equivalent).
+
+**Result:** no such code exists anywhere in the repository. The `.pkl` files are present as static data artifacts (40 files, ~5,000 URLs each, ≈200,000 total — consistent with the paper's claimed 197,566 repositories), each a plain `List[str]` of GitHub URLs. A path reference in `extract-libraries-from-code/main.py` (`.../LPWC_Extension/Creating_LPWC_Snapshot/data/urls.pkl`) suggests this extraction step existed as a separate module in the original author's local workspace but was never committed to this repository.
+
+**Relevant for WP4:** this is not a reuse/rewrite decision — there is nothing to reuse or rewrite. `extract_lpwc_urls.py` must be built from scratch per WP4.2. Scope is well-defined by the existing output format: read an LPWC release (per the WP2.1 version-pinning decision), emit a list of GitHub repository URLs with source provenance (paper entity, extraction timestamp) — actually a slightly richer output than v1's bare URL list, matching the proposal's suggested `lpwc_repository_links.jsonl` schema (`lpwc_entity`, `paper_entity`, `original_repository_url`, `source_release`, `extraction_timestamp`).
+
+---
+
 ## Summary: reuse/rewrite implications
 
 | Module | Confirms | New info | Decision |
@@ -92,5 +102,6 @@ graph.add((make_uri('person', X), make_uri('property', 'hasPersonType'), make_ur
 | `RDF_Graphing.py` | fabio:hasUrl bug (line-level), orphan subclass root cause | Issue nodes never typed | Rewrite |
 | `Connect_to_LPWC_and_SOA/main.py` | No MLSea logic, exact-name matching | O(repos × lpwc_lines) performance issue | Rewrite |
 | `crawler.py` (language fields) | — | Validates v2 `languageBytes` decision | Reuse pattern idea, not code |
+| LPWC extraction (`extract_lpwc_urls.py`) | — | Code does not exist in this repo at all | Build from scratch |
 
 Full per-file reuse/rewrite/remove table remains in `docs/current-file-inventory.csv`; this document exists to preserve the *reasoning trail* connecting ontology-level problems to their pipeline-level source.
