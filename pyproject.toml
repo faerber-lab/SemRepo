@@ -1,0 +1,9 @@
+[project]
+name = "semrepo"
+version = "2.0.0"
+description = "SemRepo v2 -- reproducible knowledge graph linking GitHub repositories to scholarly publications"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,16 @@
+# Overrides for small-sample / pilot runs (10-20 repos).
+# Usage: load default.yaml first, then merge this on top.
+
+collection_limits:
+  max_forks: 50
+  max_contributors: 50
+  max_issues: 50
+
+paths:
+  intermediate_dir: "data/test/intermediate"
+  output_dir: "data/test/output"
+  checkpoint_dir: "data/test/checkpoints"
+
+logging:
+  level: "DEBUG"
+  log_dir: "data/test/logs"

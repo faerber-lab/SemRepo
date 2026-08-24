@@ -1,0 +1,37 @@
+# SemRepo v2 pipeline configuration
+# Overridden by config/test.yaml for small-sample runs (see scripts/run_small_example.py)
+
+github:
+  # Multiple tokens for rotation under rate limits (see crawling-gitHub-metadata/main.py
+  # for the existing rotation logic being reused)
+  tokens_env_var: "SEMREPO_GITHUB_TOKENS"   # comma-separated, read from environment, never committed
+  api_base_url: "https://api.github.com"
+  request_timeout_seconds: 30
+  max_retries: 5
+  retry_backoff_seconds: 2
+
+collection_limits:
+  # Explicit and configurable per Rule 7 -- no silent hard-coded caps.
+  # null = no limit (full collection).
+  max_forks: null
+  max_contributors: null
+  max_issues: null
+
+lpwc_source:
+  release: "TBD"              # pin exact LPWC release per WP2.1
+  download_date: "TBD"
+  source_path: "data/input/lpwc_snapshot.nt"
+  checksum: "TBD"
+
+paths:
+  intermediate_dir: "data/intermediate"
+  output_dir: "data/output"
+  checkpoint_dir: "data/intermediate/checkpoints"
+
+ontology:
+  namespace: "https://semrepo.org/ontology/v2#"
+  prefix: "sr"
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
