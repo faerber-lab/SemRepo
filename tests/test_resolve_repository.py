@@ -47,13 +47,15 @@ def test_resolved_when_no_redirect():
     })
     client = FakeClient(response=response)
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.RESOLVED
     assert link.resolved_repository_github_id == 123
     assert canonical is not None
     assert canonical.github_repository_id == 123
     assert canonical.created_at.year == 2011
+    assert raw_data is not None
+    assert raw_data["name"] == "Hello-World"
     assert client.requested_paths == ["/repos/octocat/Hello-World"]
 
 
@@ -65,7 +67,7 @@ def test_renamed_when_same_owner_different_repo_name():
     }, history=["redirect"])
     client = FakeClient(response=response)
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.RENAMED
     assert canonical is not None
@@ -79,7 +81,7 @@ def test_transferred_when_owner_changed():
     }, history=["redirect"])
     client = FakeClient(response=response)
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.TRANSFERRED
     assert canonical is not None
@@ -88,17 +90,18 @@ def test_transferred_when_owner_changed():
 def test_invalid_on_404():
     client = FakeClient(response=FakeResponse(404))
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.INVALID
     assert canonical is None
+    assert raw_data is None
     assert link.resolved_repository_github_id is None
 
 
 def test_api_error_on_unexpected_status():
     client = FakeClient(response=FakeResponse(500))
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.API_ERROR
     assert canonical is None
@@ -107,7 +110,7 @@ def test_api_error_on_unexpected_status():
 def test_api_error_on_client_exception():
     client = FakeClient(exception=ConnectionError("network unreachable"))
 
-    link, canonical = resolve_repository(_ok_normalized(), client)
+    link, canonical, raw_data = resolve_repository(_ok_normalized(), client)
 
     assert link.resolution_status == ResolutionStatus.API_ERROR
     assert canonical is None

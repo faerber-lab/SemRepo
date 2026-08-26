@@ -46,12 +46,17 @@ def _parse_github_datetime(value: str) -> datetime:
 def resolve_repository(
     normalized: NormalizedUrl,
     client: GitHubClient,
-) -> Tuple[SourceRepositoryLink, Optional[CanonicalRepository]]:
+) -> Tuple[SourceRepositoryLink, Optional[CanonicalRepository], Optional[dict]]:
     """Resolves one normalized candidate URL against the live GitHub API.
 
-    Always returns a SourceRepositoryLink. Returns a CanonicalRepository
-    too, but only when resolution_status is RESOLVED, RENAMED, or
-    TRANSFERRED (i.e. the repository is currently reachable)."""
+    Always returns a SourceRepositoryLink. Returns a CanonicalRepository and
+    the raw API response dict too, but only when resolution_status is
+    RESOLVED, RENAMED, or TRANSFERRED (i.e. the repository is currently
+    reachable). The raw dict is exposed so downstream steps (WP4.5's
+    collect_repository.py) can build a RepositorySnapshot from the same
+    response instead of making a second, wasteful API call for data this
+    request already returned (stars/forks/description/archived are all
+    already present in this payload)."""
 
     if normalized.parse_status != ParseStatus.OK or normalized.normalized_candidate_url is None:
         raise ValueError(
@@ -71,6 +76,7 @@ def resolve_repository(
                 resolution_status=ResolutionStatus.API_ERROR,
             ),
             None,
+            None,
         )
 
     if response.status_code == 404:
@@ -81,6 +87,7 @@ def resolve_repository(
                 original_repository_url=normalized.original_url,
                 resolution_status=ResolutionStatus.INVALID,
             ),
+            None,
             None,
         )
 
@@ -93,6 +100,7 @@ def resolve_repository(
                 original_repository_url=normalized.original_url,
                 resolution_status=ResolutionStatus.API_ERROR,
             ),
+            None,
             None,
         )
 
@@ -119,4 +127,4 @@ def resolve_repository(
         canonical_url=final_url,
         created_at=_parse_github_datetime(data["created_at"]) if data.get("created_at") else None,
     )
-    return link, canonical
+    return link, canonical, data
