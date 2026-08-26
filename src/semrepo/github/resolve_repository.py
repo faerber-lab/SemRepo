@@ -17,12 +17,12 @@ classification is new information, not a regression.
 from __future__ import annotations
 
 import logging
-from datetime import datetime
 from typing import Optional, Tuple
 from urllib.parse import urlparse
 
 from semrepo.github.github_client import GitHubClient
 from semrepo.github.normalize_url import NormalizedUrl, ParseStatus
+from semrepo.github.utils import parse_github_datetime
 from semrepo.models import CanonicalRepository, ResolutionStatus, SourceRepositoryLink
 
 logger = logging.getLogger(__name__)
@@ -34,13 +34,6 @@ def _extract_owner_repo(normalized_url: str) -> Tuple[str, str]:
     path = urlparse(normalized_url).path.strip("/")
     owner, repo = path.split("/")[:2]
     return owner, repo
-
-
-def _parse_github_datetime(value: str) -> datetime:
-    """GitHub timestamps look like '2011-01-26T19:01:12Z'. Python's
-    datetime.fromisoformat() only accepts the 'Z' suffix from 3.11+; this
-    project targets >=3.10 (pyproject.toml), so we normalize it by hand."""
-    return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
 def resolve_repository(
@@ -125,6 +118,6 @@ def resolve_repository(
     canonical = CanonicalRepository(
         github_repository_id=data["id"],
         canonical_url=final_url,
-        created_at=_parse_github_datetime(data["created_at"]) if data.get("created_at") else None,
+        created_at=parse_github_datetime(data["created_at"]) if data.get("created_at") else None,
     )
     return link, canonical, data
