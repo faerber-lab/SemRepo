@@ -50,9 +50,17 @@ def test_raises_when_all_tokens_exhausted():
             client.get("/repos/octocat/Hello-World")
 
 
-def test_requires_at_least_one_token():
-    with pytest.raises(ValueError):
-        GitHubClient(tokens=[])
+def test_empty_tokens_means_unauthenticated_mode():
+    """Empty tokens list is a deliberate mode, not an error -- no
+    Authorization header should be sent."""
+    client = GitHubClient(tokens=[])
+    assert client.authenticated is False
+
+    with patch.object(client._session, "get", return_value=_fake_response(200)) as mock_get:
+        client.get("/repos/octocat/Hello-World")
+
+    sent_headers = mock_get.call_args.kwargs["headers"]
+    assert "Authorization" not in sent_headers
 
 
 def test_from_env_reads_comma_separated_tokens(monkeypatch):
