@@ -115,19 +115,23 @@ See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/
 
 ## Citation
 
-If you use SemRepo, please cite the paper (_will be updated upon acceptance_):
+If you use SemRepo, please cite the paper (_currently the preprint version; will be updated upon acceptance_):
 
 ```bibtex
-@inproceedings{semrepo,
-  title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem.},
-  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
-  year={2026}
+@misc{semrepo,
+      title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem}, 
+      author={Abdul Rafay and Yuni Susanti and David Lamprecht and Michael Färber},
+      year={2026},
+      eprint={2605.13310},
+      archivePrefix={arXiv},
+      primaryClass={cs.DL},
+      url={https://arxiv.org/abs/2605.13310}, 
 }
 ```
 
 and/or the dataset:
 ```bibtex
-@dataset{semrepo,
+@dataset{semrepoData,
   author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
   title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
   month        = apr,
