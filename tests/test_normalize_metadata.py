@@ -76,7 +76,7 @@ def test_write_repository_records_full_success_case(tmp_path):
     snapshot = RepositorySnapshot(repository_github_id=1, collected_at=TS, stars_count=10)
     link = SourceRepositoryLink(original_repository_url="https://github.com/a/b", resolution_status=ResolutionStatus.RESOLVED)
     issues = [Issue(github_issue_id=1, issue_number=1, issue_state="open", issue_created_at=TS, belongs_to_repository_github_id=1)]
-    contributions = [Contribution(repository_github_id=1, snapshot_collected_at=TS, contributor_github_user_id=99, commit_count=5)]
+    contributions = [Contribution(repository_github_id=1, snapshot_collected_at=TS, contributor_github_user_id=99, contributor_github_login="test-user", commit_count=5)]
     languages = [LanguageUsage(repository_github_id=1, snapshot_collected_at=TS, language_name="Python", language_bytes=100)]
 
     written = write_repository_records(

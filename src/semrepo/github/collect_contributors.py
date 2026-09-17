@@ -118,6 +118,7 @@ def collect_contributors(
                 repository_github_id=repository_github_id,
                 snapshot_collected_at=snapshot_collected_at,
                 contributor_github_user_id=item["id"],
+                contributor_github_login=item["login"],
                 commit_count=item["contributions"],
             ))
             if max_contributors is not None and len(contributions) >= max_contributors:

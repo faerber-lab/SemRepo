@@ -149,10 +149,16 @@ class Contribution:
     """A GitHub account's commit contribution to one repository snapshot.
     (repository_github_id, snapshot_collected_at) together identify the
     target snapshot -- snapshots don't get a standalone stable ID until
-    WP5's URI generation step."""
+    WP5's URI generation step.
+
+    contributor_github_login is required (not Optional) because WP3's
+    GitHubAccountCoreShape (semrepo-v2-shapes.ttl) requires githubLogin
+    with minCount 1 -- WP5.2's SHACL validation caught this being silently
+    missing when the field didn't exist here yet."""
     repository_github_id: int
     snapshot_collected_at: datetime
     contributor_github_user_id: int
+    contributor_github_login: str
     commit_count: int
 
 

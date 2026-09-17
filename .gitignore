@@ -7,3 +7,4 @@ data/output/
 __pycache__/
 .pytest_cache/
 data/pilot/
+data/rdf/
