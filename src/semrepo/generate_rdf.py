@@ -3,15 +3,15 @@ WP5.2 -- Generate RDF from the normalized JSONL records produced by
 WP4.6/pipeline.py, using identifiers.py's deterministic URIs and the
 classes/properties defined in ontologies/semrepo-v2.ttl.
 
-Known, deliberate simplification -- disclose this alongside any sample
-sent for review, don't let it pass silently: every Contribution's
-contributor is currently typed as :GitHubUser. The GitHub /contributors
-endpoint used in WP4.5's collect_contributors.py does not return account
-type (User/Organisation/Bot); only a separate per-account lookup
-(GET /users/{login}) would, which this pipeline does not yet perform.
-Most contributors on a typical repository are individual users, so this
-is a reasonable default, not a verified fact -- it will misclassify any
-contributor that is actually an organisation or a bot account.
+Account typing: GitHub returns a 'type' field (User / Organization / Bot)
+for repository owners, contributors and issue authors; it is mapped to
+:GitHubUser / :GitHubOrganisation / :GitHubBot by _account_class(). Records
+written before ontology v2.1 have no type field and fall back to
+:GitHubUser (the previous, documented default).
+
+Numeric values are written as plain xsd:integer (Turtle: 103257), not
+xsd:nonNegativeInteger; non-negativity is enforced by sh:minInclusive 0 in
+the shapes (ontology v2.1, per reviewer feedback).
 
 Output is split into the files the project proposal names for WP5.2,
 plus one addition (semrepo-languages.ttl) the proposal's file list
@@ -32,6 +32,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 from typing import Iterator, Optional
+from urllib.parse import quote
 
 from rdflib import RDF, XSD, Graph, Literal, Namespace, URIRef
 
@@ -57,6 +58,45 @@ def _read_jsonl(path: Path) -> Iterator[dict]:
 
 def _parse_dt(value: Optional[str]) -> Optional[datetime]:
     return datetime.fromisoformat(value) if value else None
+
+
+_ACCOUNT_CLASSES = {
+    "User": SR.GitHubUser,
+    "Organization": SR.GitHubOrganisation,
+    "Organisation": SR.GitHubOrganisation,
+    "Bot": SR.GitHubBot,
+}
+
+
+def _account_class(github_type: Optional[str]) -> URIRef:
+    """Unknown or missing types (e.g. 'Mannequin', old records) -> GitHubUser."""
+    return _ACCOUNT_CLASSES.get(github_type or "User", SR.GitHubUser)
+
+
+def _add_account(graph: Graph, github_id: int, login: str, github_type: Optional[str]) -> URIRef:
+    uri = URIRef(github_account_uri(github_id))
+    graph.add((uri, RDF.type, _account_class(github_type)))
+    graph.add((uri, SR.githubUserId, Literal(github_id, datatype=XSD.integer)))
+    graph.add((uri, SR.githubLogin, Literal(login)))
+    graph.add((uri, SR.profileUrl, Literal(f"https://github.com/{login}", datatype=XSD.anyURI)))
+    return uri
+
+
+def _int(value) -> Literal:
+    return Literal(int(value), datatype=XSD.integer)
+
+
+def license_uri(spdx_id: str) -> URIRef:
+    """Real SPDX ids -> official SPDX IRI. GitHub's 'NOASSERTION' (license
+    file present but not recognised) is not an SPDX license, so it gets a
+    SemRepo-local IRI instead of a fake spdx.org one."""
+    if spdx_id == "NOASSERTION":
+        return URIRef(RESOURCE_NS["license/NOASSERTION"])
+    return URIRef(f"https://spdx.org/licenses/{quote(spdx_id, safe='.-+')}")
+
+
+def topic_uri(topic: str) -> URIRef:
+    return URIRef(RESOURCE_NS[f"topic/{quote(topic.lower(), safe='-')}"])
 
 
 def _new_graph() -> Graph:
@@ -91,16 +131,48 @@ def add_snapshots(graph: Graph, path: Path) -> int:
         graph.add((snap_uri, SR.snapshotOf, repo_uri))
         graph.add((repo_uri, SR.hasSnapshot, snap_uri))
 
-        if rec.get("stars_count") is not None:
-            graph.add((snap_uri, SR.starsCount, Literal(rec["stars_count"], datatype=XSD.nonNegativeInteger)))
-        if rec.get("forks_count") is not None:
-            graph.add((snap_uri, SR.forksCount, Literal(rec["forks_count"], datatype=XSD.nonNegativeInteger)))
-        if rec.get("open_issues_count") is not None:
-            graph.add((snap_uri, SR.openIssuesCount, Literal(rec["open_issues_count"], datatype=XSD.nonNegativeInteger)))
-        if rec.get("description"):
-            graph.add((snap_uri, SR.description, Literal(rec["description"])))
-        if rec.get("archived") is not None:
-            graph.add((snap_uri, SR.archived, Literal(rec["archived"], datatype=XSD.boolean)))
+        for key, prop in (("stars_count", SR.starsCount), ("forks_count", SR.forksCount),
+                          ("open_issues_count", SR.openIssuesCount), ("watchers_count", SR.watchersCount),
+                          ("size_kb", SR.sizeKb)):
+            if rec.get(key) is not None:
+                graph.add((snap_uri, prop, _int(rec[key])))
+        for key, prop in (("description", SR.description), ("repository_name", SR.repositoryName),
+                          ("full_name", SR.fullName), ("default_branch", SR.defaultBranch)):
+            if rec.get(key):
+                graph.add((snap_uri, prop, Literal(rec[key])))
+        for key, prop in (("archived", SR.archived), ("is_fork", SR.isFork)):
+            if rec.get(key) is not None:
+                graph.add((snap_uri, prop, Literal(rec[key], datatype=XSD.boolean)))
+        for key, prop in (("pushed_at", SR.pushedAt), ("updated_at", SR.updatedAt),
+                          ("last_commit_at", SR.lastCommitAt)):
+            if rec.get(key):
+                graph.add((snap_uri, prop, Literal(rec[key], datatype=XSD.dateTime)))
+        if rec.get("homepage_url"):
+            graph.add((snap_uri, SR.homepageUrl, Literal(rec["homepage_url"], datatype=XSD.anyURI)))
+
+        if rec.get("license_spdx_id"):
+            lic = license_uri(rec["license_spdx_id"])
+            graph.add((lic, RDF.type, SR.License))
+            graph.add((lic, SR.spdxId, Literal(rec["license_spdx_id"])))
+            if rec.get("license_name"):
+                graph.add((lic, SR.licenseName, Literal(rec["license_name"])))
+            graph.add((snap_uri, SR.hasLicense, lic))
+
+        for topic in rec.get("topics") or []:
+            t = topic_uri(topic)
+            graph.add((t, RDF.type, SR.Topic))
+            graph.add((t, SR.topicName, Literal(topic)))
+            graph.add((snap_uri, SR.hasTopic, t))
+
+        if rec.get("primary_language"):
+            lang = URIRef(programming_language_uri(rec["primary_language"]))
+            graph.add((lang, RDF.type, SR.ProgrammingLanguage))
+            graph.add((lang, SR.languageName, Literal(rec["primary_language"])))
+            graph.add((snap_uri, SR.primaryLanguage, lang))
+
+        if rec.get("owner_github_id") is not None and rec.get("owner_login"):
+            owner = _add_account(graph, rec["owner_github_id"], rec["owner_login"], rec.get("owner_type"))
+            graph.add((snap_uri, SR.ownerAccount, owner))
         count += 1
     return count
 
@@ -149,6 +221,22 @@ def add_issues(graph: Graph, path: Path) -> int:
         graph.add((uri, SR.issueCreatedAt, Literal(rec["issue_created_at"], datatype=XSD.dateTime)))
         if rec.get("issue_closed_at"):
             graph.add((uri, SR.issueClosedAt, Literal(rec["issue_closed_at"], datatype=XSD.dateTime)))
+        if rec.get("issue_title"):
+            graph.add((uri, SR.issueTitle, Literal(rec["issue_title"])))
+        if rec.get("issue_url"):
+            graph.add((uri, SR.issueUrl, Literal(rec["issue_url"], datatype=XSD.anyURI)))
+        if rec.get("issue_updated_at"):
+            graph.add((uri, SR.issueUpdatedAt, Literal(rec["issue_updated_at"], datatype=XSD.dateTime)))
+        if rec.get("issue_comment_count") is not None:
+            graph.add((uri, SR.issueCommentCount, _int(rec["issue_comment_count"])))
+        for label in rec.get("issue_labels") or []:
+            graph.add((uri, SR.issueLabel, Literal(label)))
+        if rec.get("is_pull_request") and rec.get("pull_request_merged_at"):
+            graph.add((uri, SR.pullRequestMergedAt, Literal(rec["pull_request_merged_at"], datatype=XSD.dateTime)))
+        if rec.get("issue_author_github_id") is not None and rec.get("issue_author_login"):
+            author = _add_account(graph, rec["issue_author_github_id"], rec["issue_author_login"],
+                                  rec.get("issue_author_type"))
+            graph.add((uri, SR.issueAuthor, author))
         repo_uri = URIRef(repository_uri(rec["belongs_to_repository_github_id"]))
         graph.add((uri, SR.belongsToRepository, repo_uri))
         graph.add((repo_uri, SR.hasIssue, uri))
@@ -157,23 +245,20 @@ def add_issues(graph: Graph, path: Path) -> int:
 
 
 def add_contributions(graph: Graph, path: Path) -> int:
-    """See module docstring: every contributor is typed as :GitHubUser --
-    a documented simplification, not a verified fact."""
+    """Contributor class comes from GitHub's 'type' field (see module docstring)."""
     count = 0
     for rec in _read_jsonl(path):
         collected_at = _parse_dt(rec["snapshot_collected_at"])
         uri = URIRef(contribution_uri(rec["repository_github_id"], collected_at, rec["contributor_github_user_id"]))
-        account_uri = URIRef(github_account_uri(rec["contributor_github_user_id"]))
         snap_uri = URIRef(repository_snapshot_uri(rec["repository_github_id"], collected_at))
 
-        graph.add((account_uri, RDF.type, SR.GitHubUser))  # simplification -- see docstring
-        graph.add((account_uri, SR.githubUserId, Literal(rec["contributor_github_user_id"], datatype=XSD.integer)))
-        graph.add((account_uri, SR.githubLogin, Literal(rec["contributor_github_login"])))
+        account_uri = _add_account(graph, rec["contributor_github_user_id"], rec["contributor_github_login"],
+                                   rec.get("contributor_account_type"))
 
         graph.add((uri, RDF.type, SR.Contribution))
         graph.add((uri, SR.contributionToSnapshot, snap_uri))
         graph.add((uri, SR.contributor, account_uri))
-        graph.add((uri, SR.commitCount, Literal(rec["commit_count"], datatype=XSD.nonNegativeInteger)))
+        graph.add((uri, SR.commitCount, _int(rec["commit_count"])))
         count += 1
     return count
 
@@ -192,7 +277,7 @@ def add_language_usage(graph: Graph, path: Path) -> int:
         graph.add((uri, RDF.type, SR.LanguageUsage))
         graph.add((uri, SR.languageUsageIn, snap_uri))
         graph.add((uri, SR.programmingLanguage, lang_uri))
-        graph.add((uri, SR.languageBytes, Literal(rec["language_bytes"], datatype=XSD.nonNegativeInteger)))
+        graph.add((uri, SR.languageBytes, _int(rec["language_bytes"])))
         count += 1
     return count
 

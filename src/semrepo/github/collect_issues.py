@@ -32,7 +32,16 @@ logger = logging.getLogger(__name__)
 PER_PAGE = 100
 
 
+def _opt_dt(value):
+    return parse_github_datetime(value) if value else None
+
+
 def _to_issue(item: dict, repository_github_id: int) -> Issue:
+    user = item.get("user") or {}   # null for deleted ('ghost') accounts
+    labels = [
+        (lab.get("name") if isinstance(lab, dict) else lab)
+        for lab in (item.get("labels") or [])
+    ]
     return Issue(
         github_issue_id=item["id"],
         issue_number=item["number"],
@@ -40,7 +49,16 @@ def _to_issue(item: dict, repository_github_id: int) -> Issue:
         issue_created_at=parse_github_datetime(item["created_at"]),
         belongs_to_repository_github_id=repository_github_id,
         is_pull_request="pull_request" in item,
-        issue_closed_at=parse_github_datetime(item["closed_at"]) if item.get("closed_at") else None,
+        issue_closed_at=_opt_dt(item.get("closed_at")),
+        issue_title=item.get("title"),
+        issue_url=item.get("html_url"),
+        issue_updated_at=_opt_dt(item.get("updated_at")),
+        issue_comment_count=item.get("comments"),
+        issue_labels=[lab for lab in labels if lab],
+        issue_author_github_id=user.get("id"),
+        issue_author_login=user.get("login"),
+        issue_author_type=user.get("type"),
+        pull_request_merged_at=_opt_dt((item.get("pull_request") or {}).get("merged_at")),
     )
 
 

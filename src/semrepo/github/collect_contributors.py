@@ -120,6 +120,7 @@ def collect_contributors(
                 contributor_github_user_id=item["id"],
                 contributor_github_login=item["login"],
                 commit_count=item["contributions"],
+                contributor_account_type=item.get("type") or "User",
             ))
             if max_contributors is not None and len(contributions) >= max_contributors:
                 limit_applied = True

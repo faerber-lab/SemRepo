@@ -8,3 +8,5 @@ __pycache__/
 .pytest_cache/
 data/pilot/
 data/rdf/
+data/
+*.egg-info/

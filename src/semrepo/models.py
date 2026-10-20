@@ -18,7 +18,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Optional
+from typing import List, Optional
 
 
 # ---------------------------------------------------------------------------
@@ -63,6 +63,24 @@ class RepositorySnapshot:
     open_issues_count: Optional[int] = None
     description: Optional[str] = None
     archived: Optional[bool] = None
+    # --- v2.1 additions (all optional; None = not reported / not collected) ---
+    repository_name: Optional[str] = None
+    full_name: Optional[str] = None
+    default_branch: Optional[str] = None
+    homepage_url: Optional[str] = None
+    is_fork: Optional[bool] = None
+    pushed_at: Optional[datetime] = None        # GitHub 'pushed_at'
+    updated_at: Optional[datetime] = None       # GitHub 'updated_at'
+    last_commit_at: Optional[datetime] = None   # needs 1 extra API call, see fetch_last_commit_at()
+    watchers_count: Optional[int] = None        # GitHub 'subscribers_count' (NOT 'watchers_count')
+    size_kb: Optional[int] = None
+    license_spdx_id: Optional[str] = None
+    license_name: Optional[str] = None
+    topics: List[str] = field(default_factory=list)
+    primary_language: Optional[str] = None
+    owner_github_id: Optional[int] = None
+    owner_login: Optional[str] = None
+    owner_type: Optional[str] = None            # GitHub 'User' / 'Organization' / 'Bot'
 
 
 # ---------------------------------------------------------------------------
@@ -160,6 +178,7 @@ class Contribution:
     contributor_github_user_id: int
     contributor_github_login: str
     commit_count: int
+    contributor_account_type: str = "User"   # GitHub 'type': User / Bot / Organization
 
 
 # ---------------------------------------------------------------------------
@@ -200,3 +219,13 @@ class Issue:
     belongs_to_repository_github_id: int
     is_pull_request: bool = False
     issue_closed_at: Optional[datetime] = None
+    # --- v2.1 additions ---
+    issue_title: Optional[str] = None
+    issue_url: Optional[str] = None
+    issue_updated_at: Optional[datetime] = None
+    issue_comment_count: Optional[int] = None
+    issue_labels: List[str] = field(default_factory=list)
+    issue_author_github_id: Optional[int] = None
+    issue_author_login: Optional[str] = None
+    issue_author_type: Optional[str] = None
+    pull_request_merged_at: Optional[datetime] = None
