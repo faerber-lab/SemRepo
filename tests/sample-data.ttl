@@ -1,145 +1,66 @@
 @prefix : <https://semrepo.org/ontology/v2#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix r: <https://semrepo.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-#################################################################
-#    VALID examples (should pass SHACL validation)
-#################################################################
+#### VALID ####
+<https://semrepo.org/resource/user/583231> a :GitHubUser ; :githubUserId 583231 ; :githubLogin "octocat" ;
+  :profileUrl "https://github.com/octocat"^^xsd:anyURI ; :accountName "The Octocat" ;
+  :accountDescription "bio" ; :accountLocation "San Francisco" ; :accountCreatedAt "2011-01-25T18:44:36Z"^^xsd:dateTime ;
+  :followersCount 20000 ; :publicReposCount 8 .
+<https://semrepo.org/resource/org/1> a :GitHubOrganisation ; :githubUserId 1 ; :githubLogin "scads" .
+<https://semrepo.org/resource/bot/9> a :GitHubBot ; :githubUserId 9 ; :githubLogin "dependabot[bot]" .
 
-# Valid GitHubUser
-:user1 rdf:type :GitHubUser ;
-    :githubUserId 1001 ;
-    :githubLogin "octocat" ;
-    :profileUrl "https://github.com/octocat"^^xsd:anyURI .
+<https://semrepo.org/resource/repo/1296269> a :Repository ; :githubRepositoryId 1296269 ;
+  :canonicalUrl "https://github.com/octocat/Hello-World"^^xsd:anyURI ;
+  :createdAt "2011-01-26T19:01:12Z"^^xsd:dateTime ;
+  :hasSnapshot <https://semrepo.org/resource/snap/1296269-20261020> .
 
-# Valid GitHubOrganisation
-:org1 rdf:type :GitHubOrganisation ;
-    :githubUserId 2001 ;
-    :githubLogin "faerber-lab" .
+<https://semrepo.org/resource/snap/1296269-20261020> a :RepositorySnapshot ; :snapshotOf <https://semrepo.org/resource/repo/1296269> ;
+  :collectedAt "2026-10-20T10:00:00Z"^^xsd:dateTime ;
+  :starsCount 103257 ; :forksCount 5000 ; :openIssuesCount 12 ; :watchersCount 1700 ;
+  :contributorsCount 3 ; :issuesTotalCount 400 ; :sizeKb 1024 ;
+  :description "My first repository" ; :archived false ; :isFork false ;
+  :repositoryName "Hello-World" ; :fullName "octocat/Hello-World" ; :defaultBranch "master" ;
+  :pushedAt "2026-09-01T12:00:00Z"^^xsd:dateTime ; :updatedAt "2026-09-02T12:00:00Z"^^xsd:dateTime ;
+  :lastCommitAt "2026-08-30T08:00:00Z"^^xsd:dateTime ;
+  :ownerAccount <https://semrepo.org/resource/user/583231> ; :hasLicense <https://spdx.org/licenses/MIT> ;
+  :hasTopic <https://semrepo.org/resource/topic/demo> , <https://semrepo.org/resource/topic/machine-learning> ; :primaryLanguage <https://semrepo.org/resource/lang/Python> ;
+  :snapshotCollectedBy <https://semrepo.org/resource/act/1> .
 
-# Valid GitHubBot
-:bot1 rdf:type :GitHubBot ;
-    :githubUserId 3001 ;
-    :githubLogin "dependabot" .
+<https://spdx.org/licenses/MIT> a :License ; :spdxId "MIT" ; :licenseName "MIT License" .
+<https://semrepo.org/resource/topic/demo> a :Topic ; :topicName "demo" .
+<https://semrepo.org/resource/topic/machine-learning> a :Topic ; :topicName "machine-learning" .
+<https://semrepo.org/resource/lang/Python> a :ProgrammingLanguage ; :languageName "Python" .
 
-# Valid Repository WITH a snapshot
-:repo1 rdf:type :Repository ;
-    :githubRepositoryId 5001 ;
-    :canonicalUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
-    :createdAt "2023-01-15T10:00:00Z"^^xsd:dateTime ;
-    :hasSnapshot :snapshot1 .
+<https://semrepo.org/resource/act/1> a :CollectionActivity ; :collectionTimestamp "2026-10-20T10:00:00Z"^^xsd:dateTime ;
+  :attemptedUrl "https://github.com/octocat/Hello-World"^^xsd:anyURI ;
+  :collectionSource "https://api.github.com/repos/octocat/Hello-World" ;
+  :collectionStatus :Success ; :resultedInRepository <https://semrepo.org/resource/repo/1296269> .
 
-:snapshot1 rdf:type :RepositorySnapshot ;
-    :collectedAt "2026-08-01T00:00:00Z"^^xsd:dateTime ;
-    :starsCount "42"^^xsd:nonNegativeInteger ;
-    :forksCount "5"^^xsd:nonNegativeInteger ;
-    :openIssuesCount "3"^^xsd:nonNegativeInteger ;
-    :description "SemRepo v2 knowledge graph" ;
-    :archived false ;
-    :snapshotOf :repo1 .
+<https://semrepo.org/resource/srl/1> a :SourceRepositoryLink ; :originalRepositoryUrl "https://github.com/octocat/Hello-World.git"^^xsd:anyURI ;
+  :resolutionStatus :Resolved ; :resolvedRepository <https://semrepo.org/resource/repo/1296269> .
 
-# Valid Repository WITHOUT a snapshot (should still be VALID — hasSnapshot is optional)
-:repo2 rdf:type :Repository ;
-    :githubRepositoryId 5002 ;
-    :canonicalUrl "https://github.com/example/not-yet-collected"^^xsd:anyURI .
+<https://semrepo.org/resource/link/1> a :ExternalLink ; :linkSource <https://semrepo.org/resource/repo/1296269> ;
+  :linkTarget "https://semopenalex.org/work/W123"^^xsd:anyURI ; :targetKnowledgeGraph "SemOpenAlex" ;
+  :linkingMethod "lpwc-curated" ; :confidenceScore 0.95 ; :linkDecision "accepted" .
 
-# Valid ExternalLink, source = Repository
-:link1 rdf:type :ExternalLink ;
-    :linkTarget "https://semopenalex.org/work/W123"^^xsd:anyURI ;
-    :targetKnowledgeGraph "SemOpenAlex" ;
-    :linkingMethod "title-match" ;
-    :confidenceScore 0.87 ;
-    :linkSource :repo1 .
+<https://semrepo.org/resource/lu/1> a :LanguageUsage ; :languageUsageIn <https://semrepo.org/resource/snap/1296269-20261020> ; :programmingLanguage <https://semrepo.org/resource/lang/Python> ; :languageBytes 1234 .
+<https://semrepo.org/resource/con/1> a :Contribution ; :contributionToSnapshot <https://semrepo.org/resource/snap/1296269-20261020> ; :contributor <https://semrepo.org/resource/user/583231> ; :commitCount 42 .
 
-# Valid ExternalLink, source = GitHubUser
-:link2 rdf:type :ExternalLink ;
-    :linkTarget "https://orcid.org/0000-0001-2345"^^xsd:anyURI ;
-    :targetKnowledgeGraph "ORCID" ;
-    :confidenceScore 0.95 ;
-    :linkSource :user1 .
+<https://semrepo.org/resource/issue/1> a :Issue ; :githubIssueId 900 ; :issueNumber 1 ; :issueState "open" ;
+  :issueCreatedAt "2026-01-01T00:00:00Z"^^xsd:dateTime ; :belongsToRepository <https://semrepo.org/resource/repo/1296269> ;
+  :issueTitle "Bug" ; :issueUrl "https://github.com/octocat/Hello-World/issues/1"^^xsd:anyURI ;
+  :issueUpdatedAt "2026-01-02T00:00:00Z"^^xsd:dateTime ; :issueCommentCount 3 ;
+  :issueLabel "bug" , "help wanted" ; :issueAuthor <https://semrepo.org/resource/user/583231> .
+<https://semrepo.org/resource/pr/2> a :PullRequest ; :githubIssueId 901 ; :issueNumber 2 ; :issueState "closed" ;
+  :issueCreatedAt "2026-01-01T00:00:00Z"^^xsd:dateTime ; :belongsToRepository <https://semrepo.org/resource/repo/1296269> ;
+  :pullRequestMergedAt "2026-01-03T00:00:00Z"^^xsd:dateTime .
 
-# Valid SourceRepositoryLink
-:srl1 rdf:type :SourceRepositoryLink ;
-    :originalRepositoryUrl "https://github.com/old-name/old-repo"^^xsd:anyURI ;
-    :finalResolvedUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
-    :resolutionStatus :Renamed ;
-    :resolvedRepository :repo1 .
-
-# Valid CollectionActivity
-:ca1 rdf:type :CollectionActivity ;
-    :collectionTimestamp "2026-08-01T00:00:00Z"^^xsd:dateTime ;
-    :attemptedUrl "https://github.com/faerber-lab/SemRepo"^^xsd:anyURI ;
-    :collectionSource "github-api-crawler-v2" ;
-    :collectionStatus :Success ;
-    :resultedInRepository :repo1 .
-
-# Valid Contribution
-:contrib1 rdf:type :Contribution ;
-    :contributionToSnapshot :snapshot1 ;
-    :contributor :user1 ;
-    :commitCount "17"^^xsd:nonNegativeInteger .
-
-# Valid ProgrammingLanguage + LanguageUsage
-:lang1 rdf:type :ProgrammingLanguage ;
-    :languageName "Python" .
-
-:langusage1 rdf:type :LanguageUsage ;
-    :languageUsageIn :snapshot1 ;
-    :programmingLanguage :lang1 ;
-    :languageBytes "128340"^^xsd:nonNegativeInteger .
-
-# Valid Issue (non-PR)
-:issue1 rdf:type :Issue ;
-    :githubIssueId 9001 ;
-    :issueNumber 42 ;
-    :issueState "open" ;
-    :issueCreatedAt "2026-07-01T00:00:00Z"^^xsd:dateTime ;
-    :belongsToRepository :repo1 .
-
-# Valid PullRequest
-:pr1 rdf:type :PullRequest ;
-    :githubIssueId 9002 ;
-    :issueNumber 43 ;
-    :issueState "closed" ;
-    :issueCreatedAt "2026-07-05T00:00:00Z"^^xsd:dateTime ;
-    :issueClosedAt "2026-07-10T00:00:00Z"^^xsd:dateTime ;
-    :belongsToRepository :repo1 .
-
-
-#################################################################
-#    INVALID examples (should FAIL SHACL validation)
-#################################################################
-
-# INVALID: Repository missing canonicalUrl (minCount 1 violated)
-:repo_bad1 rdf:type :Repository ;
-    :githubRepositoryId 6001 .
-
-# INVALID: GitHubUser missing githubLogin (minCount 1 violated)
-:user_bad1 rdf:type :GitHubUser ;
-    :githubUserId 1099 .
-
-# INVALID: SourceRepositoryLink with resolutionStatus value NOT in the closed sh:in list
-# (using :Success, a CollectionStatus individual, by mistake — a plausible copy-paste error)
-:srl_bad1 rdf:type :SourceRepositoryLink ;
-    :originalRepositoryUrl "https://github.com/broken/example"^^xsd:anyURI ;
-    :resolutionStatus :Success .
-
-# INVALID: CollectionActivity missing collectionSource (mandatory per our WP1-MLSea decision)
-:ca_bad1 rdf:type :CollectionActivity ;
-    :collectionTimestamp "2026-08-02T00:00:00Z"^^xsd:dateTime ;
-    :attemptedUrl "https://github.com/example/missing-source"^^xsd:anyURI ;
-    :collectionStatus :Failed .
-
-# INVALID: ExternalLink whose linkSource points to something outside the allowed sh:or classes
-# (points to a ProgrammingLanguage, which is neither Repository nor a GitHubAccount subclass)
-:link_bad1 rdf:type :ExternalLink ;
-    :linkTarget "https://example.org/bad-link"^^xsd:anyURI ;
-    :targetKnowledgeGraph "Bogus" ;
-    :linkSource :lang1 .
-
-# INVALID: Issue missing belongsToRepository (minCount 1 violated)
-:issue_bad1 rdf:type :Issue ;
-    :githubIssueId 9099 ;
-    :issueNumber 99 ;
-    :issueState "open" ;
-    :issueCreatedAt "2026-08-01T00:00:00Z"^^xsd:dateTime .
+#### INTENTIONAL VIOLATIONS ####
+<https://semrepo.org/resource/bad/neg> a :RepositorySnapshot ; :snapshotOf <https://semrepo.org/resource/repo/1296269> ; :collectedAt "2026-10-20T10:00:00Z"^^xsd:dateTime ; :starsCount -5 .        # V1 negative count
+<https://semrepo.org/resource/bad/user> a :GitHubUser ; :githubUserId 77 .                                                                                                # V2 missing login
+<https://semrepo.org/resource/bad/status> a :SourceRepositoryLink ; :originalRepositoryUrl "https://github.com/a/b"^^xsd:anyURI ; :resolutionStatus :Success .            # V3 wrong vocab
+<https://semrepo.org/resource/bad/act> a :CollectionActivity ; :collectionTimestamp "2026-10-20T10:00:00Z"^^xsd:dateTime ; :attemptedUrl "https://github.com/a/b"^^xsd:anyURI ; :collectionStatus :Success .  # V4 no source
+<https://semrepo.org/resource/bad/lic> a :License ; :licenseName "No id" .                                                                                                # V5 license without SPDX
+<https://semrepo.org/resource/bad/date> a :RepositorySnapshot ; :snapshotOf <https://semrepo.org/resource/repo/1296269> ; :collectedAt "2026-10-20T10:00:00Z"^^xsd:dateTime ; :pushedAt "yesterday" .   # V6 bad dateTime

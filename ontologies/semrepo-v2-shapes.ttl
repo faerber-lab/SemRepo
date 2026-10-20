@@ -24,6 +24,43 @@
         sh:path :profileUrl ;
         sh:datatype xsd:anyURI ;
         sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :accountName ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :accountDescription ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :accountLocation ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :accountBlogUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :accountCreatedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :followersCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :publicReposCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
     ] .
 
 :GitHubUserShape
@@ -81,17 +118,20 @@
     ] ;
     sh:property [
         sh:path :starsCount ;
-        sh:datatype xsd:nonNegativeInteger ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path :forksCount ;
-        sh:datatype xsd:nonNegativeInteger ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
         sh:path :openIssuesCount ;
-        sh:datatype xsd:nonNegativeInteger ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
         sh:maxCount 1 ;
     ] ;
     sh:property [
@@ -108,6 +148,94 @@
         sh:path :snapshotOf ;
         sh:class :Repository ;
         sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :repositoryName ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :fullName ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :defaultBranch ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :homepageUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :isFork ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :pushedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :updatedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :lastCommitAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :watchersCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :contributorsCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issuesTotalCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :sizeKb ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :hasLicense ;
+        sh:class :License ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :hasTopic ;
+        sh:class :Topic ;
+    ] ;
+    sh:property [
+        sh:path :primaryLanguage ;
+        sh:class :ProgrammingLanguage ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :ownerAccount ;
+        sh:or ( [ sh:class :GitHubUser ] [ sh:class :GitHubOrganisation ] [ sh:class :GitHubBot ] ) ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :snapshotCollectedBy ;
+        sh:class :CollectionActivity ;
         sh:maxCount 1 ;
     ] .
 
@@ -254,7 +382,8 @@
     ] ;
     sh:property [
         sh:path :commitCount ;
-        sh:datatype xsd:nonNegativeInteger ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] .
@@ -280,7 +409,8 @@
     ] ;
     sh:property [
         sh:path :languageBytes ;
-        sh:datatype xsd:nonNegativeInteger ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] .
@@ -335,6 +465,36 @@
         sh:class :Repository ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueTitle ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueUrl ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueUpdatedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueCommentCount ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :issueLabel ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path :issueAuthor ;
+        sh:or ( [ sh:class :GitHubUser ] [ sh:class :GitHubOrganisation ] [ sh:class :GitHubBot ] ) ;
+        sh:maxCount 1 ;
     ] .
 
 :IssueShape
@@ -345,4 +505,24 @@
 :PullRequestShape
     a sh:NodeShape ;
     sh:targetClass :PullRequest ;
-    sh:node :IssueCoreShape .
+    sh:node :IssueCoreShape ;
+    sh:property [
+        sh:path :pullRequestMergedAt ;
+        sh:datatype xsd:dateTime ;
+        sh:maxCount 1 ;
+    ] .
+
+#################################################################
+#    License / Topic (v2.1)
+#################################################################
+
+:LicenseShape
+    a sh:NodeShape ;
+    sh:targetClass :License ;
+    sh:property [ sh:path :spdxId ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path :licenseName ; sh:datatype xsd:string ; sh:maxCount 1 ] .
+
+:TopicShape
+    a sh:NodeShape ;
+    sh:targetClass :Topic ;
+    sh:property [ sh:path :topicName ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
