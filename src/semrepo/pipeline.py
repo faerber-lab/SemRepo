@@ -35,7 +35,7 @@ from typing import Dict, List, Set, Tuple
 from semrepo.github.collect_contributors import collect_contributors
 from semrepo.github.collect_issues import collect_issues
 from semrepo.github.collect_languages import collect_languages
-from semrepo.github.collect_repository import build_repository_snapshot
+from semrepo.github.collect_repository import build_repository_snapshot, fetch_last_commit_at
 from semrepo.github.github_client import GitHubClient
 from semrepo.github.normalize_url import ParseStatus, normalize_github_url
 from semrepo.github.resolve_repository import resolve_repository
@@ -85,11 +85,16 @@ def run_pipeline(
     collection_source: str,
     max_issues: int = None,
     max_contributors: int = None,
+    fetch_last_commit: bool = True,
 ) -> Dict[str, dict]:
     """Runs the full normalize -> resolve -> collect -> write pipeline for
     each URL. Safe to call again with the same (or a superset of the) URL
     list after an interruption -- already-processed URLs and
-    already-collected repository IDs are skipped, not redone."""
+    already-collected repository IDs are skipped, not redone.
+
+    fetch_last_commit=True costs one extra API call per repository
+    (GET /commits?per_page=1) to fill RepositorySnapshot.last_commit_at;
+    set it to False to save rate-limit budget on very large runs."""
     processed_urls, seen_repository_ids = _load_checkpoint_state(output_dir)
     resolution_counts: Counter = Counter()
     totals: Counter = Counter()
@@ -128,6 +133,8 @@ def run_pipeline(
             collected_at = datetime.now(timezone.utc)
 
             snapshot = build_repository_snapshot(raw_data, collected_at)
+            if fetch_last_commit:
+                snapshot.last_commit_at = fetch_last_commit_at(owner, repo, client)
 
             languages, lang_activity = collect_languages(
                 owner, repo, canonical.github_repository_id, collected_at, client, collection_source

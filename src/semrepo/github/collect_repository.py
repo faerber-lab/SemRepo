@@ -83,8 +83,11 @@ def fetch_last_commit_at(owner: str, repo: str, client) -> Optional[datetime]:
         return None
     if response.status_code != 200:
         return None
-    items = response.json()
-    if not items:
+    try:
+        items = response.json()
+    except Exception:
+        return None
+    if not isinstance(items, list) or not items or not isinstance(items[0], dict):
         return None
     commit = items[0].get("commit") or {}
     date = (commit.get("committer") or {}).get("date") or (commit.get("author") or {}).get("date")
