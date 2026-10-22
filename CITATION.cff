@@ -1,0 +1,9 @@
+@dataset{semrepoData,
+  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
+  title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
+  month        = apr,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20084784},
+  url          = {https://doi.org/10.5281/zenodo.20084784},
+}
