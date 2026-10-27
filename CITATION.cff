@@ -1,9 +1,36 @@
-@dataset{semrepoData,
-  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
-  title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
-  month        = apr,
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20084784},
-  url          = {https://doi.org/10.5281/zenodo.20084784},
-}
+cff-version: 1.2.0
+message: "If you use SemRepo, please cite the dataset and the associated publication."
+title: "SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem"
+authors:
+  - family-names: "Rafay"
+    given-names: "Abdul"
+  - family-names: "Susanti"
+    given-names: "Yuni"
+  - family-names: "Lamprecht"
+    given-names: "David"
+  - family-names: "Färber"
+    given-names: "Michael"
+version: "1.0.0"
+date-released: "2026-04"
+url: "https://doi.org/10.5281/zenodo.20084784"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20084784"
+preferred-citation:
+  type: article
+  title: "SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem"
+  authors:
+    - family-names: "Rafay"
+      given-names: "Abdul"
+    - family-names: "Susanti"
+      given-names: "Yuni"
+    - family-names: "Lamprecht"
+      given-names: "David"
+    - family-names: "Färber"
+      given-names: "Michael"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.13310"
+  identifiers:
+    - type: arxiv
+      value: "2605.13310"
+  notes: "Associated publication. The dataset is available at https://doi.org/10.5281/zenodo.20084784."
