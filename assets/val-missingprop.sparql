@@ -1,0 +1,91 @@
+# These queries checks whether repositories lack a title, creator, URL
+PREFIX sem:     <https://semrepo.org/>
+PREFIX cls:     <https://semrepo.org/class/>
+PREFIX prop:    <https://semrepo.org/property/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX fabio:   <http://purl.org/spar/fabio/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?repository ?missingProperty
+WHERE {
+  ?repository rdf:type cls:repository .
+
+  VALUES ?requiredProperty {
+    dcterms:title
+    dcterms:creator
+    fabio:hasURL
+  }
+
+  FILTER NOT EXISTS {
+    ?repository ?requiredProperty ?value .
+    FILTER(BOUND(?value))
+  }
+
+  BIND(?requiredProperty AS ?missingProperty)
+}
+ORDER BY ?repository
+
+## missing property check for bot class
+SELECT ?bot ?missingProperty
+WHERE {
+  ?bot rdf:type cls:bot .
+
+  VALUES ?requiredProperty {
+    fabio:hasURL
+    prop:hasBotType
+    foaf:accountName
+  }
+
+  FILTER NOT EXISTS {
+    ?bot ?requiredProperty ?value .
+    FILTER(BOUND(?value))
+  }
+
+  BIND(?requiredProperty AS ?missingProperty)
+}
+ORDER BY ?bot
+
+## missing property check for organization class
+SELECT ?organization ?missingProperty
+WHERE {
+  ?organization rdf:type cls:organization .
+
+  VALUES ?requiredProperty {
+    foaf:accountName
+    fabio:hasURL
+    dcterms:created
+    foaf:name
+  }
+
+  FILTER NOT EXISTS {
+    ?organization ?requiredProperty ?value .
+    FILTER(BOUND(?value))
+  }
+
+  BIND(?requiredProperty AS ?missingProperty)
+}
+ORDER BY ?organization
+
+## missing property check for person class
+SELECT ?person ?missingProperty
+WHERE {
+  ?person rdf:type cls:person .
+
+  VALUES ?requiredProperty {
+    fabio:hasURL
+    prop:hasPersonType
+  }
+
+  FILTER NOT EXISTS {
+    ?person ?requiredProperty ?value .
+    FILTER(BOUND(?value))
+  }
+
+  BIND(?requiredProperty AS ?missingProperty)
+}
+ORDER BY ?person
+
