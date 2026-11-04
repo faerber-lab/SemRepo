@@ -17,7 +17,7 @@
 
 - [Ontology and Metadata Descriptions](#ontology-and-metadata-descriptions)
 - [Key Statistics](#key-statistics)
-- [Construction Pipeline](#construction-pipeline)
+- [Construction and Validation Pipeline](#construction-and-validation-pipeline)
 - [Example Usage: CQs, Use Cases, Queries](#example-usage)
 - [Repository Structure](#repository-structure)
 - [License](#license)
@@ -53,7 +53,7 @@ Following Linked Open Data and FAIR best practices, SemRepo provides machine-rea
 
 _* as of April 2026, core classes only_
 
-## Construction Pipeline
+## Construction and Validation Pipeline
 
 ### Installation
 
@@ -72,6 +72,9 @@ Ensure you are using Python 3.10 or higher. The pipeline then follows the follow
 
 - **RDF Knowledge Graph Construction and Linking**  
   We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs using the provided [scripts](./making-repo-metadata-kg).
+
+- **RDF Knowledge Graph Validation**  
+  To validate the structural consistency of the knowledge graph, run the queries here: [missing properties checks](./assets/val-missingprop.sparql) and [datatypes checks](./assets/val-missingprop.sparql). These checks targeted various aspects of structural consistency, i.e., missing required properties, invalid or unexpected datatypes.
 
 ## Example Usage
 
