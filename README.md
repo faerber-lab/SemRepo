@@ -3,13 +3,11 @@
 ## Overview
 [**SemRepo**](https://semrepo.org/) is a large-scale RDF knowledge graph of GitHub repositories linked to scientific research. SemRepo captures fine-grained repository-level metadata (e.g., _contributors, issues, dependencies, programming languages_) and interlinks this information with external scholarly knowledge graphs: repositories are connected to publications in [LPWC](https://linkedpaperswithcode.com/), repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), and research artifacts (e.g., _datasets, experiments_) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (see [Maintenance](#maintenance)).
+1. **Data Access**: RDF data dumps are available via Zenodo [DOI:10.5281/zenodo.15399467](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (see [Maintenance](#maintenance)).
 
-2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql).
+2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql). Please note that the endpoint is **currently under maintenance** and may not return the latest data.
 
 3. **Open-source Pipeline**: Full source code for SemRepo construction and interlinking, supporting future extensions of SemRepo.
-
-4. **URI Resolution**: SemRepo supports persistent URI resolution for entities within the Linked Open Data cloud.
 
 🌐 Website: **[https://semrepo.org](https://semrepo.org/)**
 
