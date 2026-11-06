@@ -207,7 +207,7 @@ if __name__ == "__main__":
         description="Link GitHub repositories to LPWC and SemOpenAlex."
     )
     parser.add_argument("--repositories", type=Path, default=Path("data/pilot/repositories.jsonl"))
-    parser.add_argument("--output", type=Path, default=Path("data/linking/repository-links.jsonl"))
+    parser.add_argument("--output", type=Path, default=Path("data/pilot/repository-links.jsonl"))
 
     args = parser.parse_args()
     run_linking(args.repositories, args.output, LPWC_ENDPOINT)
