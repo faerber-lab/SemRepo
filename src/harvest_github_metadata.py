@@ -10,8 +10,8 @@ from semrepo.pipeline import run_pipeline
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 COLLECTION_SOURCE = "1_5000.pkl"
-PILOT_SIZE = 5
-PILOT_LIMIT = 20
+PILOT_SIZE = 3 # run on few examples
+PILOT_LIMIT = 20 # caps issues/contributors per repo -- see module docstring
 
 def load_repository_urls(pkl_path: Path) -> list[str]:
     with pkl_path.open("rb") as f:
@@ -19,14 +19,14 @@ def load_repository_urls(pkl_path: Path) -> list[str]:
     return data[:PILOT_SIZE]
 
 if __name__ == "__main__":
-    input_file = Path("1_5000.pkl") #from crawling-gitHub-metadata... /github_links...
+    input_file = Path("1_5000.pkl") #src-v1\crawling-gitHub-metadata\github_links\1_5000.pkl
     output_dir = Path("data/pilot")
 
     PILOT_REPOSITORY_URLS = load_repository_urls(input_file)
 
     logging.info("Loaded %d repository URLs", len(PILOT_REPOSITORY_URLS))
 
-    client = GitHubClient(tokens=[])
+    client = GitHubClient(tokens=[]) # unauthenticated -- see github_client.py
 
     summary = run_pipeline(
         PILOT_REPOSITORY_URLS,
