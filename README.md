@@ -3,13 +3,11 @@
 ## Overview
 [**SemRepo**](https://semrepo.org/) is a large-scale RDF knowledge graph of GitHub repositories linked to scientific research. SemRepo captures fine-grained repository-level metadata (e.g., _contributors, issues, dependencies, programming languages_) and interlinks this information with external scholarly knowledge graphs: repositories are connected to publications in [LPWC](https://linkedpaperswithcode.com/), repository authors are linked to their profiles in [SemOpenAlex](https://semopenalex.org/), and research artifacts (e.g., _datasets, experiments_) are linked via [MLSea KG](https://dtai-kg.github.io/MLSea-KGC/). SemRepo provides an important infrastructure for large-scale analysis of software within the broader scientific research ecosystem.
 
-1. **Data Access**: RDF data dumps are available via [Zenodo](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (see [Maintenance](#maintenance)).
+1. **Data Access**: RDF data dumps are available via Zenodo [DOI:10.5281/zenodo.15399467](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (see [Maintenance](#maintenance)).
 
-2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql).
+2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql). Please note that the endpoint is **currently under maintenance** and may not return the latest data.
 
 3. **Open-source Pipeline**: Full source code for SemRepo construction and interlinking, supporting future extensions of SemRepo.
-
-4. **URI Resolution**: SemRepo supports persistent URI resolution for entities within the Linked Open Data cloud.
 
 🌐 Website: **[https://semrepo.org](https://semrepo.org/)**
 
@@ -17,7 +15,7 @@
 
 - [Ontology and Metadata Descriptions](#ontology-and-metadata-descriptions)
 - [Key Statistics](#key-statistics)
-- [Construction Pipeline](#construction-pipeline)
+- [Construction and Validation Pipeline](#construction-and-validation-pipeline)
 - [Example Usage: CQs, Use Cases, Queries](#example-usage)
 - [Repository Structure](#repository-structure)
 - [License](#license)
@@ -53,9 +51,9 @@ Following Linked Open Data and FAIR best practices, SemRepo provides machine-rea
 
 _* as of April 2026, core classes only_
 
-## Construction Pipeline
+## Construction and Validation Pipeline
 
-### Installation
+### Prerequisites
 
 Clone the repository and install the required dependencies:
 
@@ -66,35 +64,36 @@ pip install -r requirements.txt
 ```
 Ensure you are using Python 3.10 or higher. The pipeline then follows the following steps:
 
-- **Repository and Metadata Harvesting**  
-  We collect repository data and metadata using dedicated [scripts](./crawling-gitHub-metadata). An overview of the crawled dataset is available in [JSON format](./assets/khuangaf_awesome-chart-understanding.json).  
-  To extract libraries and dependencies used in the code, we utilize [scripts](./extract-libraries-from-code) that clone each repository and parse source files to identify imported packages.
+- **Data Harvesting**  
+  We collect repository metadata using dedicated pipeline: [/src](./src). An overview of the crawled dataset is available in [JSON format](./assets/khuangaf_awesome-chart-understanding.json).
 
-- **RDF Knowledge Graph Construction and Linking**  
-  We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs using the provided [scripts](./making-repo-metadata-kg).
+- **RDF Construction and Linking**  
+  We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs: see [/src](./src).
+
+- **Validation**  
+  To validate the structural consistency of the knowledge graph, run the queries here: [missing properties checks](./src/tests/val-missingprop.sparql) and [datatypes checks](./src/tests/val-missingprop.sparql). These checks targeted various aspects of structural consistency, i.e., missing required properties, invalid or unexpected datatypes.
 
 ## Example Usage
 
 We demonstrate and evaluate the utility of SemRepo through the following:
 
-- **[Reproducibility and Sustainability Analysis Use Case](./usecase)**  
-  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo that are linked to scientific publications. All resources for this use case are available in the [`usecase`](./usecase) directory.
+- **[Reproducibility and Sustainability Analysis Use Case](./usecase-examples)**  
+  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo linked to scientific publications. All resources for this use case are available in the [`usecase-examples`](./usecase-examples) directory.
 
-- **[Competency Questions (CQs)](./CQs)**  
+- **[Competency Questions (CQs)](./cqs-queries)**  
   We formulate competency questions based on expert knowledge from researchers and software engineers working with scientific software ecosystems and scholarly analytics workflows.
   
-- **[Additional SPARQL Query Examples](./CQs/example-sparql-queries.pdf)**  
+- **[Additional SPARQL Query Examples](./cqs-queries/queries/)**  
   A collection of additional SPARQL query examples.
 
 ## Repository Structure
 
-- `/usecase` — SemRepo use cases i.e., reproducibility analysis
-- `/ontologies` — OWL ontology and VoID files
-- `/CQs` — competency questions
-- `/crawling-gitHub-metadata` — github crawling 
-- `/extract-libraries-from-code` — code dependencies and libraries harvesting
-- `/making-repo-metadata-kg` — kg construction and interlinking
-- `/assets` — figures 
+- `/usecase-examples` — SemRepo use case examples
+- `/ontologies` — Ontology and machine-readable data description files 
+- `/cqs-queries` — competency questions and query examples
+- `/src-v1` — Source code for previous version of SemRepo 
+- `/src` — Complete implementation source code and documentation
+- `/assets` — figures and other materials
 - requirements.txt
 
 ## License
@@ -109,25 +108,29 @@ SemRepo is released under the CC0 license to maximize reuse and interoperability
 
 SemRepo follows the FAIR data principles to support long-term usability, reproducibility, and integration within the scholarly data ecosystem. The dataset is publicly available via Zenodo, GitHub, and the project website through RDF dumps and a public SPARQL endpoint. Interoperability is ensured through open standards (RDF, OWL, SPARQL, VoID) and interlinking with external scholarly knowledge graphs, while reusability is supported through open licensing and the release of the full construction pipeline.
 
-SemRepo provides versioned releases with periodic updates (approximately twice per year), accompanied by dissemination of each release via mailing list. SemRepo is constructed exclusively from publicly available software and scholarly metadata. We acknowledge that inherited biases and coverage limitations from upstream sources (e.g., GitHub and linked scholarly knowledge graphs) may affect representation across research communities and regions.
+SemRepo provides versioned releases with periodic updates (annually or semi-annualy), accompanied by dissemination of each release via Github and website. SemRepo is constructed exclusively from publicly available software and scholarly metadata. We acknowledge that inherited biases and coverage limitations from upstream sources (e.g., GitHub and linked scholarly knowledge graphs) may affect representation across research communities and regions.
 
 See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/open-science/)
 
 ## Citation
 
-If you use SemRepo, please cite the paper (_will be updated upon acceptance_):
+If you use SemRepo, please cite the paper (_currently the preprint version; will be updated upon acceptance_):
 
 ```bibtex
-@inproceedings{semrepo,
-  title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem.},
-  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
-  year={2026}
+@misc{semrepo,
+      title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem}, 
+      author={Abdul Rafay and Yuni Susanti and David Lamprecht and Michael Färber},
+      year={2026},
+      eprint={2605.13310},
+      archivePrefix={arXiv},
+      primaryClass={cs.DL},
+      url={https://arxiv.org/abs/2605.13310}, 
 }
 ```
 
 and/or the dataset:
 ```bibtex
-@dataset{semrepo,
+@dataset{semrepoData,
   author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
   title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
   month        = apr,
@@ -140,9 +143,7 @@ and/or the dataset:
 
 ## Maintenance
 
-SemRepo follows a versioned release cycle with periodic updates (approximately twice per year, subject on upstream resource availability), with each release announced via project website, Github, and mailing lists. To support medium- and long-term maintainability, SemRepo provides:
-- Open-source KG construction and interlinking pipelines
-- Versioned RDF dump releases via Zenodo  
+SemRepo follows a versioned release cycle with periodic updates (anually, subject on resource availability), with each release announced via project website and Github. 
 
 SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/) at ScaDS.AI, TU Dresden.  
 📧 Contact: [michael.faerber@tu-dresden.de](mailto:michael.faerber@tu-dresden.de)

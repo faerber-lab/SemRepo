@@ -1,0 +1,105 @@
+## Detect invalid datatypes
+
+PREFIX sem:     <https://semrepo.org/>
+PREFIX cls:     <https://semrepo.org/class/>
+PREFIX prop:    <https://semrepo.org/property/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX fabio:   <http://purl.org/spar/fabio/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?subject ?property ?value
+       (DATATYPE(?value) AS ?actualDatatype)
+       ?expectedDatatype
+WHERE {
+  {
+    ?subject dcterms:title ?value .
+    BIND(dcterms:title AS ?property)
+    BIND(xsd:string AS ?expectedDatatype)
+  }
+  UNION
+  {
+    ?subject prop:hasTotalStargazers ?value .
+    BIND(prop:hasTotalStargazers AS ?property)
+    BIND(xsd:int AS ?expectedDatatype)
+  }
+  UNION
+  {
+    ?subject prop:hasTotalWatchers ?value .
+    BIND(prop:hasTotalWatchers AS ?property)
+    BIND(xsd:int AS ?expectedDatatype)
+  }
+  UNION
+  {
+    ?subject prop:hasLanguageUsage ?value .
+    BIND(prop:hasLanguageUsage AS ?property)
+    BIND(xsd:float AS ?expectedDatatype)
+  }
+
+  FILTER(
+    !isLiteral(?value) ||
+    DATATYPE(?value) != ?expectedDatatype
+  )
+}
+
+## Detect unexpected literal values
+PREFIX sem:     <https://semrepo.org/>
+PREFIX cls:     <https://semrepo.org/class/>
+PREFIX prop:    <https://semrepo.org/property/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX fabio:   <http://purl.org/spar/fabio/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?subject ?property ?value
+WHERE {
+  VALUES ?property {
+    <http://semrepo.org/property/hasTotalStargazers>
+    <http://semrepo.org/property/hasTotalWatchers>
+    <http://semrepo.org/property/hasTotalForks>
+    <http://semrepo.org/property/hasTotalIssues>
+    <http://semrepo.org/property/hasTotalContributor>
+    <http://semrepo.org/property/hasTotalOpenIssues>
+    <http://semrepo.org/property/hasTotalClosedIssues>
+    <http://semrepo.org/property/hasTotalComments>
+    <http://semrepo.org/property/hasFollowers>
+    <http://semrepo.org/property/hasPublicRepos>
+    <http://semrepo.org/property/hasCommits>
+  }
+
+  ?subject ?property ?value .
+
+  FILTER(
+    !isLiteral(?value) ||
+    !isNumeric(?value) ||
+    (isNumeric(?value) && ?value < 0)
+  )
+}
+
+##
+PREFIX sem:     <https://semrepo.org/>
+PREFIX cls:     <https://semrepo.org/class/>
+PREFIX prop:    <https://semrepo.org/property/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX fabio:   <http://purl.org/spar/fabio/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?language ?usage
+WHERE {
+  ?language prop:hasLanguageUsage ?usage .
+
+  FILTER(
+    !isNumeric(?usage) ||
+    (isNumeric(?usage) && (?usage < 0 || ?usage > 100))
+  )
+}
