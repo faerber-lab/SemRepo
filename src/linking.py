@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-import argparse
+import sys
 from pathlib import Path
 from typing import Iterator
 
@@ -10,7 +10,6 @@ from rdflib import URIRef
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
-SEMOPENALEX_ENDPOINT = "https://semopenalex.org/sparql"
 LPWC_ENDPOINT = "https://linkedpaperswithcode.com/sparql"
 
 LPWC_PREFIXES = """
@@ -147,6 +146,30 @@ def find_papers_for_repository(lpwc_endpoint: str, lpwc_repository_uri: str) -> 
 
     return list(papers.values())
 
+def find_mlsea_uris(lpwc_endpoint: str, lpwc_repository_uri: str) -> list[str]:
+    repository_iri = URIRef(lpwc_repository_uri).n3()
+
+    query = LPWC_PREFIXES + f"""
+    SELECT DISTINCT ?mlsea
+    WHERE {{
+        {repository_iri} owl:sameAs ?mlsea .
+
+        FILTER(
+            STRSTARTS(STR(?mlsea), "http://w3id.org/mlsea/")
+            ||
+            STRSTARTS(STR(?mlsea), "https://w3id.org/mlsea/")
+        )
+    }}
+    ORDER BY ?mlsea
+    """
+
+    rows = run_select(lpwc_endpoint, query)
+
+    return sorted({
+        row["mlsea"]["value"]
+        for row in rows
+        if row.get("mlsea", {}).get("value")
+    })
 
 def link_repository(lpwc_endpoint: str, repository_record: dict) -> dict:
     repository_id = repository_record["github_repository_id"]
@@ -166,10 +189,17 @@ def link_repository(lpwc_endpoint: str, repository_record: dict) -> dict:
         return result
 
     for match in lpwc_repositories:
-        papers = find_papers_for_repository(lpwc_endpoint, match["lpwc_repository_uri"])
-        result["lpwc_repository_matches"].append({**match, "papers": papers})
+        lpwc_repository_uri = match["lpwc_repository_uri"]
+        papers = find_papers_for_repository(lpwc_endpoint, lpwc_repository_uri)
+        mlsea_software_uris = find_mlsea_uris(lpwc_endpoint, lpwc_repository_uri)
 
+        result["lpwc_repository_matches"].append({
+            **match,
+            "papers": papers,
+            "mlsea_software_uris": mlsea_software_uris,
+        })
     result["status"] = "RepositoryMatched"
+
     return result
 
 def find_lpwc_papers(endpoint, repository_iri):
@@ -203,11 +233,16 @@ def run_linking(repositories_path: Path, output_path: Path, lpwc_endpoint: str) 
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Link GitHub repositories to LPWC and SemOpenAlex."
-    )
-    parser.add_argument("--repositories", type=Path, default=Path("data/pilot/repositories.jsonl"))
-    parser.add_argument("--output", type=Path, default=Path("data/pilot/repository-links.jsonl"))
+    folder = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/pilot")
+    input_path = folder / "repositories.jsonl"
+    output_path = folder / "external-links.jsonl"
 
-    args = parser.parse_args()
-    run_linking(args.repositories, args.output, LPWC_ENDPOINT)
+    run_linking(input_path, output_path, LPWC_ENDPOINT)
+
+
+
+# python linking.py data/out-test/1_5000/
+
+# Repository 790680512: RepositoryMatched
+# Repository 741251289: RepositoryMatched
+# Results written to: data/out-test/1_5000/external-links.jsonl

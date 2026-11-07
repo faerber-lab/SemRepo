@@ -1,6 +1,32 @@
 """
-adding linking to lpwc and soa
+WP5.2 -- Generate RDF from the normalized JSONL records produced by
+WP4.6/pipeline.py, using identifiers.py's deterministic URIs and the
+classes/properties defined in ontologies/semrepo-v2.ttl.
+
+Account typing: GitHub returns a 'type' field (User / Organization / Bot)
+for repository owners, contributors and issue authors; it is mapped to
+:GitHubUser / :GitHubOrganisation / :GitHubBot by _account_class(). Records
+written before ontology v2.1 have no type field and fall back to
+:GitHubUser (the previous, documented default).
+
+Numeric values are written as plain xsd:integer (Turtle: 103257), not
+xsd:nonNegativeInteger; non-negativity is enforced by sh:minInclusive 0 in
+the shapes (ontology v2.1, per reviewer feedback).
+
+Output is split into the files the project proposal names for WP5.2,
+plus one addition (semrepo-languages.ttl) the proposal's file list
+doesn't include but our ontology needs (LanguageUsage/ProgrammingLanguage
+weren't part of v1's data model, so the proposal's WP5.2 list predates
+this pattern):
+
+    semrepo-core.ttl          Repository, SourceRepositoryLink, CollectionActivity
+    semrepo-snapshots.ttl     RepositorySnapshot
+    semrepo-issues.ttl        Issue / PullRequest
+    semrepo-contributions.ttl Contribution
+    semrepo-languages.ttl     LanguageUsage, ProgrammingLanguage
 """
+
+# python generate_rdf_with_linking.py data/pilot data/rdf-4
 
 from __future__ import annotations
 
@@ -26,7 +52,10 @@ LPWC_CLASS = Namespace("https://linkedpaperswithcode.com/class/")
 SOA_CLASS = Namespace("https://semopenalex.org/class/")
 
 LPWC_KNOWLEDGE_GRAPH = "LPWC"
+MLSEA_KNOWLEDGE_GRAPH = "MLSea"
+
 LPWC_REPOSITORY_MATCH_METHOD = "lpwc-repository-url-match"
+MLSEA_SAME_AS_METHOD = "lpwc-owl-sameAs"
 
 LPWC_RELATION_CONFIG = {
     "hasOfficialRepository": {
@@ -58,10 +87,6 @@ _ACCOUNT_CLASSES = { #new 06.11
     "organisation": SR.GitHubOrganisation,
     "bot": SR.GitHubBot,
 }
-
-# def _account_class(github_type: Optional[str]) -> URIRef: 
-#     """Unknown or missing types (e.g. 'Mannequin', old records) -> GitHubUser."""
-#     return _ACCOUNT_CLASSES.get(github_type or "User", SR.GitHubUser)
 
 def _account_class(github_type: Optional[str]) -> URIRef: #new 06.11
     """
@@ -289,12 +314,18 @@ def external_link_uri(source_uri: str, target_uri: str, relation_type: str, link
     return URIRef(RESOURCE_NS[f"external-link/{digest}"])
 
 def add_external_links(graph: Graph, path: Path) -> int:
-    """Generate SemRepo repository -> LPWC repository and paper external links."""
+    """Generate SemRepo repository -> LPWC and MLSea external links."""
     count = 0
 
-    def add_link(source_uri: URIRef, target_uri: str, relation_type: str,
-                 linking_method: str, knowledge_graph: str = "LPWC") -> None:
+    def add_link(
+        source_uri: URIRef,
+        target_uri: str,
+        relation_type: str,
+        linking_method: str,
+        knowledge_graph: str,
+    ) -> None:
         nonlocal count
+
         if not target_uri:
             return
 
@@ -323,25 +354,26 @@ def add_external_links(graph: Graph, path: Path) -> int:
             if not lpwc_repository:
                 continue
 
-            # SemRepo Repository -> LPWC Repository
-            add_link(source_uri, lpwc_repository, "same repository as", "lpwc-repository-url-match")
+            # 1. SemRepo Repository -> LPWC Repository
+            add_link(source_uri, lpwc_repository, "same repository as", LPWC_REPOSITORY_MATCH_METHOD, LPWC_KNOWLEDGE_GRAPH)
 
-            # SemRepo Repository -> LPWC Paper
+            # 2. SemRepo Repository -> LPWC Paper
             for paper in match.get("papers") or []:
                 paper_uri = paper.get("lpwc_paper_uri")
                 if not paper_uri or not paper_uri.startswith("https://linkedpaperswithcode.com/paper/"):
                     continue
 
                 for relation in paper.get("repository_relations") or []:
-                    if relation == "hasOfficialRepository":
-                        relation_type, method = "official implementation of", "lpwc-curated-official-repository"
-                    elif relation == "hasRepository":
-                        relation_type, method = "repository referenced by paper", "lpwc-curated-repository-reference"
-                    else:
+                    relation_config = LPWC_RELATION_CONFIG.get(relation)
+                    if not relation_config:
                         print(f"Warning: unsupported LPWC relation '{relation}' for {paper_uri}")
                         continue
 
-                    add_link(source_uri, paper_uri, relation_type, method)
+                    add_link(source_uri, paper_uri, relation_config["relation_type"], relation_config["linking_method"], LPWC_KNOWLEDGE_GRAPH)
+
+            # 3. SemRepo Repository -> MLSea Software
+            for mlsea_uri in match.get("mlsea_software_uris") or []:
+                add_link(source_uri, mlsea_uri, "same software as", MLSEA_SAME_AS_METHOD, MLSEA_KNOWLEDGE_GRAPH)
 
     return count
 
@@ -400,25 +432,20 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     counts["language_usage"] = add_language_usage(languages, input_dir / "language-usage.jsonl")
     languages.serialize(destination=output_dir / "semrepo-languages.ttl", format="turtle")
 
-    # external_links = _new_graph()
-    # counts["external_links"] = add_external_links(external_links, input_dir / "repository-links.jsonl")
-    # external_links.serialize(destination=output_dir / "semrepo-external-links.ttl", format="turtle")
-
-    # LPWC and SemOpenAlex external linking
-    lpwc_input = input_dir / "repository-links.jsonl"
+    # LPWC and SemOpenAlex and MLSea external linking
+    lpwc_input = input_dir / "external-links.jsonl"
     external_links = _new_graph()
     external_links.bind("dcterms", DCTERMS)
     counts["external_links"] = add_external_links(external_links, lpwc_input)
-    external_links.serialize(destination=output_dir / "semrepo-lpwc-links.ttl", format="turtle")
+    external_links.serialize(destination=output_dir / "semrepo-external-links.ttl", format="turtle")
 
     # LPWC paper -> SemOpenAlex author relationships
     authorship = _new_graph()
     authorship.bind("dcterms", DCTERMS)
     counts["lpwc_authorship"] = add_lpwc_authorship(authorship, lpwc_input)
-    authorship.serialize(destination=output_dir / "semrepo-lpwc-soa-links.ttl", format="turtle")
+    authorship.serialize(destination=output_dir / "semrepo-author-profiles-links.ttl", format="turtle")
 
     return counts
-
 
 if __name__ == "__main__":
     import sys
@@ -432,6 +459,20 @@ if __name__ == "__main__":
     for key, value in counts.items():
         print(f"  {key}: {value} records")
 
+
+# ~/semrepo-pipeline$ python generate_rdf_with_linking.py data/out-jsonl/1_5000/ data/rdf/1_5000
+
+# Input: /home/yunisusan/semrepo-pipeline/data/out-jsonl/1_5000
+# Output: /home/yunisusan/semrepo-pipeline/data/rdf/1_5000
+#   repositories: 2 records
+#   source_repository_links: 2 records
+#   collection_activities: 6 records
+#   snapshots: 2 records
+#   issues: 10 records
+#   contributions: 8 records
+#   language_usage: 1 records
+#   external_links: 5 records
+#   lpwc_authorship: 5 records
 
 ### Linking validation
 
