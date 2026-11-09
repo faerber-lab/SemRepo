@@ -53,25 +53,7 @@ _* as of April 2026, core classes only_
 
 ## Construction and Validation Pipeline
 
-### Prerequisites
-
-Clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/faerber-lab/SemRepo.git
-cd SemRepo
-pip install -r requirements.txt
-```
-Ensure you are using Python 3.10 or higher. The pipeline then follows the following steps:
-
-- **Data Harvesting**  
-  We collect repository metadata using dedicated pipeline: [/src](./src). An overview of the crawled dataset is available in [JSON format](./assets/khuangaf_awesome-chart-understanding.json).
-
-- **RDF Construction and Linking**  
-  We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs: see [/src](./src).
-
-- **Validation**  
-  To validate the structural consistency of the knowledge graph, run the queries here: [missing properties checks](./src/tests/val-missingprop.sparql) and [datatypes checks](./src/tests/val-missingprop.sparql). These checks targeted various aspects of structural consistency, i.e., missing required properties, invalid or unexpected datatypes.
+See the detailed construction pipeline in [/src](./src).
 
 ## Example Usage
 
