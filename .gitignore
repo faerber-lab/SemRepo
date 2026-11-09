@@ -6,7 +6,8 @@ data/output/
 .DS_Store
 __pycache__/
 .pytest_cache/
-data/pilot/
-data/rdf/
-data/
+# data/pilot/
+# data/rdf/
+# data/
 *.egg-info/
+src-v1/

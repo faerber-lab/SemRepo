@@ -1,0 +1,67 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/328c8ba4ca831b20> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-07T14:19:24.893244+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/collection-activity/930856240dcc2ec2> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-07T14:19:23.787627+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/collection-activity/a61ed220c11c58cf> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-07T14:19:23.419600+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/collection-activity/ca4862261ab1cbcf> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-07T14:19:23.160161+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/collection-activity/e64c936f8eb2372d> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-07T14:19:25.193011+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/collection-activity/ec1da386c42a0abb> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-07T14:19:25.696226+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/source-repository-link/341900b702d62539> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/wlb12345/TFUP"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/wlb12345/tfup"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/source-repository-link/b876e9a4a1b885fd> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/khuangaf/Awesome-Chart-Understanding"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/khuangaf/awesome-chart-understanding"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/repository/741251289> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/khuangaf/Awesome-Chart-Understanding"^^xsd:anyURI ;
+    sr:createdAt "2024-01-10T02:19:01+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 741251289 .
+
+<https://semrepo.org/resource/repository/790680512> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/wlb12345/TFUP"^^xsd:anyURI ;
+    sr:createdAt "2024-04-23T10:28:53+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 790680512 .
+
