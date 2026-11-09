@@ -11,7 +11,7 @@ from semrepo.pipeline import run_pipeline
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
-PILOT_SIZE = 2  # Run on a few examples; set to None to process all
+PILOT_SIZE = 2  # Run on a few examples; set to None to process all repositories
 PILOT_LIMIT = 10  # Caps issues/contributors per repository
 
 
