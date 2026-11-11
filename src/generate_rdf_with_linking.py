@@ -26,7 +26,7 @@ this pattern):
     semrepo-languages.ttl     LanguageUsage, ProgrammingLanguage
 """
 
-# python generate_rdf_with_linking.py data/pilot data/rdf-4
+# python generate_rdf_with_linking.py data/out-test/1_5000/ data/rdf-test/1_5000
 
 from __future__ import annotations
 
@@ -53,9 +53,15 @@ SOA_CLASS = Namespace("https://semopenalex.org/class/")
 
 LPWC_KNOWLEDGE_GRAPH = "LPWC"
 MLSEA_KNOWLEDGE_GRAPH = "MLSea"
+SOA_KNOWLEDGE_GRAPH = "SemOpenAlex"
 
 LPWC_REPOSITORY_MATCH_METHOD = "lpwc-repository-url-match"
 MLSEA_SAME_AS_METHOD = "lpwc-owl-sameAs"
+GITHUB_SOA_MATCH_METHODS = {
+    "ExactNameMatch": "exact-name-match",
+    "ReversedNameMatch": "reversed-name-match",
+    "FuzzyNameMatch": "fuzzy-name-match",
+}
 
 LPWC_RELATION_CONFIG = {
     "hasOfficialRepository": {
@@ -402,6 +408,36 @@ def add_lpwc_authorship(graph: Graph, path: Path) -> int:
 
     return count
 
+def add_contributor_soa_links(graph: Graph, external_links_path: Path) -> int:
+    count = 0
+    created_links = set()
+    for repository_record in _read_jsonl(external_links_path):
+        for match in repository_record.get("github_contributor_soa_matches") or []:
+            if match.get("match_status") == "AmbiguousNameMatch":
+                continue
+            contributor_id = match.get("contributor_github_user_id")
+            soa_author_uri = match.get("soa_author_uri")
+            if contributor_id is None or not soa_author_uri:
+                continue
+            linking_method = GITHUB_SOA_MATCH_METHODS.get(match.get("match_type"))
+            if not linking_method:
+                continue
+            github_account = URIRef(github_account_uri(contributor_id))
+            relation_type = "same person as"
+            link_uri = external_link_uri(str(github_account), soa_author_uri, relation_type, linking_method)
+            if link_uri in created_links:
+                continue
+            created_links.add(link_uri)
+            graph.add((github_account, SR.hasExternalLink, link_uri))
+            graph.add((link_uri, RDF.type, SR.ExternalLink))
+            graph.add((link_uri, SR.linkSource, github_account))
+            graph.add((link_uri, SR.linkTarget, Literal(soa_author_uri, datatype=XSD.anyURI)))
+            graph.add((link_uri, SR.linkRelationType, Literal(relation_type, datatype=XSD.string)))
+            graph.add((link_uri, SR.linkingMethod, Literal(linking_method, datatype=XSD.string)))
+            graph.add((link_uri, SR.targetKnowledgeGraph, Literal(SOA_KNOWLEDGE_GRAPH, datatype=XSD.string)))
+            count += 1
+    return count
+
 def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     """Reads all JSONL files in input_dir (WP4.6/pipeline.py's output) and
     writes the five .ttl files described in the module docstring. Returns
@@ -437,13 +473,10 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     external_links = _new_graph()
     external_links.bind("dcterms", DCTERMS)
     counts["external_links"] = add_external_links(external_links, lpwc_input)
+    counts["github_soa_author_links"] = add_contributor_soa_links(external_links, lpwc_input)
+    counts["lpwc_authorship"] = add_lpwc_authorship(external_links, lpwc_input)
+    
     external_links.serialize(destination=output_dir / "semrepo-external-links.ttl", format="turtle")
-
-    # LPWC paper -> SemOpenAlex author relationships
-    authorship = _new_graph()
-    authorship.bind("dcterms", DCTERMS)
-    counts["lpwc_authorship"] = add_lpwc_authorship(authorship, lpwc_input)
-    authorship.serialize(destination=output_dir / "semrepo-author-profiles-links.ttl", format="turtle")
 
     return counts
 
@@ -460,19 +493,20 @@ if __name__ == "__main__":
         print(f"  {key}: {value} records")
 
 
-# ~/semrepo-pipeline$ python generate_rdf_with_linking.py data/out-jsonl/1_5000/ data/rdf/1_5000
+# ~/semrepo-pipeline$ python generate_rdf_with_linking.py data/out-test/1_5000/ data/rdf-test/1_5000
 
-# Input: /home/yunisusan/semrepo-pipeline/data/out-jsonl/1_5000
-# Output: /home/yunisusan/semrepo-pipeline/data/rdf/1_5000
-#   repositories: 2 records
-#   source_repository_links: 2 records
-#   collection_activities: 6 records
-#   snapshots: 2 records
-#   issues: 10 records
-#   contributions: 8 records
-#   language_usage: 1 records
-#   external_links: 5 records
-#   lpwc_authorship: 5 records
+# Input: /home/yunisusan/semrepo-pipeline/data/out-test/1_5000
+# Output: /home/yunisusan/semrepo-pipeline/data/rdf-test/1_5000
+#   repositories: 7 records
+#   source_repository_links: 20 records
+#   collection_activities: 21 records
+#   snapshots: 7 records
+#   issues: 40 records
+#   contributions: 25 records
+#   language_usage: 9 records
+#   external_links: 19 records
+#   github_soa_author_links: 4 records
+#   lpwc_authorship: 33 records
 
 ### Linking validation
 
