@@ -47,7 +47,7 @@ Generate RDF data for all the entities and relationships from the harvested meta
   ```
 Examples of the generated RDF (.ttl) files are available in [/src/data/rdf](./src/data/rdf).
 
-### Validation
+### Validation (SemRepo-v1 version)
 To validate the structural consistency of the knowledge graph, run the queries here: [missing properties checks](./tests/val-missingprop.sparql) and [datatypes checks](./tests/val-datatypes.sparql). These checks targeted various aspects of structural consistency, i.e., missing required properties, invalid or unexpected datatypes.
   
 ### Directory
