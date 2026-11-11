@@ -5,9 +5,9 @@
 
 1. **Data Access**: RDF data dumps are available via Zenodo [DOI:10.5281/zenodo.15399467](https://doi.org/10.5281/zenodo.15399467) and are periodically updated (see [Maintenance](#maintenance)).
 
-2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql). Please note that the endpoint is **currently under maintenance** and may not return the latest data.
+2. **Query Services**: SemRepo is hosted in a public triple store with a SPARQL endpoint: [https://semrepo.org/sparql](https://semrepo.org/sparql). Please note that the endpoint is currently under maintenance and may not return the latest data.
 
-3. **Open-source Pipeline**: Full source code for SemRepo construction, supporting future extensions and customization of SemRepo. Please note that the SemRepo construction pipeline is currently undergoing reorganization; for the latest implementation, refer to [semrepo-v2-dev](https://github.com/faerber-lab/SemRepo/tree/semrepo-v2-dev/) branch.
+3. **Open-source Pipeline**: The complete source code for SemRepo construction is provided to support future extensions and customization. Please note that the construction pipeline is currently being reorganized to improve its structure and maintainability; for the latest update, refer to [semrepo-v2-dev](https://github.com/faerber-lab/SemRepo/tree/semrepo-v2-dev/) branch.
 
 🌐 Website: **[https://semrepo.org](https://semrepo.org/)**
 
