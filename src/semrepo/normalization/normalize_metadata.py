@@ -42,6 +42,7 @@ OUTPUT_FILES = {
     "snapshot": "snapshots.jsonl",
     "issue": "issues.jsonl",
     "contribution": "contributions.jsonl",
+    "contributor": "contributors.jsonl",
     "language_usage": "language-usage.jsonl",
     "source_repository_link": "source-repository-links.jsonl",
     "collection_activity": "collection-activities.jsonl",
@@ -93,6 +94,7 @@ def write_repository_records(
     source_repository_link: Optional[Any] = None,
     issues: Optional[list] = None,
     contributions: Optional[list] = None,
+    contributors: Optional[list] = None,
     language_usages: Optional[list] = None,
     collection_activities: Optional[list] = None,
 ) -> Dict[str, int]:
@@ -118,6 +120,7 @@ def write_repository_records(
     _write("source_repository_link", [source_repository_link] if source_repository_link else [])
     _write("issue", issues or [])
     _write("contribution", contributions or [])
+    _write("contributor", contributors or [])
     _write("language_usage", language_usages or [])
     _write("collection_activity", collection_activities or [])
 
