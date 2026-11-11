@@ -27,12 +27,69 @@ from datetime import datetime, timezone
 from typing import List, Optional, Tuple
 
 from semrepo.github.github_client import GitHubClient
-from semrepo.models import CollectionActivity, CollectionStatus, Contribution
+from semrepo.models import CollectionActivity, CollectionStatus, Contribution, Contributor
 
 logger = logging.getLogger(__name__)
 
 PER_PAGE = 100
 
+def collect_contributor_details(
+    github_user_id: int,
+    login: str,
+    account_type: str,
+    client: GitHubClient,
+) -> Optional[Contributor]:
+    """Collect detailed public information for a GitHub account."""
+
+    try:
+        response = client.get(f"/users/{login}")
+
+    except Exception as e:
+        logger.warning(
+            "API error collecting GitHub profile for %s: %s",
+            login,
+            e,
+        )
+        return None
+
+    if response.status_code != 200:
+        logger.warning(
+            "Could not collect GitHub profile for %s (HTTP %d)",
+            login,
+            response.status_code,
+        )
+        return None
+
+    item = response.json()
+
+    return Contributor(
+        contributor_github_user_id=github_user_id,
+        contributor_github_login=item.get("login", login),
+        contributor_account_type=item.get("type") or account_type,
+
+        name=item.get("name"),
+        email=item.get("email"),
+        bio=item.get("bio"),
+        company=item.get("company"),
+        location=item.get("location"),
+        blog=item.get("blog"),
+        public_repos=item.get("public_repos"),
+        followers=item.get("followers"),
+        following=item.get("following"),
+
+        github_created_at=(
+            datetime.fromisoformat(
+                item["created_at"].replace("Z", "+00:00")
+            ) if item.get("created_at") else None
+        ),
+        github_updated_at=(
+            datetime.fromisoformat(
+                item["updated_at"].replace("Z", "+00:00")
+            ) if item.get("updated_at") else None
+        ),
+
+        profile_collected_at=datetime.now(timezone.utc),
+    )
 
 def collect_contributors(
     owner: str,
@@ -42,13 +99,14 @@ def collect_contributors(
     client: GitHubClient,
     collection_source: str,
     max_contributors: Optional[int] = None,
-) -> Tuple[List[Contribution], CollectionActivity]:
+) -> Tuple[List[Contribution], List[Contributor], CollectionActivity]: ##new 11.11
     """max_contributors=None means unlimited. A limit that actually cuts
     the result short is recorded as PARTIAL_SUCCESS, per Rule 7."""
 
     attempted_url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
     timestamp = datetime.now(timezone.utc)
     contributions: List[Contribution] = []
+    contributors: List[Contributor] = [] ##new 11.11
     page = 1
     limit_applied = False
     anonymous_skipped = 0
@@ -114,14 +172,29 @@ def collect_contributors(
             if item.get("type") == "Anonymous" or item.get("id") is None:
                 anonymous_skipped += 1
                 continue
+            github_user_id = item["id"]
+            login = item["login"]
+            account_type = item.get("type") or "User"
+
             contributions.append(Contribution(
                 repository_github_id=repository_github_id,
                 snapshot_collected_at=snapshot_collected_at,
-                contributor_github_user_id=item["id"],
-                contributor_github_login=item["login"],
+                contributor_github_user_id=github_user_id,
+                contributor_github_login=login,
                 commit_count=item["contributions"],
-                contributor_account_type=item.get("type") or "User",
+                contributor_account_type=account_type,
             ))
+
+            contributor = collect_contributor_details(
+                github_user_id=github_user_id,
+                login=login,
+                account_type=account_type,
+                client=client,
+            )
+
+            if contributor is not None:
+                contributors.append(contributor)
+
             if max_contributors is not None and len(contributions) >= max_contributors:
                 limit_applied = True
                 break
@@ -136,7 +209,7 @@ def collect_contributors(
             anonymous_skipped, owner, repo,
         )
 
-    return contributions, CollectionActivity(
+    return contributions, contributors, CollectionActivity(
         collection_timestamp=timestamp,
         attempted_url=attempted_url,
         collection_source=collection_source,
