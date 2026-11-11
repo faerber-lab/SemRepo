@@ -146,7 +146,7 @@ def run_pipeline(
             )
             collection_activities.append(issues_activity)
 
-            contributions, contrib_activity = collect_contributors(
+            contributions, contributors, contrib_activity = collect_contributors(
                 owner, repo, canonical.github_repository_id, collected_at, client, collection_source,
                 max_contributors=max_contributors,
             )
@@ -163,6 +163,7 @@ def run_pipeline(
             source_repository_link=link,
             issues=issues,
             contributions=contributions,
+            contributors=contributors,
             language_usages=languages,
             collection_activities=collection_activities,
         )
