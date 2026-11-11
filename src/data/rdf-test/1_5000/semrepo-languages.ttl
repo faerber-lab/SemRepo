@@ -1,0 +1,57 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/language-usage/084b6dd471a5faff> a sr:LanguageUsage ;
+    sr:languageBytes 65464 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/790680512/2026-11-11T11:50:15.355616+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/1132533fdbe36c27> a sr:LanguageUsage ;
+    sr:languageBytes 377654 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/408447491/2026-11-11T11:50:24.241593+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/303c3732c0134ee3> a sr:LanguageUsage ;
+    sr:languageBytes 3451033 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/645270986/2026-11-11T11:50:28.663223+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/jupyter-notebook> .
+
+<https://semrepo.org/resource/language-usage/3b5e0e1e2282c325> a sr:LanguageUsage ;
+    sr:languageBytes 547516 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/705126352/2026-11-11T11:51:02.035530+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/4226a1d62a1afb08> a sr:LanguageUsage ;
+    sr:languageBytes 340981 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/645270986/2026-11-11T11:50:28.663223+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/e029b74a7025ad6a> a sr:LanguageUsage ;
+    sr:languageBytes 132093 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/450564762/2026-11-11T11:51:04.294295+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/e977882b5e0345cf> a sr:LanguageUsage ;
+    sr:languageBytes 241952 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/823210233/2026-11-11T11:50:20.636141+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/ea19e96d8402c1d7> a sr:LanguageUsage ;
+    sr:languageBytes 5951 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/705126352/2026-11-11T11:51:02.035530+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/shell> .
+
+<https://semrepo.org/resource/language-usage/ea256491238bb31d> a sr:LanguageUsage ;
+    sr:languageBytes 12646 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/823210233/2026-11-11T11:50:20.636141+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/shell> .
+
+<https://semrepo.org/resource/programming-language/jupyter-notebook> a sr:ProgrammingLanguage ;
+    sr:languageName "Jupyter Notebook" .
+
+<https://semrepo.org/resource/programming-language/shell> a sr:ProgrammingLanguage ;
+    sr:languageName "Shell" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+

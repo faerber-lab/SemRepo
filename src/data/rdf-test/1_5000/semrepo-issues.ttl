@@ -1,0 +1,752 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/101634608> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "qwerwsc1" ;
+    sr:githubUserId 101634608 ;
+    sr:profileUrl "https://github.com/qwerwsc1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/104708741> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "nikhilagrawalsf" ;
+    sr:githubUserId 104708741 ;
+    sr:profileUrl "https://github.com/nikhilagrawalsf"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/109447983> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "DanceinDmajor" ;
+    sr:githubUserId 109447983 ;
+    sr:profileUrl "https://github.com/DanceinDmajor"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/132315878> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "llf30" ;
+    sr:githubUserId 132315878 ;
+    sr:profileUrl "https://github.com/llf30"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/136585730> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dahlian00" ;
+    sr:githubUserId 136585730 ;
+    sr:profileUrl "https://github.com/dahlian00"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/136906891> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "orange9105" ;
+    sr:githubUserId 136906891 ;
+    sr:profileUrl "https://github.com/orange9105"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/144588196> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zujia-w" ;
+    sr:githubUserId 144588196 ;
+    sr:profileUrl "https://github.com/zujia-w"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/149959895> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "op1009" ;
+    sr:githubUserId 149959895 ;
+    sr:profileUrl "https://github.com/op1009"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/17132927> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "joaopalmeiro" ;
+    sr:githubUserId 17132927 ;
+    sr:profileUrl "https://github.com/joaopalmeiro"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/175964303> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "erly-zhang" ;
+    sr:githubUserId 175964303 ;
+    sr:profileUrl "https://github.com/erly-zhang"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/180205446> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "arjunkshah" ;
+    sr:githubUserId 180205446 ;
+    sr:profileUrl "https://github.com/arjunkshah"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/206951365> a sr:GitHubAccount,
+        sr:GitHubBot ;
+    sr:githubLogin "cursor[bot]" ;
+    sr:githubUserId 206951365 ;
+    sr:profileUrl "https://github.com/cursor[bot]"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/231574583> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ipezygj" ;
+    sr:githubUserId 231574583 ;
+    sr:profileUrl "https://github.com/ipezygj"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/237905827> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "adhabnr-ux" ;
+    sr:githubUserId 237905827 ;
+    sr:profileUrl "https://github.com/adhabnr-ux"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/250658088> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "AUTHENSOR" ;
+    sr:githubUserId 250658088 ;
+    sr:profileUrl "https://github.com/AUTHENSOR"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/29146835> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Lv996331209" ;
+    sr:githubUserId 29146835 ;
+    sr:profileUrl "https://github.com/Lv996331209"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/298017155> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shaurya416" ;
+    sr:githubUserId 298017155 ;
+    sr:profileUrl "https://github.com/shaurya416"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/31852410> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sunggukcha" ;
+    sr:githubUserId 31852410 ;
+    sr:profileUrl "https://github.com/sunggukcha"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/42505434> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Yunnglin" ;
+    sr:githubUserId 42505434 ;
+    sr:profileUrl "https://github.com/Yunnglin"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/44236100> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zwq2018" ;
+    sr:githubUserId 44236100 ;
+    sr:profileUrl "https://github.com/zwq2018"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/48615375> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Coobiw" ;
+    sr:githubUserId 48615375 ;
+    sr:profileUrl "https://github.com/Coobiw"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/65839112> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "lihaoran-hub" ;
+    sr:githubUserId 65839112 ;
+    sr:profileUrl "https://github.com/lihaoran-hub"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/68192416> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "polestar-z" ;
+    sr:githubUserId 68192416 ;
+    sr:profileUrl "https://github.com/polestar-z"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/70879405> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shumayl2" ;
+    sr:githubUserId 70879405 ;
+    sr:profileUrl "https://github.com/shumayl2"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/71324430> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "FanqingM" ;
+    sr:githubUserId 71324430 ;
+    sr:profileUrl "https://github.com/FanqingM"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/80698753> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "fatemehpesaran310" ;
+    sr:githubUserId 80698753 ;
+    sr:profileUrl "https://github.com/fatemehpesaran310"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/87471734> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Lotusymt" ;
+    sr:githubUserId 87471734 ;
+    sr:profileUrl "https://github.com/Lotusymt"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/89053279> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "hutingz" ;
+    sr:githubUserId 89053279 ;
+    sr:profileUrl "https://github.com/hutingz"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/89628732> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dragonlzm" ;
+    sr:githubUserId 89628732 ;
+    sr:profileUrl "https://github.com/dragonlzm"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/94438790> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "jacklee018" ;
+    sr:githubUserId 94438790 ;
+    sr:profileUrl "https://github.com/jacklee018"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1677818365> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1677818365 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/90133533> ;
+    sr:issueClosedAt "2023-04-22T05:24:19+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-04-21T05:08:35+00:00"^^xsd:dateTime ;
+    sr:issueNumber 15 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Some Confusions Regarding Your Paper" ;
+    sr:issueUpdatedAt "2023-04-22T05:24:19+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/15"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1706862502> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1706862502 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/90133533> ;
+    sr:issueClosedAt "2023-05-20T00:37:20+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-05-12T03:31:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 16 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Some confusion about the code you published" ;
+    sr:issueUpdatedAt "2023-05-20T00:37:20+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/16"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1747666726> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1747666726 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/101634608> ;
+    sr:issueClosedAt "2023-06-09T19:09:48+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-08T11:04:03+00:00"^^xsd:dateTime ;
+    sr:issueNumber 18 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Where can I find these files?" ;
+    sr:issueUpdatedAt "2023-06-09T19:09:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/18"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1870820509> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1870820509 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/89053279> ;
+    sr:issueClosedAt "2023-08-30T07:43:42+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-08-29T03:34:49+00:00"^^xsd:dateTime ;
+    sr:issueNumber 19 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Where can I get pretrained weights for autoencoder？" ;
+    sr:issueUpdatedAt "2023-08-30T07:43:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/19"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1944480597> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1944480597 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/130481211> ;
+    sr:issueClosedAt "2023-10-16T13:22:26+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-10-16T06:38:28+00:00"^^xsd:dateTime ;
+    sr:issueNumber 20 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "explain the API" ;
+    sr:issueUpdatedAt "2023-10-17T14:33:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/20"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1947586454> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1947586454 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/130481211> ;
+    sr:issueClosedAt "2023-10-17T17:24:05+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-10-17T14:35:16+00:00"^^xsd:dateTime ;
+    sr:issueNumber 21 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "explain the API" ;
+    sr:issueUpdatedAt "2023-10-18T06:26:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/21"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1974142070> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1974142070 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/130481211> ;
+    sr:issueClosedAt "2023-11-17T03:27:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-11-02T12:25:53+00:00"^^xsd:dateTime ;
+    sr:issueNumber 22 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "missing euroc_ Dataset.py file" ;
+    sr:issueUpdatedAt "2023-11-17T03:27:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1986009569> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1986009569 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/149959895> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-11-09T16:38:03+00:00"^^xsd:dateTime ;
+    sr:issueNumber 23 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Unable to install torch==1.7.1" ;
+    sr:issueUpdatedAt "2023-11-17T11:27:26+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/23"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1992085397> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 1992085397 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/130481211> ;
+    sr:issueCommentCount 10 ;
+    sr:issueCreatedAt "2023-11-14T06:37:46+00:00"^^xsd:dateTime ;
+    sr:issueNumber 24 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Why did I not train well according to your method?" ;
+    sr:issueUpdatedAt "2023-12-11T01:29:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/24"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2513721489> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 2513721489 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/44236100> ;
+    sr:issueClosedAt "2025-02-09T03:33:03+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-09-09T11:41:23+00:00"^^xsd:dateTime ;
+    sr:issueNumber 4 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Update a chart understanding paper" ;
+    sr:issueUpdatedAt "2025-02-09T03:33:03+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/4"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2025-02-09T03:33:03+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/2540228413> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 2540228413 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/48615375> ;
+    sr:issueClosedAt "2025-02-09T03:29:38+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2024-09-21T12:33:23+00:00"^^xsd:dateTime ;
+    sr:issueNumber 5 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add `ChartMoE` into `ChartQA` and `Chart to Code`" ;
+    sr:issueUpdatedAt "2025-03-19T05:42:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/5"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2025-02-09T03:29:38+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/2570318261> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 2570318261 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/71324430> ;
+    sr:issueClosedAt "2025-02-23T18:46:41+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-10-07T12:36:19+00:00"^^xsd:dateTime ;
+    sr:issueNumber 6 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ChartAssistant is accepted by ACL2024" ;
+    sr:issueUpdatedAt "2025-02-23T18:46:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/issues/6"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2625214248> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/408447491> ;
+    sr:githubIssueId 2625214248 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/87471734> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-10-30T20:00:51+00:00"^^xsd:dateTime ;
+    sr:issueNumber 26 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Pretrained weights for resnet and autoencoder" ;
+    sr:issueUpdatedAt "2026-01-23T03:12:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ArminMasoumian/GCNDepth/issues/26"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2752382898> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2752382898 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/132315878> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-12-20T10:02:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 88 ;
+    sr:issueState "open" ;
+    sr:issueTitle "训练报错： forward() got an unexpected keyword argument 'cache_position'" ;
+    sr:issueUpdatedAt "2025-03-06T06:17:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/88"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2759214836> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2759214836 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/94438790> ;
+    sr:issueClosedAt "2024-12-30T05:03:42+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-12-26T03:06:41+00:00"^^xsd:dateTime ;
+    sr:issueNumber 89 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Stage2: Errors occured when changing model_max_length to 1024" ;
+    sr:issueUpdatedAt "2024-12-30T05:06:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/89"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2769310258> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2769310258 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/109447983> ;
+    sr:issueCommentCount 15 ;
+    sr:issueCreatedAt "2025-01-05T14:53:27+00:00"^^xsd:dateTime ;
+    sr:issueNumber 90 ;
+    sr:issueState "open" ;
+    sr:issueTitle "pyg-lib问题" ;
+    sr:issueUpdatedAt "2025-11-06T08:34:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/90"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2870453764> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2870453764 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/175964303> ;
+    sr:issueClosedAt "2025-02-22T08:05:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-02-22T03:42:28+00:00"^^xsd:dateTime ;
+    sr:issueNumber 91 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "训练报错GraphLlamaConfig 类缺少属性 pretrain_graph_model_path" ;
+    sr:issueUpdatedAt "2025-02-22T08:05:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/91"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2957816484> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2957816484 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/144588196> ;
+    sr:issueClosedAt "2025-03-29T11:42:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-03-29T06:39:09+00:00"^^xsd:dateTime ;
+    sr:issueNumber 92 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: 'GraphLlamaConfig' object has no attribute 'pretrain_graph_model_path'" ;
+    sr:issueUpdatedAt "2025-03-29T11:42:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/92"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2959935779> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 2959935779 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/29146835> ;
+    sr:issueClosedAt "2025-04-02T06:20:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-03-31T09:20:22+00:00"^^xsd:dateTime ;
+    sr:issueNumber 7 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ChartBench Dataset URL link error" ;
+    sr:issueUpdatedAt "2025-04-02T06:20:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/issues/7"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2995519003> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 2995519003 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/68192416> ;
+    sr:issueClosedAt "2025-05-12T02:29:58+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-04-15T07:55:09+00:00"^^xsd:dateTime ;
+    sr:issueNumber 93 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "WARNING: tokenization mismatch:" ;
+    sr:issueUpdatedAt "2025-05-12T02:29:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/93"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3061668689> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 3061668689 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/65839112> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-05-14T02:59:33+00:00"^^xsd:dateTime ;
+    sr:issueNumber 94 ;
+    sr:issueState "open" ;
+    sr:issueTitle "GraphGPT训练结束后如何使用" ;
+    sr:issueUpdatedAt "2025-05-14T02:59:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/94"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3124145877> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 3124145877 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/136906891> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-06-06T09:05:00+00:00"^^xsd:dateTime ;
+    sr:issueNumber 95 ;
+    sr:issueState "open" ;
+    sr:issueTitle "环境存在冲突" ;
+    sr:issueUpdatedAt "2025-06-06T09:05:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/95"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3143690993> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 3143690993 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/80698753> ;
+    sr:issueClosedAt "2025-06-17T06:27:38+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-06-13T14:00:30+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add Text2Chart31 paper" ;
+    sr:issueUpdatedAt "2025-06-17T06:28:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/8"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2025-06-17T06:27:38+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/3391385041> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 3391385041 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/70879405> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-09-07T09:00:53+00:00"^^xsd:dateTime ;
+    sr:issueNumber 9 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Update README.md" ;
+    sr:issueUpdatedAt "2025-09-07T09:38:54+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/9"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3674027274> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 3674027274 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/126931904> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-11-28T08:18:45+00:00"^^xsd:dateTime ;
+    sr:issueNumber 96 ;
+    sr:issueState "open" ;
+    sr:issueTitle "nnnn" ;
+    sr:issueUpdatedAt "2025-12-10T07:58:15+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/96"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3714045401> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/705126352> ;
+    sr:githubIssueId 3714045401 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/126931904> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-12-10T07:57:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 97 ;
+    sr:issueState "open" ;
+    sr:issueTitle "How did you obtain the paper titles/abstracts for PubMed and arXiv nodes?" ;
+    sr:issueUpdatedAt "2025-12-10T07:57:05+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/HKUDS/GraphGPT/issues/97"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3726561503> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 3726561503 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/89628732> ;
+    sr:issueClosedAt "2025-12-19T02:47:55+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-12-14T00:41:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 10 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Could you please add our WACV2026 paper about chart understanding" ;
+    sr:issueUpdatedAt "2025-12-19T02:47:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/issues/10"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3837615961> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 3837615961 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/136585730> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-01-21T10:34:45+00:00"^^xsd:dateTime ;
+    sr:issueNumber 11 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Update README with SBS Figures details" ;
+    sr:issueUpdatedAt "2026-01-21T10:34:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/11"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4137659651> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 4137659651 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/17132927> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-25T18:40:42+00:00"^^xsd:dateTime ;
+    sr:issueNumber 12 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add Benchmark It Yourself (BIY): Preparing a Dataset and Benchmarking AI Models for Scatterplot-Related Tasks paper" ;
+    sr:issueUpdatedAt "2026-03-25T18:41:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/issues/12"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4771239073> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 4771239073 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/180205446> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-06-29T20:05:39+00:00"^^xsd:dateTime ;
+    sr:issueNumber 466 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Feature: Prompt compression to reduce evaluation token costs" ;
+    sr:issueUpdatedAt "2026-06-30T04:00:38+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/466"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4848489393> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 4848489393 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/166820912> ;
+    sr:issueClosedAt "2026-07-09T18:56:47+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-07-09T17:31:39+00:00"^^xsd:dateTime ;
+    sr:issueNumber 468 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add Perception MoA (Half-Layer) - Patience v1" ;
+    sr:issueUpdatedAt "2026-07-10T04:40:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/pull/468"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4852070719> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 4852070719 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/166820912> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-07-10T04:42:52+00:00"^^xsd:dateTime ;
+    sr:issueNumber 469 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Perception moa half layer patience v1" ;
+    sr:issueUpdatedAt "2026-07-10T04:42:52+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/pull/469"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4967306425> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 4967306425 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/42505434> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-07-24T09:52:17+00:00"^^xsd:dateTime ;
+    sr:issueNumber 470 ;
+    sr:issueState "open" ;
+    sr:issueTitle "EvalScope integration: one-command evaluation support for AlpacaEval2.0" ;
+    sr:issueUpdatedAt "2026-07-24T09:52:17+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/470"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5023586051> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5023586051 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/231574583> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-07-30T20:08:55+00:00"^^xsd:dateTime ;
+    sr:issueNumber 471 ;
+    sr:issueState "open" ;
+    sr:issueTitle "AlpacaEval 2 leaderboard: discrete_win_rate for aligner-2b_gpt-4-turbo-2024-04-09 disagrees with its own n_wins/n_draws (only row of 223)" ;
+    sr:issueUpdatedAt "2026-07-30T20:08:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/471"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5148755379> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5148755379 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/250658088> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-08-14T05:52:22+00:00"^^xsd:dateTime ;
+    sr:issueNumber 472 ;
+    sr:issueState "open" ;
+    sr:issueTitle "regex_parser extracts pairwise verdicts by match order over free text; candidates can seed the tokens it trusts" ;
+    sr:issueUpdatedAt "2026-08-14T05:52:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/472"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5223572152> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5223572152 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/237905827> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-08-22T19:29:13+00:00"^^xsd:dateTime ;
+    sr:issueNumber 473 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Optional EvalPort interop for model_outputs/reference_outputs and pairwise preferences" ;
+    sr:issueUpdatedAt "2026-08-22T19:29:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/473"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5276472471> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5276472471 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/206951365> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-08-28T08:46:24+00:00"^^xsd:dateTime ;
+    sr:issueNumber 474 ;
+    sr:issueState "open" ;
+    sr:issueTitle "OpenAI-compat: openai_completions with openai_api_base /v1, not Hugging Face" ;
+    sr:issueUpdatedAt "2026-08-28T08:46:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/474"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5557641966> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5557641966 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/298017155> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-09-23T18:20:37+00:00"^^xsd:dateTime ;
+    sr:issueNumber 475 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Failed judge calls are dropped from the win-rate denominator and nothing gates n_total against the instruction count, so win_rate rises as rows fail" ;
+    sr:issueUpdatedAt "2026-09-23T18:20:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/475"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5689333711> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/741251289> ;
+    sr:githubIssueId 5689333711 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/31852410> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-10-03T11:49:35+00:00"^^xsd:dateTime ;
+    sr:issueNumber 13 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add visual answerability benchmark to chart question answering" ;
+    sr:issueUpdatedAt "2026-10-03T11:49:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/khuangaf/Awesome-Chart-Understanding/pull/13"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5896376318> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/645270986> ;
+    sr:githubIssueId 5896376318 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/104708741> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-10-17T08:09:50+00:00"^^xsd:dateTime ;
+    sr:issueNumber 476 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Model output can inject forged chat-role messages into the judge prompt (ChatML split, no sanitization)" ;
+    sr:issueUpdatedAt "2026-10-17T08:11:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/tatsu-lab/alpaca_eval/issues/476"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/126931904> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "MrWan001" ;
+    sr:githubUserId 126931904 ;
+    sr:profileUrl "https://github.com/MrWan001"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/166820912> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Derstgamd" ;
+    sr:githubUserId 166820912 ;
+    sr:profileUrl "https://github.com/Derstgamd"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/90133533> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "takisu0916" ;
+    sr:githubUserId 90133533 ;
+    sr:profileUrl "https://github.com/takisu0916"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/130481211> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zsh1223" ;
+    sr:githubUserId 130481211 ;
+    sr:profileUrl "https://github.com/zsh1223"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/408447491> sr:hasIssue <https://semrepo.org/resource/github-issue/1677818365>,
+        <https://semrepo.org/resource/github-issue/1706862502>,
+        <https://semrepo.org/resource/github-issue/1747666726>,
+        <https://semrepo.org/resource/github-issue/1870820509>,
+        <https://semrepo.org/resource/github-issue/1944480597>,
+        <https://semrepo.org/resource/github-issue/1947586454>,
+        <https://semrepo.org/resource/github-issue/1974142070>,
+        <https://semrepo.org/resource/github-issue/1986009569>,
+        <https://semrepo.org/resource/github-issue/1992085397>,
+        <https://semrepo.org/resource/github-issue/2625214248> .
+
+<https://semrepo.org/resource/repository/645270986> sr:hasIssue <https://semrepo.org/resource/github-issue/4771239073>,
+        <https://semrepo.org/resource/github-issue/4848489393>,
+        <https://semrepo.org/resource/github-issue/4852070719>,
+        <https://semrepo.org/resource/github-issue/4967306425>,
+        <https://semrepo.org/resource/github-issue/5023586051>,
+        <https://semrepo.org/resource/github-issue/5148755379>,
+        <https://semrepo.org/resource/github-issue/5223572152>,
+        <https://semrepo.org/resource/github-issue/5276472471>,
+        <https://semrepo.org/resource/github-issue/5557641966>,
+        <https://semrepo.org/resource/github-issue/5896376318> .
+
+<https://semrepo.org/resource/repository/705126352> sr:hasIssue <https://semrepo.org/resource/github-issue/2752382898>,
+        <https://semrepo.org/resource/github-issue/2759214836>,
+        <https://semrepo.org/resource/github-issue/2769310258>,
+        <https://semrepo.org/resource/github-issue/2870453764>,
+        <https://semrepo.org/resource/github-issue/2957816484>,
+        <https://semrepo.org/resource/github-issue/2995519003>,
+        <https://semrepo.org/resource/github-issue/3061668689>,
+        <https://semrepo.org/resource/github-issue/3124145877>,
+        <https://semrepo.org/resource/github-issue/3674027274>,
+        <https://semrepo.org/resource/github-issue/3714045401> .
+
+<https://semrepo.org/resource/repository/741251289> sr:hasIssue <https://semrepo.org/resource/github-issue/2513721489>,
+        <https://semrepo.org/resource/github-issue/2540228413>,
+        <https://semrepo.org/resource/github-issue/2570318261>,
+        <https://semrepo.org/resource/github-issue/2959935779>,
+        <https://semrepo.org/resource/github-issue/3143690993>,
+        <https://semrepo.org/resource/github-issue/3391385041>,
+        <https://semrepo.org/resource/github-issue/3726561503>,
+        <https://semrepo.org/resource/github-issue/3837615961>,
+        <https://semrepo.org/resource/github-issue/4137659651>,
+        <https://semrepo.org/resource/github-issue/5689333711> .
+

@@ -1,0 +1,293 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/118165258> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "HKUDS" ;
+    sr:githubUserId 118165258 ;
+    sr:profileUrl "https://github.com/HKUDS"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/12652488> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "khuangaf" ;
+    sr:githubUserId 12652488 ;
+    sr:profileUrl "https://github.com/khuangaf"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/22779182> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "beykyle" ;
+    sr:githubUserId 22779182 ;
+    sr:profileUrl "https://github.com/beykyle"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/25202078> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "epfl-dlab" ;
+    sr:githubUserId 25202078 ;
+    sr:profileUrl "https://github.com/epfl-dlab"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/61893194> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "tatsu-lab" ;
+    sr:githubUserId 61893194 ;
+    sr:profileUrl "https://github.com/tatsu-lab"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/74140596> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ArminMasoumian" ;
+    sr:githubUserId 74140596 ;
+    sr:profileUrl "https://github.com/ArminMasoumian"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/96621360> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "wlb12345" ;
+    sr:githubUserId 96621360 ;
+    sr:profileUrl "https://github.com/wlb12345"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/jupyter-notebook> a sr:ProgrammingLanguage ;
+    sr:languageName "Jupyter Notebook" .
+
+<https://semrepo.org/resource/repository-snapshot/408447491/2026-11-11T11:50:24.241593+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:50:24.241593+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "Self-Supervised CNN-GCN Autoencoder for Monocular Depth Estimation" ;
+    sr:forksCount 17 ;
+    sr:fullName "ArminMasoumian/GCNDepth" ;
+    sr:hasLicense <https://spdx.org/licenses/MIT> ;
+    sr:isFork false ;
+    sr:lastCommitAt "2023-11-17T03:26:01+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 3 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/74140596> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2023-11-17T03:26:01+00:00"^^xsd:dateTime ;
+    sr:repositoryName "GCNDepth" ;
+    sr:sizeKb 7892 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/408447491> ;
+    sr:starsCount 119 ;
+    sr:updatedAt "2026-08-20T21:09:04+00:00"^^xsd:dateTime ;
+    sr:watchersCount 4 .
+
+<https://semrepo.org/resource/repository-snapshot/450564762/2026-11-11T11:51:04.294295+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:51:04.294295+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "Uncertainty quantification of optical model parameters in fission fragment de-excitation" ;
+    sr:forksCount 0 ;
+    sr:fullName "beykyle/omp-uq" ;
+    sr:hasLicense <https://spdx.org/licenses/MIT> ;
+    sr:isFork false ;
+    sr:lastCommitAt "2025-03-19T04:44:11+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 0 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/22779182> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2025-03-19T04:44:13+00:00"^^xsd:dateTime ;
+    sr:repositoryName "omp-uq" ;
+    sr:sizeKb 1535 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/450564762> ;
+    sr:starsCount 2 ;
+    sr:updatedAt "2026-01-11T04:02:48+00:00"^^xsd:dateTime ;
+    sr:watchersCount 1 .
+
+<https://semrepo.org/resource/repository-snapshot/645270986/2026-11-11T11:50:28.663223+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:50:28.663223+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "An automatic evaluator for instruction-following language models. Human-validated, high-quality, cheap, and fast." ;
+    sr:forksCount 315 ;
+    sr:fullName "tatsu-lab/alpaca_eval" ;
+    sr:hasLicense <https://spdx.org/licenses/Apache-2.0> ;
+    sr:hasTopic <https://semrepo.org/resource/topic/deep-learning>,
+        <https://semrepo.org/resource/topic/evaluation>,
+        <https://semrepo.org/resource/topic/foundation-models>,
+        <https://semrepo.org/resource/topic/instruction-following>,
+        <https://semrepo.org/resource/topic/large-language-models>,
+        <https://semrepo.org/resource/topic/leaderboard>,
+        <https://semrepo.org/resource/topic/nlp>,
+        <https://semrepo.org/resource/topic/rlhf> ;
+    sr:homepageUrl "https://tatsu-lab.github.io/alpaca_eval/"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2025-08-09T07:23:36+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 36 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/61893194> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/jupyter-notebook> ;
+    sr:pushedAt "2025-08-09T07:23:36+00:00"^^xsd:dateTime ;
+    sr:repositoryName "alpaca_eval" ;
+    sr:sizeKb 315007 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/645270986> ;
+    sr:starsCount 2025 ;
+    sr:updatedAt "2026-11-11T08:36:44+00:00"^^xsd:dateTime ;
+    sr:watchersCount 8 .
+
+<https://semrepo.org/resource/repository-snapshot/705126352/2026-11-11T11:51:02.035530+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:51:02.035530+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "[SIGIR'2024] \"GraphGPT: Graph Instruction Tuning for Large Language Models\"" ;
+    sr:forksCount 86 ;
+    sr:fullName "HKUDS/GraphGPT" ;
+    sr:hasLicense <https://spdx.org/licenses/Apache-2.0> ;
+    sr:hasTopic <https://semrepo.org/resource/topic/graph-learning>,
+        <https://semrepo.org/resource/topic/graph-neural-networks>,
+        <https://semrepo.org/resource/topic/instruction-tuning>,
+        <https://semrepo.org/resource/topic/large-language-models>,
+        <https://semrepo.org/resource/topic/text-graph> ;
+    sr:homepageUrl "https://arxiv.org/abs/2310.13023"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2024-06-25T13:27:00+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 28 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/118165258> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2024-06-25T13:27:00+00:00"^^xsd:dateTime ;
+    sr:repositoryName "GraphGPT" ;
+    sr:sizeKb 38323 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/705126352> ;
+    sr:starsCount 831 ;
+    sr:updatedAt "2026-11-06T12:06:29+00:00"^^xsd:dateTime ;
+    sr:watchersCount 6 .
+
+<https://semrepo.org/resource/repository-snapshot/741251289/2026-11-11T11:50:17.143579+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:50:17.143579+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "A curated list of recent and past chart understanding work based on our IEEE TKDE survey paper: From Pixels to Insights: A Survey on Automatic Chart Understanding in the Era of Large Foundation Models." ;
+    sr:forksCount 25 ;
+    sr:fullName "khuangaf/Awesome-Chart-Understanding" ;
+    sr:hasTopic <https://semrepo.org/resource/topic/awesome-list>,
+        <https://semrepo.org/resource/topic/chart-captioning>,
+        <https://semrepo.org/resource/topic/chart-question-answering>,
+        <https://semrepo.org/resource/topic/chart-summarization>,
+        <https://semrepo.org/resource/topic/chart-understanding>,
+        <https://semrepo.org/resource/topic/large-vision-language-models> ;
+    sr:homepageUrl "https://arxiv.org/abs/2403.12027"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2025-12-17T15:36:32+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 4 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/12652488> ;
+    sr:pushedAt "2025-12-17T15:36:32+00:00"^^xsd:dateTime ;
+    sr:repositoryName "Awesome-Chart-Understanding" ;
+    sr:sizeKb 178 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/741251289> ;
+    sr:starsCount 240 ;
+    sr:updatedAt "2026-11-05T08:51:19+00:00"^^xsd:dateTime ;
+    sr:watchersCount 5 .
+
+<https://semrepo.org/resource/repository-snapshot/790680512/2026-11-11T11:50:15.355616+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:50:15.355616+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "Implementation of  Training-Free Unsupervised Prompt for Vision-Language Models (TFUP)" ;
+    sr:forksCount 0 ;
+    sr:fullName "wlb12345/TFUP" ;
+    sr:isFork false ;
+    sr:lastCommitAt "2024-04-25T02:48:29+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 0 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/96621360> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2024-04-25T02:48:29+00:00"^^xsd:dateTime ;
+    sr:repositoryName "TFUP" ;
+    sr:sizeKb 2074 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/790680512> ;
+    sr:starsCount 8 ;
+    sr:updatedAt "2025-07-10T04:53:15+00:00"^^xsd:dateTime ;
+    sr:watchersCount 1 .
+
+<https://semrepo.org/resource/repository-snapshot/823210233/2026-11-11T11:50:20.636141+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-11T11:50:20.636141+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "This repo contains the code for Sketch-Guided Constrained Decoding, published at ACL 2024(main)" ;
+    sr:forksCount 1 ;
+    sr:fullName "epfl-dlab/SketchGCD" ;
+    sr:homepageUrl "https://arxiv.org/abs/2401.09967"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2024-07-02T15:43:27+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 0 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/25202078> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2024-07-02T15:43:41+00:00"^^xsd:dateTime ;
+    sr:repositoryName "SketchGCD" ;
+    sr:sizeKb 3075 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/823210233> ;
+    sr:starsCount 6 ;
+    sr:updatedAt "2025-11-13T17:05:59+00:00"^^xsd:dateTime ;
+    sr:watchersCount 1 .
+
+<https://semrepo.org/resource/repository/408447491> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/408447491/2026-11-11T11:50:24.241593+00:00> .
+
+<https://semrepo.org/resource/repository/450564762> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/450564762/2026-11-11T11:51:04.294295+00:00> .
+
+<https://semrepo.org/resource/repository/645270986> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/645270986/2026-11-11T11:50:28.663223+00:00> .
+
+<https://semrepo.org/resource/repository/705126352> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/705126352/2026-11-11T11:51:02.035530+00:00> .
+
+<https://semrepo.org/resource/repository/741251289> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/741251289/2026-11-11T11:50:17.143579+00:00> .
+
+<https://semrepo.org/resource/repository/790680512> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/790680512/2026-11-11T11:50:15.355616+00:00> .
+
+<https://semrepo.org/resource/repository/823210233> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/823210233/2026-11-11T11:50:20.636141+00:00> .
+
+<https://semrepo.org/resource/topic/awesome-list> a sr:Topic ;
+    sr:topicName "awesome-list" .
+
+<https://semrepo.org/resource/topic/chart-captioning> a sr:Topic ;
+    sr:topicName "chart-captioning" .
+
+<https://semrepo.org/resource/topic/chart-question-answering> a sr:Topic ;
+    sr:topicName "chart-question-answering" .
+
+<https://semrepo.org/resource/topic/chart-summarization> a sr:Topic ;
+    sr:topicName "chart-summarization" .
+
+<https://semrepo.org/resource/topic/chart-understanding> a sr:Topic ;
+    sr:topicName "chart-understanding" .
+
+<https://semrepo.org/resource/topic/deep-learning> a sr:Topic ;
+    sr:topicName "deep-learning" .
+
+<https://semrepo.org/resource/topic/evaluation> a sr:Topic ;
+    sr:topicName "evaluation" .
+
+<https://semrepo.org/resource/topic/foundation-models> a sr:Topic ;
+    sr:topicName "foundation-models" .
+
+<https://semrepo.org/resource/topic/graph-learning> a sr:Topic ;
+    sr:topicName "graph-learning" .
+
+<https://semrepo.org/resource/topic/graph-neural-networks> a sr:Topic ;
+    sr:topicName "graph-neural-networks" .
+
+<https://semrepo.org/resource/topic/instruction-following> a sr:Topic ;
+    sr:topicName "instruction-following" .
+
+<https://semrepo.org/resource/topic/instruction-tuning> a sr:Topic ;
+    sr:topicName "instruction-tuning" .
+
+<https://semrepo.org/resource/topic/large-vision-language-models> a sr:Topic ;
+    sr:topicName "large-vision-language-models" .
+
+<https://semrepo.org/resource/topic/leaderboard> a sr:Topic ;
+    sr:topicName "leaderboard" .
+
+<https://semrepo.org/resource/topic/nlp> a sr:Topic ;
+    sr:topicName "nlp" .
+
+<https://semrepo.org/resource/topic/rlhf> a sr:Topic ;
+    sr:topicName "rlhf" .
+
+<https://semrepo.org/resource/topic/text-graph> a sr:Topic ;
+    sr:topicName "text-graph" .
+
+<https://semrepo.org/resource/topic/large-language-models> a sr:Topic ;
+    sr:topicName "large-language-models" .
+
+<https://spdx.org/licenses/Apache-2.0> a sr:License ;
+    sr:licenseName "Apache License 2.0" ;
+    sr:spdxId "Apache-2.0" .
+
+<https://spdx.org/licenses/MIT> a sr:License ;
+    sr:licenseName "MIT License" ;
+    sr:spdxId "MIT" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+

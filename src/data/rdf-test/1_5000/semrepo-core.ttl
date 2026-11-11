@@ -1,0 +1,279 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/10be2c02ddf65e01> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/ArminMasoumian/GCNDepth/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:24.818648+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/408447491> .
+
+<https://semrepo.org/resource/collection-activity/133acfac7724226e> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/ArminMasoumian/GCNDepth/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:26.153837+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/408447491> .
+
+<https://semrepo.org/resource/collection-activity/1b7601e07d4103b5> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/epfl-dlab/SketchGCD/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:21.508675+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/823210233> .
+
+<https://semrepo.org/resource/collection-activity/3a229fd943f2bc18> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/HKUDS/GraphGPT/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:51:02.382461+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/705126352> .
+
+<https://semrepo.org/resource/collection-activity/3a60aa70e130028d> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:15.813909+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/collection-activity/3dbbfa2dd347c8bc> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/beykyle/omp-uq/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:51:05.060438+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/450564762> .
+
+<https://semrepo.org/resource/collection-activity/526162bb11a2c77f> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/ArminMasoumian/GCNDepth/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-11T11:50:25.671343+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/408447491> .
+
+<https://semrepo.org/resource/collection-activity/65b81199ee0c7f56> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/tatsu-lab/alpaca_eval/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-11T11:50:30.143765+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/645270986> .
+
+<https://semrepo.org/resource/collection-activity/66d1140f2f5a81a6> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:17.562195+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/collection-activity/67b9c3f4064681e6> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/HKUDS/GraphGPT/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-11T11:51:02.581137+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/705126352> .
+
+<https://semrepo.org/resource/collection-activity/8bab35c98a13d42a> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/tatsu-lab/alpaca_eval/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:29.461942+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/645270986> .
+
+<https://semrepo.org/resource/collection-activity/8fd0f5c8dc50e3ee> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-11T11:50:17.766096+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/collection-activity/9a38235a1641b421> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/epfl-dlab/SketchGCD/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:21.220053+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/823210233> .
+
+<https://semrepo.org/resource/collection-activity/ac65a3587c75868f> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:16.036806+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/collection-activity/bcc8f360999df400> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/HKUDS/GraphGPT/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:51:03.390137+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/705126352> .
+
+<https://semrepo.org/resource/collection-activity/ccd0953f73638288> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/tatsu-lab/alpaca_eval/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-11T11:50:32.122381+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/645270986> .
+
+<https://semrepo.org/resource/collection-activity/d5fcdaa06f3236be> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/khuangaf/Awesome-Chart-Understanding/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:18.234214+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/collection-activity/da5b67445529915a> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/beykyle/omp-uq/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:51:04.621957+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/450564762> .
+
+<https://semrepo.org/resource/collection-activity/dcfdd354419c749b> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/epfl-dlab/SketchGCD/languages"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:21.004520+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/823210233> .
+
+<https://semrepo.org/resource/collection-activity/efce82d2a89ffe3c> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/beykyle/omp-uq/issues"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:51:04.825242+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/450564762> .
+
+<https://semrepo.org/resource/collection-activity/f7b65b8fe2cef879> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/wlb12345/TFUP/contributors"^^xsd:anyURI ;
+    sr:collectionSource "1_5000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-11T11:50:16.322435+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/source-repository-link/341900b702d62539> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/wlb12345/TFUP"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/wlb12345/tfup"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/790680512> .
+
+<https://semrepo.org/resource/source-repository-link/3b5217ac50c6121f> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/tatsu-lab/alpaca_eval"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/tatsu-lab/alpaca_eval"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/645270986> .
+
+<https://semrepo.org/resource/source-repository-link/3d0088e8f7e0c01f> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/epfl-dlab/SketchGCD"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/epfl-dlab/sketchgcd"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/823210233> .
+
+<https://semrepo.org/resource/source-repository-link/3ee6aaf3b176a89c> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/HKUDS/GraphGPT"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/hkuds/graphgpt"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/705126352> .
+
+<https://semrepo.org/resource/source-repository-link/4f89ae5ae1c7279d> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/csm9493/fc-aide-keras"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/64dd61b28dee07ab> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/zhoutianxun/data_free_kd_regression"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/738f3b667fe8e8f9> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/ArminMasoumian/GCNDepth"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/arminmasoumian/gcndepth"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/408447491> .
+
+<https://semrepo.org/resource/source-repository-link/753324c7467582d7> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/dyq0811/eeg-transformer-seq2seq"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/7d8f4b6abbcfd47c> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/denisyarats/drq"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/7e0d76e851b819be> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/dvlp-cmaterju/variational-augmentation-for-enhancing-historical-document-image-binarization"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/894ea61591831191> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/gsarti/pecore"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/97b709de7a45040e> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/pedidep/hep-th"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/9c1cf66a7f7cd5ea> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/quickvc/quickvoice-conversion"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/b876e9a4a1b885fd> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/khuangaf/Awesome-Chart-Understanding"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/khuangaf/awesome-chart-understanding"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/741251289> .
+
+<https://semrepo.org/resource/source-repository-link/c43f7a49ee900ee2> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/microsoft/TaxiNLI"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/d2b4f45877dfd05e> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/limuhit/scae"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/d2f87f25b9774af0> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/junpan19/etdm"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/d4710c986fd25864> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/simon-larsson/keras-swa"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/e0077ceeb2cd5da5> a sr:SourceRepositoryLink ;
+    sr:originalRepositoryUrl "https://github.com/interdigitalinc/colde"^^xsd:anyURI ;
+    sr:resolutionStatus sr:ApiError .
+
+<https://semrepo.org/resource/source-repository-link/e2e045f30cf6e444> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/beykyle/omp-uq"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/beykyle/omp-uq"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/450564762> .
+
+<https://semrepo.org/resource/repository/408447491> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/ArminMasoumian/GCNDepth"^^xsd:anyURI ;
+    sr:createdAt "2021-09-20T13:09:24+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 408447491 .
+
+<https://semrepo.org/resource/repository/450564762> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/beykyle/omp-uq"^^xsd:anyURI ;
+    sr:createdAt "2022-01-21T16:35:59+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 450564762 .
+
+<https://semrepo.org/resource/repository/645270986> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/tatsu-lab/alpaca_eval"^^xsd:anyURI ;
+    sr:createdAt "2023-05-25T09:35:28+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 645270986 .
+
+<https://semrepo.org/resource/repository/705126352> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/HKUDS/GraphGPT"^^xsd:anyURI ;
+    sr:createdAt "2023-10-15T05:13:24+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 705126352 .
+
+<https://semrepo.org/resource/repository/741251289> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/khuangaf/Awesome-Chart-Understanding"^^xsd:anyURI ;
+    sr:createdAt "2024-01-10T02:19:01+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 741251289 .
+
+<https://semrepo.org/resource/repository/790680512> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/wlb12345/TFUP"^^xsd:anyURI ;
+    sr:createdAt "2024-04-23T10:28:53+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 790680512 .
+
+<https://semrepo.org/resource/repository/823210233> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/epfl-dlab/SketchGCD"^^xsd:anyURI ;
+    sr:createdAt "2024-07-02T15:35:16+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 823210233 .
+

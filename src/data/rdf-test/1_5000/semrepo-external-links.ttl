@@ -1,0 +1,238 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/absolute-distance-prediction-based-on-deep> dcterms:creator <https://semopenalex.org/author/A5057237980>,
+        <https://semopenalex.org/author/A5058055651>,
+        <https://semopenalex.org/author/A5077257584>,
+        <https://semopenalex.org/author/A5085126924> .
+
+<https://linkedpaperswithcode.com/paper/alpacafarm-a-simulation-framework-for-methods-1> dcterms:creator <https://semopenalex.org/author/A5012276327>,
+        <https://semopenalex.org/author/A5017940830>,
+        <https://semopenalex.org/author/A5025255782>,
+        <https://semopenalex.org/author/A5025335469>,
+        <https://semopenalex.org/author/A5032176444>,
+        <https://semopenalex.org/author/A5073806117>,
+        <https://semopenalex.org/author/A5075208513>,
+        <https://semopenalex.org/author/A5090739892> .
+
+<https://linkedpaperswithcode.com/paper/gcndepth-self-supervised-monocular-depth> dcterms:creator <https://semopenalex.org/author/A5057237980>,
+        <https://semopenalex.org/author/A5077257584>,
+        <https://semopenalex.org/author/A5085126924> .
+
+<https://linkedpaperswithcode.com/paper/graphgpt-graph-instruction-tuning-for-large> dcterms:creator <https://semopenalex.org/author/A5003799076>,
+        <https://semopenalex.org/author/A5007972098>,
+        <https://semopenalex.org/author/A5011681363>,
+        <https://semopenalex.org/author/A5024168844>,
+        <https://semopenalex.org/author/A5032745070>,
+        <https://semopenalex.org/author/A5054482111>,
+        <https://semopenalex.org/author/A5082089521>,
+        <https://semopenalex.org/author/A5090159721> .
+
+<https://linkedpaperswithcode.com/paper/sketch-guided-constrained-decoding-for> dcterms:creator <https://semopenalex.org/author/A5007292959>,
+        <https://semopenalex.org/author/A5054165469>,
+        <https://semopenalex.org/author/A5057031908>,
+        <https://semopenalex.org/author/A5073622492>,
+        <https://semopenalex.org/author/A5081763612> .
+
+<https://linkedpaperswithcode.com/paper/training-free-unsupervised-prompt-for-vision> dcterms:creator <https://semopenalex.org/author/A5009784397>,
+        <https://semopenalex.org/author/A5026805435>,
+        <https://semopenalex.org/author/A5040257967>,
+        <https://semopenalex.org/author/A5070307446>,
+        <https://semopenalex.org/author/A5086280684> .
+
+<https://semrepo.org/resource/external-link/111073abe3188e849fea5c13e08c12f704bc3c72947eda8ee78211b20be00585> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/450564762> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/beykyle/omp-uq"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/1d1c4785e71e2a17184f11f18076010492efe743704b357c6e6658826a112831> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/823210233> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/epfl-dlab/sketchgcd"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/3ed6262555b7e46b0d8dca6cdcacc1f6da5c3a07ec1b3b8f3def702f5b04363d> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/823210233> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/sketch-guided-constrained-decoding-for"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/4c0d4af79b8a5c71b612b8428654794df022a23139cf001e98295d69a0fde2e8> a sr:ExternalLink ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/24327668> ;
+    sr:linkTarget "https://semopenalex.org/author/A5032176444"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/6ffc2be231ed37df464016abbb942e0d7a34100997ac18e4fd4ed44346edc814> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/450564762> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/uncertainty-quantification-of-optical-models"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/73652e20a53e6e258182c21fdcc1a600549a92093d446d33032dbe1ebb6fe7e8> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/705126352> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/graphgpt-graph-instruction-tuning-for-large"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/7cb5f9944cf44521455e45e5de7d4e4dfe9404f6455ddf5af224b79dc143e10a> a sr:ExternalLink ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/43330997> ;
+    sr:linkTarget "https://semopenalex.org/author/A5024168844"^^xsd:anyURI ;
+    sr:linkingMethod "fuzzy-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/84bdd2d46112ea2649298021f56d58f370d058b6b0a35364c8e3d7336884968c> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/645270986> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/length-controlled-alpacaeval-a-simple-way-to"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/85cafc3f919426d197b8ba581cb5f5e565e7da084335085f288cc9689e5b5003> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/705126352> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/GraphGPT%3A%20Graph%20Instruction%20Tuning%20for%20Large%20Language%20Models"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/96e95733afb14d55d073f5a212f8be5c8bab8dbd3a9d3eb207499bca2521e530> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/645270986> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/tatsu-lab/alpaca_eval"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/9c787c530496144323cdd6f23c7bb7cd47c27755f4afeedcf49ba2739e6ca504> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/408447491> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/arminmasoumian/gcndepth"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/a5ec754aa754541a6ce06bbd630cdc04254c54cf5d9697ace796ab50460ffa2a> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/705126352> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/hkuds/graphgpt"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/ac50bc7c07137ab49ae2ed9e99d2aea5894eda32e911da82a58e0e7bca8a5910> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/741251289> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/from-pixels-to-insights-a-survey-on-automatic"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/ad022cb0f48bbffada0b3a436c7a5b8382a275b73fc5ad41447ef716161456e2> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/645270986> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/alpacafarm-a-simulation-framework-for-methods-1"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/c26771a67e2805bbfef848380fbb668060a9e5c9aa810fe3fa245d903e6ee384> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/408447491> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/absolute-distance-prediction-based-on-deep"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/c28e29380a7c891c63518dc4a0b793e3ecd2bef7b2cfa7b3f308590fb5e39a25> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/790680512> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/training-free-unsupervised-prompt-for-vision"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/cdcb1bf7b0c6fbbbbaccf6f77f48221d7c1876492795dc476f4d9b60f3532d97> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/645270986> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/Length-Controlled%20AlpacaEval%3A%20A%20Simple%20Way%20to%20Debias%20Automatic%20Evaluators"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/d5170fb9ea5d476795fb8f66f6426bf1a0cd07234889888e9198fa2e8381fc99> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/790680512> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/wlb12345/tfup"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/d5651b05ce1deb729278bd5b67fa16046ecd619b824fd25cbdbf620743097f89> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/408447491> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/gcndepth-self-supervised-monocular-depth"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e118daf8d7a3a14f1e75b14a488b6f1f95d6b2948f225e31110a497da4f45068> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/741251289> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/khuangaf/awesome-chart-understanding"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/f099c66fcf6d95f999e000ee74f53f471acd74da6009867dea7faa8357ffc715> a sr:ExternalLink ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/74140596> ;
+    sr:linkTarget "https://semopenalex.org/author/A5077257584"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/f2f073608e24db114d0fefe45ffd01c97d91735a18b8697fff60d22352e034f3> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/741251289> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/From%20Pixels%20to%20Insights%3A%20A%20Survey%20on%20Automatic%20Chart%20Understanding%20in%20the%20Era%20of%20Large%20Foundation%20Models"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/f6b233337d19838b0b8c467473184bdd0ec2e2aa2e6483b08481284ba6d5081b> a sr:ExternalLink ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/6610670> ;
+    sr:linkTarget "https://semopenalex.org/author/A5017940830"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/github-account/24327668> sr:hasExternalLink <https://semrepo.org/resource/external-link/4c0d4af79b8a5c71b612b8428654794df022a23139cf001e98295d69a0fde2e8> .
+
+<https://semrepo.org/resource/github-account/43330997> sr:hasExternalLink <https://semrepo.org/resource/external-link/7cb5f9944cf44521455e45e5de7d4e4dfe9404f6455ddf5af224b79dc143e10a> .
+
+<https://semrepo.org/resource/github-account/6610670> sr:hasExternalLink <https://semrepo.org/resource/external-link/f6b233337d19838b0b8c467473184bdd0ec2e2aa2e6483b08481284ba6d5081b> .
+
+<https://semrepo.org/resource/github-account/74140596> sr:hasExternalLink <https://semrepo.org/resource/external-link/f099c66fcf6d95f999e000ee74f53f471acd74da6009867dea7faa8357ffc715> .
+
+<https://semrepo.org/resource/repository/450564762> sr:hasExternalLink <https://semrepo.org/resource/external-link/111073abe3188e849fea5c13e08c12f704bc3c72947eda8ee78211b20be00585>,
+        <https://semrepo.org/resource/external-link/6ffc2be231ed37df464016abbb942e0d7a34100997ac18e4fd4ed44346edc814> .
+
+<https://semrepo.org/resource/repository/790680512> sr:hasExternalLink <https://semrepo.org/resource/external-link/c28e29380a7c891c63518dc4a0b793e3ecd2bef7b2cfa7b3f308590fb5e39a25>,
+        <https://semrepo.org/resource/external-link/d5170fb9ea5d476795fb8f66f6426bf1a0cd07234889888e9198fa2e8381fc99> .
+
+<https://semrepo.org/resource/repository/823210233> sr:hasExternalLink <https://semrepo.org/resource/external-link/1d1c4785e71e2a17184f11f18076010492efe743704b357c6e6658826a112831>,
+        <https://semrepo.org/resource/external-link/3ed6262555b7e46b0d8dca6cdcacc1f6da5c3a07ec1b3b8f3def702f5b04363d> .
+
+<https://semrepo.org/resource/repository/408447491> sr:hasExternalLink <https://semrepo.org/resource/external-link/9c787c530496144323cdd6f23c7bb7cd47c27755f4afeedcf49ba2739e6ca504>,
+        <https://semrepo.org/resource/external-link/c26771a67e2805bbfef848380fbb668060a9e5c9aa810fe3fa245d903e6ee384>,
+        <https://semrepo.org/resource/external-link/d5651b05ce1deb729278bd5b67fa16046ecd619b824fd25cbdbf620743097f89> .
+
+<https://semrepo.org/resource/repository/705126352> sr:hasExternalLink <https://semrepo.org/resource/external-link/73652e20a53e6e258182c21fdcc1a600549a92093d446d33032dbe1ebb6fe7e8>,
+        <https://semrepo.org/resource/external-link/85cafc3f919426d197b8ba581cb5f5e565e7da084335085f288cc9689e5b5003>,
+        <https://semrepo.org/resource/external-link/a5ec754aa754541a6ce06bbd630cdc04254c54cf5d9697ace796ab50460ffa2a> .
+
+<https://semrepo.org/resource/repository/741251289> sr:hasExternalLink <https://semrepo.org/resource/external-link/ac50bc7c07137ab49ae2ed9e99d2aea5894eda32e911da82a58e0e7bca8a5910>,
+        <https://semrepo.org/resource/external-link/e118daf8d7a3a14f1e75b14a488b6f1f95d6b2948f225e31110a497da4f45068>,
+        <https://semrepo.org/resource/external-link/f2f073608e24db114d0fefe45ffd01c97d91735a18b8697fff60d22352e034f3> .
+
+<https://semrepo.org/resource/repository/645270986> sr:hasExternalLink <https://semrepo.org/resource/external-link/84bdd2d46112ea2649298021f56d58f370d058b6b0a35364c8e3d7336884968c>,
+        <https://semrepo.org/resource/external-link/96e95733afb14d55d073f5a212f8be5c8bab8dbd3a9d3eb207499bca2521e530>,
+        <https://semrepo.org/resource/external-link/ad022cb0f48bbffada0b3a436c7a5b8382a275b73fc5ad41447ef716161456e2>,
+        <https://semrepo.org/resource/external-link/cdcb1bf7b0c6fbbbbaccf6f77f48221d7c1876492795dc476f4d9b60f3532d97> .
+
