@@ -180,6 +180,31 @@ class Contribution:
     commit_count: int
     contributor_account_type: str = "User"   # GitHub 'type': User / Bot / Organization
 
+@dataclass
+class Contributor:
+    """A GitHub account and its publicly available profile details.
+    """
+    contributor_github_user_id: int
+    contributor_github_login: str
+    contributor_account_type: str = "User"
+
+    # Profile information
+    name: Optional[str] = None
+    email: Optional[str] = None
+    bio: Optional[str] = None
+    company: Optional[str] = None
+    location: Optional[str] = None
+    blog: Optional[str] = None
+
+    # GitHub account statistics
+    public_repos: Optional[int] = None
+    followers: Optional[int] = None
+    following: Optional[int] = None
+
+    # Timestamps
+    github_created_at: Optional[datetime] = None
+    github_updated_at: Optional[datetime] = None
+    profile_collected_at: Optional[datetime] = None
 
 # ---------------------------------------------------------------------------
 # LanguageUsage / ProgrammingLanguage pattern
