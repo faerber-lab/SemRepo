@@ -53,7 +53,14 @@
 :hasExternalLink rdf:type owl:ObjectProperty ;
                  owl:inverseOf :linkSource ;
                  rdfs:range :ExternalLink .
-
+### new 12.11
+:hasExternalLink rdf:type owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( :Repository :GitHubAccount )
+    ] ;
+    rdfs:range :ExternalLink ;
+    owl:inverseOf :linkSource .
 
 ###  https://semrepo.org/ontology/v2#hasIssue
 :hasIssue rdf:type owl:ObjectProperty ;
@@ -432,15 +439,15 @@
 :SourceRepositoryLink rdf:type owl:Class ;
                       rdfs:comment "Represents the resolution process from an originally recorded LPWC repository URL to a canonical Repository, tracking redirects, renames, or failures."@en ;
                       rdfs:label "Source Repository Link"@en .
-### new 12.11
-:ExternalLinkRelationType rdf:type owl:Class ;
-    rdfs:label "External Link Relation Type"@en ;
-    rdfs:comment "A controlled vocabulary of semantic relationship types used to describe links between SemRepo entities and entities in external knowledge graphs."@en .
+# ### new 12.11
+# :ExternalLinkRelationType rdf:type owl:Class ;
+#     rdfs:label "External Link Relation Type"@en ;
+#     rdfs:comment "A controlled vocabulary of semantic relationship types used to describe links between SemRepo entities and entities in external knowledge graphs."@en .
 
-### new 12.11
-:LinkingMethod rdf:type owl:Class ;
-    rdfs:label "Linking Method"@en ;
-    rdfs:comment "A controlled vocabulary describing the methods, evidence sources, or matching procedures used to establish ExternalLink instances."@en .
+# ### new 12.11
+# :LinkingMethod rdf:type owl:Class ;
+#     rdfs:label "Linking Method"@en ;
+#     rdfs:comment "A controlled vocabulary describing the methods, evidence sources, or matching procedures used to establish ExternalLink instances."@en .
 
 #################################################################
 #    Individuals
@@ -510,57 +517,57 @@
 :Transferred rdf:type owl:NamedIndividual ,
                       :ResolutionStatus .
 
-### new 12.11
-:officialImplementationOf rdf:type owl:NamedIndividual ,
-                                    :ExternalLinkRelationType ;
-    rdfs:label "official implementation of"@en ;
-    rdfs:comment "Indicates that a repository is curated by an external source as the official implementation associated with a research paper."@en .
+# ### new 12.11
+# :officialImplementationOf rdf:type owl:NamedIndividual ,
+#                                     :ExternalLinkRelationType ;
+#     rdfs:label "official implementation of"@en ;
+#     rdfs:comment "Indicates that a repository is curated by an external source as the official implementation associated with a research paper."@en .
 
-:repositoryReferencedBy rdf:type owl:NamedIndividual ,
-                                 :ExternalLinkRelationType ;
-    rdfs:label "repository referenced by"@en ;
-    rdfs:comment "Indicates that an external source references a repository, without necessarily identifying it as the official implementation."@en .
+# :repositoryReferencedBy rdf:type owl:NamedIndividual ,
+#                                  :ExternalLinkRelationType ;
+#     rdfs:label "repository referenced by"@en ;
+#     rdfs:comment "Indicates that an external source references a repository, without necessarily identifying it as the official implementation."@en .
 
-### new 12.11 LPWC methods
+# ### new 12.11 LPWC methods
 
-:lpwcRepositoryUrlMatch rdf:type owl:NamedIndividual ,
-                                  :LinkingMethod ;
-    rdfs:label "lpwc-repository-url-match"@en ;
-    rdfs:comment "Matches a repository using its repository URL recorded in the Linked Papers With Code dataset."@en .
+# :lpwcRepositoryUrlMatch rdf:type owl:NamedIndividual ,
+#                                   :LinkingMethod ;
+#     rdfs:label "lpwc-repository-url-match"@en ;
+#     rdfs:comment "Matches a repository using its repository URL recorded in the Linked Papers With Code dataset."@en .
 
-:lpwcCuratedOfficialRepository rdf:type owl:NamedIndividual ,
-                                        :LinkingMethod ;
-    rdfs:label "lpwc-curated-official-repository"@en ;
-    rdfs:comment "Uses the LPWC curated hasOfficialRepository relationship to identify an official repository implementation for a paper."@en .
+# :lpwcCuratedOfficialRepository rdf:type owl:NamedIndividual ,
+#                                         :LinkingMethod ;
+#     rdfs:label "lpwc-curated-official-repository"@en ;
+#     rdfs:comment "Uses the LPWC curated hasOfficialRepository relationship to identify an official repository implementation for a paper."@en .
 
-:lpwcCuratedRepositoryReference rdf:type owl:NamedIndividual ,
-                                         :LinkingMethod ;
-    rdfs:label "lpwc-curated-repository-reference"@en ;
-    rdfs:comment "Uses the LPWC curated hasRepository relationship to identify a repository referenced by a paper."@en .
+# :lpwcCuratedRepositoryReference rdf:type owl:NamedIndividual ,
+#                                          :LinkingMethod ;
+#     rdfs:label "lpwc-curated-repository-reference"@en ;
+#     rdfs:comment "Uses the LPWC curated hasRepository relationship to identify a repository referenced by a paper."@en .
 
-### new 12.11 MLSea method
+# ### new 12.11 MLSea method
 
-:lpwcOwlSameAs rdf:type owl:NamedIndividual ,
-                        :LinkingMethod ;
-    rdfs:label "lpwc-owl-sameAs"@en ;
-    rdfs:comment "Uses an owl:sameAs assertion from the LPWC ontology to establish a software identity link."@en .
+# :lpwcOwlSameAs rdf:type owl:NamedIndividual ,
+#                         :LinkingMethod ;
+#     rdfs:label "lpwc-owl-sameAs"@en ;
+#     rdfs:comment "Uses an owl:sameAs assertion from the LPWC ontology to establish a software identity link."@en .
 
-### new 12.11 GitHub–SemOpenAlex matching methods
+# ### new 12.11 GitHub–SemOpenAlex matching methods
 
-:exactNameMatch rdf:type owl:NamedIndividual ,
-                         :LinkingMethod ;
-    rdfs:label "exact-name-match"@en ;
-    rdfs:comment "Matches a GitHub account to a scholarly author using exact name equality."@en .
+# :exactNameMatch rdf:type owl:NamedIndividual ,
+#                          :LinkingMethod ;
+#     rdfs:label "exact-name-match"@en ;
+#     rdfs:comment "Matches a GitHub account to a scholarly author using exact name equality."@en .
 
-:reversedNameMatch rdf:type owl:NamedIndividual ,
-                            :LinkingMethod ;
-    rdfs:label "reversed-name-match"@en ;
-    rdfs:comment "Matches a GitHub account to a scholarly author after accounting for reversed name ordering."@en .
+# :reversedNameMatch rdf:type owl:NamedIndividual ,
+#                             :LinkingMethod ;
+#     rdfs:label "reversed-name-match"@en ;
+#     rdfs:comment "Matches a GitHub account to a scholarly author after accounting for reversed name ordering."@en .
 
-:fuzzyNameMatch rdf:type owl:NamedIndividual ,
-                         :LinkingMethod ;
-    rdfs:label "fuzzy-name-match"@en ;
-    rdfs:comment "Matches a GitHub account to a scholarly author using approximate or fuzzy name similarity."@en .
+# :fuzzyNameMatch rdf:type owl:NamedIndividual ,
+#                          :LinkingMethod ;
+#     rdfs:label "fuzzy-name-match"@en ;
+#     rdfs:comment "Matches a GitHub account to a scholarly author using approximate or fuzzy name similarity."@en .
 
 #################################################################
 #    General axioms
