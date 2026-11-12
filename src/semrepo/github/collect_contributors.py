@@ -18,13 +18,24 @@ Two things handled deliberately:
   rather than being silently conflated with a real failure. A future
   revision could add a retry-after-delay path if this turns out to affect
   a meaningful share of repositories in practice.
+
+Account profiles (GET /users/{login}) cost one extra API call per
+contributor, which dominates the API budget on a full run. Two controls:
+- known_profile_ids: GitHub user IDs whose profile was already collected
+  (in this run or a previous one). They are not fetched again and not
+  written again, so contributors.jsonl holds one record per account.
+- fetch_profiles=False skips profile collection entirely.
+
+Every return path yields the same 3-tuple
+(contributions, contributors, activity), including failures, so callers
+can always unpack it the same way.
 """
 
 from __future__ import annotations
 
 import logging
 from datetime import datetime, timezone
-from typing import List, Optional, Tuple
+from typing import List, Optional, Set, Tuple
 
 from semrepo.github.github_client import GitHubClient
 from semrepo.models import CollectionActivity, CollectionStatus, Contribution, Contributor
@@ -60,7 +71,13 @@ def collect_contributor_details(
         )
         return None
 
-    item = response.json()
+    try:
+        item = response.json()
+    except Exception:
+        item = None
+    if not isinstance(item, dict):
+        logger.warning("Unexpected profile payload for %s -- skipped", login)
+        return None
 
     return Contributor(
         contributor_github_user_id=github_user_id,
@@ -99,14 +116,21 @@ def collect_contributors(
     client: GitHubClient,
     collection_source: str,
     max_contributors: Optional[int] = None,
-) -> Tuple[List[Contribution], List[Contributor], CollectionActivity]: ##new 11.11
+    fetch_profiles: bool = True,
+    known_profile_ids: Optional[Set[int]] = None,
+) -> Tuple[List[Contribution], List[Contributor], CollectionActivity]:
     """max_contributors=None means unlimited. A limit that actually cuts
-    the result short is recorded as PARTIAL_SUCCESS, per Rule 7."""
+    the result short is recorded as PARTIAL_SUCCESS, per Rule 7.
+
+    known_profile_ids is updated in place with every profile fetched here,
+    so the caller can share one set across repositories."""
+    if known_profile_ids is None:
+        known_profile_ids = set()
 
     attempted_url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
     timestamp = datetime.now(timezone.utc)
     contributions: List[Contribution] = []
-    contributors: List[Contributor] = [] ##new 11.11
+    contributors: List[Contributor] = []
     page = 1
     limit_applied = False
     anonymous_skipped = 0
@@ -119,7 +143,7 @@ def collect_contributors(
         except Exception as e:
             logger.warning("API error collecting contributors for %s/%s (page %d): %s", owner, repo, page, e)
             status = CollectionStatus.PARTIAL_SUCCESS if contributions else CollectionStatus.FAILED
-            return contributions, CollectionActivity(
+            return contributions, contributors, CollectionActivity(
                 collection_timestamp=timestamp,
                 attempted_url=attempted_url,
                 collection_source=collection_source,
@@ -128,7 +152,7 @@ def collect_contributors(
             )
 
         if response.status_code == 404:
-            return [], CollectionActivity(
+            return [], [], CollectionActivity(
                 collection_timestamp=timestamp,
                 attempted_url=attempted_url,
                 collection_source=collection_source,
@@ -142,7 +166,7 @@ def collect_contributors(
             logger.warning(
                 "GitHub is still computing contributor stats for %s/%s (202) -- not retried", owner, repo
             )
-            return contributions, CollectionActivity(
+            return contributions, contributors, CollectionActivity(
                 collection_timestamp=timestamp,
                 attempted_url=attempted_url,
                 collection_source=collection_source,
@@ -156,7 +180,7 @@ def collect_contributors(
                 response.status_code, owner, repo, page,
             )
             status = CollectionStatus.PARTIAL_SUCCESS if contributions else CollectionStatus.FAILED
-            return contributions, CollectionActivity(
+            return contributions, contributors, CollectionActivity(
                 collection_timestamp=timestamp,
                 attempted_url=attempted_url,
                 collection_source=collection_source,
@@ -185,15 +209,16 @@ def collect_contributors(
                 contributor_account_type=account_type,
             ))
 
-            contributor = collect_contributor_details(
-                github_user_id=github_user_id,
-                login=login,
-                account_type=account_type,
-                client=client,
-            )
-
-            if contributor is not None:
-                contributors.append(contributor)
+            if fetch_profiles and github_user_id not in known_profile_ids:
+                contributor = collect_contributor_details(
+                    github_user_id=github_user_id,
+                    login=login,
+                    account_type=account_type,
+                    client=client,
+                )
+                if contributor is not None:
+                    contributors.append(contributor)
+                    known_profile_ids.add(github_user_id)
 
             if max_contributors is not None and len(contributions) >= max_contributors:
                 limit_applied = True

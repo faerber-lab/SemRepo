@@ -32,12 +32,17 @@ class RoutingFakeClient:
     repo_payloads maps 'owner/repo' -> repo dict; an unknown key means the
     repository lookup itself returns 404."""
 
-    def __init__(self, repo_payloads: dict):
+    def __init__(self, repo_payloads: dict, contributors=None, contributors_status=200):
         self.repo_payloads = repo_payloads
+        self.contributors = contributors or []
+        self.contributors_status = contributors_status
         self.requested_paths = []
 
     def get(self, path):
         self.requested_paths.append(path)
+        if path.startswith("/users/"):
+            login = path.split("/")[2]
+            return FakeResponse(200, {"login": login, "type": "User", "name": login.title()})
         parts = path.lstrip("/").split("/")
         owner, repo = parts[1], parts[2].split("?")[0]
         key = f"{owner}/{repo}"
@@ -47,7 +52,9 @@ class RoutingFakeClient:
         if "/issues" in path:
             return FakeResponse(200, [])
         if "/contributors" in path:
-            return FakeResponse(200, [])
+            if self.contributors_status != 200:
+                return FakeResponse(self.contributors_status, {"message": "too large"})
+            return FakeResponse(200, self.contributors if path.endswith("&page=1") else [])
 
         if key not in self.repo_payloads:
             return FakeResponse(404)
@@ -167,3 +174,40 @@ def test_normalize_and_resolution_failures_do_not_crash(tmp_path):
     assert summary["resolution_counts"]["Invalid"] == 1
     links = (tmp_path / "source-repository-links.jsonl").read_text().strip().split("\n")
     assert len(links) == 1  # only the resolvable-but-invalid one leaves a trace
+
+def test_contributors_403_does_not_crash_the_run(tmp_path):
+    """GitHub answers 403 on /contributors for very large repositories
+    (seen live for torvalds/linux). The run must record it and continue."""
+    client = RoutingFakeClient(
+        {"a/one": _repo_payload(1, "a", "one"), "b/two": _repo_payload(2, "b", "two")},
+        contributors_status=403,
+    )
+
+    summary = run_pipeline(
+        ["https://github.com/a/one", "https://github.com/b/two"], tmp_path, client, "test-source",
+    )
+
+    assert summary["resolution_counts"] == {"Resolved": 2}
+    repos = (tmp_path / "repositories.jsonl").read_text().strip().split("\n")
+    assert len(repos) == 2
+
+
+def test_contributor_profile_fetched_once_across_repositories_and_runs(tmp_path):
+    """The same account contributing to two repositories costs one
+    /users call, also after a resume."""
+    shared = [{"id": 7, "login": "alice", "contributions": 3, "type": "User"}]
+    client = RoutingFakeClient(
+        {"a/one": _repo_payload(1, "a", "one"), "b/two": _repo_payload(2, "b", "two")},
+        contributors=shared,
+    )
+    run_pipeline(["https://github.com/a/one", "https://github.com/b/two"], tmp_path, client, "test-source")
+
+    assert [p for p in client.requested_paths if p.startswith("/users/")] == ["/users/alice"]
+    profiles = (tmp_path / "contributors.jsonl").read_text().strip().split("\n")
+    assert len(profiles) == 1
+    contributions = (tmp_path / "contributions.jsonl").read_text().strip().split("\n")
+    assert len(contributions) == 2   # one contribution per repository
+
+    client2 = RoutingFakeClient({"c/three": _repo_payload(3, "c", "three")}, contributors=shared)
+    run_pipeline(["https://github.com/c/three"], tmp_path, client2, "test-source")
+    assert [p for p in client2.requested_paths if p.startswith("/users/")] == []

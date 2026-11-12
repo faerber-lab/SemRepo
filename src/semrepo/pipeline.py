@@ -78,6 +78,21 @@ def _load_checkpoint_state(output_dir: Path) -> Tuple[Set[str], Set[int]]:
     return processed_urls, seen_ids
 
 
+def _load_known_profile_ids(output_dir: Path) -> Set[int]:
+    """GitHub user IDs whose account profile is already in
+    contributors.jsonl, so a resumed run does not fetch (or write) the same
+    profile twice. Profiles cost one API call each and many accounts
+    contribute to several repositories, so this matters on a full run."""
+    known: Set[int] = set()
+    path = output_dir / OUTPUT_FILES["contributor"]
+    if path.exists():
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    known.add(json.loads(line)["contributor_github_user_id"])
+    return known
+
+
 def run_pipeline(
     urls: List[str],
     output_dir: Path,
@@ -86,6 +101,7 @@ def run_pipeline(
     max_issues: int = None,
     max_contributors: int = None,
     fetch_last_commit: bool = True,
+    fetch_profiles: bool = True,
 ) -> Dict[str, dict]:
     """Runs the full normalize -> resolve -> collect -> write pipeline for
     each URL. Safe to call again with the same (or a superset of the) URL
@@ -94,8 +110,12 @@ def run_pipeline(
 
     fetch_last_commit=True costs one extra API call per repository
     (GET /commits?per_page=1) to fill RepositorySnapshot.last_commit_at;
-    set it to False to save rate-limit budget on very large runs."""
+    set it to False to save rate-limit budget on very large runs.
+
+    fetch_profiles=True costs one extra API call per *new* contributor
+    account (GET /users/{login}); accounts already collected are skipped."""
     processed_urls, seen_repository_ids = _load_checkpoint_state(output_dir)
+    known_profile_ids = _load_known_profile_ids(output_dir)
     resolution_counts: Counter = Counter()
     totals: Counter = Counter()
 
@@ -116,7 +136,7 @@ def run_pipeline(
 
         is_duplicate = canonical is not None and canonical.github_repository_id in seen_repository_ids
         collection_activities: list = []
-        issues, contributions, languages, snapshot = [], [], [], None
+        issues, contributions, contributors, languages, snapshot = [], [], [], [], None
         canonical_to_write = None
 
         if is_duplicate:
@@ -149,11 +169,14 @@ def run_pipeline(
             contributions, contributors, contrib_activity = collect_contributors(
                 owner, repo, canonical.github_repository_id, collected_at, client, collection_source,
                 max_contributors=max_contributors,
+                fetch_profiles=fetch_profiles,
+                known_profile_ids=known_profile_ids,
             )
             collection_activities.append(contrib_activity)
 
             totals["issues"] += len(issues)
             totals["contributions"] += len(contributions)
+            totals["contributor_profiles"] += len(contributors)
             totals["languages"] += len(languages)
 
         write_repository_records(

@@ -292,7 +292,7 @@ def test_issue_v21_fields_and_account_types(tmp_path):
 
 def test_v21_output_conforms_to_shapes(tmp_path):
     from semrepo.validate_rdf import validate_generated_rdf
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[2]   # src/tests/ -> repo root
     input_dir = _make_v21_input(tmp_path)
     output_dir = tmp_path / "output"
     generate_rdf(input_dir, output_dir)

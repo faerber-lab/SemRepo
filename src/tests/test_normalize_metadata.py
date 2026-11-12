@@ -91,7 +91,7 @@ def test_write_repository_records_full_success_case(tmp_path):
 
     assert written == {
         "repository": 1, "snapshot": 1, "source_repository_link": 1,
-        "issue": 1, "contribution": 1, "language_usage": 1, "collection_activity": 0,
+        "issue": 1, "contribution": 1, "contributor": 0, "language_usage": 1, "collection_activity": 0,
     }
     assert (tmp_path / "repositories.jsonl").exists()
     assert (tmp_path / "snapshots.jsonl").exists()
