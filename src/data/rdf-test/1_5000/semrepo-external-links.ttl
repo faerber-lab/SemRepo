@@ -63,6 +63,7 @@
     sr:targetKnowledgeGraph "LPWC"^^xsd:string .
 
 <https://semrepo.org/resource/external-link/4c0d4af79b8a5c71b612b8428654794df022a23139cf001e98295d69a0fde2e8> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
     sr:linkRelationType "same person as"^^xsd:string ;
     sr:linkSource <https://semrepo.org/resource/github-account/24327668> ;
     sr:linkTarget "https://semopenalex.org/author/A5032176444"^^xsd:anyURI ;
@@ -84,6 +85,7 @@
     sr:targetKnowledgeGraph "LPWC"^^xsd:string .
 
 <https://semrepo.org/resource/external-link/7cb5f9944cf44521455e45e5de7d4e4dfe9404f6455ddf5af224b79dc143e10a> a sr:ExternalLink ;
+    sr:confidenceScore 0.6667 ;
     sr:linkRelationType "same person as"^^xsd:string ;
     sr:linkSource <https://semrepo.org/resource/github-account/43330997> ;
     sr:linkTarget "https://semopenalex.org/author/A5024168844"^^xsd:anyURI ;
@@ -182,6 +184,7 @@
     sr:targetKnowledgeGraph "LPWC"^^xsd:string .
 
 <https://semrepo.org/resource/external-link/f099c66fcf6d95f999e000ee74f53f471acd74da6009867dea7faa8357ffc715> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
     sr:linkRelationType "same person as"^^xsd:string ;
     sr:linkSource <https://semrepo.org/resource/github-account/74140596> ;
     sr:linkTarget "https://semopenalex.org/author/A5077257584"^^xsd:anyURI ;
@@ -196,6 +199,7 @@
     sr:targetKnowledgeGraph "MLSea"^^xsd:string .
 
 <https://semrepo.org/resource/external-link/f6b233337d19838b0b8c467473184bdd0ec2e2aa2e6483b08481284ba6d5081b> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
     sr:linkRelationType "same person as"^^xsd:string ;
     sr:linkSource <https://semrepo.org/resource/github-account/6610670> ;
     sr:linkTarget "https://semopenalex.org/author/A5017940830"^^xsd:anyURI ;

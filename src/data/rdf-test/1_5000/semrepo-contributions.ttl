@@ -128,151 +128,293 @@
 
 <https://semrepo.org/resource/github-account/115380282> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://haoyiq114.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2022-10-09T00:31:44+00:00"^^xsd:dateTime ;
+    sr:accountDescription "UCLA CS PhD Student"^^xsd:string ;
+    sr:accountName "Haoyi Qiu"^^xsd:string ;
+    sr:followersCount 7 ;
     sr:githubLogin "haoyiq114" ;
     sr:githubUserId 115380282 ;
-    sr:profileUrl "https://github.com/haoyiq114"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/haoyiq114"^^xsd:anyURI ;
+    sr:publicReposCount 7 .
 
 <https://semrepo.org/resource/github-account/12652488> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "http://khuangaf.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2015-05-29T02:05:01+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Senior Research Scientist @ Google"^^xsd:string ;
+    sr:accountLocation "San Francisco, California"^^xsd:string ;
+    sr:accountName "Kung-Hsiang Steeve Huang"^^xsd:string ;
+    sr:followersCount 615 ;
     sr:githubLogin "khuangaf" ;
     sr:githubUserId 12652488 ;
-    sr:profileUrl "https://github.com/khuangaf"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/khuangaf"^^xsd:anyURI ;
+    sr:publicReposCount 62 .
 
 <https://semrepo.org/resource/github-account/12689993> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2015-06-01T03:30:23+00:00"^^xsd:dateTime ;
+    sr:accountName "Xuechen Li"^^xsd:string ;
+    sr:followersCount 437 ;
     sr:githubLogin "lxuechen" ;
     sr:githubUserId 12689993 ;
-    sr:profileUrl "https://github.com/lxuechen"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/lxuechen"^^xsd:anyURI ;
+    sr:publicReposCount 81 .
 
 <https://semrepo.org/resource/github-account/139752091> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2023-07-17T08:33:15+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Phd Candidate, LLM."^^xsd:string ;
+    sr:accountLocation "San Francisco"^^xsd:string ;
+    sr:accountName "inferLLM"^^xsd:string ;
+    sr:followersCount 2 ;
     sr:githubLogin "inferLLM" ;
     sr:githubUserId 139752091 ;
-    sr:profileUrl "https://github.com/inferLLM"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/inferLLM"^^xsd:anyURI ;
+    sr:publicReposCount 11 .
 
 <https://semrepo.org/resource/github-account/1451529> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2012-02-19T16:20:33+00:00"^^xsd:dateTime ;
+    sr:accountName "Jon Durbin"^^xsd:string ;
+    sr:followersCount 246 ;
     sr:githubLogin "jondurbin" ;
     sr:githubUserId 1451529 ;
-    sr:profileUrl "https://github.com/jondurbin"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/jondurbin"^^xsd:anyURI ;
+    sr:publicReposCount 24 .
 
 <https://semrepo.org/resource/github-account/17907741> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2016-03-17T15:04:03+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research @Microsoft"^^xsd:string ;
+    sr:accountName "victorsungo"^^xsd:string ;
+    sr:followersCount 88 ;
     sr:githubLogin "victorsungo" ;
     sr:githubUserId 17907741 ;
-    sr:profileUrl "https://github.com/victorsungo"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/victorsungo"^^xsd:anyURI ;
+    sr:publicReposCount 30 .
 
 <https://semrepo.org/resource/github-account/22514219> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.canwenxu.net/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2016-09-29T05:11:01+00:00"^^xsd:dateTime ;
+    sr:accountDescription "PhD @ UCSD; Formerly @google-research, @huggingface, @microsoft Research Asia."^^xsd:string ;
+    sr:accountLocation "San Diego, CA"^^xsd:string ;
+    sr:accountName "Kevin Canwen Xu"^^xsd:string ;
+    sr:followersCount 449 ;
     sr:githubLogin "JetRunner" ;
     sr:githubUserId 22514219 ;
-    sr:profileUrl "https://github.com/JetRunner"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/JetRunner"^^xsd:anyURI ;
+    sr:publicReposCount 45 .
 
 <https://semrepo.org/resource/github-account/22633385> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2016-10-05T07:58:42+00:00"^^xsd:dateTime ;
+    sr:accountDescription """AI-driven developer @ Tokyo.\r
+Loves 🎸/🐈/🍛/🏝/⛰"""^^xsd:string ;
+    sr:accountLocation "Tokyo, Japan"^^xsd:string ;
+    sr:accountName "Ikko Eltociear Ashimine"^^xsd:string ;
+    sr:followersCount 1888 ;
     sr:githubLogin "eltociear" ;
     sr:githubUserId 22633385 ;
-    sr:profileUrl "https://github.com/eltociear"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/eltociear"^^xsd:anyURI ;
+    sr:publicReposCount 309 .
 
 <https://semrepo.org/resource/github-account/22779182> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2016-10-11T20:51:23+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Postdoc at the Facility for Rare Isotope Beams at Michigan State University, working on nuclear reaction theory."^^xsd:string ;
+    sr:accountName "Kyle Beyer"^^xsd:string ;
+    sr:followersCount 33 ;
     sr:githubLogin "beykyle" ;
     sr:githubUserId 22779182 ;
-    sr:profileUrl "https://github.com/beykyle"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/beykyle"^^xsd:anyURI ;
+    sr:publicReposCount 44 .
 
 <https://semrepo.org/resource/github-account/24327668> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "yanndubs.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2016-12-03T03:18:06+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Trying to train useful models"^^xsd:string ;
+    sr:accountLocation "San Francisco"^^xsd:string ;
+    sr:accountName "Yann Dubois"^^xsd:string ;
+    sr:followersCount 1252 ;
     sr:githubLogin "YannDubs" ;
     sr:githubUserId 24327668 ;
-    sr:profileUrl "https://github.com/YannDubs"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/YannDubs"^^xsd:anyURI ;
+    sr:publicReposCount 53 .
 
 <https://semrepo.org/resource/github-account/3153194> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2012-12-30T11:54:53+00:00"^^xsd:dateTime ;
+    sr:followersCount 432 ;
     sr:githubLogin "44670" ;
     sr:githubUserId 3153194 ;
-    sr:profileUrl "https://github.com/44670"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/44670"^^xsd:anyURI ;
+    sr:publicReposCount 170 .
 
 <https://semrepo.org/resource/github-account/36249910> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2018-02-08T01:07:15+00:00"^^xsd:dateTime ;
+    sr:accountName "Guspan Tanadi"^^xsd:string ;
+    sr:followersCount 40 ;
     sr:githubLogin "guspan-tanadi" ;
     sr:githubUserId 36249910 ;
-    sr:profileUrl "https://github.com/guspan-tanadi"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/guspan-tanadi"^^xsd:anyURI ;
+    sr:publicReposCount 606 .
 
 <https://semrepo.org/resource/github-account/43330997> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://yuh-yang.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2018-09-17T05:25:56+00:00"^^xsd:dateTime ;
+    sr:accountDescription "A fan of Guido van Rossum"^^xsd:string ;
+    sr:accountLocation "Hong Kong"^^xsd:string ;
+    sr:accountName "Yuhao"^^xsd:string ;
+    sr:followersCount 332 ;
     sr:githubLogin "yuh-yang" ;
     sr:githubUserId 43330997 ;
-    sr:profileUrl "https://github.com/yuh-yang"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/yuh-yang"^^xsd:anyURI ;
+    sr:publicReposCount 26 .
 
 <https://semrepo.org/resource/github-account/44236100> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://zwq2018.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2018-10-17T14:33:16+00:00"^^xsd:dateTime ;
+    sr:accountDescription "I am Wenqi Zhang (张文祺), a ZJU100 Young Professor at Zhejiang University. My research interests include LLMs and VLMs. My personal pages: https://zwq2018.github."^^xsd:string ;
+    sr:accountLocation "Hangzhou"^^xsd:string ;
+    sr:accountName "Wenqi Zhang"^^xsd:string ;
+    sr:followersCount 175 ;
     sr:githubLogin "zwq2018" ;
     sr:githubUserId 44236100 ;
-    sr:profileUrl "https://github.com/zwq2018"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/zwq2018"^^xsd:anyURI ;
+    sr:publicReposCount 186 .
 
 <https://semrepo.org/resource/github-account/4735503> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://kenchan0226.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2013-06-19T06:11:32+00:00"^^xsd:dateTime ;
+    sr:accountDescription "I am an Assistant Professor in the Department of Artificial Intelligence at the University of Macau"^^xsd:string ;
+    sr:accountLocation "Macau"^^xsd:string ;
+    sr:accountName "Hou Pong (Ken) Chan"^^xsd:string ;
+    sr:followersCount 49 ;
     sr:githubLogin "kenchan0226" ;
     sr:githubUserId 4735503 ;
-    sr:profileUrl "https://github.com/kenchan0226"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/kenchan0226"^^xsd:anyURI ;
+    sr:publicReposCount 15 .
 
 <https://semrepo.org/resource/github-account/48615375> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://coobiw.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2019-03-16T07:41:06+00:00"^^xsd:dateTime ;
+    sr:accountDescription """@MoonshotAI ; Master @ PKU ; Ex Intern \r
+@huawei-noah @DataArcTech  @01-ai @rhymes-ai ."""^^xsd:string ;
+    sr:accountName "Brian Qu"^^xsd:string ;
+    sr:followersCount 130 ;
     sr:githubLogin "Coobiw" ;
     sr:githubUserId 48615375 ;
-    sr:profileUrl "https://github.com/Coobiw"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/Coobiw"^^xsd:anyURI ;
+    sr:publicReposCount 29 .
 
 <https://semrepo.org/resource/github-account/53392976> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://saibo-creator.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2019-07-28T07:20:47+00:00"^^xsd:dateTime ;
+    sr:accountDescription "What I can not build I don't understand."^^xsd:string ;
+    sr:accountLocation "Switzerland"^^xsd:string ;
+    sr:followersCount 81 ;
     sr:githubLogin "Saibo-creator" ;
     sr:githubUserId 53392976 ;
-    sr:profileUrl "https://github.com/Saibo-creator"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/Saibo-creator"^^xsd:anyURI ;
+    sr:publicReposCount 46 .
 
 <https://semrepo.org/resource/github-account/56426168> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "tjb-tech.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2019-10-11T06:00:14+00:00"^^xsd:dateTime ;
+    sr:accountDescription """2-year Ph.D. student@IDS, HKU. \r
+Our lab @HKUDS"""^^xsd:string ;
+    sr:accountLocation "Hong Kong"^^xsd:string ;
+    sr:accountName "Jiabin Tang"^^xsd:string ;
+    sr:followersCount 313 ;
     sr:githubLogin "tjb-tech" ;
     sr:githubUserId 56426168 ;
-    sr:profileUrl "https://github.com/tjb-tech"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/tjb-tech"^^xsd:anyURI ;
+    sr:publicReposCount 68 .
 
 <https://semrepo.org/resource/github-account/63850757> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2020-04-17T10:37:56+00:00"^^xsd:dateTime ;
+    sr:accountDescription "LLM, RL, Agent, RecSys, FinAI"^^xsd:string ;
+    sr:accountName "Yuhui Zheng"^^xsd:string ;
+    sr:followersCount 3 ;
     sr:githubLogin "cszhengyh" ;
     sr:githubUserId 63850757 ;
-    sr:profileUrl "https://github.com/cszhengyh"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/cszhengyh"^^xsd:anyURI ;
+    sr:publicReposCount 7 .
 
 <https://semrepo.org/resource/github-account/65916846> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "https://github.com/actions"^^xsd:anyURI ;
+    sr:accountCreatedAt "2020-05-25T17:35:50+00:00"^^xsd:dateTime ;
+    sr:followersCount 6108 ;
     sr:githubLogin "actions-user" ;
     sr:githubUserId 65916846 ;
-    sr:profileUrl "https://github.com/actions-user"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/actions-user"^^xsd:anyURI ;
+    sr:publicReposCount 0 .
 
 <https://semrepo.org/resource/github-account/6610670> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "rohantaori.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-02-06T23:42:27+00:00"^^xsd:dateTime ;
+    sr:accountDescription "ML research"^^xsd:string ;
+    sr:accountLocation "San Francisco"^^xsd:string ;
+    sr:accountName "Rohan Taori"^^xsd:string ;
+    sr:followersCount 205 ;
     sr:githubLogin "rtaori" ;
     sr:githubUserId 6610670 ;
-    sr:profileUrl "https://github.com/rtaori"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/rtaori"^^xsd:anyURI ;
+    sr:publicReposCount 20 .
 
 <https://semrepo.org/resource/github-account/74140596> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2020-11-08T12:56:30+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Data Scientist / Machine Learning Engineer"^^xsd:string ;
+    sr:accountName "Armin Masoumian"^^xsd:string ;
+    sr:followersCount 11 ;
     sr:githubLogin "ArminMasoumian" ;
     sr:githubUserId 74140596 ;
-    sr:profileUrl "https://github.com/ArminMasoumian"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/ArminMasoumian"^^xsd:anyURI ;
+    sr:publicReposCount 8 .
 
 <https://semrepo.org/resource/github-account/80698753> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountBlogUrl "fatemehpesaran310.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2021-03-15T14:37:29+00:00"^^xsd:dateTime ;
+    sr:accountName "Fatemeh Pesaran zadeh"^^xsd:string ;
+    sr:followersCount 7 ;
     sr:githubLogin "fatemehpesaran310" ;
     sr:githubUserId 80698753 ;
-    sr:profileUrl "https://github.com/fatemehpesaran310"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/fatemehpesaran310"^^xsd:anyURI ;
+    sr:publicReposCount 22 .
 
 <https://semrepo.org/resource/github-account/8697111> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2014-09-08T14:36:00+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Applied Researcher at Capital One. My research interest lies on Multimodality Learning with vision and language."^^xsd:string ;
+    sr:accountLocation "New York"^^xsd:string ;
+    sr:accountName "Mingyang Zhou"^^xsd:string ;
+    sr:followersCount 40 ;
     sr:githubLogin "zmykevin" ;
     sr:githubUserId 8697111 ;
-    sr:profileUrl "https://github.com/zmykevin"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/zmykevin"^^xsd:anyURI ;
+    sr:publicReposCount 45 .
 
 <https://semrepo.org/resource/github-account/96621360> a sr:GitHubAccount,
         sr:GitHubUser ;
+    sr:accountCreatedAt "2021-12-24T12:23:13+00:00"^^xsd:dateTime ;
+    sr:followersCount 0 ;
     sr:githubLogin "wlb12345" ;
     sr:githubUserId 96621360 ;
-    sr:profileUrl "https://github.com/wlb12345"^^xsd:anyURI .
+    sr:profileUrl "https://github.com/wlb12345"^^xsd:anyURI ;
+    sr:publicReposCount 1 .
 
