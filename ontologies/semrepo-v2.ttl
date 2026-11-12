@@ -50,9 +50,9 @@
 
 
 ###  https://semrepo.org/ontology/v2#hasExternalLink
-:hasExternalLink rdf:type owl:ObjectProperty ;
-                 owl:inverseOf :linkSource ;
-                 rdfs:range :ExternalLink .
+# :hasExternalLink rdf:type owl:ObjectProperty ;
+#                  owl:inverseOf :linkSource ;
+#                  rdfs:range :ExternalLink .
 ### new 12.11
 :hasExternalLink rdf:type owl:ObjectProperty ;
     rdfs:domain [
