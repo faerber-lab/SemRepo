@@ -113,6 +113,51 @@ def _add_account(graph: Graph, github_id: int, login: str, github_type: Optional
     graph.add((uri, SR.profileUrl, Literal(f"https://github.com/{login}", datatype=XSD.anyURI)))
     return uri
 
+def add_contributor_profiles(graph: Graph, path: Path) -> int:
+    """
+    Add GitHub contributor profile metadata to GitHubAccount resources.
+    The account URI is generated from the stable GitHub user ID, so this
+    enriches the same resources already used by Contribution records.
+    """
+    count = 0
+    for rec in _read_jsonl(path):
+        github_id = rec.get("contributor_github_user_id")
+        login = rec.get("contributor_github_login")
+        if github_id is None or not login:
+            print(f"Warning: skipping contributor profile without ID/login: {rec}")
+            continue
+
+        account_uri = _add_account(graph, github_id, login, rec.get("contributor_account_type"))
+
+        text_fields = (
+            ("name", SR.accountName),
+            ("bio", SR.accountDescription),
+            ("location", SR.accountLocation),
+        )
+        for key, prop in text_fields:
+            value = rec.get(key)
+            if isinstance(value, str) and value.strip():
+                graph.add((account_uri, prop, Literal(value.strip(), datatype=XSD.string)))
+
+        blog = rec.get("blog")
+        if isinstance(blog, str) and blog.strip():
+            graph.add((account_uri, SR.accountBlogUrl, Literal(blog.strip(), datatype=XSD.anyURI)))
+
+        created_at = rec.get("github_created_at")
+        if created_at:
+            graph.add((account_uri, SR.accountCreatedAt, Literal(created_at, datatype=XSD.dateTime)))
+
+        for key, prop in (
+            ("followers", SR.followersCount),
+            ("public_repos", SR.publicReposCount),
+        ):
+            value = rec.get(key)
+            if value is not None:
+                graph.add((account_uri, prop, _int(value)))
+
+        count += 1
+    return count
+    
 def _int(value) -> Literal:
     return Literal(int(value), datatype=XSD.integer)
 
@@ -460,8 +505,13 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     counts["issues"] = add_issues(issues, input_dir / "issues.jsonl")
     issues.serialize(destination=output_dir / "semrepo-issues.ttl", format="turtle")
 
+    # contributions = _new_graph()
+    # counts["contributions"] = add_contributions(contributions, input_dir / "contributions.jsonl")
+    # contributions.serialize(destination=output_dir / "semrepo-contributions.ttl", format="turtle")
+    
     contributions = _new_graph()
     counts["contributions"] = add_contributions(contributions, input_dir / "contributions.jsonl")
+    counts["contributor_profiles"] = add_contributor_profiles(contributions, input_dir / "contributors.jsonl")
     contributions.serialize(destination=output_dir / "semrepo-contributions.ttl", format="turtle")
 
     languages = _new_graph()
