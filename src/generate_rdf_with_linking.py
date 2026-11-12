@@ -480,6 +480,9 @@ def add_contributor_soa_links(graph: Graph, external_links_path: Path) -> int:
             graph.add((link_uri, SR.linkRelationType, Literal(relation_type, datatype=XSD.string)))
             graph.add((link_uri, SR.linkingMethod, Literal(linking_method, datatype=XSD.string)))
             graph.add((link_uri, SR.targetKnowledgeGraph, Literal(SOA_KNOWLEDGE_GRAPH, datatype=XSD.string)))
+            similarity = match.get("similarity")
+            if similarity is not None:
+                graph.add((link_uri, SR.confidenceScore, Literal(float(similarity), datatype=XSD.decimal)))
             count += 1
     return count
 
