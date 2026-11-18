@@ -21,7 +21,8 @@ this pattern):
 
     semrepo-core.ttl          Repository, SourceRepositoryLink, CollectionActivity
     semrepo-snapshots.ttl     RepositorySnapshot
-    semrepo-issues.ttl        Issue / PullRequest
+    semrepo-issues.ttl        Issue
+    semrepo-pullrequests.ttl  PullRequest (separate file, for issue closure analysis)
     semrepo-contributions.ttl Contribution
     semrepo-languages.ttl     LanguageUsage, ProgrammingLanguage
 """
@@ -36,6 +37,7 @@ from pathlib import Path
 from typing import Iterator, Optional
 from urllib.parse import quote
 import hashlib
+import re
 
 from rdflib import RDF, XSD, Graph, Literal, Namespace, URIRef
 
@@ -73,6 +75,16 @@ LPWC_RELATION_CONFIG = {
         "linking_method": "lpwc-curated-repository-reference",
     },
 }
+
+# Privacy (agreed with Yuni): e-mail addresses are not published. The raw
+# contributors.jsonl keeps them; free-text profile fields are masked here.
+_EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
+EMAIL_MASK = "[email removed]"
+
+
+def mask_emails(text: str) -> str:
+    return _EMAIL.sub(EMAIL_MASK, text)
+
 
 def _read_jsonl(path: Path) -> Iterator[dict]:
     if not path.exists():
@@ -137,10 +149,10 @@ def add_contributor_profiles(graph: Graph, path: Path) -> int:
         for key, prop in text_fields:
             value = rec.get(key)
             if isinstance(value, str) and value.strip():
-                graph.add((account_uri, prop, Literal(value.strip(), datatype=XSD.string)))
+                graph.add((account_uri, prop, Literal(mask_emails(value.strip()), datatype=XSD.string)))
 
         blog = rec.get("blog")
-        if isinstance(blog, str) and blog.strip():
+        if isinstance(blog, str) and blog.strip() and not _EMAIL.search(blog):   # skip "blog" fields that are e-mails
             graph.add((account_uri, SR.accountBlogUrl, Literal(blog.strip(), datatype=XSD.anyURI)))
 
         created_at = rec.get("github_created_at")
@@ -286,38 +298,44 @@ def add_collection_activities(graph: Graph, path: Path) -> int:
     return count
 
 
-def add_issues(graph: Graph, path: Path) -> int:
+def add_issues(graph: Graph, path: Path, pr_graph: Optional[Graph] = None) -> int:
+    """Issues go to graph; pull requests go to pr_graph if given (else also graph)."""
     count = 0
     for rec in _read_jsonl(path):
-        uri = URIRef(issue_uri(rec["github_issue_id"]))
-        graph.add((uri, RDF.type, SR.PullRequest if rec.get("is_pull_request") else SR.Issue))
-        graph.add((uri, SR.githubIssueId, Literal(rec["github_issue_id"], datatype=XSD.integer)))
-        graph.add((uri, SR.issueNumber, Literal(rec["issue_number"], datatype=XSD.integer)))
-        graph.add((uri, SR.issueState, Literal(rec["issue_state"])))
-        graph.add((uri, SR.issueCreatedAt, Literal(rec["issue_created_at"], datatype=XSD.dateTime)))
-        if rec.get("issue_closed_at"):
-            graph.add((uri, SR.issueClosedAt, Literal(rec["issue_closed_at"], datatype=XSD.dateTime)))
-        if rec.get("issue_title"):
-            graph.add((uri, SR.issueTitle, Literal(rec["issue_title"])))
-        if rec.get("issue_url"):
-            graph.add((uri, SR.issueUrl, Literal(rec["issue_url"], datatype=XSD.anyURI)))
-        if rec.get("issue_updated_at"):
-            graph.add((uri, SR.issueUpdatedAt, Literal(rec["issue_updated_at"], datatype=XSD.dateTime)))
-        if rec.get("issue_comment_count") is not None:
-            graph.add((uri, SR.issueCommentCount, _int(rec["issue_comment_count"])))
-        for label in rec.get("issue_labels") or []:
-            graph.add((uri, SR.issueLabel, Literal(label)))
-        if rec.get("is_pull_request") and rec.get("pull_request_merged_at"):
-            graph.add((uri, SR.pullRequestMergedAt, Literal(rec["pull_request_merged_at"], datatype=XSD.dateTime)))
-        if rec.get("issue_author_github_id") is not None and rec.get("issue_author_login"):
-            author = _add_account(graph, rec["issue_author_github_id"], rec["issue_author_login"],
-                                  rec.get("issue_author_type"))
-            graph.add((uri, SR.issueAuthor, author))
-        repo_uri = URIRef(repository_uri(rec["belongs_to_repository_github_id"]))
-        graph.add((uri, SR.belongsToRepository, repo_uri))
-        graph.add((repo_uri, SR.hasIssue, uri))
+        target = pr_graph if (pr_graph is not None and rec.get("is_pull_request")) else graph
+        _add_issue(target, rec)
         count += 1
     return count
+
+
+def _add_issue(graph: Graph, rec: dict) -> None:
+    uri = URIRef(issue_uri(rec["github_issue_id"]))
+    graph.add((uri, RDF.type, SR.PullRequest if rec.get("is_pull_request") else SR.Issue))
+    graph.add((uri, SR.githubIssueId, Literal(rec["github_issue_id"], datatype=XSD.integer)))
+    graph.add((uri, SR.issueNumber, Literal(rec["issue_number"], datatype=XSD.integer)))
+    graph.add((uri, SR.issueState, Literal(rec["issue_state"])))
+    graph.add((uri, SR.issueCreatedAt, Literal(rec["issue_created_at"], datatype=XSD.dateTime)))
+    if rec.get("issue_closed_at"):
+        graph.add((uri, SR.issueClosedAt, Literal(rec["issue_closed_at"], datatype=XSD.dateTime)))
+    if rec.get("issue_title"):
+        graph.add((uri, SR.issueTitle, Literal(rec["issue_title"])))
+    if rec.get("issue_url"):
+        graph.add((uri, SR.issueUrl, Literal(rec["issue_url"], datatype=XSD.anyURI)))
+    if rec.get("issue_updated_at"):
+        graph.add((uri, SR.issueUpdatedAt, Literal(rec["issue_updated_at"], datatype=XSD.dateTime)))
+    if rec.get("issue_comment_count") is not None:
+        graph.add((uri, SR.issueCommentCount, _int(rec["issue_comment_count"])))
+    for label in rec.get("issue_labels") or []:
+        graph.add((uri, SR.issueLabel, Literal(label)))
+    if rec.get("is_pull_request") and rec.get("pull_request_merged_at"):
+        graph.add((uri, SR.pullRequestMergedAt, Literal(rec["pull_request_merged_at"], datatype=XSD.dateTime)))
+    if rec.get("issue_author_github_id") is not None and rec.get("issue_author_login"):
+        author = _add_account(graph, rec["issue_author_github_id"], rec["issue_author_login"],
+                              rec.get("issue_author_type"))
+        graph.add((uri, SR.issueAuthor, author))
+    repo_uri = URIRef(repository_uri(rec["belongs_to_repository_github_id"]))
+    graph.add((uri, SR.belongsToRepository, repo_uri))
+    graph.add((repo_uri, SR.hasIssue, uri))
 
 
 def add_contributions(graph: Graph, path: Path) -> int:
@@ -504,9 +522,11 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     counts["snapshots"] = add_snapshots(snapshots, input_dir / "snapshots.jsonl")
     snapshots.serialize(destination=output_dir / "semrepo-snapshots.ttl", format="turtle")
 
-    issues = _new_graph()
-    counts["issues"] = add_issues(issues, input_dir / "issues.jsonl")
+    issues, pull_requests = _new_graph(), _new_graph()
+    counts["issues_and_pull_requests"] = add_issues(issues, input_dir / "issues.jsonl", pr_graph=pull_requests)
+    counts["pull_requests"] = len(set(pull_requests.subjects(RDF.type, SR.PullRequest)))
     issues.serialize(destination=output_dir / "semrepo-issues.ttl", format="turtle")
+    pull_requests.serialize(destination=output_dir / "semrepo-pullrequests.ttl", format="turtle")
 
     # contributions = _new_graph()
     # counts["contributions"] = add_contributions(contributions, input_dir / "contributions.jsonl")
