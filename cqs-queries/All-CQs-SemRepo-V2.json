@@ -1,0 +1,468 @@
+[
+  {
+    "id": "CQ-B01",
+    "category": "Core Bibliographic and Retrieval",
+    "naturalLanguageQuestion": "Which repositories are associated with a scientific publication?",
+    "requires": [
+      "repository",
+      "external links",
+      "publication identifiers",
+      "link relation type",
+      "target knowledge graph"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "publication identifier",
+      "link relation type",
+      "target knowledge graph"
+    ],
+    "queryFile": "CQ-B01.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B02",
+    "category": "Core Bibliographic and Retrieval",
+    "naturalLanguageQuestion": "Which repositories are identified as official implementations of a scientific publication?",
+    "requires": [
+      "repository",
+      "external links",
+      "publication identifiers",
+      "link relation type"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "publication identifier",
+      implementation relationship"
+    ],
+    "queryFile": "CQ-B02.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B03",
+    "category": "Scholarly Relationships",
+    "naturalLanguageQuestion": "Which GitHub contributors are also authors of publications associated with a repository?",
+    "requires": [
+      "repository",
+      "repository snapshots",
+      "contributions",
+      contributor accounts",
+      external scholarly links",
+      publication authorship information"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "contributor account",
+      contributor identity",
+      publication identifier",
+      author relationship"
+    ],
+    "queryFile": "CQ-B03.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B04",
+    "category": "Scholarly Relationships",
+    "naturalLanguageQuestion": "Which repositories are linked to publications across multiple scholarly knowledge graphs?",
+    "requires": [
+      "repository",
+      "external links",
+      "target knowledge graph"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      linked publication identifiers",
+      distinct knowledge graphs",
+      number of knowledge graphs"
+    ],
+    "queryFile": "CQ-B04.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B05",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "How do repository popularity, development activity, and metadata evolve over time?",
+    "requires": [
+      "repository",
+      "repository snapshots",
+      snapshot collection timestamps",
+      stars",
+      forks",
+      watchers",
+      open issues",
+      repository metadata"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      snapshot timestamps",
+      stars over time",
+      forks over time",
+      watchers over time",
+      open issues over time",
+      metadata changes"
+    ],
+    "queryFile": "CQ-B05.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B06",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "Which repositories continued development after their associated scientific publication was published?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      publication-repository links",
+      publication dates",
+      pushed timestamps"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      publication date",
+      repository last-push date",
+      post-publication development indicator"
+    ],
+    "queryFile": "CQ-B06.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B07",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "Which publication-associated repositories are archived, inaccessible, or potentially deleted?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      archived status",
+      source repository links",
+      URL resolution status",
+      publication-repository links"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      archived status",
+      source URL",
+      URL resolution status",
+      repository availability indicator"
+    ],
+    "queryFile": "CQ-B07.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B08",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which repositories exhibit declining development activity while the number of open issues increases?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      snapshot timestamps",
+      pushed timestamps",
+      open issue counts"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      snapshot comparison periods",
+      development activity trend",
+      open issue trend",
+      potential maintenance decline indicator"
+    ],
+    "queryFile": "CQ-B08.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B09",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which repositories demonstrate sustained contributor activity across multiple collection periods?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      contributions",
+      contributor accounts",
+      commit counts",
+      snapshot timestamps"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      contributor accounts",
+      number of snapshots with contributions",
+      commit counts per snapshot",
+      sustained activity indicator"
+    ],
+    "queryFile": "CQ-B09.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B10",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which publication-associated repositories have high popularity but low maintenance activity?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      external scholarly links",
+      stars",
+      pushed timestamps",
+      publication identifiers"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      star count",
+      last-push timestamp",
+      popularity indicator",
+      maintenance activity indicator"
+    ],
+    "queryFile": "CQ-B10.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B11",
+    "category": "Core Bibliographic and Retrieval",
+    "naturalLanguageQuestion": "Which publication-associated repositories do not have a declared software license?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      external scholarly links",
+      software license"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      license availability indicator"
+    ],
+    "queryFile": "CQ-B11.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B12",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "Which repositories have undergone URL changes, renaming, or ownership transfers, and what happened to their development activity?",
+    "requires": [
+      "repository",
+      source repository links",
+      original URL",
+      final URL",
+      resolution status",
+      resolved repository",
+      repository snapshots",
+      repository activity"
+    ],
+    "expectedOutput": [
+      "original repository URL",
+      resolved repository URL",
+      repository identifier",
+      resolution status",
+      repository activity history"
+    ],
+    "queryFile": "CQ-B12.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B13",
+    "category": "Evidence and Provenance",
+    "naturalLanguageQuestion": "Which scholarly software links are supported by high-confidence or curated evidence?",
+    "requires": [
+      "external links",
+      linking method",
+      confidence score",
+      link relation type",
+      target knowledge graph"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      link relation type",
+      linking method",
+      confidence score",
+      target knowledge graph"
+    ],
+    "queryFile": "CQ-B13.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B14",
+    "category": "Evidence and Provenance",
+    "naturalLanguageQuestion": "Which repositories have scholarly links established using different linking methods?",
+    "requires": [
+      "repository",
+      external links",
+      linking method"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      linked publication identifiers",
+      linking methods",
+      number of distinct linking methods"
+    ],
+    "queryFile": "CQ-B14.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B15",
+    "category": "Evidence and Provenance",
+    "naturalLanguageQuestion": "Which repository collection activities failed, partially succeeded, or were repeated?",
+    "requires": [
+      "collection activities",
+      attempted URL",
+      collection timestamp",
+      collection status",
+      collection result",
+      repository"
+    ],
+    "expectedOutput": [
+      "collection activity identifier",
+      attempted URL",
+      collection timestamp",
+      collection status",
+      collection result",
+      repository identifier"
+    ],
+    "queryFile": "CQ-B15.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B16",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "Which publication-software links remain stable across collection periods, and which links are unresolved?",
+    "requires": [
+      "repository",
+      source repository links",
+      original URL",
+      final URL",
+      resolution status",
+      collection activities",
+      collection timestamps"
+    ],
+    "expectedOutput": [
+      "publication identifier",
+      repository identifier",
+      source URL",
+      resolution status",
+      link stability indicator",
+      collection periods"
+    ],
+    "queryFile": "CQ-B16.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B17",
+    "category": "Temporal Sustainability and Reproducibility",
+    "naturalLanguageQuestion": "Which publication-associated repositories were initially accessible but subsequently became unavailable?",
+    "requires": [
+      "repository",
+      external scholarly links",
+      source repository links",
+      resolution status",
+      collection activities",
+      collection timestamps"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifier",
+      initial availability status",
+      subsequent availability status",
+      observation timestamps",
+      availability change indicator"
+    ],
+    "queryFile": "CQ-B17.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B18",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which research domains have the highest rates of software abandonment or repository accessibility loss?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      archived status",
+      repository accessibility",
+      research domain classification",
+      publication-repository links"
+    ],
+    "expectedOutput": [
+      "research domain",
+      number of associated repositories",
+      number of archived repositories",
+      number of inaccessible repositories",
+      abandonment rate",
+      accessibility loss rate"
+    ],
+    "queryFile": "CQ-B18.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B19",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "How is contributor activity distributed across repositories, and how does contributor concentration evolve over time?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      contributions",
+      contributor accounts",
+      commit counts",
+      snapshot timestamps"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      contributor identifiers",
+      commits per contributor",
+      contributor activity distribution",
+      contributor concentration metrics",
+      concentration changes over time"
+    ],
+    "queryFile": "CQ-B19.sparql",
+    "status": "validated - partial",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-B20",
+    "category": "Unique Graph Capabilities",
+    "naturalLanguageQuestion": "Can the lifecycle of publication-associated software be reconstructed from repository snapshots, scholarly links, metadata, and provenance information?",
+    "requires": [
+      "repository",
+      repository snapshots",
+      external scholarly links",
+      repository metadata",
+      ownership information",
+      archived status",
+      repository activity timestamps",
+      source repository links",
+      resolution status",
+      collection activities"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      publication identifiers",
+      repository snapshot history",
+      metadata evolution",
+      ownership information",
+      development activity history",
+      archival status",
+      source URL resolution history",
+      collection provenance",
+      reconstructed repository lifecycle"
+    ],
+    "queryFile": "CQ-B20.sparql",
+    "status": "validated - fully",
+    "executionStatus": "not executed"
+  }
+]
