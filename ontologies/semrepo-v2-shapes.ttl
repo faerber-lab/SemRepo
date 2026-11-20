@@ -279,6 +279,16 @@
         sh:maxCount 1 ;
     ] ;
     sh:property [
+        sh:path :paperMentionsRepository ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :repositoryMentionsPaper ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
         sh:path :linkSource ;
         sh:minCount 1 ;
         sh:maxCount 1 ;

@@ -128,6 +128,7 @@ def test_output_works_with_generate_rdf_external_links(setup, tmp_path):
     g = Graph()
     n_links = add_external_links(g, folder / "external-links.jsonl")
     n_auth = add_lpwc_authorship(g, folder / "external-links.jsonl")
-    # repo1: same-repository + official + referenced + MLSea = 4; repo2: same-repository + referenced = 2
-    assert n_links == 6
+    # repo1: same-repository + official + referenced + MLSea = 4, plus 2 SemOpenAlex-work links
+    # (p1 is owl:sameAs W1, once per relation); repo2: same-repository + referenced = 2
+    assert n_links == 8
     assert n_auth == 2

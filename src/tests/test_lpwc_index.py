@@ -22,6 +22,11 @@ NT = f"""
 <{L}paper/p2> <{L}property/creatorName> "Jane Doe" .
 <{L}dataloader/x> <{L}property/hasRepository> <{L}repository/github.com/Owner/Repo> .
 <{L}paper/p1> <http://purl.org/dc/terms/abstract> "ignored" .
+<{L}paper/p1> <{L}property/hasTask> <{L}task/object-detection> .
+<{L}paper/p2> <{L}property/hasTask> <{L}task/small-object-detection> .
+<{L}task/object-detection> <http://dbpedia.org/property/area> <{L}area/computer-vision> .
+<{L}task/object-detection> <{L}property/hasSubtask> <{L}task/small-object-detection> .
+<{L}task/other> <http://dbpedia.org/property/area> <{L}area/> .
 """
 
 
@@ -70,3 +75,13 @@ def test_paper_metadata_and_semopenalex_links(tmp_path):
 def test_unknown_url_returns_nothing(tmp_path):
     _, index = _index(tmp_path)
     assert index.lookup("https://github.com/nobody/nothing") == []
+
+def test_tasks_and_research_areas_including_inherited(tmp_path):
+    counts, index = _index(tmp_path)
+    papers = {p["paper_iri"]: p for p in index.papers_for_repository(f"{L}repository/github.com/Owner/Repo")}
+    p1, p2 = papers[f"{L}paper/p1"], papers[f"{L}paper/p2"]
+    assert p1["tasks"] == [f"{L}task/object-detection"]
+    assert p1["research_areas"] == [f"{L}area/computer-vision"]
+    # small-object-detection has no area itself; inherits from its parent task
+    assert p2["research_areas"] == [f"{L}area/computer-vision"]
+    assert counts["tasks_with_area"] == 1 and counts["tasks_with_inherited_area"] == 1   # empty area/ ignored

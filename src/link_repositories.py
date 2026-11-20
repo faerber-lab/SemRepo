@@ -225,6 +225,8 @@ def _paper_record(p: dict) -> dict:
         "arxiv_id": p.get("arxiv_id"),
         "date": p.get("date"),
         "soa_work_uri": p.get("soa_work"),
+        "tasks": p.get("tasks") or [],
+        "research_areas": p.get("research_areas") or [],
         "paper_mentions_repo": p.get("paper_mentions_repo"),
         "repo_mentions_paper": p.get("repo_mentions_paper"),
     }

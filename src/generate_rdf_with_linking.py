@@ -52,6 +52,8 @@ RESOURCE_NS = Namespace("https://semrepo.org/resource/")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 LPWC_CLASS = Namespace("https://linkedpaperswithcode.com/class/")
 SOA_CLASS = Namespace("https://semopenalex.org/class/")
+LPWC_PROP = Namespace("https://linkedpaperswithcode.com/property/")
+DBP = Namespace("http://dbpedia.org/property/")
 
 LPWC_KNOWLEDGE_GRAPH = "LPWC"
 MLSEA_KNOWLEDGE_GRAPH = "MLSea"
@@ -59,6 +61,8 @@ SOA_KNOWLEDGE_GRAPH = "SemOpenAlex"
 
 LPWC_REPOSITORY_MATCH_METHOD = "lpwc-repository-url-match"
 MLSEA_SAME_AS_METHOD = "lpwc-owl-sameAs"
+# repository -> SemOpenAlex work: the LPWC paper of the repository is owl:sameAs the SemOpenAlex work
+SOA_WORK_VIA_LPWC_METHOD = "lpwc-paper-owl-sameAs"
 GITHUB_SOA_MATCH_METHODS = {
     "ExactNameMatch": "exact-name-match",
     "ReversedNameMatch": "reversed-name-match",
@@ -392,15 +396,15 @@ def add_external_links(graph: Graph, path: Path) -> int:
         relation_type: str,
         linking_method: str,
         knowledge_graph: str,
-    ) -> None:
+    ) -> Optional[URIRef]:
         nonlocal count
 
         if not target_uri:
-            return
+            return None
 
         link_uri = external_link_uri(str(source_uri), target_uri, relation_type, linking_method)
         if (source_uri, SR.hasExternalLink, link_uri) in graph:
-            return
+            return link_uri
 
         graph.add((source_uri, SR.hasExternalLink, link_uri))
         graph.add((link_uri, RDF.type, SR.ExternalLink))
@@ -410,6 +414,16 @@ def add_external_links(graph: Graph, path: Path) -> int:
         graph.add((link_uri, SR.linkingMethod, Literal(linking_method, datatype=XSD.string)))
         graph.add((link_uri, SR.targetKnowledgeGraph, Literal(knowledge_graph, datatype=XSD.string)))
         count += 1
+        return link_uri
+
+    def add_evidence(link_uri: Optional[URIRef], paper: dict) -> None:
+        """LPWC evidence for a repository-paper link (from the repositoryreferences node)."""
+        if link_uri is None:
+            return
+        for key, prop in (("paper_mentions_repo", SR.paperMentionsRepository),
+                          ("repo_mentions_paper", SR.repositoryMentionsPaper)):
+            if paper.get(key) is not None:
+                graph.add((link_uri, prop, Literal(bool(paper[key]), datatype=XSD.boolean)))
 
     for rec in _read_jsonl(path):
         github_id = rec.get("github_repository_id")
@@ -438,7 +452,15 @@ def add_external_links(graph: Graph, path: Path) -> int:
                         print(f"Warning: unsupported LPWC relation '{relation}' for {paper_uri}")
                         continue
 
-                    add_link(source_uri, paper_uri, relation_config["relation_type"], relation_config["linking_method"], LPWC_KNOWLEDGE_GRAPH)
+                    link = add_link(source_uri, paper_uri, relation_config["relation_type"],
+                                    relation_config["linking_method"], LPWC_KNOWLEDGE_GRAPH)
+                    add_evidence(link, paper)
+
+                    # 2b. SemRepo Repository -> SemOpenAlex Work (the LPWC paper is owl:sameAs that work)
+                    soa_work = paper.get("soa_work_uri")
+                    if soa_work:
+                        add_link(source_uri, soa_work, relation_config["relation_type"],
+                                 SOA_WORK_VIA_LPWC_METHOD, SOA_KNOWLEDGE_GRAPH)
 
             # 3. SemRepo Repository -> MLSea Software
             for mlsea_uri in match.get("mlsea_software_uris") or []:
@@ -470,6 +492,36 @@ def add_lpwc_authorship(graph: Graph, path: Path) -> int:
                         count += 1
 
     return count
+
+def add_lpwc_paper_metadata(graph: Graph, path: Path) -> int:
+    """Copies a few facts about each linked LPWC paper from the LPWC dump into
+    the graph, using LPWC's own IRIs and predicates (like add_lpwc_authorship):
+    title and publication date (dcterms), tasks (lpwc:hasTask) and the
+    research area of each task (dbpprop:area). Needed for CQs about
+    publication dates (B06) and research domains (B18)."""
+    seen = set()
+    for rec in _read_jsonl(path):
+        for match in rec.get("lpwc_repository_matches") or []:
+            for paper in match.get("papers") or []:
+                paper_uri = paper.get("lpwc_paper_uri")
+                if not paper_uri or not paper_uri.startswith("https://linkedpaperswithcode.com/paper/") \
+                        or paper_uri in seen:
+                    continue
+                seen.add(paper_uri)
+                paper_ref = URIRef(paper_uri)
+                if paper.get("title"):
+                    graph.add((paper_ref, DCTERMS.title, Literal(paper["title"])))
+                date = paper.get("date")
+                if date:
+                    is_day = re.fullmatch(r"\d{4}-\d{2}-\d{2}", date) is not None
+                    graph.add((paper_ref, DCTERMS.date, Literal(date, datatype=XSD.date) if is_day else Literal(date)))
+                for task in paper.get("tasks") or []:
+                    graph.add((paper_ref, LPWC_PROP.hasTask, URIRef(task)))
+                # areas are resolved per paper by the index (own task area or inherited from a parent task)
+                for area in paper.get("research_areas") or []:
+                    graph.add((paper_ref, DBP.area, URIRef(area)))
+    return len(seen)
+
 
 def add_contributor_soa_links(graph: Graph, external_links_path: Path) -> int:
     count = 0
@@ -545,9 +597,12 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     lpwc_input = input_dir / "external-links.jsonl"
     external_links = _new_graph()
     external_links.bind("dcterms", DCTERMS)
+    external_links.bind("lpwc", LPWC_PROP)
+    external_links.bind("dbpprop", DBP)
     counts["external_links"] = add_external_links(external_links, lpwc_input)
     counts["github_soa_author_links"] = add_contributor_soa_links(external_links, lpwc_input)
     counts["lpwc_authorship"] = add_lpwc_authorship(external_links, lpwc_input)
+    counts["lpwc_paper_metadata"] = add_lpwc_paper_metadata(external_links, lpwc_input)
     
     external_links.serialize(destination=output_dir / "semrepo-external-links.ttl", format="turtle")
 

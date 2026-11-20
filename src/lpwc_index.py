@@ -23,6 +23,9 @@ What the dump looks like (checked on the 2024-09-05 file):
     paper    dcterms:creator              <https://semopenalex.org/author/...>
     paper    lpwc:creatorName             "Name"
     paper    owl:sameAs                   <https://semopenalex.org/work/...>
+    paper    lpwc:hasTask                 <.../task/object-detection>      (932,641)
+    task     dbpprop:area                 <.../area/computer-vision>       (  2,569; 19 areas)
+    task     lpwc:hasSubtask              task   (a subtask without an area inherits its parent's areas)
 
 Note: the dump contains no MLSea (w3id.org/mlsea) links; those are only on
 the live endpoint.
@@ -60,6 +63,10 @@ P_PAPER_MENTIONS = LPWC + "property/paperMentionsRepository"
 P_REPO_MENTIONS = LPWC + "property/repositoryMentionsPaper"
 P_FRAMEWORK = LPWC + "property/hasFramework"
 P_CREATOR_NAME = LPWC + "property/creatorName"
+P_HAS_TASK = LPWC + "property/hasTask"
+P_HAS_SUBTASK = LPWC + "property/hasSubtask"
+P_AREA = "http://dbpedia.org/property/area"
+MAX_AREA_INHERITANCE_DEPTH = 3
 
 REPO_PREFIX = LPWC + "repository/"
 PAPER_PREFIX = LPWC + "paper/"
@@ -68,7 +75,8 @@ DATALOADER_PREFIX = LPWC + "dataloader/"
 SOA_WORK_PREFIX = "https://semopenalex.org/work/"
 
 PREDICATES = {P_HAS_URL, P_ARXIV, P_TITLE, P_DATE, P_CREATOR, P_SAME_AS, P_OFFICIAL, P_HAS_REPO,
-              P_HAS_REFS, P_PAPER_MENTIONS, P_REPO_MENTIONS, P_FRAMEWORK, P_CREATOR_NAME}
+              P_HAS_REFS, P_PAPER_MENTIONS, P_REPO_MENTIONS, P_FRAMEWORK, P_CREATOR_NAME,
+              P_HAS_TASK, P_HAS_SUBTASK, P_AREA}
 _PREDICATE_MARKERS = tuple(f"<{p}>" for p in PREDICATES)
 
 _LINE = re.compile(
@@ -122,6 +130,8 @@ CREATE INDEX paper_repo_repo ON paper_repo(repo_iri);
 CREATE TABLE paper_author (paper_iri TEXT, author_iri TEXT, PRIMARY KEY (paper_iri, author_iri));
 CREATE TABLE paper_creator_name (paper_iri TEXT, name TEXT, PRIMARY KEY (paper_iri, name));
 CREATE TABLE dataloader_repo (dataloader_iri TEXT, repo_iri TEXT, PRIMARY KEY (dataloader_iri, repo_iri));
+CREATE TABLE paper_task (paper_iri TEXT, task_iri TEXT, PRIMARY KEY (paper_iri, task_iri));
+CREATE TABLE task_area (task_iri TEXT, area_iri TEXT, inherited INTEGER, PRIMARY KEY (task_iri, area_iri));
 """
 
 
@@ -141,6 +151,9 @@ def build_index(nt_path: Path, db_path: Path, log_every: int = 1_000_000) -> dic
     authors: set[tuple[str, str]] = set()
     creator_names: set[tuple[str, str]] = set()
     dataloaders: set[tuple[str, str]] = set()
+    paper_tasks: set[tuple[str, str]] = set()
+    task_areas: dict[str, set[str]] = defaultdict(set)
+    task_parents: dict[str, set[str]] = defaultdict(set)
     other_has_repo = 0
     seen = 0
 
@@ -166,6 +179,12 @@ def build_index(nt_path: Path, db_path: Path, log_every: int = 1_000_000) -> dic
                 other_has_repo += 1
         elif p == P_HAS_REFS and o_iri:
             ref_paper[o_iri] = s
+        elif p == P_AREA and o_iri and o_iri.rstrip("/") != LPWC + "area":
+            task_areas[s].add(o_iri)
+        elif p == P_HAS_SUBTASK and o_iri:
+            task_parents[o_iri].add(s)
+        elif p == P_HAS_TASK and o_iri and s.startswith(PAPER_PREFIX):
+            paper_tasks.add((s, o_iri))
         elif p == P_PAPER_MENTIONS:
             ref_flags[s]["paper_mentions_repo"] = _bool(o_lit)
         elif p == P_REPO_MENTIONS:
@@ -198,6 +217,23 @@ def build_index(nt_path: Path, db_path: Path, log_every: int = 1_000_000) -> dic
             if value is not None:
                 link[key] = max(link.get(key) or 0, value)
 
+    # research areas per task: its own, else the nearest ancestor's (via hasSubtask)
+    resolved: dict[str, tuple[set[str], int]] = {}
+    for task in {t for _, t in paper_tasks} | set(task_areas):
+        if task_areas.get(task):
+            resolved[task] = (task_areas[task], 0)
+            continue
+        frontier, seen_tasks = set(task_parents.get(task, ())), {task}
+        for _ in range(MAX_AREA_INHERITANCE_DEPTH):
+            areas = set().union(*(task_areas.get(t, set()) for t in frontier)) if frontier else set()
+            if areas:
+                resolved[task] = (areas, 1)
+                break
+            seen_tasks |= frontier
+            frontier = {parent for t in frontier for parent in task_parents.get(t, ())} - seen_tasks
+            if not frontier:
+                break
+
     if db_path.exists():
         db_path.unlink()
     db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -216,6 +252,9 @@ def build_index(nt_path: Path, db_path: Path, log_every: int = 1_000_000) -> dic
     con.executemany("INSERT INTO paper_author VALUES (?,?)", authors)
     con.executemany("INSERT INTO paper_creator_name VALUES (?,?)", creator_names)
     con.executemany("INSERT INTO dataloader_repo VALUES (?,?)", dataloaders)
+    con.executemany("INSERT INTO paper_task VALUES (?,?)", paper_tasks)
+    con.executemany("INSERT INTO task_area VALUES (?,?,?)",
+                    ((task, area, inherited) for task, (areas, inherited) in resolved.items() for area in areas))
 
     counts = {
         "relevant_triples": seen,
@@ -231,6 +270,10 @@ def build_index(nt_path: Path, db_path: Path, log_every: int = 1_000_000) -> dic
         "paper_author_links": len(authors),
         "creator_names": len(creator_names),
         "papers_with_semopenalex_work": sum(1 for d in papers.values() if d.get("soa_work")),
+        "paper_task_links": len(paper_tasks),
+        "tasks_with_area": sum(1 for _, inherited in resolved.values() if not inherited),
+        "tasks_with_inherited_area": sum(1 for _, inherited in resolved.values() if inherited),
+        "papers_with_research_area": len({p for p, t in paper_tasks if t in resolved}),
         "build_seconds": round(time.monotonic() - started, 1),
     }
     meta = {"source_file": nt_path.name, "built_at": datetime.now(timezone.utc).isoformat(),
@@ -268,6 +311,11 @@ class LpwcIndex:
                     "SELECT author_iri FROM paper_author WHERE paper_iri = ? ORDER BY author_iri", (paper_iri,))],
                 "creator_names": [r[0] for r in self.con.execute(
                     "SELECT name FROM paper_creator_name WHERE paper_iri = ? ORDER BY name", (paper_iri,))],
+                "tasks": [r[0] for r in self.con.execute(
+                    "SELECT task_iri FROM paper_task WHERE paper_iri = ? ORDER BY task_iri", (paper_iri,))],
+                "research_areas": [r[0] for r in self.con.execute(
+                    "SELECT DISTINCT a.area_iri FROM paper_task t JOIN task_area a ON a.task_iri = t.task_iri "
+                    "WHERE t.paper_iri = ? ORDER BY a.area_iri", (paper_iri,))],
             })
         return papers
 

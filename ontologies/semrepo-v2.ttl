@@ -846,3 +846,17 @@
 :Forbidden rdfs:label "Forbidden"@en ; rdfs:comment "Access was denied (HTTP 403, not rate limiting)."@en .
 :RateLimited rdfs:label "Rate limited"@en ; rdfs:comment "Collection stopped by API rate limiting."@en .
 :PartialSuccess rdfs:label "Partial success"@en ; rdfs:comment "Core data collected, some parts missing."@en .
+
+#################################################################
+#    v2.2 additions: link evidence (from LPWC repositoryreferences)
+#################################################################
+
+:paperMentionsRepository rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain :ExternalLink ; rdfs:range xsd:boolean ;
+    rdfs:label "paper mentions repository"@en ;
+    rdfs:comment "Evidence for a repository-paper link: the paper text mentions the repository (LPWC paperMentionsRepository)."@en .
+
+:repositoryMentionsPaper rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain :ExternalLink ; rdfs:range xsd:boolean ;
+    rdfs:label "repository mentions paper"@en ;
+    rdfs:comment "Evidence for a repository-paper link: the repository (e.g. its README) mentions the paper (LPWC repositoryMentionsPaper)."@en .
