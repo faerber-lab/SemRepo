@@ -35,7 +35,7 @@
       "repository identifier",
       "repository URL",
       "publication identifier",
-      implementation relationship"
+      "implementation relationship"
     ],
     "queryFile": "CQ-B02.sparql",
     "status": "validated - partial",
@@ -49,16 +49,16 @@
       "repository",
       "repository snapshots",
       "contributions",
-      contributor accounts",
-      external scholarly links",
-      publication authorship information"
+      "contributor accounts",
+      "external scholarly links",
+      "publication authorship information"
     ],
     "expectedOutput": [
       "repository identifier",
       "contributor account",
-      contributor identity",
-      publication identifier",
-      author relationship"
+      "contributor identity",
+      "publication identifier",
+      "author relationship"
     ],
     "queryFile": "CQ-B03.sparql",
     "status": "validated - partial",
@@ -76,9 +76,9 @@
     "expectedOutput": [
       "repository identifier",
       "repository URL",
-      linked publication identifiers",
-      distinct knowledge graphs",
-      number of knowledge graphs"
+      "linked publication identifiers",
+      "distinct knowledge graphs",
+      "number of knowledge graphs"
     ],
     "queryFile": "CQ-B04.sparql",
     "status": "validated - fully",
@@ -91,21 +91,21 @@
     "requires": [
       "repository",
       "repository snapshots",
-      snapshot collection timestamps",
-      stars",
-      forks",
-      watchers",
-      open issues",
-      repository metadata"
+      "snapshot collection timestamps",
+      "stars",
+      "forks",
+      "watchers",
+      "open issues",
+      "repository metadata"
     ],
     "expectedOutput": [
       "repository identifier",
-      snapshot timestamps",
-      stars over time",
-      forks over time",
-      watchers over time",
-      open issues over time",
-      metadata changes"
+      "snapshot timestamps",
+      "stars over time",
+      "forks over time",
+      "watchers over time",
+      "open issues over time",
+      "metadata changes"
     ],
     "queryFile": "CQ-B05.sparql",
     "status": "validated - fully",
@@ -117,17 +117,17 @@
     "naturalLanguageQuestion": "Which repositories continued development after their associated scientific publication was published?",
     "requires": [
       "repository",
-      repository snapshots",
-      publication-repository links",
-      publication dates",
-      pushed timestamps"
+      "repository snapshots",
+      "publication-repository links",
+      "publication dates",
+      "pushed timestamps"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      publication date",
-      repository last-push date",
-      post-publication development indicator"
+      "publication identifier",
+      "publication date",
+      "repository last-push date",
+      "post-publication development indicator"
     ],
     "queryFile": "CQ-B06.sparql",
     "status": "validated - partial",
@@ -139,19 +139,19 @@
     "naturalLanguageQuestion": "Which publication-associated repositories are archived, inaccessible, or potentially deleted?",
     "requires": [
       "repository",
-      repository snapshots",
-      archived status",
-      source repository links",
-      URL resolution status",
-      publication-repository links"
+      "repository snapshots",
+      "archived status",
+      "source repository links",
+      "URL resolution status",
+      "publication-repository links"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      archived status",
-      source URL",
-      URL resolution status",
-      repository availability indicator"
+      "publication identifier",
+      "archived status",
+      "source URL",
+      "URL resolution status",
+      "repository availability indicator"
     ],
     "queryFile": "CQ-B07.sparql",
     "status": "validated - partial",
@@ -163,17 +163,17 @@
     "naturalLanguageQuestion": "Which repositories exhibit declining development activity while the number of open issues increases?",
     "requires": [
       "repository",
-      repository snapshots",
-      snapshot timestamps",
-      pushed timestamps",
-      open issue counts"
+      "repository snapshots",
+      "snapshot timestamps",
+      "pushed timestamps",
+      "open issue counts"
     ],
     "expectedOutput": [
       "repository identifier",
-      snapshot comparison periods",
-      development activity trend",
-      open issue trend",
-      potential maintenance decline indicator"
+      "snapshot comparison periods",
+      "development activity trend",
+      "open issue trend",
+      "potential maintenance decline indicator"
     ],
     "queryFile": "CQ-B08.sparql",
     "status": "validated - partial",
@@ -185,18 +185,18 @@
     "naturalLanguageQuestion": "Which repositories demonstrate sustained contributor activity across multiple collection periods?",
     "requires": [
       "repository",
-      repository snapshots",
-      contributions",
-      contributor accounts",
-      commit counts",
-      snapshot timestamps"
+      "repository snapshots",
+      "contributions",
+      "contributor accounts",
+      "commit counts",
+      "snapshot timestamps"
     ],
     "expectedOutput": [
       "repository identifier",
-      contributor accounts",
-      number of snapshots with contributions",
-      commit counts per snapshot",
-      sustained activity indicator"
+      "contributor accounts",
+      "number of snapshots with contributions",
+      "commit counts per snapshot",
+      "sustained activity indicator"
     ],
     "queryFile": "CQ-B09.sparql",
     "status": "validated - partial",
@@ -208,19 +208,19 @@
     "naturalLanguageQuestion": "Which publication-associated repositories have high popularity but low maintenance activity?",
     "requires": [
       "repository",
-      repository snapshots",
-      external scholarly links",
-      stars",
-      pushed timestamps",
-      publication identifiers"
+      "repository snapshots",
+      "external scholarly links",
+      "stars",
+      "pushed timestamps",
+      "publication identifiers"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      star count",
-      last-push timestamp",
-      popularity indicator",
-      maintenance activity indicator"
+      "publication identifier",
+      "star count",
+      "last-push timestamp",
+      "popularity indicator",
+      "maintenance activity indicator"
     ],
     "queryFile": "CQ-B10.sparql",
     "status": "validated - partial",
@@ -232,14 +232,14 @@
     "naturalLanguageQuestion": "Which publication-associated repositories do not have a declared software license?",
     "requires": [
       "repository",
-      repository snapshots",
-      external scholarly links",
-      software license"
+      "repository snapshots",
+      "external scholarly links",
+      "software license"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      license availability indicator"
+      "publication identifier",
+      "license availability indicator"
     ],
     "queryFile": "CQ-B11.sparql",
     "status": "validated - partial",
@@ -251,20 +251,20 @@
     "naturalLanguageQuestion": "Which repositories have undergone URL changes, renaming, or ownership transfers, and what happened to their development activity?",
     "requires": [
       "repository",
-      source repository links",
-      original URL",
-      final URL",
-      resolution status",
-      resolved repository",
-      repository snapshots",
-      repository activity"
+      "source repository links",
+      "original URL",
+      "final URL",
+      "resolution status",
+      "resolved repository",
+      "repository snapshots",
+      "repository activity"
     ],
     "expectedOutput": [
       "original repository URL",
-      resolved repository URL",
-      repository identifier",
-      resolution status",
-      repository activity history"
+      "resolved repository URL",
+      "repository identifier",
+      "resolution status",
+      "repository activity history"
     ],
     "queryFile": "CQ-B12.sparql",
     "status": "validated - partial",
@@ -276,18 +276,18 @@
     "naturalLanguageQuestion": "Which scholarly software links are supported by high-confidence or curated evidence?",
     "requires": [
       "external links",
-      linking method",
-      confidence score",
-      link relation type",
-      target knowledge graph"
+      "linking method",
+      "confidence score",
+      "link relation type",
+      "target knowledge graph"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      link relation type",
-      linking method",
-      confidence score",
-      target knowledge graph"
+      "publication identifier",
+      "link relation type",
+      "linking method",
+      "confidence score",
+      "target knowledge graph"
     ],
     "queryFile": "CQ-B13.sparql",
     "status": "validated - fully",
@@ -299,14 +299,14 @@
     "naturalLanguageQuestion": "Which repositories have scholarly links established using different linking methods?",
     "requires": [
       "repository",
-      external links",
-      linking method"
+      "external links",
+      "linking method"
     ],
     "expectedOutput": [
       "repository identifier",
-      linked publication identifiers",
-      linking methods",
-      number of distinct linking methods"
+      "linked publication identifiers",
+      "linking methods",
+      "number of distinct linking methods"
     ],
     "queryFile": "CQ-B14.sparql",
     "status": "validated - fully",
@@ -318,19 +318,19 @@
     "naturalLanguageQuestion": "Which repository collection activities failed, partially succeeded, or were repeated?",
     "requires": [
       "collection activities",
-      attempted URL",
-      collection timestamp",
-      collection status",
-      collection result",
-      repository"
+      "attempted URL",
+      "collection timestamp",
+      "collection status",
+      "collection result",
+      "repository"
     ],
     "expectedOutput": [
       "collection activity identifier",
-      attempted URL",
-      collection timestamp",
-      collection status",
-      collection result",
-      repository identifier"
+      "attempted URL",
+      "collection timestamp",
+      "collection status",
+      "collection result",
+      "repository identifier"
     ],
     "queryFile": "CQ-B15.sparql",
     "status": "validated - fully",
@@ -342,20 +342,20 @@
     "naturalLanguageQuestion": "Which publication-software links remain stable across collection periods, and which links are unresolved?",
     "requires": [
       "repository",
-      source repository links",
-      original URL",
-      final URL",
-      resolution status",
-      collection activities",
-      collection timestamps"
+      "source repository links",
+      "original URL",
+      "final URL",
+      "resolution status",
+      "collection activities",
+      "collection timestamps"
     ],
     "expectedOutput": [
       "publication identifier",
-      repository identifier",
-      source URL",
-      resolution status",
-      link stability indicator",
-      collection periods"
+      "repository identifier",
+      "source URL",
+      "resolution status",
+      "link stability indicator",
+      "collection periods"
     ],
     "queryFile": "CQ-B16.sparql",
     "status": "validated - partial",
@@ -367,19 +367,19 @@
     "naturalLanguageQuestion": "Which publication-associated repositories were initially accessible but subsequently became unavailable?",
     "requires": [
       "repository",
-      external scholarly links",
-      source repository links",
-      resolution status",
-      collection activities",
-      collection timestamps"
+      "external scholarly links",
+      "source repository links",
+      "resolution status",
+      "collection activities",
+      "collection timestamps"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifier",
-      initial availability status",
-      subsequent availability status",
-      observation timestamps",
-      availability change indicator"
+      "publication identifier",
+      "initial availability status",
+      "subsequent availability status",
+      "observation timestamps",
+      "availability change indicator"
     ],
     "queryFile": "CQ-B17.sparql",
     "status": "validated - partial",
@@ -391,19 +391,19 @@
     "naturalLanguageQuestion": "Which research domains have the highest rates of software abandonment or repository accessibility loss?",
     "requires": [
       "repository",
-      repository snapshots",
-      archived status",
-      repository accessibility",
-      research domain classification",
-      publication-repository links"
+      "repository snapshots",
+      "archived status",
+      "repository accessibility",
+      "research domain classification",
+      "publication-repository links"
     ],
     "expectedOutput": [
       "research domain",
-      number of associated repositories",
-      number of archived repositories",
-      number of inaccessible repositories",
-      abandonment rate",
-      accessibility loss rate"
+      "number of associated repositories",
+      "number of archived repositories",
+      "number of inaccessible repositories",
+      "abandonment rate",
+      "accessibility loss rate"
     ],
     "queryFile": "CQ-B18.sparql",
     "status": "validated - partial",
@@ -415,19 +415,19 @@
     "naturalLanguageQuestion": "How is contributor activity distributed across repositories, and how does contributor concentration evolve over time?",
     "requires": [
       "repository",
-      repository snapshots",
-      contributions",
-      contributor accounts",
-      commit counts",
-      snapshot timestamps"
+      "repository snapshots",
+      "contributions",
+      "contributor accounts",
+      "commit counts",
+      "snapshot timestamps"
     ],
     "expectedOutput": [
       "repository identifier",
-      contributor identifiers",
-      commits per contributor",
-      contributor activity distribution",
-      contributor concentration metrics",
-      concentration changes over time"
+      "contributor identifiers",
+      "commits per contributor",
+      "contributor activity distribution",
+      "contributor concentration metrics",
+      "concentration changes over time"
     ],
     "queryFile": "CQ-B19.sparql",
     "status": "validated - partial",
@@ -439,27 +439,27 @@
     "naturalLanguageQuestion": "Can the lifecycle of publication-associated software be reconstructed from repository snapshots, scholarly links, metadata, and provenance information?",
     "requires": [
       "repository",
-      repository snapshots",
-      external scholarly links",
-      repository metadata",
-      ownership information",
-      archived status",
-      repository activity timestamps",
-      source repository links",
-      resolution status",
-      collection activities"
+      "repository snapshots",
+      "external scholarly links",
+      "repository metadata",
+      "ownership information",
+      "archived status",
+      "repository activity timestamps",
+      "source repository links",
+      "resolution status",
+      "collection activities"
     ],
     "expectedOutput": [
       "repository identifier",
-      publication identifiers",
-      repository snapshot history",
-      metadata evolution",
-      ownership information",
-      development activity history",
-      archival status",
-      source URL resolution history",
-      collection provenance",
-      reconstructed repository lifecycle"
+      "publication identifiers",
+      "repository snapshot history",
+      "metadata evolution",
+      "ownership information",
+      "development activity history",
+      "archival status",
+      "source URL resolution history",
+      "collection provenance",
+      "reconstructed repository lifecycle"
     ],
     "queryFile": "CQ-B20.sparql",
     "status": "validated - fully",
