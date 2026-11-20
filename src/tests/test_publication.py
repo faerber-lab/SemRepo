@@ -134,3 +134,48 @@ def test_rdf_adds_semopenalex_work_links_evidence_and_paper_metadata(tmp_path):
     ok, report = validate_generated_rdf(sorted(out.glob("*.ttl")), root / "ontologies/semrepo-v2.ttl",
                                         root / "ontologies/semrepo-v2-shapes.ttl")
     assert ok, report
+
+
+def test_language_spellings_are_unified_across_collections(tmp_path):
+    harvest, publish = tmp_path / "h", tmp_path / "p"
+    _collection(harvest, "a", [1, 2], "https://github.com/x/r")
+    _collection(harvest, "b", [3], "https://github.com/y/r")
+    _write(harvest / "a" / "snapshots.jsonl", [{"repository_github_id": 1, "collected_at": TS, "primary_language": "MATLAB"},
+                                               {"repository_github_id": 2, "collected_at": TS, "primary_language": "MATLAB"}])
+    _write(harvest / "b" / "language-usage.jsonl", [{"repository_github_id": 3, "snapshot_collected_at": TS,
+                                                     "language_name": "Matlab", "language_bytes": 10}])
+
+    summary = prepare(harvest, publish)
+
+    assert _lines(publish / "b" / "language-usage.jsonl")[0]["language_name"] == "MATLAB"
+    assert summary["language_names_unified"] == {"matlab": {"canonical": "MATLAB", "variants": {"MATLAB": 2, "Matlab": 1}}}
+
+
+def test_evidence_flags_from_two_lpwc_repositories_are_merged(tmp_path):
+    from pathlib import Path
+    from semrepo.validate_rdf import validate_generated_rdf
+    L = "https://linkedpaperswithcode.com/"
+
+    def match(repo, paper_mentions, repo_mentions):
+        return {"lpwc_repository_uri": f"{L}repository/github.com/o/{repo}", "mlsea_software_uris": [],
+                "papers": [{"lpwc_paper_uri": f"{L}paper/p1", "repository_relations": ["hasOfficialRepository"],
+                            "paper_mentions_repo": paper_mentions, "repo_mentions_paper": repo_mentions,
+                            "authors": []}]}
+
+    d = tmp_path / "in"
+    _write(d / "repositories.jsonl", [{"github_repository_id": 1, "canonical_url": "https://github.com/o/new"}])
+    # renamed repository: current and original URL are two LPWC repository nodes with different flags
+    _write(d / "external-links.jsonl", [{"github_repository_id": 1,
+                                         "lpwc_repository_matches": [match("new", False, False), match("old", True, False)]}])
+    out = tmp_path / "out"
+    generate_rdf(d, out)
+    g = Graph().parse(out / "semrepo-external-links.ttl")
+
+    link = next(l for l in g.subjects(SR.linkRelationType, Literal("official implementation of", datatype=XSD_STRING)))
+    assert [o.toPython() for o in g.objects(link, SR.paperMentionsRepository)] == [True]
+    assert [o.toPython() for o in g.objects(link, SR.repositoryMentionsPaper)] == [False]
+
+    root = Path(__file__).resolve().parents[2]
+    ok, report = validate_generated_rdf(sorted(out.glob("*.ttl")), root / "ontologies/semrepo-v2.ttl",
+                                        root / "ontologies/semrepo-v2-shapes.ttl")
+    assert ok, report

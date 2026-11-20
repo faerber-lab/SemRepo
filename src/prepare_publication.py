@@ -9,7 +9,8 @@ collected it; later copies are dropped. Every source-repository-link
 (original URL -> repository) is kept once, so the URL provenance stays
 complete; collection activities are all kept (provenance of every API
 call). Contributor profiles are written once, in the first collection that
-references the account.
+references the account. Language names that differ only in spelling
+("MATLAB"/"Matlab") are unified to the most frequent spelling.
 
 Input:  <harvest root>/<collection>/*.jsonl   (only collections with _COMPLETE)
 Output: <publish root>/<collection>/*.jsonl  + <publish root>/dedup-summary.json
@@ -25,7 +26,7 @@ import sys
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable, Iterable
+from typing import Callable, Iterable, Optional
 
 FILES = [
     "repositories.jsonl", "snapshots.jsonl", "issues.jsonl", "contributions.jsonl", "contributors.jsonl",
@@ -42,11 +43,36 @@ def _read(path: Path) -> Iterable[dict]:
                     yield json.loads(line)
 
 
-def _copy(src: Path, dst: Path, keep: Callable[[dict], bool]) -> tuple[int, int]:
+def _language_key(name: str) -> str:
+    """Same normalization as semrepo.identifiers.programming_language_uri."""
+    return name.strip().lower().replace(" ", "-")
+
+
+def canonical_language_names(collections: list[Path]) -> tuple[dict[str, str], dict[str, dict]]:
+    """GitHub sometimes reports one language with different spellings (e.g.
+    "MATLAB" and "Matlab"). They share one ProgrammingLanguage node, which must
+    have exactly one name. The canonical name is the most frequent spelling over
+    the whole harvest (ties: alphabetical), so it is the same in every collection."""
+    seen: dict[str, Counter] = {}
+    for col in collections:
+        for file, field in (("snapshots.jsonl", "primary_language"), ("language-usage.jsonl", "language_name")):
+            for rec in _read(col / file):
+                name = rec.get(field)
+                if name:
+                    seen.setdefault(_language_key(name), Counter())[name] += 1
+    canonical = {key: sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))[0][0] for key, c in seen.items()}
+    unified = {key: {"canonical": canonical[key], "variants": dict(c)} for key, c in seen.items() if len(c) > 1}
+    return canonical, unified
+
+
+def _copy(src: Path, dst: Path, keep: Callable[[dict], bool],
+          transform: Optional[Callable[[dict], dict]] = None) -> tuple[int, int]:
     kept = dropped = 0
     with dst.open("w", encoding="utf-8") as out:
         for rec in _read(src):
             if keep(rec):
+                if transform:
+                    rec = transform(rec)
                 out.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 kept += 1
             else:
@@ -68,6 +94,15 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         for rec in _read(col / "repositories.jsonl"):
             owner.setdefault(rec["github_repository_id"], col.name)
 
+    language_names, languages_unified = canonical_language_names(collections)
+
+    def fix_language(field: str) -> Callable[[dict], dict]:
+        def apply(r: dict) -> dict:
+            if r.get(field):
+                r[field] = language_names.get(_language_key(r[field]), r[field])
+            return r
+        return apply
+
     seen_urls: set[str] = set()
     seen_profiles: set[int] = set()
     seen_issues: set[int] = set()
@@ -87,7 +122,7 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         track("repositories", _copy(col / "repositories.jsonl", out / "repositories.jsonl",
                                     lambda r: mine(r["github_repository_id"])))
         track("snapshots", _copy(col / "snapshots.jsonl", out / "snapshots.jsonl",
-                                 lambda r: mine(r["repository_github_id"])))
+                                 lambda r: mine(r["repository_github_id"]), fix_language("primary_language")))
 
         def keep_issue(r):
             if not mine(r["belongs_to_repository_github_id"]) or r["github_issue_id"] in seen_issues:
@@ -113,7 +148,7 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         track("contributors", _copy(col / "contributors.jsonl", out / "contributors.jsonl", keep_profile))
 
         track("language_usage", _copy(col / "language-usage.jsonl", out / "language-usage.jsonl",
-                                      lambda r: mine(r["repository_github_id"])))
+                                      lambda r: mine(r["repository_github_id"]), fix_language("language_name")))
 
         def keep_url(r):
             url = r["original_repository_url"]
@@ -152,6 +187,7 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         "unique_repositories": len(owner),
         "totals": dict(totals),
         "capped_repositories_partial_success": dict(capped),
+        "language_names_unified": languages_unified,
         "per_collection": per_collection,
     }
     publish_root.mkdir(parents=True, exist_ok=True)

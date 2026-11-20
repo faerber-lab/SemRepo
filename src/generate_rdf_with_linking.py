@@ -417,13 +417,22 @@ def add_external_links(graph: Graph, path: Path) -> int:
         return link_uri
 
     def add_evidence(link_uri: Optional[URIRef], paper: dict) -> None:
-        """LPWC evidence for a repository-paper link (from the repositoryreferences node)."""
+        """LPWC evidence for a repository-paper link (from the repositoryreferences node).
+
+        The same link can be reached through more than one LPWC repository node
+        (e.g. the current and the original URL of a renamed repository), each with
+        its own flags. The values are merged with OR -- true if any source says
+        true -- so every link keeps exactly one value per property (SHACL maxCount 1).
+        """
         if link_uri is None:
             return
         for key, prop in (("paper_mentions_repo", SR.paperMentionsRepository),
                           ("repo_mentions_paper", SR.repositoryMentionsPaper)):
-            if paper.get(key) is not None:
-                graph.add((link_uri, prop, Literal(bool(paper[key]), datatype=XSD.boolean)))
+            if paper.get(key) is None:
+                continue
+            existing = graph.value(link_uri, prop)
+            merged = bool(paper[key]) or (existing is not None and existing.toPython() is True)
+            graph.set((link_uri, prop, Literal(merged, datatype=XSD.boolean)))
 
     for rec in _read_jsonl(path):
         github_id = rec.get("github_repository_id")
