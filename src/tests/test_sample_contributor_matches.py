@@ -69,3 +69,27 @@ def test_score_reads_semicolon_csv_and_weights_by_population(tmp_path):
     assert result["strata"]["ExactNameMatch"]["precision"] == 1.0
     assert sum(s.get("unsure", 0) for s in result["strata"].values()) == 1
     assert result["match_types"]["FuzzyNameMatch"]["weighted_precision"] == 0.75   # 4 equal bands of 50, one wrong
+
+
+def test_score_restores_columns_that_were_sorted_separately(tmp_path):
+    _harvest(tmp_path / "h")
+    original = tmp_path / "s.csv"
+    sample(tmp_path / "h", original)
+    rows = list(csv.DictReader(original.open()))
+    for r in rows:
+        r["label"] = "0" if r["stratum"] == "Fuzzy 0.60-0.70" else "1"
+    # the labeller sorted only the first columns (sample_id .. similarity) by match_type
+    head = ["sample_id", "stratum", "match_type", "similarity"]
+    moved = sorted(({k: r[k] for k in head} for r in rows), key=lambda h: h["match_type"])
+    broken = [{**r, **h} for r, h in zip(rows, moved)]
+    labelled = tmp_path / "s-labelled.csv"
+    with labelled.open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(broken)
+
+    result = score(labelled)
+
+    assert result["rows_restored_from_original"] > 0
+    assert result["strata"]["Fuzzy 0.60-0.70"]["precision"] == 0.0
+    assert result["match_types"]["FuzzyNameMatch"]["weighted_precision"] == 0.75

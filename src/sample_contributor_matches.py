@@ -116,9 +116,28 @@ def _read_labelled(path: Path) -> list[dict]:
     return list(csv.DictReader(text.splitlines(), dialect=dialect))
 
 
+def _restore_from_original(rows: list[dict], original_csv: Path) -> int:
+    """Spreadsheet editing can move single columns (e.g. sorting only the selected
+    columns). The sample columns are therefore restored from the original sample,
+    joined on (github_login, soa_author_uri); only label and note come from the
+    labelled file. Returns the number of rows whose sample columns had changed."""
+    original = {(r["github_login"], r["soa_author_uri"]): r for r in csv.DictReader(original_csv.open(encoding="utf-8"))}
+    changed = 0
+    for r in rows:
+        o = original.get((r.get("github_login"), r.get("soa_author_uri")))
+        if o is None:
+            raise ValueError(f"row not in the original sample: {r.get('github_login')} / {r.get('soa_author_uri')}")
+        if any((r.get(k) or "") != (o[k] or "") for k in ("sample_id", "stratum", "match_type", "github_name", "matched_soa_name")):
+            changed += 1
+        r.update({k: v for k, v in o.items() if k not in ("label", "note")})
+    return changed
+
+
 def score(labelled_csv: Path, population_json: Path | None = None) -> dict:
     rows = _read_labelled(labelled_csv)
-    population_json = population_json or Path(str(labelled_csv).replace("-labelled", "") + ".population.json")
+    original_csv = Path(str(labelled_csv).replace("-labelled", ""))
+    restored = _restore_from_original(rows, original_csv) if original_csv.exists() and original_csv != labelled_csv else None
+    population_json = population_json or Path(str(original_csv) + ".population.json")
     strata_sizes = json.loads(population_json.read_text())["strata"] if population_json.exists() else {}
 
     per = defaultdict(Counter)
@@ -127,7 +146,7 @@ def score(labelled_csv: Path, population_json: Path | None = None) -> dict:
         per[r["stratum"]]["correct" if label == "1" else "wrong" if label == "0" else
                           "unsure" if label == "?" else "unlabelled"] += 1
 
-    result = {"strata": {}, "match_types": {}}
+    result = {"rows": len(rows), "rows_restored_from_original": restored, "strata": {}, "match_types": {}}
     for name, c in sorted(per.items()):
         n = c["correct"] + c["wrong"]
         result["strata"][name] = {**c, "precision": round(c["correct"] / n, 3) if n else None,
