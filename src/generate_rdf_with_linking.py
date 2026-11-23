@@ -32,6 +32,7 @@ this pattern):
 from __future__ import annotations
 
 import json
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from typing import Iterator, Optional
@@ -532,12 +533,26 @@ def add_lpwc_paper_metadata(graph: Graph, path: Path) -> int:
     return len(seen)
 
 
-def add_contributor_soa_links(graph: Graph, external_links_path: Path) -> int:
+# Linking keeps every fuzzy match with similarity >= 0.60 (SequenceMatcher's
+# "close match" rule of thumb), so the threshold can be changed later without
+# re-linking. The published RDF uses a stricter threshold: in a manually
+# labelled stratified sample (evaluation step 9.4), fuzzy matches in
+# [0.60, 0.70) were only 44% correct, those >= 0.70 79-100%.
+RDF_FUZZY_THRESHOLD = 0.70
+
+
+def add_contributor_soa_links(graph: Graph, external_links_path: Path,
+                              fuzzy_threshold: float = RDF_FUZZY_THRESHOLD,
+                              skipped: Optional[Counter] = None) -> int:
     count = 0
     created_links = set()
     for repository_record in _read_jsonl(external_links_path):
         for match in repository_record.get("github_contributor_soa_matches") or []:
             if match.get("match_status") == "AmbiguousNameMatch":
+                continue
+            if match.get("match_type") == "FuzzyNameMatch" and float(match.get("similarity") or 0) < fuzzy_threshold:
+                if skipped is not None:
+                    skipped["fuzzy_matches_below_rdf_threshold"] += 1
                 continue
             contributor_id = match.get("contributor_github_user_id")
             soa_author_uri = match.get("soa_author_uri")
@@ -565,7 +580,7 @@ def add_contributor_soa_links(graph: Graph, external_links_path: Path) -> int:
             count += 1
     return count
 
-def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
+def generate_rdf(input_dir: Path, output_dir: Path, fuzzy_threshold: float = RDF_FUZZY_THRESHOLD) -> dict:
     """Reads all JSONL files in input_dir (WP4.6/pipeline.py's output) and
     writes the five .ttl files described in the module docstring. Returns
     a dict of {file: triple_count} for the "which input/config did you
@@ -609,7 +624,9 @@ def generate_rdf(input_dir: Path, output_dir: Path) -> dict:
     external_links.bind("lpwc", LPWC_PROP)
     external_links.bind("dbpprop", DBP)
     counts["external_links"] = add_external_links(external_links, lpwc_input)
-    counts["github_soa_author_links"] = add_contributor_soa_links(external_links, lpwc_input)
+    skipped: Counter = Counter()
+    counts["github_soa_author_links"] = add_contributor_soa_links(external_links, lpwc_input, fuzzy_threshold, skipped)
+    counts["fuzzy_matches_below_rdf_threshold"] = skipped["fuzzy_matches_below_rdf_threshold"]
     counts["lpwc_authorship"] = add_lpwc_authorship(external_links, lpwc_input)
     counts["lpwc_paper_metadata"] = add_lpwc_paper_metadata(external_links, lpwc_input)
     

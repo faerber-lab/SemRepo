@@ -179,3 +179,21 @@ def test_evidence_flags_from_two_lpwc_repositories_are_merged(tmp_path):
     ok, report = validate_generated_rdf(sorted(out.glob("*.ttl")), root / "ontologies/semrepo-v2.ttl",
                                         root / "ontologies/semrepo-v2-shapes.ttl")
     assert ok, report
+
+
+def test_fuzzy_matches_below_rdf_threshold_are_not_published(tmp_path):
+    d = tmp_path / "in"
+    _write(d / "repositories.jsonl", [{"github_repository_id": 1, "canonical_url": "https://github.com/o/r1"}])
+
+    def m(uid, mtype, sim):
+        return {"contributor_github_user_id": uid, "soa_author_uri": f"https://semopenalex.org/author/A{uid}",
+                "match_type": mtype, "similarity": sim}
+
+    _write(d / "external-links.jsonl", [{"github_repository_id": 1, "lpwc_repository_matches": [],
+                                         "github_contributor_soa_matches": [
+                                             m(1, "ExactNameMatch", 1.0), m(2, "FuzzyNameMatch", 0.65),
+                                             m(3, "FuzzyNameMatch", 0.70), m(4, "ReversedNameMatch", 1.0)]}])
+    counts = generate_rdf(d, tmp_path / "out")
+    assert counts["github_soa_author_links"] == 3
+    assert counts["fuzzy_matches_below_rdf_threshold"] == 1
+    assert generate_rdf(d, tmp_path / "out2", fuzzy_threshold=0.60)["github_soa_author_links"] == 4

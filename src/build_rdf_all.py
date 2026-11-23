@@ -17,7 +17,7 @@ import time
 from collections import Counter
 from pathlib import Path
 
-from generate_rdf_with_linking import generate_rdf
+from generate_rdf_with_linking import RDF_FUZZY_THRESHOLD, generate_rdf
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,7 +54,7 @@ def main(argv: list[str]) -> None:
         totals.update(counts)
         print(f"{col.name}: {entry}", flush=True)
 
-    summary = {"totals": dict(totals), "collections": report,
+    summary = {"rdf_fuzzy_threshold": RDF_FUZZY_THRESHOLD, "totals": dict(totals), "collections": report,
                "all_conform": all(e.get("shacl_conforms", True) for e in report.values())}
     rdf_root.mkdir(parents=True, exist_ok=True)
     (rdf_root / "rdf-summary.json").write_text(json.dumps(summary, indent=2))
