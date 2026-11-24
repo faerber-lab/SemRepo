@@ -78,6 +78,14 @@
     sh:targetClass :GitHubBot ;
     sh:node :GitHubAccountCoreShape .
 
+# Every account is typed sr:GitHubAccount; the specific subclass is added only
+# when GitHub reports User/Organization/Bot. Accounts of other types (e.g.
+# "Mannequin") stay generic GitHubAccount and are validated here.
+:GitHubAccountShape
+    a sh:NodeShape ;
+    sh:targetClass :GitHubAccount ;
+    sh:node :GitHubAccountCoreShape .
+
 #################################################################
 #    Repository / RepositorySnapshot pattern
 #################################################################
@@ -230,7 +238,7 @@
     ] ;
     sh:property [
         sh:path :ownerAccount ;
-        sh:or ( [ sh:class :GitHubUser ] [ sh:class :GitHubOrganisation ] [ sh:class :GitHubBot ] ) ;
+        sh:class :GitHubAccount ;   # User, Organisation, Bot, or an account of unknown/other type
         sh:maxCount 1 ;
     ] ;
     sh:property [
@@ -294,9 +302,7 @@
         sh:maxCount 1 ;
         sh:or (
             [ sh:class :Repository ]
-            [ sh:class :GitHubUser ]
-            [ sh:class :GitHubOrganisation ]
-            [ sh:class :GitHubBot ]
+            [ sh:class :GitHubAccount ]
         ) ;
     ] .
 
@@ -384,11 +390,7 @@
         sh:path :contributor ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:or (
-            [ sh:class :GitHubUser ]
-            [ sh:class :GitHubOrganisation ]
-            [ sh:class :GitHubBot ]
-        ) ;
+        sh:class :GitHubAccount ;   # User, Organisation, Bot, or an account of unknown/other type
     ] ;
     sh:property [
         sh:path :commitCount ;
@@ -503,7 +505,7 @@
     ] ;
     sh:property [
         sh:path :issueAuthor ;
-        sh:or ( [ sh:class :GitHubUser ] [ sh:class :GitHubOrganisation ] [ sh:class :GitHubBot ] ) ;
+        sh:class :GitHubAccount ;   # User, Organisation, Bot, or an account of unknown/other type
         sh:maxCount 1 ;
     ] .
 

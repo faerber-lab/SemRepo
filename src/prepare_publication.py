@@ -8,7 +8,9 @@ Rule: a repository belongs to the first collection (in sorted order) that
 collected it; later copies are dropped. Every source-repository-link
 (original URL -> repository) is kept once, so the URL provenance stays
 complete; collection activities are all kept (provenance of every API
-call). Contributor profiles are written once, in the first collection that
+call). Source-repository-links and collection activities are written to the
+collection that owns the repository they point to, so each collection is
+self-contained and can be validated on its own. Contributor profiles are written once, in the first collection that
 references the account. Language names that differ only in spelling
 ("MATLAB"/"Matlab") are unified to the most frequent spelling.
 
@@ -23,7 +25,7 @@ from __future__ import annotations
 
 import json
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, Iterable, Optional
@@ -103,12 +105,36 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
             return r
         return apply
 
+    # Provenance records are written to the collection that owns the repository
+    # they point to, so every collection folder is self-contained (no
+    # references to repositories of other collections) and can be validated
+    # on its own. Records without a harvested repository stay where they were.
     seen_urls: set[str] = set()
+    routed_links: dict[str, list[dict]] = defaultdict(list)
+    routed_activities: dict[str, list[dict]] = defaultdict(list)
+    link_stats: dict[str, Counter] = defaultdict(Counter)
+    for col in collections:
+        for r in _read(col / "source-repository-links.jsonl"):
+            url = r["original_repository_url"]
+            if url in seen_urls:
+                link_stats[col.name]["source_repository_links_dropped"] += 1
+                continue
+            seen_urls.add(url)
+            target = owner.get(r.get("resolved_repository_github_id"), col.name)
+            routed_links[target].append(r)
+            if target != col.name:
+                link_stats[col.name]["source_repository_links_moved_out"] += 1
+        for a in _read(col / "collection-activities.jsonl"):
+            target = owner.get(a.get("resulted_in_repository_github_id"), col.name)
+            routed_activities[target].append(a)
+            if target != col.name:
+                link_stats[col.name]["collection_activities_moved_out"] += 1
+
     seen_profiles: set[int] = set()
     seen_issues: set[int] = set()
     per_collection = {}
     totals: Counter = Counter()
-    capped = Counter()
+    capped_repos: set[tuple[str, int]] = set()
 
     for col in collections:
         out = publish_root / col.name
@@ -150,24 +176,20 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         track("language_usage", _copy(col / "language-usage.jsonl", out / "language-usage.jsonl",
                                       lambda r: mine(r["repository_github_id"]), fix_language("language_name")))
 
-        def keep_url(r):
-            url = r["original_repository_url"]
-            if url in seen_urls:
-                return False
-            seen_urls.add(url)
-            return True
-        track("source_repository_links", _copy(col / "source-repository-links.jsonl",
-                                               out / "source-repository-links.jsonl", keep_url))
+        with (out / "source-repository-links.jsonl").open("w", encoding="utf-8") as f:
+            for r in routed_links[col.name]:
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        c["source_repository_links_kept"] = len(routed_links[col.name])
 
-        activities = list(_read(col / "collection-activities.jsonl"))
         with (out / "collection-activities.jsonl").open("w", encoding="utf-8") as f:
-            for a in activities:
+            for a in routed_activities[col.name]:
                 f.write(json.dumps(a, ensure_ascii=False) + "\n")
                 if _is_capped(a) and mine(a.get("resulted_in_repository_github_id")):
                     kind = "issues" if "/issues" in a["attempted_url"] else \
                            "contributors" if "/contributors" in a["attempted_url"] else "other"
-                    capped[kind] += 1
-        c["collection_activities_kept"] = len(activities)
+                    capped_repos.add((kind, a["resulted_in_repository_github_id"]))
+        c["collection_activities_kept"] = len(routed_activities[col.name])
+        c.update(link_stats[col.name])
 
         track("external_links", _copy(col / "external-links.jsonl", out / "external-links.jsonl",
                                       lambda r: mine(r["github_repository_id"])))
@@ -186,7 +208,7 @@ def prepare(harvest_root: Path, publish_root: Path, require_complete: bool = Tru
         "collections_skipped_incomplete": skipped,
         "unique_repositories": len(owner),
         "totals": dict(totals),
-        "capped_repositories_partial_success": dict(capped),
+        "capped_repositories_partial_success": dict(Counter(kind for kind, _ in capped_repos)),
         "language_names_unified": languages_unified,
         "per_collection": per_collection,
     }

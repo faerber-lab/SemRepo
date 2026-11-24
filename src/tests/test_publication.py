@@ -57,7 +57,15 @@ def test_duplicates_are_kept_once_and_provenance_is_preserved(tmp_path):
     assert summary["unique_repositories"] == 3 and summary["collections_skipped_incomplete"] == ["c"]
     assert [r["github_repository_id"] for r in _lines(publish / "b" / "repositories.jsonl")] == [3]
     assert [r["github_issue_id"] for r in _lines(publish / "b" / "issues.jsonl")] == [30]
-    assert len(_lines(publish / "b" / "source-repository-links.jsonl")) == 2   # both URLs of b kept
+    # every URL is kept once, in the collection that owns its repository:
+    # b's URL for repo 2 moves to a, so both collections are self-contained
+    assert [r["original_repository_url"] for r in _lines(publish / "b" / "source-repository-links.jsonl")] == \
+        ["https://github.com/y/r3"]
+    assert sorted(r["original_repository_url"] for r in _lines(publish / "a" / "source-repository-links.jsonl")) == \
+        ["https://github.com/x/r1", "https://github.com/x/r2", "https://github.com/y/r2"]
+    assert {a["resulted_in_repository_github_id"] for a in _lines(publish / "b" / "collection-activities.jsonl")} == {3}
+    assert len(_lines(publish / "a" / "collection-activities.jsonl")) == 3        # incl. b's activity for repo 2
+    assert summary["per_collection"]["b"]["source_repository_links_moved_out"] == 1
     assert len(_lines(publish / "b" / "contributors.jsonl")) == 0             # alice already written in a
     assert summary["totals"]["repositories_dropped"] == 1
     assert summary["capped_repositories_partial_success"] == {"issues": 3}
@@ -197,3 +205,65 @@ def test_fuzzy_matches_below_rdf_threshold_are_not_published(tmp_path):
     assert counts["github_soa_author_links"] == 3
     assert counts["fuzzy_matches_below_rdf_threshold"] == 1
     assert generate_rdf(d, tmp_path / "out2", fuzzy_threshold=0.60)["github_soa_author_links"] == 4
+
+
+def test_every_published_collection_validates_on_its_own(tmp_path):
+    """Regression: after dedup, collection b pointed to repository 2 of collection a
+    (source link + collection activity), so per-collection SHACL failed."""
+    from pathlib import Path
+    from semrepo.validate_rdf import validate_generated_rdf
+    harvest, publish = tmp_path / "h", tmp_path / "p"
+    _collection(harvest, "a", [1, 2], "https://github.com/x/r")
+    _collection(harvest, "b", [2, 3], "https://github.com/y/r")
+    for col in ("a", "b"):    # keep only the record types this test is about
+        for name in ("issues.jsonl", "contributions.jsonl", "contributors.jsonl"):
+            _write(harvest / col / name, [])
+    prepare(harvest, publish)
+
+    root = Path(__file__).resolve().parents[2]
+    for col in ("a", "b"):
+        out = tmp_path / "rdf" / col
+        generate_rdf(publish / col, out)
+        ok, report = validate_generated_rdf(sorted(out.glob("*.ttl")), root / "ontologies/semrepo-v2.ttl",
+                                            root / "ontologies/semrepo-v2-shapes.ttl")
+        assert ok, f"{col}: {report}"
+
+
+def test_issue_author_of_unknown_account_type_validates(tmp_path):
+    """GitHub also has account types other than User/Organization/Bot (e.g. Mannequin);
+    they are published as generic sr:GitHubAccount and must pass SHACL."""
+    from pathlib import Path
+    from semrepo.validate_rdf import validate_generated_rdf
+    d = tmp_path / "in"
+    _write(d / "repositories.jsonl", [{"github_repository_id": 9, "canonical_url": "https://github.com/o/r9"}])
+    _write(d / "issues.jsonl", [{"github_issue_id": 1, "issue_number": 1, "issue_state": "open", "issue_created_at": TS,
+                                 "belongs_to_repository_github_id": 9, "issue_author_github_id": 5,
+                                 "issue_author_login": "old-user", "issue_author_type": "Mannequin"}])
+    out = tmp_path / "out"
+    generate_rdf(d, out)
+    g = Graph().parse(out / "semrepo-issues.ttl")
+    author = URIRef("https://semrepo.org/resource/github-account/5")
+    assert set(g.objects(author, RDF.type)) == {SR.GitHubAccount}
+
+    root = Path(__file__).resolve().parents[2]
+    ok, report = validate_generated_rdf(sorted(out.glob("*.ttl")), root / "ontologies/semrepo-v2.ttl",
+                                        root / "ontologies/semrepo-v2-shapes.ttl")
+    assert ok, report
+
+
+def test_build_rdf_all_in_parallel_validates_every_collection(tmp_path):
+    import build_rdf_all
+    harvest, publish, rdf = tmp_path / "h", tmp_path / "p", tmp_path / "rdf"
+    _collection(harvest, "a", [1, 2], "https://github.com/x/r")
+    _collection(harvest, "b", [2, 3], "https://github.com/y/r")
+    for col in ("a", "b"):
+        for name in ("issues.jsonl", "contributions.jsonl", "contributors.jsonl"):
+            _write(harvest / col / name, [])
+    prepare(harvest, publish)
+
+    build_rdf_all.main([str(publish), str(rdf), "--validate", "--workers", "2"])
+
+    summary = json.loads((rdf / "rdf-summary.json").read_text())
+    assert summary["all_conform"] is True and summary["workers"] == 2
+    assert set(summary["collections"]) == {"a", "b"}
+    assert all("validation_seconds" in e for e in summary["collections"].values())
