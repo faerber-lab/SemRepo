@@ -168,6 +168,60 @@ Issue and pull request authors by account type: User 3,023,419; Bot 254,400
 
 **SHACL: all 40 collections conform (0 violations).**
 
+### 5.3 Final dataset statistics
+
+Computed directly from the published data with `src/compute_statistics.py`
+(distinct entities, after cross-collection dedup).
+
+| Item | Count |
+|---|---|
+| **Triples** | **78,304,508** |
+| … issues / pull requests / external links | 26,809,547 / 23,526,453 / 10,209,432 |
+| … contributions / snapshots / core / languages | 5,447,678 / 5,322,084 / 5,272,438 / 1,716,876 |
+| Repositories | 190,072 |
+| … linked to at least one paper | 189,236 (99.6%) |
+| … linked to a SemOpenAlex work | 133,628 (70.3%) |
+| … linked to MLSea | 143,420 (75.5%) |
+| … with issues / with pull requests / with contributions | 94,983 / 56,745 / 183,893 |
+| Distinct papers (LPWC) | 176,196 |
+| … with an official-implementation link | 147,970 |
+| … with a research area | 108,519 |
+| Distinct SemOpenAlex works | 115,688 |
+| Distinct MLSea software resources | 127,773 |
+| Distinct LPWC tasks | 4,127 |
+| Issues / pull requests | 1,695,247 / 1,583,073 |
+| Distinct issue and pull request authors | 600,785 |
+| Distinct contributors | 229,910 |
+| Published GitHub account → SemOpenAlex author pairs | 38,962 |
+| … distinct GitHub accounts / distinct SemOpenAlex authors | 37,609 / 37,903 |
+| Programming languages | 481 |
+
+Most frequent primary languages: Python (114,806), Jupyter Notebook (30,267),
+C++ (7,745), MATLAB (6,142), R (4,438).
+
+Research areas by distinct papers: computer vision (68,650), methodology
+(52,220), natural language processing (47,094), miscellaneous (28,814),
+medical (24,380), computer code (17,289), adversarial (14,929), graphs
+(12,705), reasoning (12,590), time series (12,142).
+
+### 5.4 Comparison with SemRepo v1
+
+| Item | v1 (RDF dump 2025-05-11) | v2 |
+|---|---|---|
+| Triples | 82,078,636 | 78,304,508 |
+| Repositories | 197,566 | 190,072 |
+| Persons / accounts linked to SemOpenAlex authors | 11,867 | 37,609 |
+| Issues (v1: `hasIssue` usages; v2: typed issues and pull requests) | 2,609,510 | 3,278,320 |
+| Repositories with an MLSea link | 148,186 | 143,420 |
+
+Notes on the comparison: v2 has fewer repositories because repositories
+reached through several source URLs or collections are published once, and
+deleted or private repositories (2,283) are not published. Triple counts are
+not directly comparable, since the two versions use different data models
+(e.g. v1 also writes 7,786,024 URL values under a second property spelling,
+`fabio:hasUrl` next to `fabio:hasURL`). The v1 MLSea links do not come from a documented pipeline step; the v2
+links are produced by the linking script.
+
 ---
 
 ## 6. Validation procedures
@@ -177,6 +231,8 @@ Issue and pull request authors by account type: User 3,023,419; Bot 254,400
 - **Unit and integration tests:** 137 tests (`pytest`), run before every push.
   Every bug in §7 has a regression test that fails on the old code and passes
   on the fix.
+- **Syntactic validity:** all 280 Turtle files (40 collections × 7) were
+  parsed with RDFLib without errors when counting the triples (§5.3).
 - **SHACL:** every collection of the published RDF is validated against
   `ontologies/semrepo-v2-shapes.ttl` (pySHACL, with the ontology). The
   pipeline writes a `shacl-report.txt` for any non-conforming collection.
@@ -211,9 +267,11 @@ Scripts: `src/sample_contributor_matches.py` (`sample`, `score`).
 | Fuzzy 0.70–0.80 | 79% (19/24, 1 unsure) | 59.5–90.8% | 1,544 |
 | Fuzzy 0.60–0.70 | 44% (11/25) | 26.7–62.9% | 2,994 |
 
-Population-weighted precision: fuzzy 70%, all matches 91.3% at threshold 0.60.
-With threshold 0.70 the estimated precision is 98.2% while keeping ~87% of the
-matches. Decision: linking keeps matches from 0.60, the published RDF uses
+Population-weighted precision on the first 15 collections: fuzzy 70%, all
+matches 91.3% at threshold 0.60, 98.2% at 0.70 while keeping ~87% of the
+matches. Applied to the stratum sizes of the full data (45,424 unique pairs
+from 0.60), the estimated precision is 90.4% for all matches and **98.1% for
+the 38,962 published matches**. Decision: linking keeps matches from 0.60, the published RDF uses
 0.70. Typical error in the lowest band: a contributor matched to a different
 co-author of the same paper with a similar name.
 
@@ -262,8 +320,8 @@ read and every violation type traced to its cause (§7, issues 6, 7, 9, 10).
 - A later run may use an extended, updated source URL list. The pipeline can be re-run on a new list; with 3 tokens it processes about
   2,000 URLs per hour.
 - Precision was measured on a sample from the first 15 collections; the
-  method does not depend on the collection, but the stratum sizes in §6.2 are
-  from those 15 collections.
+  estimate for the full data applies the per-stratum precision to the full
+  stratum sizes (§6.2).
 
 ---
 

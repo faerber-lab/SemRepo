@@ -32,7 +32,7 @@ V1 = {
     "triples": 82_078_636,
     "repositories": 197_566,
     "mlsea_links": 148_186,
-    "github_soa_author_links": 11_867,
+    "github_soa_author_links": 11_867,      # persons linked to a SemOpenAlex author
     "issues (hasIssue usages)": 2_609_510,
 }
 
@@ -215,7 +215,9 @@ def main(argv: list[str]) -> None:
             f"{k} (v1 / v2)": f"{V1[k]:,} / {v:,}" for k, v in {
                 "triples": stats.get("rdf", {}).get("triples"),
                 "repositories": stats["repositories"]["repositories"],
-                "github_soa_author_links": totals.get("github_soa_author_links"),
+                # v1 counts persons linked to SemOpenAlex (one link per person); v2 counts one
+                # link per repository, contributor and author, so persons are compared
+                "github_soa_author_links": stats["linking"]["published_distinct_github_accounts"],
                 "issues (hasIssue usages)": stats["issues_and_pull_requests"]["issues_and_pull_requests"],
             }.items() if v is not None}
         # v1 has one hasMlseaUrl link per repository, so it is compared with repositories that have an MLSea link
