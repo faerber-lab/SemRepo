@@ -1,36 +1,32 @@
-cff-version: 1.2.0
+cff-version: 2.0.0
 message: "If you use SemRepo, please cite the dataset and the associated publication."
-title: "SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem"
+title: "SemRepo-V2: Redesigning the Semantic Foundation of Knowledge Graph for Research Software and and Its Scholarly Ecosystem"
 authors:
-  - family-names: "Rafay"
-    given-names: "Abdul"
+  - family-names: "Varan"
+    given-names: "Göktuğ"
   - family-names: "Susanti"
     given-names: "Yuni"
-  - family-names: "Lamprecht"
-    given-names: "David"
   - family-names: "Färber"
     given-names: "Michael"
-version: "1.0.0"
-date-released: "2026-04"
+version: "2.0.0"
+date-released: "2026-12"
 url: "https://doi.org/10.5281/zenodo.20084784"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20084784"
 preferred-citation:
   type: article
-  title: "SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem"
+  title: "SemRepo-V2: Redesigning the Semantic Foundation of Knowledge Graph for Research Software and and Its Scholarly Ecosystem"
   authors:
-    - family-names: "Rafay"
-      given-names: "Abdul"
+    - family-names: "Varan"
+      given-names: "Göktuğ"
     - family-names: "Susanti"
       given-names: "Yuni"
-    - family-names: "Lamprecht"
-      given-names: "David"
     - family-names: "Färber"
       given-names: "Michael"
   year: 2026
-  url: "https://arxiv.org/abs/2605.13310"
+  url: "https://xx"
   identifiers:
     - type: arxiv
-      value: "2605.13310"
+      value: "xx.xx"
   notes: "Associated publication. The dataset is available at https://doi.org/10.5281/zenodo.20084784."
