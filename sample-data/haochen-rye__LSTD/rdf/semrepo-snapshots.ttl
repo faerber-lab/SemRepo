@@ -1,0 +1,39 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/13687472> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "haochen-rye" ;
+    sr:githubUserId 13687472 ;
+    sr:profileUrl "https://github.com/haochen-rye"^^xsd:anyURI .
+
+<https://semrepo.org/resource/license/NOASSERTION> a sr:License ;
+    sr:licenseName "Other" ;
+    sr:spdxId "NOASSERTION" .
+
+<https://semrepo.org/resource/programming-language/c++> a sr:ProgrammingLanguage ;
+    sr:languageName "C++" .
+
+<https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-20T04:34:56.101744+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "master" ;
+    sr:description "An object detection architecture combines the advantage of SSD and Faster-RCNN." ;
+    sr:forksCount 12 ;
+    sr:fullName "haochen-rye/LSTD" ;
+    sr:hasLicense <https://semrepo.org/resource/license/NOASSERTION> ;
+    sr:isFork false ;
+    sr:lastCommitAt "2019-08-28T01:49:47+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 8 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/13687472> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/c++> ;
+    sr:pushedAt "2019-08-28T02:05:47+00:00"^^xsd:dateTime ;
+    sr:repositoryName "LSTD" ;
+    sr:sizeKb 45624 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/102554381> ;
+    sr:starsCount 72 ;
+    sr:updatedAt "2025-05-08T06:20:35+00:00"^^xsd:dateTime ;
+    sr:watchersCount 3 .
+
+<https://semrepo.org/resource/repository/102554381> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> .
+

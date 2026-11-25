@@ -1,0 +1,3 @@
+{"collection_timestamp": "2026-11-20T22:12:46.130103+00:00", "attempted_url": "https://api.github.com/repos/imavijit/detect-it/languages", "collection_source": "185001_190000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 178486964}
+{"collection_timestamp": "2026-11-20T22:12:46.384242+00:00", "attempted_url": "https://api.github.com/repos/imavijit/detect-it/issues", "collection_source": "185001_190000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 178486964}
+{"collection_timestamp": "2026-11-20T22:12:46.675967+00:00", "attempted_url": "https://api.github.com/repos/imavijit/detect-it/contributors", "collection_source": "185001_190000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 178486964}

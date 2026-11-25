@@ -1,0 +1,204 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/12456918> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "XiongweiWu" ;
+    sr:githubUserId 12456918 ;
+    sr:profileUrl "https://github.com/XiongweiWu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/23715696> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "PearlDzzz" ;
+    sr:githubUserId 23715696 ;
+    sr:profileUrl "https://github.com/PearlDzzz"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/32362315> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "MARMOTatZJU" ;
+    sr:githubUserId 32362315 ;
+    sr:profileUrl "https://github.com/MARMOTatZJU"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/36948529> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "lori0726" ;
+    sr:githubUserId 36948529 ;
+    sr:profileUrl "https://github.com/lori0726"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/43601871> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "yo92" ;
+    sr:githubUserId 43601871 ;
+    sr:profileUrl "https://github.com/yo92"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/5038435> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "GodefroyClair" ;
+    sr:githubUserId 5038435 ;
+    sr:profileUrl "https://github.com/GodefroyClair"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/75464270> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "1157449807" ;
+    sr:githubUserId 75464270 ;
+    sr:profileUrl "https://github.com/1157449807"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1069488977> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 1069488977 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/75464270> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2021-12-02T12:24:15+00:00"^^xsd:dateTime ;
+    sr:issueNumber 11 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Is there a python version？" ;
+    sr:issueUpdatedAt "2021-12-02T12:24:15+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/11"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/307565113> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 307565113 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/36948529> ;
+    sr:issueClosedAt "2018-04-12T03:50:50+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2018-03-22T09:31:15+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is it the paper's code \"LSTD: A Low-Shot Transfer Detector for Object Detection\"?" ;
+    sr:issueUpdatedAt "2018-04-17T04:23:57+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/317045227> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 317045227 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/23715696> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2018-04-24T02:10:22+00:00"^^xsd:dateTime ;
+    sr:issueNumber 2 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Question about SSLConvolution?" ;
+    sr:issueUpdatedAt "2018-09-26T22:22:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/2"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/342950364> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 342950364 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12456918> ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2018-07-20T02:22:55+00:00"^^xsd:dateTime ;
+    sr:issueNumber 3 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Cannot reproduce result" ;
+    sr:issueUpdatedAt "2019-06-18T08:33:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/3"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/365084516> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 365084516 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/43601871> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2018-09-29T01:39:33+00:00"^^xsd:dateTime ;
+    sr:issueNumber 4 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Check failed: 0 == bottom[0]->count() % explicit_count (0 vs. 21) bottom count (21) must be divisible by the product of the specified dimensions (1008)" ;
+    sr:issueUpdatedAt "2019-03-09T07:48:54+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/4"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/391043727> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 391043727 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5038435> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2018-12-14T10:03:33+00:00"^^xsd:dateTime ;
+    sr:issueNumber 5 ;
+    sr:issueState "open" ;
+    sr:issueTitle "TK and BD regularization" ;
+    sr:issueUpdatedAt "2022-10-09T03:01:07+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/5"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/417298984> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 417298984 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/18568981> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2019-03-05T13:29:11+00:00"^^xsd:dateTime ;
+    sr:issueNumber 6 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Could you provide more information about how to train this model?" ;
+    sr:issueUpdatedAt "2020-12-03T05:26:42+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/6"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/419044694> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 419044694 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/18568981> ;
+    sr:issueClosedAt "2019-03-22T04:44:21+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-03-09T07:40:29+00:00"^^xsd:dateTime ;
+    sr:issueNumber 7 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "dim 1008 in train.prototxt?" ;
+    sr:issueUpdatedAt "2019-03-22T04:44:21+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/7"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/435364316> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 435364316 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/39772908> ;
+    sr:issueClosedAt "2019-04-22T12:42:41+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-04-20T06:55:10+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "lstd branch + docker + cmake runtest failed at PostClassOutputLayerTest" ;
+    sr:issueUpdatedAt "2019-04-22T12:42:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/8"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/437660646> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 437660646 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/39772908> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-04-26T12:57:13+00:00"^^xsd:dateTime ;
+    sr:issueNumber 9 ;
+    sr:issueState "open" ;
+    sr:issueTitle "PostClassOutputLayer and RestrainLossLayer not working" ;
+    sr:issueUpdatedAt "2019-04-26T12:57:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/9"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/653740437> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/102554381> ;
+    sr:githubIssueId 653740437 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/32362315> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-07-09T03:46:59+00:00"^^xsd:dateTime ;
+    sr:issueNumber 10 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Question about the evaluation protocol" ;
+    sr:issueUpdatedAt "2020-07-09T03:46:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/haochen-rye/LSTD/issues/10"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/18568981> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ztf-ucas" ;
+    sr:githubUserId 18568981 ;
+    sr:profileUrl "https://github.com/ztf-ucas"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/39772908> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ignaciomarvinjohn" ;
+    sr:githubUserId 39772908 ;
+    sr:profileUrl "https://github.com/ignaciomarvinjohn"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/102554381> sr:hasIssue <https://semrepo.org/resource/github-issue/1069488977>,
+        <https://semrepo.org/resource/github-issue/307565113>,
+        <https://semrepo.org/resource/github-issue/317045227>,
+        <https://semrepo.org/resource/github-issue/342950364>,
+        <https://semrepo.org/resource/github-issue/365084516>,
+        <https://semrepo.org/resource/github-issue/391043727>,
+        <https://semrepo.org/resource/github-issue/417298984>,
+        <https://semrepo.org/resource/github-issue/419044694>,
+        <https://semrepo.org/resource/github-issue/435364316>,
+        <https://semrepo.org/resource/github-issue/437660646>,
+        <https://semrepo.org/resource/github-issue/653740437> .
+

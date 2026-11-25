@@ -1,0 +1,2000 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/106082865> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sauravsinhaa" ;
+    sr:githubUserId 106082865 ;
+    sr:profileUrl "https://github.com/sauravsinhaa"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1107111> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dvsrepo" ;
+    sr:githubUserId 1107111 ;
+    sr:profileUrl "https://github.com/dvsrepo"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/11072543> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Erin59" ;
+    sr:githubUserId 11072543 ;
+    sr:profileUrl "https://github.com/Erin59"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/12793783> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "clayms" ;
+    sr:githubUserId 12793783 ;
+    sr:profileUrl "https://github.com/clayms"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/13260946> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "r76941156" ;
+    sr:githubUserId 13260946 ;
+    sr:profileUrl "https://github.com/r76941156"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/13438222> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "abs51295" ;
+    sr:githubUserId 13438222 ;
+    sr:profileUrl "https://github.com/abs51295"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/137829296> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "nv-rliu" ;
+    sr:githubUserId 137829296 ;
+    sr:profileUrl "https://github.com/nv-rliu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1433412> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "trimbilrepo" ;
+    sr:githubUserId 1433412 ;
+    sr:profileUrl "https://github.com/trimbilrepo"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/14815653> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shadylpstan" ;
+    sr:githubUserId 14815653 ;
+    sr:profileUrl "https://github.com/shadylpstan"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/16170057> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "vikaskumarjha9" ;
+    sr:githubUserId 16170057 ;
+    sr:profileUrl "https://github.com/vikaskumarjha9"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/172005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "davidsickmiller" ;
+    sr:githubUserId 172005 ;
+    sr:profileUrl "https://github.com/davidsickmiller"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/17455277> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "oldskewlcool" ;
+    sr:githubUserId 17455277 ;
+    sr:profileUrl "https://github.com/oldskewlcool"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/18385290> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "merrillaldrich" ;
+    sr:githubUserId 18385290 ;
+    sr:profileUrl "https://github.com/merrillaldrich"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/19321967> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "chencjiajy" ;
+    sr:githubUserId 19321967 ;
+    sr:profileUrl "https://github.com/chencjiajy"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/19821812> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "wcollins-ebsco" ;
+    sr:githubUserId 19821812 ;
+    sr:profileUrl "https://github.com/wcollins-ebsco"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/21121989> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "arunzz" ;
+    sr:githubUserId 21121989 ;
+    sr:profileUrl "https://github.com/arunzz"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/228280> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ptynecki" ;
+    sr:githubUserId 228280 ;
+    sr:profileUrl "https://github.com/ptynecki"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/25073753> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "chikubee" ;
+    sr:githubUserId 25073753 ;
+    sr:profileUrl "https://github.com/chikubee"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26342344> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "duarteocarmo" ;
+    sr:githubUserId 26342344 ;
+    sr:profileUrl "https://github.com/duarteocarmo"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26514005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "bryan-johnston" ;
+    sr:githubUserId 26514005 ;
+    sr:profileUrl "https://github.com/bryan-johnston"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/27629416> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Chtchou" ;
+    sr:githubUserId 27629416 ;
+    sr:profileUrl "https://github.com/Chtchou"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/2991417> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "colingoldberg" ;
+    sr:githubUserId 2991417 ;
+    sr:profileUrl "https://github.com/colingoldberg"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/3061377> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "jake-aft" ;
+    sr:githubUserId 3061377 ;
+    sr:profileUrl "https://github.com/jake-aft"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/30725373> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "fukidzon" ;
+    sr:githubUserId 30725373 ;
+    sr:profileUrl "https://github.com/fukidzon"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/31094364> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "KanimozhiU" ;
+    sr:githubUserId 31094364 ;
+    sr:profileUrl "https://github.com/KanimozhiU"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/31122308> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "krtrth" ;
+    sr:githubUserId 31122308 ;
+    sr:profileUrl "https://github.com/krtrth"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/32473248> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Vignesh9395" ;
+    sr:githubUserId 32473248 ;
+    sr:profileUrl "https://github.com/Vignesh9395"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/32874663> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "AshwiniPatil5" ;
+    sr:githubUserId 32874663 ;
+    sr:profileUrl "https://github.com/AshwiniPatil5"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/33228477> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Vickoh" ;
+    sr:githubUserId 33228477 ;
+    sr:profileUrl "https://github.com/Vickoh"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/3408809> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "andremacola" ;
+    sr:githubUserId 3408809 ;
+    sr:profileUrl "https://github.com/andremacola"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/35122933> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dbragdon1" ;
+    sr:githubUserId 35122933 ;
+    sr:profileUrl "https://github.com/dbragdon1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/3518738> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Tauvic" ;
+    sr:githubUserId 3518738 ;
+    sr:profileUrl "https://github.com/Tauvic"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/40192895> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Jansonboss" ;
+    sr:githubUserId 40192895 ;
+    sr:profileUrl "https://github.com/Jansonboss"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/40291970> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Albertobegue" ;
+    sr:githubUserId 40291970 ;
+    sr:profileUrl "https://github.com/Albertobegue"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/40362058> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "danielp3011" ;
+    sr:githubUserId 40362058 ;
+    sr:profileUrl "https://github.com/danielp3011"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/41862082> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "MoritzLaurer" ;
+    sr:githubUserId 41862082 ;
+    sr:profileUrl "https://github.com/MoritzLaurer"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/42149> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "rjurney" ;
+    sr:githubUserId 42149 ;
+    sr:profileUrl "https://github.com/rjurney"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/4329213> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "mattkohl" ;
+    sr:githubUserId 4329213 ;
+    sr:profileUrl "https://github.com/mattkohl"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/44054062> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zykerli" ;
+    sr:githubUserId 44054062 ;
+    sr:profileUrl "https://github.com/zykerli"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/45479206> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "spike-xiong" ;
+    sr:githubUserId 45479206 ;
+    sr:profileUrl "https://github.com/spike-xiong"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/46837998> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Lord-V15" ;
+    sr:githubUserId 46837998 ;
+    sr:profileUrl "https://github.com/Lord-V15"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/4690174> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "xiaoxielnino" ;
+    sr:githubUserId 4690174 ;
+    sr:profileUrl "https://github.com/xiaoxielnino"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/47012177> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "akhila66" ;
+    sr:githubUserId 47012177 ;
+    sr:profileUrl "https://github.com/akhila66"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/482171> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "eldritch-elbow" ;
+    sr:githubUserId 482171 ;
+    sr:profileUrl "https://github.com/eldritch-elbow"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/48280643> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "EmanueleGusso" ;
+    sr:githubUserId 48280643 ;
+    sr:profileUrl "https://github.com/EmanueleGusso"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/5129000> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "rabinneslo" ;
+    sr:githubUserId 5129000 ;
+    sr:profileUrl "https://github.com/rabinneslo"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/53218201> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "repodiac" ;
+    sr:githubUserId 53218201 ;
+    sr:profileUrl "https://github.com/repodiac"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/55793026> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sumitkumarjethani" ;
+    sr:githubUserId 55793026 ;
+    sr:profileUrl "https://github.com/sumitkumarjethani"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/5652784> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "phongtnit" ;
+    sr:githubUserId 5652784 ;
+    sr:profileUrl "https://github.com/phongtnit"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/58149247> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "anna-droid-beep" ;
+    sr:githubUserId 58149247 ;
+    sr:profileUrl "https://github.com/anna-droid-beep"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/59953137> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "matteosdocsity" ;
+    sr:githubUserId 59953137 ;
+    sr:profileUrl "https://github.com/matteosdocsity"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/600077> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "teucer" ;
+    sr:githubUserId 600077 ;
+    sr:profileUrl "https://github.com/teucer"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/65895033> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "gremur" ;
+    sr:githubUserId 65895033 ;
+    sr:profileUrl "https://github.com/gremur"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/69633814> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "kaiyungtan" ;
+    sr:githubUserId 69633814 ;
+    sr:profileUrl "https://github.com/kaiyungtan"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/7631779> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shashwath94" ;
+    sr:githubUserId 7631779 ;
+    sr:profileUrl "https://github.com/shashwath94"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/7794475> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "romanovzky" ;
+    sr:githubUserId 7794475 ;
+    sr:profileUrl "https://github.com/romanovzky"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/8049167> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "asberk" ;
+    sr:githubUserId 8049167 ;
+    sr:profileUrl "https://github.com/asberk"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/842131> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "arc12" ;
+    sr:githubUserId 842131 ;
+    sr:profileUrl "https://github.com/arc12"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/8597303> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "coolcoder001" ;
+    sr:githubUserId 8597303 ;
+    sr:profileUrl "https://github.com/coolcoder001"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/86740139> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "davesnake01" ;
+    sr:githubUserId 86740139 ;
+    sr:profileUrl "https://github.com/davesnake01"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/9219426> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "mahekshah5858" ;
+    sr:githubUserId 9219426 ;
+    sr:profileUrl "https://github.com/mahekshah5858"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/9523936> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "junchen1992" ;
+    sr:githubUserId 9523936 ;
+    sr:profileUrl "https://github.com/junchen1992"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1102334420> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1102334420 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/50707385> ;
+    sr:issueClosedAt "2022-07-25T18:16:33+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2022-01-13T20:37:48+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 202 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Biased Textrank implementation uses phrases instead of sentences" ;
+    sr:issueUpdatedAt "2022-07-25T18:16:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/202"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1105023228> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1105023228 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/48280643> ;
+    sr:issueClosedAt "2022-07-25T18:17:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2022-01-16T11:13:10+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 203 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Information about the matrix similarity" ;
+    sr:issueUpdatedAt "2022-07-25T18:17:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/203"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1110825314> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1110825314 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/65895033> ;
+    sr:issueClosedAt "2022-07-12T11:35:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 8 ;
+    sr:issueCreatedAt "2022-01-21T19:35:15+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 204 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "NotImplementedError: [E894] The 'noun_chunks' syntax iterator is not implemented for language 'ru'." ;
+    sr:issueUpdatedAt "2022-07-12T11:35:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/204"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1157728116> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1157728116 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26514005> ;
+    sr:issueClosedAt "2022-03-06T22:03:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2022-03-02T21:47:59+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 209 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Silence of the Lambs" ;
+    sr:issueUpdatedAt "2022-03-06T22:03:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/209"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1199855831> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1199855831 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/55793026> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2022-04-11T11:47:28+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 213 ;
+    sr:issueState "open" ;
+    sr:issueTitle "ZeroDivisionError: division by zero in _calc_discounted_normalised_rank" ;
+    sr:issueUpdatedAt "2022-07-25T18:18:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/213"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1213173753> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1213173753 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5652784> ;
+    sr:issueClosedAt "2022-07-25T18:01:28+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2022-04-23T03:11:53+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 214 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Cannot use stopwords in PyTextRank" ;
+    sr:issueUpdatedAt "2022-07-25T18:01:29+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/214"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1236187508> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1236187508 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/58927531> ;
+    sr:issueClosedAt "2022-07-25T18:21:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2022-05-15T04:55:09+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 215 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Demo: Term Weighting for Document Similarity Testing" ;
+    sr:issueUpdatedAt "2022-07-25T18:21:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/215"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1253061177> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1253061177 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/50707385> ;
+    sr:issueClosedAt "2023-08-22T16:09:40+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2022-05-30T19:22:28+00:00"^^xsd:dateTime ;
+    sr:issueLabel "kg",
+        "question" ;
+    sr:issueNumber 216 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is `biasedtextrank` implemented?" ;
+    sr:issueUpdatedAt "2023-08-22T16:09:40+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/216"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1293865942> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1293865942 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8597303> ;
+    sr:issueClosedAt "2022-07-25T18:01:07+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2022-07-05T06:50:26+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 218 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is it possible to integrate Pytextrank with Flair NLP engine" ;
+    sr:issueUpdatedAt "2022-07-25T18:01:07+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/218"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1319908756> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1319908756 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/10137> ;
+    sr:issueClosedAt "2023-08-22T16:08:39+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2022-07-27T18:07:53+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 220 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "\"ValueError: [E002] Can't find factory for 'textrank' for language English (en).\" - incompatibility with SpaCy 3.3.1?" ;
+    sr:issueUpdatedAt "2023-08-22T16:08:39+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/220"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1436583187> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1436583187 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/842131> ;
+    sr:issueClosedAt "2023-08-22T16:22:15+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2022-11-04T19:53:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 223 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "suggestion: allow \"wildcard\" POS for stopwords" ;
+    sr:issueUpdatedAt "2023-08-22T16:22:15+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/223"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1627896250> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1627896250 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3518738> ;
+    sr:issueClosedAt "2023-08-22T16:10:13+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-03-16T16:50:22+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 228 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Doesn't work for Dutch language" ;
+    sr:issueUpdatedAt "2023-08-22T16:10:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/228"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1704842850> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1704842850 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/27629416> ;
+    sr:issueClosedAt "2024-02-21T21:54:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-05-11T01:18:59+00:00"^^xsd:dateTime ;
+    sr:issueNumber 229 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "DiGraph instead of Graph" ;
+    sr:issueUpdatedAt "2024-02-21T21:54:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/229"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/180887133> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 180887133 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4329213> ;
+    sr:issueClosedAt "2016-10-04T16:51:53+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2016-10-04T13:04:01+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Dependency on Textblob-0.11.1?" ;
+    sr:issueUpdatedAt "2016-10-04T16:51:53+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1838064121> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1838064121 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/661662> ;
+    sr:issueClosedAt "2023-08-22T16:06:38+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-08-06T06:00:11+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 231 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is handling of singular / plural forms ('sentence' and 'sentences') correct / consistent?" ;
+    sr:issueUpdatedAt "2023-08-22T16:06:38+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/231"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1838114472> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1838114472 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/661662> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-08-06T08:47:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 232 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Bugfix for scrubber sample code which fails when scrubbing \"two\"" ;
+    sr:issueUpdatedAt "2023-08-07T05:24:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/232"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1838206334> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1838206334 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/661662> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-08-06T13:17:13+00:00"^^xsd:dateTime ;
+    sr:issueNumber 234 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Update Sample Usage document: stop words must be lowercase" ;
+    sr:issueUpdatedAt "2023-08-07T05:26:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/234"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1838691806> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1838691806 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-08-07T05:08:47+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 236 ;
+    sr:issueState "open" ;
+    sr:issueTitle "GitHub CI Actions for `pre-commit` are failing" ;
+    sr:issueUpdatedAt "2023-09-23T19:24:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/236"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1846710836> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1846710836 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/106082865> ;
+    sr:issueClosedAt "2023-08-22T16:41:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2023-08-11T12:07:07+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 239 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "different output" ;
+    sr:issueUpdatedAt "2023-08-22T16:41:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/239"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1909965286> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 1909965286 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3061377> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-09-23T18:46:47+00:00"^^xsd:dateTime ;
+    sr:issueNumber 266 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Dependency Management Pip-Tools Example" ;
+    sr:issueUpdatedAt "2023-09-23T18:53:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/266"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2065660745> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 2065660745 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/19321967> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2024-01-04T13:26:41+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 271 ;
+    sr:issueState "open" ;
+    sr:issueTitle "why the keyword phrase include a PRON, like \"it\"" ;
+    sr:issueUpdatedAt "2025-07-28T13:54:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/271"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/235235769> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 235235769 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1107111> ;
+    sr:issueClosedAt "2019-11-07T01:19:55+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2017-06-12T13:38:48+00:00"^^xsd:dateTime ;
+    sr:issueNumber 7 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Adding multilingual support with spaCy models" ;
+    sr:issueUpdatedAt "2019-11-07T01:19:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/7"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/235614915> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 235614915 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/228280> ;
+    sr:issueClosedAt "2017-09-15T07:06:09+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2017-06-13T16:35:07+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "KeyError: 'graf'" ;
+    sr:issueUpdatedAt "2018-08-13T17:50:21+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/8"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2511717589> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 2511717589 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3408809> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-09-07T14:51:59+00:00"^^xsd:dateTime ;
+    sr:issueNumber 281 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Unnecessary print in versions.py" ;
+    sr:issueUpdatedAt "2024-09-07T14:52:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/281"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2578971028> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 2578971028 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/59953137> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-10-10T14:03:40+00:00"^^xsd:dateTime ;
+    sr:issueNumber 282 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Error when adding textrank component for language model in Python 3.12 Docker setup" ;
+    sr:issueUpdatedAt "2024-10-10T14:03:40+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/282"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/257947678> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 257947678 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueClosedAt "2019-11-05T22:20:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2017-09-15T07:13:28+00:00"^^xsd:dateTime ;
+    sr:issueNumber 9 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Temporarily disable NER by default" ;
+    sr:issueUpdatedAt "2019-11-05T22:20:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/9"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/269642306> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 269642306 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/33228477> ;
+    sr:issueClosedAt "2019-11-01T18:21:26+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 7 ;
+    sr:issueCreatedAt "2017-10-30T15:27:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 10 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: 'DiGraph' object has no attribute 'edge'" ;
+    sr:issueUpdatedAt "2020-02-16T19:23:17+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/10"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/285970470> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 285970470 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/31094364> ;
+    sr:issueClosedAt "2019-11-07T01:31:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2018-01-04T12:24:05+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 12 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "RuntimeError: module compiled against API version 0xa but this version of numpy is 0x9" ;
+    sr:issueUpdatedAt "2019-11-07T01:31:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/12"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2882435701> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 2882435701 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/137829296> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-02-26T18:09:02+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 284 ;
+    sr:issueState "open" ;
+    sr:issueTitle "[Question]: Usage of Graph Algorithms and Any Slowdowns?" ;
+    sr:issueUpdatedAt "2025-03-06T21:27:39+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/284"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/291606459> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 291606459 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/2991417> ;
+    sr:issueClosedAt "2019-11-07T01:31:32+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2018-01-25T15:20:46+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 13 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "I get an error in the example \"Stage 1\"" ;
+    sr:issueUpdatedAt "2019-11-07T01:31:32+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/13"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/295088165> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 295088165 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/13438222> ;
+    sr:issueClosedAt "2019-11-07T06:13:47+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2018-02-07T10:41:49+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 14 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add support for unicode characters" ;
+    sr:issueUpdatedAt "2019-11-07T06:13:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/14"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/296301675> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 296301675 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1433412> ;
+    sr:issueClosedAt "2019-11-01T18:27:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2018-02-12T08:56:06+00:00"^^xsd:dateTime ;
+    sr:issueNumber 15 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Error on spacy 2.0" ;
+    sr:issueUpdatedAt "2019-11-01T18:27:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/15"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/308846581> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 308846581 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4690174> ;
+    sr:issueClosedAt "2019-11-05T22:22:56+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2018-03-27T07:09:14+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 16 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Could .txt or other input files used in this project?" ;
+    sr:issueUpdatedAt "2019-11-05T22:22:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/16"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/319186180> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 319186180 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/600077> ;
+    sr:issueClosedAt "2019-11-07T01:31:42+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2018-05-01T12:31:32+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 17 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Serious bug in get_tiles? " ;
+    sr:issueUpdatedAt "2019-11-07T01:31:42+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/17"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/324199238> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 324199238 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12793783> ;
+    sr:issueClosedAt "2019-11-01T18:18:16+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2018-05-17T21:52:11+00:00"^^xsd:dateTime ;
+    sr:issueNumber 18 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "pytextrank.text_rank  -> 'DiGraph' object has no attribute 'edge'" ;
+    sr:issueUpdatedAt "2019-11-01T18:18:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/18"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/327651949> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 327651949 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5129000> ;
+    sr:issueClosedAt "2019-11-07T01:32:17+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2018-05-30T09:39:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 19 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "IndexError: list index out of range" ;
+    sr:issueUpdatedAt "2019-11-07T01:32:17+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/19"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/330386732> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 330386732 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8049167> ;
+    sr:issueClosedAt "2019-11-01T18:27:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2018-06-07T18:31:34+00:00"^^xsd:dateTime ;
+    sr:issueNumber 20 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "spacy call error: __call__() got an unexpected keyword argument 'parse'" ;
+    sr:issueUpdatedAt "2019-11-01T18:27:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/20"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/344353130> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 344353130 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7794475> ;
+    sr:issueClosedAt "2019-11-05T22:25:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 8 ;
+    sr:issueCreatedAt "2018-07-25T08:58:18+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 21 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How to use this?" ;
+    sr:issueUpdatedAt "2019-11-05T22:25:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/21"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/350125813> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 350125813 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/32874663> ;
+    sr:issueClosedAt "2019-11-05T22:24:48+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2018-08-13T17:40:12+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 22 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How to use this?" ;
+    sr:issueUpdatedAt "2019-11-05T22:24:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/365733155> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 365733155 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/172005> ;
+    sr:issueClosedAt "2019-11-07T01:32:39+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2018-10-02T04:06:39+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 24 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Keyphrases get messed up when enumerate_chunks() re-parses them " ;
+    sr:issueUpdatedAt "2019-11-07T01:32:39+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/24"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/369086934> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 369086934 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21121989> ;
+    sr:issueClosedAt "2019-11-07T01:32:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2018-10-11T11:59:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 25 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Slow while execution" ;
+    sr:issueUpdatedAt "2019-11-07T01:32:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/25"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/373394207> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 373394207 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16733726> ;
+    sr:issueClosedAt "2019-11-07T01:32:03+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2018-10-24T09:41:36+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 26 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "pos_family = tok_tag.lower()[0] IndexError: string index out of range" ;
+    sr:issueUpdatedAt "2019-11-07T01:32:03+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/26"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/373920214> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 373920214 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/482171> ;
+    sr:issueClosedAt "2019-11-07T01:31:52+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2018-10-25T12:22:47+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 27 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Expected input JSON format is not documented / clear" ;
+    sr:issueUpdatedAt "2019-11-07T01:31:52+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/27"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/409317369> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 409317369 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/31122308> ;
+    sr:issueClosedAt "2019-11-07T01:31:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-02-12T14:07:56+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 29 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "at stage2.py" ;
+    sr:issueUpdatedAt "2019-11-07T01:31:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/29"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/433589912> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 433589912 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26291005> ;
+    sr:issueClosedAt "2019-11-07T01:30:51+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-04-16T05:29:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 30 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "why does the project use  the length of RankedLexeme to sort the key phrases" ;
+    sr:issueUpdatedAt "2019-11-07T01:30:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/30"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/433594459> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 433594459 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26291005> ;
+    sr:issueClosedAt "2022-07-25T18:02:46+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-04-16T05:50:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 31 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "why does the algorithm filter out  the verbs?" ;
+    sr:issueUpdatedAt "2022-07-25T18:02:46+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/31"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/438001264> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 438001264 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/19821812> ;
+    sr:issueClosedAt "2019-11-01T18:20:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-04-28T01:42:27+00:00"^^xsd:dateTime ;
+    sr:issueNumber 32 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Can't find model 'en'." ;
+    sr:issueUpdatedAt "2019-11-01T18:20:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/32"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/484510238> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 484510238 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/52655493> ;
+    sr:issueClosedAt "2019-08-23T12:44:58+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-08-23T12:42:06+00:00"^^xsd:dateTime ;
+    sr:issueNumber 34 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: module 'pytextrank' has no attribute 'parse_doc'" ;
+    sr:issueUpdatedAt "2019-08-23T12:44:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/34"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/484510809> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 484510809 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/52655493> ;
+    sr:issueClosedAt "2019-09-16T10:23:28+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2019-08-23T12:43:22+00:00"^^xsd:dateTime ;
+    sr:issueNumber 35 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: module 'pytextrank' has no attribute 'parse_doc'" ;
+    sr:issueUpdatedAt "2020-03-09T17:51:54+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/35"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/493965119> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 493965119 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/52655493> ;
+    sr:issueClosedAt "2019-11-07T01:30:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-09-16T10:25:17+00:00"^^xsd:dateTime ;
+    sr:issueLabel "wontfix" ;
+    sr:issueNumber 36 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Error in example.ipynb" ;
+    sr:issueUpdatedAt "2019-11-07T01:30:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/36"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/518751752> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 518751752 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7631779> ;
+    sr:issueClosedAt "2020-03-02T20:21:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2019-11-06T20:53:34+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 40 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Running text rank using nlp.pipe" ;
+    sr:issueUpdatedAt "2020-03-02T20:21:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/40"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/522668979> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 522668979 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16170057> ;
+    sr:issueClosedAt "2020-03-02T20:19:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2019-11-14T07:09:59+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 41 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Error while running example.py " ;
+    sr:issueUpdatedAt "2020-03-06T00:25:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/41"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/524774893> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 524774893 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/11072543> ;
+    sr:issueClosedAt "2020-03-02T20:20:12+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 9 ;
+    sr:issueCreatedAt "2019-11-19T04:59:21+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 42 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Errors importing from pytextrank " ;
+    sr:issueUpdatedAt "2020-04-01T02:22:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/42"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/528647483> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 528647483 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/40362058> ;
+    sr:issueClosedAt "2020-03-06T01:39:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 7 ;
+    sr:issueCreatedAt "2019-11-26T10:58:38+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 43 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Keyword extraction" ;
+    sr:issueUpdatedAt "2020-03-06T01:39:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/43"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/548816087> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 548816087 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14815653> ;
+    sr:issueClosedAt "2020-03-02T20:20:33+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2020-01-13T09:52:13+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 46 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "RecursionError: maximum recursion depth exceeded in comparison" ;
+    sr:issueUpdatedAt "2020-03-02T20:20:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/46"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/549779259> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 549779259 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/17455277> ;
+    sr:issueClosedAt "2020-03-02T20:03:51+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 17 ;
+    sr:issueCreatedAt "2020-01-14T19:46:05+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 47 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Example file throws KeyError: 1255" ;
+    sr:issueUpdatedAt "2020-03-02T20:03:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/47"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/554310665> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 554310665 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueClosedAt "2023-08-22T16:23:55+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-01-23T17:51:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "kg",
+        "question" ;
+    sr:issueNumber 48 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "evaluate VerbNet integration" ;
+    sr:issueUpdatedAt "2023-08-22T16:23:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/48"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/564877290> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 564877290 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/18385290> ;
+    sr:issueClosedAt "2022-07-25T18:04:10+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-02-13T18:41:55+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "kg",
+        "question" ;
+    sr:issueNumber 49 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Singular vs plural across documents" ;
+    sr:issueUpdatedAt "2022-07-25T18:04:10+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/49"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/568864255> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 568864255 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/30725373> ;
+    sr:issueClosedAt "2023-08-22T16:25:14+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 11 ;
+    sr:issueCreatedAt "2020-02-21T10:20:08+00:00"^^xsd:dateTime ;
+    sr:issueLabel "help wanted",
+        "howto",
+        "question" ;
+    sr:issueNumber 54 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "using \"noun_chunks\" from custom extension " ;
+    sr:issueUpdatedAt "2023-08-22T16:25:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/54"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/573959952> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 573959952 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/9523936> ;
+    sr:issueClosedAt "2020-03-02T13:53:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-03-02T13:03:36+00:00"^^xsd:dateTime ;
+    sr:issueNumber 55 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How could this line work? Will list(dict.keys()) return a consistent list?" ;
+    sr:issueUpdatedAt "2020-03-02T13:53:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/55"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/576248187> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 576248187 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7823843> ;
+    sr:issueClosedAt "2021-04-22T12:32:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2020-03-05T13:19:50+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 59 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "nlp.evaluate conflicts ?" ;
+    sr:issueUpdatedAt "2021-04-22T15:21:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/59"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/579952829> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 579952829 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/10137> ;
+    sr:issueClosedAt "2023-08-22T16:14:57+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2020-03-12T13:50:18+00:00"^^xsd:dateTime ;
+    sr:issueLabel "good first issue",
+        "howto",
+        "question" ;
+    sr:issueNumber 60 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is parser a relavant pipeline component beyond noun chunking?" ;
+    sr:issueUpdatedAt "2023-08-22T16:14:57+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/60"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/599038072> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 599038072 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/42149> ;
+    sr:issueClosedAt "2020-04-13T18:24:55+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2020-04-13T17:59:45+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 61 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Can't use PyTextRank in parallel?" ;
+    sr:issueUpdatedAt "2020-04-13T18:28:46+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/61"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/616588304> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 616588304 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/40291970> ;
+    sr:issueClosedAt "2023-08-22T16:21:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2020-05-12T11:40:27+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "kg" ;
+    sr:issueNumber 63 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Ignore tokens and enrich the lemma graph" ;
+    sr:issueUpdatedAt "2023-08-22T16:21:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/63"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/675336839> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 675336839 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46677829> ;
+    sr:issueClosedAt "2020-09-09T07:35:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2020-08-07T23:13:21+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 65 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "summarization as a pipeline task" ;
+    sr:issueUpdatedAt "2020-09-09T07:35:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/65"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/698785021> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 698785021 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16733726> ;
+    sr:issueClosedAt "2022-07-25T18:03:40+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2020-09-11T03:30:05+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "kg",
+        "question" ;
+    sr:issueNumber 66 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How to work with large texts for phrase ranking?" ;
+    sr:issueUpdatedAt "2022-07-25T18:03:40+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/66"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/701280197> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 701280197 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46677829> ;
+    sr:issueClosedAt "2020-09-15T16:42:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-09-14T17:13:26+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 67 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ZeroDivisionError in summary method" ;
+    sr:issueUpdatedAt "2020-09-15T16:42:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/67"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/702989979> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 702989979 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/41862082> ;
+    sr:issueClosedAt "2021-03-09T20:21:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-09-16T18:40:20+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 69 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "doc._.textrank.summary  bug when used on multiple docs" ;
+    sr:issueUpdatedAt "2021-03-09T20:21:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/69"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/705422868> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 705422868 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/25073753> ;
+    sr:issueClosedAt "2023-08-22T16:12:24+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-09-21T09:12:05+00:00"^^xsd:dateTime ;
+    sr:issueLabel "kg",
+        "question" ;
+    sr:issueNumber 70 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "how to use pytextrank for entity linking" ;
+    sr:issueUpdatedAt "2023-08-22T16:12:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/70"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/726975171> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 726975171 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/11654396> ;
+    sr:issueClosedAt "2021-04-09T04:53:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-10-22T01:41:17+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "howto" ;
+    sr:issueNumber 72 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "remove stopwords" ;
+    sr:issueUpdatedAt "2021-04-09T05:09:20+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/72"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/728561610> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 728561610 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/11654396> ;
+    sr:issueClosedAt "2021-04-09T04:53:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2020-10-23T22:40:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "kg" ;
+    sr:issueNumber 73 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "min_phrases are not minimum spans for each phrase" ;
+    sr:issueUpdatedAt "2021-04-09T04:53:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/73"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/735372766> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 735372766 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46677829> ;
+    sr:issueClosedAt "2023-08-22T16:17:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-11-03T14:37:12+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "summarization" ;
+    sr:issueNumber 74 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "sentence scores for summarization" ;
+    sr:issueUpdatedAt "2023-08-22T16:17:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/74"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/735373177> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 735373177 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46677829> ;
+    sr:issueClosedAt "2020-11-03T14:38:05+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-11-03T14:37:44+00:00"^^xsd:dateTime ;
+    sr:issueNumber 75 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Text rank summarization-- sentence score feature request[duplicate]" ;
+    sr:issueUpdatedAt "2020-11-03T14:38:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/75"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/741640852> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 741640852 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/58149247> ;
+    sr:issueClosedAt "2022-07-25T18:11:12+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2020-11-12T14:21:38+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 76 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "pickle a pytextrank.Phrase" ;
+    sr:issueUpdatedAt "2022-07-25T18:11:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/76"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/755356272> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 755356272 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7823843> ;
+    sr:issueClosedAt "2022-07-25T18:12:26+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2020-12-02T15:08:56+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 78 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Adding support for other TextRank flavours, including PositionRank and Biased TextRank" ;
+    sr:issueUpdatedAt "2022-07-25T18:12:26+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/78"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/784152659> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 784152659 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/32473248> ;
+    sr:issueClosedAt "2023-08-22T16:14:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-01-12T11:27:54+00:00"^^xsd:dateTime ;
+    sr:issueLabel "kg",
+        "question" ;
+    sr:issueNumber 79 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "custom Keyword inclusion " ;
+    sr:issueUpdatedAt "2023-08-22T16:14:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/79"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/804301620> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 804301620 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46837998> ;
+    sr:issueClosedAt "2021-02-14T22:30:28+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2021-02-09T07:45:03+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 84 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support with SpaCy 3.0" ;
+    sr:issueUpdatedAt "2021-02-14T22:30:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/84"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/809794595> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 809794595 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16231057> ;
+    sr:issueClosedAt "2021-04-12T14:58:41+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 7 ;
+    sr:issueCreatedAt "2021-02-17T02:16:19+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 90 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Differences between 2.1.0 and 3.0.0" ;
+    sr:issueUpdatedAt "2021-04-19T07:20:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/90"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/812783696> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 812783696 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueClosedAt "2021-02-27T20:12:18+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2021-02-21T06:09:00+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 93 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "provide online documentation" ;
+    sr:issueUpdatedAt "2021-02-27T20:12:18+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/93"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/819879632> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 819879632 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/9219426> ;
+    sr:issueClosedAt "2021-03-17T05:45:56+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 5 ;
+    sr:issueCreatedAt "2021-03-02T10:30:24+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 99 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "After installing pytextrank unable to import it" ;
+    sr:issueUpdatedAt "2021-03-17T05:45:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/99"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/822598959> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 822598959 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/35122933> ;
+    sr:issueClosedAt "2021-03-05T00:30:08+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-03-04T23:37:09+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 100 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Issues with adding pytextrank to spacy pipeline" ;
+    sr:issueUpdatedAt "2021-03-05T00:36:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/100"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/837987249> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 837987249 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/47012177> ;
+    sr:issueClosedAt "2021-04-12T15:01:05+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2021-03-22T18:14:04+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 135 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: type object 'Language' has no attribute 'factory'" ;
+    sr:issueUpdatedAt "2021-04-12T15:01:05+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/135"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/841291223> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 841291223 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueClosedAt "2023-08-22T16:22:59+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2021-03-25T20:40:15+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "kg" ;
+    sr:issueNumber 144 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Optimizing the node bias values, based on an input KG" ;
+    sr:issueUpdatedAt "2023-08-22T16:22:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/144"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/846714155> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 846714155 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/13260946> ;
+    sr:issueClosedAt "2021-04-12T15:00:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 7 ;
+    sr:issueCreatedAt "2021-03-31T13:54:29+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 148 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Error: Can't find factory for 'textrank' for language English...." ;
+    sr:issueUpdatedAt "2021-04-12T15:00:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/148"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/863361220> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 863361220 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16231057> ;
+    sr:issueClosedAt "2021-04-28T17:25:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-04-21T01:11:27+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 152 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Understanding the discounted normalized rank" ;
+    sr:issueUpdatedAt "2021-04-28T17:25:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/152"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/870348885> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 870348885 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/40192895> ;
+    sr:issueClosedAt "2021-04-29T04:25:23+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-04-28T20:28:04+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 156 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Post-Processing on keyword Extraction with pytextrank" ;
+    sr:issueUpdatedAt "2021-04-29T04:25:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/156"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/873900810> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 873900810 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7823843> ;
+    sr:issueClosedAt "2021-05-04T22:46:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-05-02T10:00:49+00:00"^^xsd:dateTime ;
+    sr:issueNumber 158 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add TextRank visualisations" ;
+    sr:issueUpdatedAt "2021-05-04T22:46:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/158"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/874353649> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 874353649 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/7823843> ;
+    sr:issueClosedAt "2021-06-02T00:02:09+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2021-05-03T08:27:04+00:00"^^xsd:dateTime ;
+    sr:issueNumber 160 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add CI using GithubActions" ;
+    sr:issueUpdatedAt "2021-06-02T00:02:09+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/160"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/876715402> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 876715402 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/57973> ;
+    sr:issueClosedAt "2023-08-22T16:24:15+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2021-05-05T18:15:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "good first issue" ;
+    sr:issueNumber 164 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "use a Make file for build process" ;
+    sr:issueUpdatedAt "2023-08-22T16:24:15+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/164"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/892863701> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 892863701 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/69633814> ;
+    sr:issueClosedAt "2023-08-22T16:13:14+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-05-17T03:58:51+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 165 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ValueError: Cannot get dimension 'nO' for model 'sparse_linear': value unset" ;
+    sr:issueUpdatedAt "2023-08-22T16:13:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/165"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/922136262> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 922136262 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4995297> ;
+    sr:issueClosedAt "2021-06-30T03:41:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-06-16T06:05:48+00:00"^^xsd:dateTime ;
+    sr:issueNumber 172 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Is their a way we can prevent stop words from being part of ranked phrases?" ;
+    sr:issueUpdatedAt "2021-06-30T03:41:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/172"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/923868584> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 923868584 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/44054062> ;
+    sr:issueClosedAt "2023-08-22T16:16:41+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2021-06-17T12:29:20+00:00"^^xsd:dateTime ;
+    sr:issueLabel "howto",
+        "question" ;
+    sr:issueNumber 173 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AttributeError: [E046]  while summarizing with PositionRank/Biased TextRank" ;
+    sr:issueUpdatedAt "2023-08-22T16:16:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/173"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/925107757> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 925107757 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/58927531> ;
+    sr:issueClosedAt "2023-08-22T16:15:59+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2021-06-18T18:08:09+00:00"^^xsd:dateTime ;
+    sr:issueLabel "good first issue",
+        "help wanted",
+        "question" ;
+    sr:issueNumber 174 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Documentation or Inclusion of other algorithms" ;
+    sr:issueUpdatedAt "2023-08-22T16:15:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/174"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/938793997> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 938793997 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/19186548> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-07-07T11:32:33+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted" ;
+    sr:issueNumber 179 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Error when trying to use `nlp.pipe` with `n_process` > 1" ;
+    sr:issueUpdatedAt "2023-11-15T12:54:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/179"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/941195694> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 941195694 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4995297> ;
+    sr:issueClosedAt "2021-07-18T00:34:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2021-07-10T07:36:03+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 180 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[suggestion] use Span in scrubber?" ;
+    sr:issueUpdatedAt "2021-07-18T00:34:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/180"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/944078765> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 944078765 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4995297> ;
+    sr:issueClosedAt "2021-07-17T19:38:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-07-14T06:09:49+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 182 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "2 test cases failing with spacy latest version(3.1.0) " ;
+    sr:issueUpdatedAt "2021-07-17T19:38:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/182"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/947234680> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 947234680 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/45479206> ;
+    sr:issueClosedAt "2021-07-24T18:00:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-07-19T03:58:08+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 185 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[New Need]Input some paragraphs then return less paragraphs but complete  sentences back" ;
+    sr:issueUpdatedAt "2021-07-24T18:00:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/185"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/969074840> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 969074840 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/86740139> ;
+    sr:issueClosedAt "2022-01-01T21:00:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-08-12T15:44:30+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 192 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Not working in spanish" ;
+    sr:issueUpdatedAt "2022-01-01T21:00:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/192"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/978356726> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 978356726 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/19186548> ;
+    sr:issueClosedAt "2022-02-01T17:47:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 11 ;
+    sr:issueCreatedAt "2021-08-24T18:09:38+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 193 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "A question on keyphrases that are subsets of others and overlapping `Spans`" ;
+    sr:issueUpdatedAt "2022-02-01T18:03:49+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/193"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/983052087> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 983052087 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/19186548> ;
+    sr:issueClosedAt "2023-08-22T16:27:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2021-08-30T17:59:00+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 194 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Ideas for visualising key phrases together with text, as a modelling aid" ;
+    sr:issueUpdatedAt "2023-08-22T16:27:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/194"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/986752099> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 986752099 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26342344> ;
+    sr:issueClosedAt "2021-10-10T00:00:58+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-09-02T13:45:35+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 195 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Scipy missing from dependencies " ;
+    sr:issueUpdatedAt "2021-10-10T00:00:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/195"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/991366566> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/69814684> ;
+    sr:githubIssueId 991366566 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/53218201> ;
+    sr:issueClosedAt "2022-01-01T21:11:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2021-09-08T17:26:01+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 196 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Bug: [E002] Can't find factory for 'textrank' for language English (en)" ;
+    sr:issueUpdatedAt "2022-01-01T21:11:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/DerwenAI/pytextrank/issues/196"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/10137> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ghost" ;
+    sr:githubUserId 10137 ;
+    sr:profileUrl "https://github.com/ghost"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/11654396> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Fan-Luo" ;
+    sr:githubUserId 11654396 ;
+    sr:profileUrl "https://github.com/Fan-Luo"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/16231057> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "debraj135" ;
+    sr:githubUserId 16231057 ;
+    sr:profileUrl "https://github.com/debraj135"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/16733726> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sayak1711" ;
+    sr:githubUserId 16733726 ;
+    sr:profileUrl "https://github.com/sayak1711"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26291005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "liuvic" ;
+    sr:githubUserId 26291005 ;
+    sr:profileUrl "https://github.com/liuvic"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/50707385> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ahmed-moubtahij" ;
+    sr:githubUserId 50707385 ;
+    sr:profileUrl "https://github.com/ahmed-moubtahij"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/58927531> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "BradKML" ;
+    sr:githubUserId 58927531 ;
+    sr:profileUrl "https://github.com/BradKML"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/19186548> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "DayalStrub" ;
+    sr:githubUserId 19186548 ;
+    sr:profileUrl "https://github.com/DayalStrub"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/4995297> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Ankush-Chander" ;
+    sr:githubUserId 4995297 ;
+    sr:profileUrl "https://github.com/Ankush-Chander"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/52655493> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "LAW68" ;
+    sr:githubUserId 52655493 ;
+    sr:profileUrl "https://github.com/LAW68"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/661662> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "0dB" ;
+    sr:githubUserId 661662 ;
+    sr:profileUrl "https://github.com/0dB"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/46677829> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shyamcody" ;
+    sr:githubUserId 46677829 ;
+    sr:profileUrl "https://github.com/shyamcody"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/7823843> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "louisguitton" ;
+    sr:githubUserId 7823843 ;
+    sr:profileUrl "https://github.com/louisguitton"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/57973> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ceteri" ;
+    sr:githubUserId 57973 ;
+    sr:profileUrl "https://github.com/ceteri"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/69814684> sr:hasIssue <https://semrepo.org/resource/github-issue/1102334420>,
+        <https://semrepo.org/resource/github-issue/1105023228>,
+        <https://semrepo.org/resource/github-issue/1110825314>,
+        <https://semrepo.org/resource/github-issue/1157728116>,
+        <https://semrepo.org/resource/github-issue/1199855831>,
+        <https://semrepo.org/resource/github-issue/1213173753>,
+        <https://semrepo.org/resource/github-issue/1236187508>,
+        <https://semrepo.org/resource/github-issue/1253061177>,
+        <https://semrepo.org/resource/github-issue/1293865942>,
+        <https://semrepo.org/resource/github-issue/1319908756>,
+        <https://semrepo.org/resource/github-issue/1436583187>,
+        <https://semrepo.org/resource/github-issue/1627896250>,
+        <https://semrepo.org/resource/github-issue/1704842850>,
+        <https://semrepo.org/resource/github-issue/180887133>,
+        <https://semrepo.org/resource/github-issue/1838064121>,
+        <https://semrepo.org/resource/github-issue/1838114472>,
+        <https://semrepo.org/resource/github-issue/1838206334>,
+        <https://semrepo.org/resource/github-issue/1838691806>,
+        <https://semrepo.org/resource/github-issue/1846710836>,
+        <https://semrepo.org/resource/github-issue/1909965286>,
+        <https://semrepo.org/resource/github-issue/2065660745>,
+        <https://semrepo.org/resource/github-issue/235235769>,
+        <https://semrepo.org/resource/github-issue/235614915>,
+        <https://semrepo.org/resource/github-issue/2511717589>,
+        <https://semrepo.org/resource/github-issue/2578971028>,
+        <https://semrepo.org/resource/github-issue/257947678>,
+        <https://semrepo.org/resource/github-issue/269642306>,
+        <https://semrepo.org/resource/github-issue/285970470>,
+        <https://semrepo.org/resource/github-issue/2882435701>,
+        <https://semrepo.org/resource/github-issue/291606459>,
+        <https://semrepo.org/resource/github-issue/295088165>,
+        <https://semrepo.org/resource/github-issue/296301675>,
+        <https://semrepo.org/resource/github-issue/308846581>,
+        <https://semrepo.org/resource/github-issue/319186180>,
+        <https://semrepo.org/resource/github-issue/324199238>,
+        <https://semrepo.org/resource/github-issue/327651949>,
+        <https://semrepo.org/resource/github-issue/330386732>,
+        <https://semrepo.org/resource/github-issue/344353130>,
+        <https://semrepo.org/resource/github-issue/350125813>,
+        <https://semrepo.org/resource/github-issue/365733155>,
+        <https://semrepo.org/resource/github-issue/369086934>,
+        <https://semrepo.org/resource/github-issue/373394207>,
+        <https://semrepo.org/resource/github-issue/373920214>,
+        <https://semrepo.org/resource/github-issue/409317369>,
+        <https://semrepo.org/resource/github-issue/433589912>,
+        <https://semrepo.org/resource/github-issue/433594459>,
+        <https://semrepo.org/resource/github-issue/438001264>,
+        <https://semrepo.org/resource/github-issue/484510238>,
+        <https://semrepo.org/resource/github-issue/484510809>,
+        <https://semrepo.org/resource/github-issue/493965119>,
+        <https://semrepo.org/resource/github-issue/518751752>,
+        <https://semrepo.org/resource/github-issue/522668979>,
+        <https://semrepo.org/resource/github-issue/524774893>,
+        <https://semrepo.org/resource/github-issue/528647483>,
+        <https://semrepo.org/resource/github-issue/548816087>,
+        <https://semrepo.org/resource/github-issue/549779259>,
+        <https://semrepo.org/resource/github-issue/554310665>,
+        <https://semrepo.org/resource/github-issue/564877290>,
+        <https://semrepo.org/resource/github-issue/568864255>,
+        <https://semrepo.org/resource/github-issue/573959952>,
+        <https://semrepo.org/resource/github-issue/576248187>,
+        <https://semrepo.org/resource/github-issue/579952829>,
+        <https://semrepo.org/resource/github-issue/599038072>,
+        <https://semrepo.org/resource/github-issue/616588304>,
+        <https://semrepo.org/resource/github-issue/675336839>,
+        <https://semrepo.org/resource/github-issue/698785021>,
+        <https://semrepo.org/resource/github-issue/701280197>,
+        <https://semrepo.org/resource/github-issue/702989979>,
+        <https://semrepo.org/resource/github-issue/705422868>,
+        <https://semrepo.org/resource/github-issue/726975171>,
+        <https://semrepo.org/resource/github-issue/728561610>,
+        <https://semrepo.org/resource/github-issue/735372766>,
+        <https://semrepo.org/resource/github-issue/735373177>,
+        <https://semrepo.org/resource/github-issue/741640852>,
+        <https://semrepo.org/resource/github-issue/755356272>,
+        <https://semrepo.org/resource/github-issue/784152659>,
+        <https://semrepo.org/resource/github-issue/804301620>,
+        <https://semrepo.org/resource/github-issue/809794595>,
+        <https://semrepo.org/resource/github-issue/812783696>,
+        <https://semrepo.org/resource/github-issue/819879632>,
+        <https://semrepo.org/resource/github-issue/822598959>,
+        <https://semrepo.org/resource/github-issue/837987249>,
+        <https://semrepo.org/resource/github-issue/841291223>,
+        <https://semrepo.org/resource/github-issue/846714155>,
+        <https://semrepo.org/resource/github-issue/863361220>,
+        <https://semrepo.org/resource/github-issue/870348885>,
+        <https://semrepo.org/resource/github-issue/873900810>,
+        <https://semrepo.org/resource/github-issue/874353649>,
+        <https://semrepo.org/resource/github-issue/876715402>,
+        <https://semrepo.org/resource/github-issue/892863701>,
+        <https://semrepo.org/resource/github-issue/922136262>,
+        <https://semrepo.org/resource/github-issue/923868584>,
+        <https://semrepo.org/resource/github-issue/925107757>,
+        <https://semrepo.org/resource/github-issue/938793997>,
+        <https://semrepo.org/resource/github-issue/941195694>,
+        <https://semrepo.org/resource/github-issue/944078765>,
+        <https://semrepo.org/resource/github-issue/947234680>,
+        <https://semrepo.org/resource/github-issue/969074840>,
+        <https://semrepo.org/resource/github-issue/978356726>,
+        <https://semrepo.org/resource/github-issue/983052087>,
+        <https://semrepo.org/resource/github-issue/986752099>,
+        <https://semrepo.org/resource/github-issue/991366566> .
+

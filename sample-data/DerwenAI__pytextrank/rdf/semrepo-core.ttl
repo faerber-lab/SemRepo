@@ -1,0 +1,62 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/60ae34dc7e8de62d> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/languages"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:06:24.619444+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/collection-activity/6710a8ed09a8605e> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/languages"^^xsd:anyURI ;
+    sr:collectionSource "95001_100000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-22T23:35:45.958987+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/collection-activity/6d1638d71b691034> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/issues"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:06:24.853793+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/collection-activity/7a01818d8e4a886f> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/contributors"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:06:27.275731+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/collection-activity/7bb0e0fe7cbd2063> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/issues"^^xsd:anyURI ;
+    sr:collectionSource "95001_100000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-22T23:35:46.947458+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/collection-activity/a7d5f53e9e4d7fa4> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/DerwenAI/pytextrank/contributors"^^xsd:anyURI ;
+    sr:collectionSource "95001_100000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-22T23:35:52.134104+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/source-repository-link/656b199fbb2ec413> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/DerwenAI/pytextrank"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/ceteri/pytextrank"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Transferred ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/source-repository-link/b87d53247a1fc6fe> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/DerwenAI/pytextrank"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/derwenai/pytextrank"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/69814684> .
+
+<https://semrepo.org/resource/repository/69814684> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/DerwenAI/pytextrank"^^xsd:anyURI ;
+    sr:createdAt "2016-10-02T18:39:12+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 69814684 .
+

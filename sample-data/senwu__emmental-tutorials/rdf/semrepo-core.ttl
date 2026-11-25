@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/11e50cf51ab01f66> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/senwu/emmental-tutorials/issues"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:29:45.491227+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/182929051> .
+
+<https://semrepo.org/resource/collection-activity/745a9908e4127fc6> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/senwu/emmental-tutorials/contributors"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:29:45.918915+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/182929051> .
+
+<https://semrepo.org/resource/collection-activity/db16fee49b5a6c94> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/senwu/emmental-tutorials/languages"^^xsd:anyURI ;
+    sr:collectionSource "5001_10000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T20:29:45.217645+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/182929051> .
+
+<https://semrepo.org/resource/source-repository-link/10880e2c5de10d54> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/senwu/emmental-tutorials"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/senwu/emmental-tutorials"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/182929051> .
+
+<https://semrepo.org/resource/repository/182929051> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/senwu/emmental-tutorials"^^xsd:anyURI ;
+    sr:createdAt "2019-04-23T04:02:19+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 182929051 .
+

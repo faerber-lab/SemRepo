@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/6eac722b5530e9ca> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/OpenDriveLab/ThinkTwice/issues"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T03:16:33.337557+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/615387590> .
+
+<https://semrepo.org/resource/collection-activity/ef51d3f4408fc050> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/OpenDriveLab/ThinkTwice/contributors"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T03:16:33.804551+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/615387590> .
+
+<https://semrepo.org/resource/collection-activity/fc7eb1f10b766792> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/OpenDriveLab/ThinkTwice/languages"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T03:16:33.073566+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/615387590> .
+
+<https://semrepo.org/resource/source-repository-link/d82f8b01d49631d9> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/OpenDriveLab/ThinkTwice"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/opendrivelab/thinktwice"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/615387590> .
+
+<https://semrepo.org/resource/repository/615387590> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/OpenDriveLab/ThinkTwice"^^xsd:anyURI ;
+    sr:createdAt "2023-03-17T15:20:46+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 615387590 .
+

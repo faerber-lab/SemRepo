@@ -1,0 +1,19 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/contribution/eebbd044b41c7d54> a sr:Contribution ;
+    sr:commitCount 9 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/178486964/2026-11-20T22:12:45.739047+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/45468002> .
+
+<https://semrepo.org/resource/github-account/45468002> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2018-11-29T19:22:04+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Data Science | ML | DL"^^xsd:string ;
+    sr:accountName "AVIJIT SAHA"^^xsd:string ;
+    sr:followersCount 6 ;
+    sr:githubLogin "imavijit" ;
+    sr:githubUserId 45468002 ;
+    sr:profileUrl "https://github.com/imavijit"^^xsd:anyURI ;
+    sr:publicReposCount 18 .
+

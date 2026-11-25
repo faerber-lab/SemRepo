@@ -1,0 +1,48 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/striving-for-simplicity-the-all-convolutional> dbpprop:area <https://linkedpaperswithcode.com/area/adversarial>,
+        <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/medical>,
+        <https://linkedpaperswithcode.com/area/music>,
+        <https://linkedpaperswithcode.com/area/playing-games> ;
+    dcterms:creator <https://semopenalex.org/author/A5017985443>,
+        <https://semopenalex.org/author/A5041323275>,
+        <https://semopenalex.org/author/A5070290355>,
+        <https://semopenalex.org/author/A5090113830> ;
+    dcterms:date "2014-12-21"^^xsd:date ;
+    dcterms:title "Striving for Simplicity: The All Convolutional Net" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/image-classification>,
+        <https://linkedpaperswithcode.com/task/object>,
+        <https://linkedpaperswithcode.com/task/object-recognition> .
+
+<https://semrepo.org/resource/external-link/13f7b0327b977762d14827d315b390dd67dcefcbcbc60ee326e237775ddb5366> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/178486964> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/imavijit/detect_it"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/282220f5a1a0bbb79cfd63717c13fc8da3ccdf2fd3a67bea16d8ebf6ad94a78b> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/178486964> ;
+    sr:linkTarget "https://semopenalex.org/work/W2963382180"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/9901f99560f508b7203c7dc03d8b4d65aba9b21c1a5f2ce23a8742a3e2bd3916> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/178486964> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/striving-for-simplicity-the-all-convolutional"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/repository/178486964> sr:hasExternalLink <https://semrepo.org/resource/external-link/13f7b0327b977762d14827d315b390dd67dcefcbcbc60ee326e237775ddb5366>,
+        <https://semrepo.org/resource/external-link/282220f5a1a0bbb79cfd63717c13fc8da3ccdf2fd3a67bea16d8ebf6ad94a78b>,
+        <https://semrepo.org/resource/external-link/9901f99560f508b7203c7dc03d8b4d65aba9b21c1a5f2ce23a8742a3e2bd3916> .
+

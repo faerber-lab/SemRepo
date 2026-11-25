@@ -1,0 +1,267 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/37606201> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "raviinfo173" ;
+    sr:githubUserId 37606201 ;
+    sr:profileUrl "https://github.com/raviinfo173"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/38473074> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "NIRAJ51" ;
+    sr:githubUserId 38473074 ;
+    sr:profileUrl "https://github.com/NIRAJ51"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/67934> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Ceesaxp" ;
+    sr:githubUserId 67934 ;
+    sr:profileUrl "https://github.com/Ceesaxp"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1623552488> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1623552488 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38473074> ;
+    sr:issueClosedAt "2023-03-30T16:39:42+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-03-14T14:03:49+00:00"^^xsd:dateTime ;
+    sr:issueNumber 11 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Initial PR creation  and merge to CiscoDeepVision for Producer." ;
+    sr:issueUpdatedAt "2023-03-30T16:39:42+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/11"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1632952187> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1632952187 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16948225> ;
+    sr:issueClosedAt "2023-03-21T16:33:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-03-20T22:19:53+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 15 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Docker Compose for CiscoDeepVision" ;
+    sr:issueUpdatedAt "2023-03-21T16:33:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/15"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1633977688> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1633977688 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16948225> ;
+    sr:issueClosedAt "2023-04-04T21:21:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-03-21T13:53:43+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 17 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Redis Video Stream FPS configuration - CiscoDeepVision" ;
+    sr:issueUpdatedAt "2023-04-04T21:21:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/17"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1635765340> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1635765340 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16948225> ;
+    sr:issueClosedAt "2023-06-30T20:46:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-03-22T13:27:22+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 18 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Setup CI/CD for CiscoDeepVision" ;
+    sr:issueUpdatedAt "2023-06-30T20:46:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/18"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1644035692> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1644035692 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/37606201> ;
+    sr:issueClosedAt "2023-06-30T20:45:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-03-28T14:04:15+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 22 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add Unit Testcases for CiscoDeepVision" ;
+    sr:issueUpdatedAt "2023-06-30T20:45:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1647900624> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1647900624 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/16948225> ;
+    sr:issueClosedAt "2023-04-05T13:07:13+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-03-30T15:59:16+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 24 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Tracklet, tracklet manager, Redistimeseries labeling integration" ;
+    sr:issueUpdatedAt "2023-05-02T15:23:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/24"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1729070073> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1729070073 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-01T03:19:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-05-28T01:25:30+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 39 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "multi-gpu machines break tracking/Monitor.py at line 36" ;
+    sr:issueUpdatedAt "2023-06-01T03:19:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/39"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1735367059> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1735367059 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-30T20:46:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-01T03:18:12+00:00"^^xsd:dateTime ;
+    sr:issueNumber 43 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "openmmlab update warning" ;
+    sr:issueUpdatedAt "2023-06-30T20:46:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/43"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1737010731> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1737010731 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-30T20:44:47+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-01T20:09:54+00:00"^^xsd:dateTime ;
+    sr:issueNumber 44 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "sensor data and gpu powered analytics save and replay feature" ;
+    sr:issueUpdatedAt "2023-06-30T20:44:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/44"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1773498579> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1773498579 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-30T20:44:11+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-06-25T21:26:40+00:00"^^xsd:dateTime ;
+    sr:issueNumber 46 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "tracking profile is used for debugging... " ;
+    sr:issueUpdatedAt "2023-06-30T20:44:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/46"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1773499018> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1773499018 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-30T20:43:54+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-25T21:28:42+00:00"^^xsd:dateTime ;
+    sr:issueNumber 47 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "loading the action model takes a long time... need to show some sort of loading message" ;
+    sr:issueUpdatedAt "2023-06-30T20:43:54+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/47"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1773499624> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1773499624 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4633080> ;
+    sr:issueClosedAt "2023-06-30T20:43:24+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-25T21:30:38+00:00"^^xsd:dateTime ;
+    sr:issueNumber 48 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "haidetection profile not displaying action detections" ;
+    sr:issueUpdatedAt "2023-06-30T20:43:25+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/48"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1778026271> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1778026271 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12656939> ;
+    sr:issueClosedAt "2023-06-30T20:42:59+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-28T01:48:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 49 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "No camera data on dashboard when running `.run tracking up`" ;
+    sr:issueUpdatedAt "2023-06-30T20:43:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/49"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1797220123> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1797220123 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12656939> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-07-10T17:34:43+00:00"^^xsd:dateTime ;
+    sr:issueNumber 53 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Misalignment of frame_id in VideoStream and TrackingStream" ;
+    sr:issueUpdatedAt "2023-07-10T17:34:49+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/53"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1891530195> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 1891530195 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12656939> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-09-12T01:47:50+00:00"^^xsd:dateTime ;
+    sr:issueNumber 62 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Server can skip frames when output video stream" ;
+    sr:issueUpdatedAt "2023-09-12T01:48:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/62"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2246856705> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/604700080> ;
+    sr:githubIssueId 2246856705 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/67934> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-04-16T20:45:44+00:00"^^xsd:dateTime ;
+    sr:issueNumber 75 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Adjust checkout instructions for RecallM" ;
+    sr:issueUpdatedAt "2024-04-16T20:45:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/cisco-open/DeepVision/issues/75"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/12656939> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shanyu-sys" ;
+    sr:githubUserId 12656939 ;
+    sr:profileUrl "https://github.com/shanyu-sys"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/16948225> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "yabur" ;
+    sr:githubUserId 16948225 ;
+    sr:profileUrl "https://github.com/yabur"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/4633080> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "hmlatapie" ;
+    sr:githubUserId 4633080 ;
+    sr:profileUrl "https://github.com/hmlatapie"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/604700080> sr:hasIssue <https://semrepo.org/resource/github-issue/1623552488>,
+        <https://semrepo.org/resource/github-issue/1632952187>,
+        <https://semrepo.org/resource/github-issue/1633977688>,
+        <https://semrepo.org/resource/github-issue/1635765340>,
+        <https://semrepo.org/resource/github-issue/1644035692>,
+        <https://semrepo.org/resource/github-issue/1647900624>,
+        <https://semrepo.org/resource/github-issue/1729070073>,
+        <https://semrepo.org/resource/github-issue/1735367059>,
+        <https://semrepo.org/resource/github-issue/1737010731>,
+        <https://semrepo.org/resource/github-issue/1773498579>,
+        <https://semrepo.org/resource/github-issue/1773499018>,
+        <https://semrepo.org/resource/github-issue/1773499624>,
+        <https://semrepo.org/resource/github-issue/1778026271>,
+        <https://semrepo.org/resource/github-issue/1797220123>,
+        <https://semrepo.org/resource/github-issue/1891530195>,
+        <https://semrepo.org/resource/github-issue/2246856705> .
+

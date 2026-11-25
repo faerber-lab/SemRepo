@@ -1,0 +1,52 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/lstd-a-low-shot-transfer-detector-for-object> dbpprop:area <https://linkedpaperswithcode.com/area/adversarial>,
+        <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/medical>,
+        <https://linkedpaperswithcode.com/area/methodology>,
+        <https://linkedpaperswithcode.com/area/miscellaneous>,
+        <https://linkedpaperswithcode.com/area/music>,
+        <https://linkedpaperswithcode.com/area/playing-games> ;
+    dcterms:creator <https://semopenalex.org/author/A5012152127>,
+        <https://semopenalex.org/author/A5029615731>,
+        <https://semopenalex.org/author/A5072861783>,
+        <https://semopenalex.org/author/A5077461682> ;
+    dcterms:date "2018-03-05"^^xsd:date ;
+    dcterms:title "LSTD: A Low-Shot Transfer Detector for Object Detection" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/few-shot-object-detection>,
+        <https://linkedpaperswithcode.com/task/object>,
+        <https://linkedpaperswithcode.com/task/object-detection>,
+        <https://linkedpaperswithcode.com/task/object-detection-1>,
+        <https://linkedpaperswithcode.com/task/transfer-learning> .
+
+<https://semrepo.org/resource/external-link/3dc41a44597bab06ac88b4c5b67fe17d0501f8b6f666c148441a0f21b1589f16> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/102554381> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/lstd-a-low-shot-transfer-detector-for-object"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/669d7432e60cf6988ecb6ae62e9cafbd2b5dc6d68416082cf3cf105cec7d6c2b> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/102554381> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/cassie94/lstd"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/ddd090fb67225e84a229b2fa3e838f9635a8be7bb2960f2bffb81f110ebe1099> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/102554381> ;
+    sr:linkTarget "https://semopenalex.org/work/W2788210750"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/repository/102554381> sr:hasExternalLink <https://semrepo.org/resource/external-link/3dc41a44597bab06ac88b4c5b67fe17d0501f8b6f666c148441a0f21b1589f16>,
+        <https://semrepo.org/resource/external-link/669d7432e60cf6988ecb6ae62e9cafbd2b5dc6d68416082cf3cf105cec7d6c2b>,
+        <https://semrepo.org/resource/external-link/ddd090fb67225e84a229b2fa3e838f9635a8be7bb2960f2bffb81f110ebe1099> .
+

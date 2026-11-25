@@ -1,0 +1,869 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/contribution/023c3669de2c469c> a sr:Contribution ;
+    sr:commitCount 9 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/3266543> .
+
+<https://semrepo.org/resource/contribution/0778f4d96814bfd8> a sr:Contribution ;
+    sr:commitCount 7 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/171189686> .
+
+<https://semrepo.org/resource/contribution/111330ada0727d15> a sr:Contribution ;
+    sr:commitCount 25 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/2152005> .
+
+<https://semrepo.org/resource/contribution/15f3f9f41ebdc3ba> a sr:Contribution ;
+    sr:commitCount 3 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/11765276> .
+
+<https://semrepo.org/resource/contribution/1a6ca671855293be> a sr:Contribution ;
+    sr:commitCount 3 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/6526592> .
+
+<https://semrepo.org/resource/contribution/1b27c37a18ed9d8d> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/39198402> .
+
+<https://semrepo.org/resource/contribution/1dbedff066516300> a sr:Contribution ;
+    sr:commitCount 11 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/98116068> .
+
+<https://semrepo.org/resource/contribution/20a63c32bcfb8684> a sr:Contribution ;
+    sr:commitCount 22 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/21251345> .
+
+<https://semrepo.org/resource/contribution/240aa39abef591b8> a sr:Contribution ;
+    sr:commitCount 10 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/8642136> .
+
+<https://semrepo.org/resource/contribution/28eefe1d89bdbc8f> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/28900943> .
+
+<https://semrepo.org/resource/contribution/2df4626b64fbbcd8> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/2593126> .
+
+<https://semrepo.org/resource/contribution/2dfeeb60a9010ed8> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/628467> .
+
+<https://semrepo.org/resource/contribution/31a012490c330bef> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/10934810> .
+
+<https://semrepo.org/resource/contribution/34faf327f2f49584> a sr:Contribution ;
+    sr:commitCount 36 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/5920036> .
+
+<https://semrepo.org/resource/contribution/36214e2b7673214a> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/144485669> .
+
+<https://semrepo.org/resource/contribution/38435a93135ce373> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/1321193> .
+
+<https://semrepo.org/resource/contribution/3deb5585c9ba22fb> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/420184> .
+
+<https://semrepo.org/resource/contribution/4229be6fa084ab27> a sr:Contribution ;
+    sr:commitCount 6 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/69287011> .
+
+<https://semrepo.org/resource/contribution/4a502bfb25b7e40c> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/81714784> .
+
+<https://semrepo.org/resource/contribution/55dfe795513854ad> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/24907486> .
+
+<https://semrepo.org/resource/contribution/56ec83aa0be04f57> a sr:Contribution ;
+    sr:commitCount 3 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/33839160> .
+
+<https://semrepo.org/resource/contribution/586aceab9e4e4527> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/66643403> .
+
+<https://semrepo.org/resource/contribution/586cbbe38cf3bca9> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/73017975> .
+
+<https://semrepo.org/resource/contribution/595505b378ec7ca5> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/195340634> .
+
+<https://semrepo.org/resource/contribution/5a842b3795452d5f> a sr:Contribution ;
+    sr:commitCount 3 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/37080003> .
+
+<https://semrepo.org/resource/contribution/5f2407c9f9f96f68> a sr:Contribution ;
+    sr:commitCount 12 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/11879978> .
+
+<https://semrepo.org/resource/contribution/6300fefeb72c4472> a sr:Contribution ;
+    sr:commitCount 6 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/497937> .
+
+<https://semrepo.org/resource/contribution/6587a940fd9a8a9e> a sr:Contribution ;
+    sr:commitCount 9 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/1254753> .
+
+<https://semrepo.org/resource/contribution/6ad30341795ab940> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/8983713> .
+
+<https://semrepo.org/resource/contribution/6c12d31c2a5d777c> a sr:Contribution ;
+    sr:commitCount 5 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/44269389> .
+
+<https://semrepo.org/resource/contribution/6fee57803ce22268> a sr:Contribution ;
+    sr:commitCount 15 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/29103305> .
+
+<https://semrepo.org/resource/contribution/7192ef5208cd0d5b> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/18662774> .
+
+<https://semrepo.org/resource/contribution/7ed90922beb193b0> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/4906435> .
+
+<https://semrepo.org/resource/contribution/88ea8761a65438a3> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/59581465> .
+
+<https://semrepo.org/resource/contribution/89c363c598922670> a sr:Contribution ;
+    sr:commitCount 13 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/9363632> .
+
+<https://semrepo.org/resource/contribution/8d5068ad0195674f> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/17860329> .
+
+<https://semrepo.org/resource/contribution/9c2e44f0f7cebc6a> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/23104500> .
+
+<https://semrepo.org/resource/contribution/9c504a2946bdee26> a sr:Contribution ;
+    sr:commitCount 4 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/70196> .
+
+<https://semrepo.org/resource/contribution/9de3c6f537dd813e> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/3107839> .
+
+<https://semrepo.org/resource/contribution/a90d923424c11ffe> a sr:Contribution ;
+    sr:commitCount 1199 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/8310727> .
+
+<https://semrepo.org/resource/contribution/b4ad6e61d0411abf> a sr:Contribution ;
+    sr:commitCount 5 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/66128494> .
+
+<https://semrepo.org/resource/contribution/b902a904e1f03f82> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/32229669> .
+
+<https://semrepo.org/resource/contribution/be0781cedf33f433> a sr:Contribution ;
+    sr:commitCount 17 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/24903921> .
+
+<https://semrepo.org/resource/contribution/c258a03145d2f03d> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/5370143> .
+
+<https://semrepo.org/resource/contribution/c58c9ae45272a397> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/7022920> .
+
+<https://semrepo.org/resource/contribution/cb6e7d7e952da33d> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/8022651> .
+
+<https://semrepo.org/resource/contribution/cc7e64aeb6594d26> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/5397500> .
+
+<https://semrepo.org/resource/contribution/d5a9cff3cd645548> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/29391438> .
+
+<https://semrepo.org/resource/contribution/d5c9b9658ba0e869> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/26126169> .
+
+<https://semrepo.org/resource/contribution/edb89472f99aa8e5> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/61328285> .
+
+<https://semrepo.org/resource/contribution/efb44b3fefc2b83a> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/7280004> .
+
+<https://semrepo.org/resource/github-account/10934810> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "niansong1996.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2015-02-10T04:16:20+00:00"^^xsd:dateTime ;
+    sr:accountDescription "PhD student at Yale - I learn about natural language and programming language."^^xsd:string ;
+    sr:accountLocation "New Haven"^^xsd:string ;
+    sr:accountName "Ansong Ni"^^xsd:string ;
+    sr:followersCount 80 ;
+    sr:githubLogin "niansong1996" ;
+    sr:githubUserId 10934810 ;
+    sr:profileUrl "https://github.com/niansong1996"^^xsd:anyURI ;
+    sr:publicReposCount 22 .
+
+<https://semrepo.org/resource/github-account/11765276> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://chaoweihuang.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2015-04-02T03:49:45+00:00"^^xsd:dateTime ;
+    sr:accountDescription """Research Scientist @ Meta\r
+PhD @ National Taiwan University.\r
+Previously at Amazon."""^^xsd:string ;
+    sr:accountLocation "Cambridge, MA, USA"^^xsd:string ;
+    sr:accountName "Chao-Wei Huang"^^xsd:string ;
+    sr:followersCount 11 ;
+    sr:githubLogin "chaoweihuang" ;
+    sr:githubUserId 11765276 ;
+    sr:profileUrl "https://github.com/chaoweihuang"^^xsd:anyURI ;
+    sr:publicReposCount 23 .
+
+<https://semrepo.org/resource/github-account/11879978> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://crutcher.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2015-04-10T01:50:57+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Red Hat, Google, 3Scan, Apprente, McDonalds, Meta/FB FAIR, OpenAI, Atmo"^^xsd:string ;
+    sr:accountLocation "San Francisco, CA"^^xsd:string ;
+    sr:accountName "Crutcher Dunnavant"^^xsd:string ;
+    sr:followersCount 54 ;
+    sr:githubLogin "crutcher" ;
+    sr:githubUserId 11879978 ;
+    sr:profileUrl "https://github.com/crutcher"^^xsd:anyURI ;
+    sr:publicReposCount 33 .
+
+<https://semrepo.org/resource/github-account/1254753> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2011-12-10T23:18:32+00:00"^^xsd:dateTime ;
+    sr:accountDescription "🦾🤖🧠👩‍💻"^^xsd:string ;
+    sr:accountLocation "Germany"^^xsd:string ;
+    sr:accountName "Tuan Tran"^^xsd:string ;
+    sr:followersCount 56 ;
+    sr:githubLogin "antoine-tran" ;
+    sr:githubUserId 1254753 ;
+    sr:profileUrl "https://github.com/antoine-tran"^^xsd:anyURI ;
+    sr:publicReposCount 142 .
+
+<https://semrepo.org/resource/github-account/1321193> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://shagunsodhani.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2012-01-11T09:28:06+00:00"^^xsd:dateTime ;
+    sr:accountDescription """@FacebookResearch. Previously \r
+@mila-iqia, @MicrosoftResearch, @AdobeResearch, @IITRoorkee, @gradientpub."""^^xsd:string ;
+    sr:accountLocation "Virtual"^^xsd:string ;
+    sr:accountName "Shagun Sodhani"^^xsd:string ;
+    sr:followersCount 1024 ;
+    sr:githubLogin "shagunsodhani" ;
+    sr:githubUserId 1321193 ;
+    sr:profileUrl "https://github.com/shagunsodhani"^^xsd:anyURI ;
+    sr:publicReposCount 224 .
+
+<https://semrepo.org/resource/github-account/144485669> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2023-09-08T18:48:09+00:00"^^xsd:dateTime ;
+    sr:followersCount 0 ;
+    sr:githubLogin "nirsometa" ;
+    sr:githubUserId 144485669 ;
+    sr:profileUrl "https://github.com/nirsometa"^^xsd:anyURI ;
+    sr:publicReposCount 1 .
+
+<https://semrepo.org/resource/github-account/171189686> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2024-05-29T20:14:48+00:00"^^xsd:dateTime ;
+    sr:followersCount 0 ;
+    sr:githubLogin "syleshfb" ;
+    sr:githubUserId 171189686 ;
+    sr:profileUrl "https://github.com/syleshfb"^^xsd:anyURI ;
+    sr:publicReposCount 3 .
+
+<https://semrepo.org/resource/github-account/17860329> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "sanchez.ai"^^xsd:anyURI ;
+    sr:accountCreatedAt "2016-03-15T19:51:22+00:00"^^xsd:dateTime ;
+    sr:accountDescription """MTS @reflectionai. PhD Student @uclnlp.\r
+\r
+Previously @facebookresearch, @keeleinstituut. Working on LLMs and low-resource languages."""^^xsd:string ;
+    sr:accountLocation "London"^^xsd:string ;
+    sr:accountName "Eduardo Sánchez"^^xsd:string ;
+    sr:followersCount 6 ;
+    sr:githubLogin "eduardosanchezg" ;
+    sr:githubUserId 17860329 ;
+    sr:profileUrl "https://github.com/eduardosanchezg"^^xsd:anyURI ;
+    sr:publicReposCount 18 .
+
+<https://semrepo.org/resource/github-account/18662774> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2016-04-25T15:06:29+00:00"^^xsd:dateTime ;
+    sr:accountName "Paul-Ambroise Duquenne"^^xsd:string ;
+    sr:followersCount 1 ;
+    sr:githubLogin "pa-dqn" ;
+    sr:githubUserId 18662774 ;
+    sr:profileUrl "https://github.com/pa-dqn"^^xsd:anyURI ;
+    sr:publicReposCount 5 .
+
+<https://semrepo.org/resource/github-account/195340634> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2025-01-16T17:57:33+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Build the vivid world."^^xsd:string ;
+    sr:accountName "Becky"^^xsd:string ;
+    sr:followersCount 10 ;
+    sr:githubLogin "beckybyte" ;
+    sr:githubUserId 195340634 ;
+    sr:profileUrl "https://github.com/beckybyte"^^xsd:anyURI ;
+    sr:publicReposCount 4 .
+
+<https://semrepo.org/resource/github-account/21251345> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2016-08-25T23:43:08+00:00"^^xsd:dateTime ;
+    sr:accountLocation "🌏"^^xsd:string ;
+    sr:accountName "Z. Yao"^^xsd:string ;
+    sr:followersCount 22 ;
+    sr:githubLogin "zyaoj" ;
+    sr:githubUserId 21251345 ;
+    sr:profileUrl "https://github.com/zyaoj"^^xsd:anyURI ;
+    sr:publicReposCount 7 .
+
+<https://semrepo.org/resource/github-account/2152005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://uralik.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2012-08-14T16:49:11+00:00"^^xsd:dateTime ;
+    sr:accountDescription "NLP researcher"^^xsd:string ;
+    sr:accountName "Ilia Kulikov"^^xsd:string ;
+    sr:followersCount 60 ;
+    sr:githubLogin "uralik" ;
+    sr:githubUserId 2152005 ;
+    sr:profileUrl "https://github.com/uralik"^^xsd:anyURI ;
+    sr:publicReposCount 19 .
+
+<https://semrepo.org/resource/github-account/23104500> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2016-10-27T17:01:54+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Engineer for Meta FAIR / Formerly at Amazon Alexa AI / Graduated with a MSc in AI & Robotics"^^xsd:string ;
+    sr:accountLocation "Paris, France"^^xsd:string ;
+    sr:accountName "Andrea Caciolai"^^xsd:string ;
+    sr:followersCount 15 ;
+    sr:githubLogin "caciolai" ;
+    sr:githubUserId 23104500 ;
+    sr:profileUrl "https://github.com/caciolai"^^xsd:anyURI ;
+    sr:publicReposCount 15 .
+
+<https://semrepo.org/resource/github-account/24903921> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2017-01-03T22:55:53+00:00"^^xsd:dateTime ;
+    sr:accountDescription "ML-Engineer, ex @facebookresearch"^^xsd:string ;
+    sr:accountLocation "Lebanon"^^xsd:string ;
+    sr:accountName "Naji El Hachem"^^xsd:string ;
+    sr:followersCount 11 ;
+    sr:githubLogin "najielhachem" ;
+    sr:githubUserId 24903921 ;
+    sr:profileUrl "https://github.com/najielhachem"^^xsd:anyURI ;
+    sr:publicReposCount 14 .
+
+<https://semrepo.org/resource/github-account/24907486> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.mattsetzler.com/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2017-01-04T03:41:59+00:00"^^xsd:dateTime ;
+    sr:accountDescription "AI researcher with roots in Music & Cognitive Science."^^xsd:string ;
+    sr:accountLocation "Seattle, Washington"^^xsd:string ;
+    sr:accountName "Matt Setzler"^^xsd:string ;
+    sr:followersCount 3 ;
+    sr:githubLogin "mattsetz" ;
+    sr:githubUserId 24907486 ;
+    sr:profileUrl "https://github.com/mattsetz"^^xsd:anyURI ;
+    sr:publicReposCount 5 .
+
+<https://semrepo.org/resource/github-account/2593126> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2012-10-18T21:53:05+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Edinburgh, UK"^^xsd:string ;
+    sr:accountName "Vanč Levstik"^^xsd:string ;
+    sr:followersCount 10 ;
+    sr:githubLogin "vanclevstik" ;
+    sr:githubUserId 2593126 ;
+    sr:profileUrl "https://github.com/vanclevstik"^^xsd:anyURI ;
+    sr:publicReposCount 27 .
+
+<https://semrepo.org/resource/github-account/26126169> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://scholar.google.com/citations?user=HeqN6q8AAAAJ&hl=en"^^xsd:anyURI ;
+    sr:accountCreatedAt "2017-03-01T22:49:17+00:00"^^xsd:dateTime ;
+    sr:accountDescription """NLP enthusiast. \r
+Current: Postdoc @ FAIR, Meta\r
+Past: \r
+- PhD at Sapienza University, Rome\r
+- Research collaborator at ILLC in University of Amsterdam"""^^xsd:string ;
+    sr:accountLocation "Paris"^^xsd:string ;
+    sr:accountName "Pere Lluis"^^xsd:string ;
+    sr:followersCount 58 ;
+    sr:githubLogin "LittlePea13" ;
+    sr:githubUserId 26126169 ;
+    sr:profileUrl "https://github.com/LittlePea13"^^xsd:anyURI ;
+    sr:publicReposCount 33 .
+
+<https://semrepo.org/resource/github-account/28900943> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2017-05-23T15:24:51+00:00"^^xsd:dateTime ;
+    sr:followersCount 6 ;
+    sr:githubLogin "YJYJLee" ;
+    sr:githubUserId 28900943 ;
+    sr:profileUrl "https://github.com/YJYJLee"^^xsd:anyURI ;
+    sr:publicReposCount 21 .
+
+<https://semrepo.org/resource/github-account/29103305> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.linkedin.com/in/kaushik95/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2017-05-31T17:11:02+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Engineer at FAIR, Meta AI"^^xsd:string ;
+    sr:accountLocation "Mountain View"^^xsd:string ;
+    sr:accountName "Kaushik Ram Sadagopan"^^xsd:string ;
+    sr:followersCount 87 ;
+    sr:githubLogin "kauterry" ;
+    sr:githubUserId 29103305 ;
+    sr:profileUrl "https://github.com/kauterry"^^xsd:anyURI ;
+    sr:publicReposCount 6 .
+
+<https://semrepo.org/resource/github-account/29391438> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2017-06-13T02:53:43+00:00"^^xsd:dateTime ;
+    sr:followersCount 5 ;
+    sr:githubLogin "sysuresh" ;
+    sr:githubUserId 29391438 ;
+    sr:profileUrl "https://github.com/sysuresh"^^xsd:anyURI ;
+    sr:publicReposCount 12 .
+
+<https://semrepo.org/resource/github-account/3107839> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://x.com/FeitengLi"^^xsd:anyURI ;
+    sr:accountCreatedAt "2012-12-23T04:52:16+00:00"^^xsd:dateTime ;
+    sr:accountDescription "AI researcher & engineer | Speech, image & video generation | Full-duplex interaction & efficient inference"^^xsd:string ;
+    sr:accountLocation "Singapore"^^xsd:string ;
+    sr:accountName "Feiteng"^^xsd:string ;
+    sr:followersCount 578 ;
+    sr:githubLogin "lifeiteng" ;
+    sr:githubUserId 3107839 ;
+    sr:profileUrl "https://github.com/lifeiteng"^^xsd:anyURI ;
+    sr:publicReposCount 130 .
+
+<https://semrepo.org/resource/github-account/32229669> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2017-09-23T21:50:05+00:00"^^xsd:dateTime ;
+    sr:accountLocation "menlo park"^^xsd:string ;
+    sr:accountName "lucca bertoncini"^^xsd:string ;
+    sr:followersCount 59 ;
+    sr:githubLogin "luccabb" ;
+    sr:githubUserId 32229669 ;
+    sr:profileUrl "https://github.com/luccabb"^^xsd:anyURI ;
+    sr:publicReposCount 40 .
+
+<https://semrepo.org/resource/github-account/3266543> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2013-01-14T15:53:26+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Engineer at Meta"^^xsd:string ;
+    sr:accountLocation "Paris, France"^^xsd:string ;
+    sr:accountName "Martin Gleize"^^xsd:string ;
+    sr:followersCount 8 ;
+    sr:githubLogin "MartinGleize" ;
+    sr:githubUserId 3266543 ;
+    sr:profileUrl "https://github.com/MartinGleize"^^xsd:anyURI ;
+    sr:publicReposCount 6 .
+
+<https://semrepo.org/resource/github-account/33839160> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "light1726.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2017-11-20T16:01:45+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Hi! I am Hui Lu (卢辉), a researcher and engineer working on speech and language technologies."^^xsd:string ;
+    sr:accountLocation "Hong Kong SAR, China"^^xsd:string ;
+    sr:accountName "Hui Lu"^^xsd:string ;
+    sr:followersCount 57 ;
+    sr:githubLogin "light1726" ;
+    sr:githubUserId 33839160 ;
+    sr:profileUrl "https://github.com/light1726"^^xsd:anyURI ;
+    sr:publicReposCount 31 .
+
+<https://semrepo.org/resource/github-account/37080003> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "ahmedsaed.me"^^xsd:anyURI ;
+    sr:accountCreatedAt "2018-03-05T16:33:14+00:00"^^xsd:dateTime ;
+    sr:accountDescription "I write code"^^xsd:string ;
+    sr:accountLocation "Egypt"^^xsd:string ;
+    sr:accountName "Ahmed Saed ElBaz"^^xsd:string ;
+    sr:followersCount 119 ;
+    sr:githubLogin "ahmedsaed" ;
+    sr:githubUserId 37080003 ;
+    sr:profileUrl "https://github.com/ahmedsaed"^^xsd:anyURI ;
+    sr:publicReposCount 105 .
+
+<https://semrepo.org/resource/github-account/39198402> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://tuanh208.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2018-05-11T17:05:24+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Welcome to my Code-storage. For my Music-storage, please have a look at: https://soundcloud.com/tuanh208 ."^^xsd:string ;
+    sr:accountLocation "Paris, France"^^xsd:string ;
+    sr:accountName "Nguyen Tu Anh"^^xsd:string ;
+    sr:followersCount 24 ;
+    sr:githubLogin "tuanh208" ;
+    sr:githubUserId 39198402 ;
+    sr:profileUrl "https://github.com/tuanh208"^^xsd:anyURI ;
+    sr:publicReposCount 11 .
+
+<https://semrepo.org/resource/github-account/420184> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "http://sdymchenko.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2010-09-29T03:51:29+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Bellevue, WA"^^xsd:string ;
+    sr:accountName "Sergii Dymchenko"^^xsd:string ;
+    sr:followersCount 117 ;
+    sr:githubLogin "kit1980" ;
+    sr:githubUserId 420184 ;
+    sr:profileUrl "https://github.com/kit1980"^^xsd:anyURI ;
+    sr:publicReposCount 80 .
+
+<https://semrepo.org/resource/github-account/44269389> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "rsyue.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2018-10-18T15:42:05+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Richard Yue is currently a Software Engineer III at Meta FAIR under contract with Mindlance. Prev NASA. Expertise in MT and pretraining techniques."^^xsd:string ;
+    sr:accountLocation "San Jose, CA"^^xsd:string ;
+    sr:accountName "Richard Yue"^^xsd:string ;
+    sr:followersCount 6 ;
+    sr:githubLogin "rsyue" ;
+    sr:githubUserId 44269389 ;
+    sr:profileUrl "https://github.com/rsyue"^^xsd:anyURI ;
+    sr:publicReposCount 22 .
+
+<https://semrepo.org/resource/github-account/4906435> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2013-07-01T13:28:44+00:00"^^xsd:dateTime ;
+    sr:accountName "Dinghao Zhou"^^xsd:string ;
+    sr:followersCount 137 ;
+    sr:githubLogin "Mddct" ;
+    sr:githubUserId 4906435 ;
+    sr:profileUrl "https://github.com/Mddct"^^xsd:anyURI ;
+    sr:publicReposCount 127 .
+
+<https://semrepo.org/resource/github-account/497937> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2010-11-26T14:27:25+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Paris"^^xsd:string ;
+    sr:accountName "Artem Kozhevnikov"^^xsd:string ;
+    sr:followersCount 28 ;
+    sr:githubLogin "artemru" ;
+    sr:githubUserId 497937 ;
+    sr:profileUrl "https://github.com/artemru"^^xsd:anyURI ;
+    sr:publicReposCount 13 .
+
+<https://semrepo.org/resource/github-account/5370143> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "guitared.me"^^xsd:anyURI ;
+    sr:accountCreatedAt "2013-09-03T05:51:04+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Code for Loved"^^xsd:string ;
+    sr:accountLocation "Thailand"^^xsd:string ;
+    sr:followersCount 17 ;
+    sr:githubLogin "guitared" ;
+    sr:githubUserId 5370143 ;
+    sr:profileUrl "https://github.com/guitared"^^xsd:anyURI ;
+    sr:publicReposCount 69 .
+
+<https://semrepo.org/resource/github-account/5397500> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2013-09-06T06:38:47+00:00"^^xsd:dateTime ;
+    sr:accountDescription "jacklanchantin.com"^^xsd:string ;
+    sr:accountLocation "New York, NY"^^xsd:string ;
+    sr:accountName "Jack Lanchantin"^^xsd:string ;
+    sr:followersCount 30 ;
+    sr:githubLogin "jacklanchantin" ;
+    sr:githubUserId 5397500 ;
+    sr:profileUrl "https://github.com/jacklanchantin"^^xsd:anyURI ;
+    sr:publicReposCount 20 .
+
+<https://semrepo.org/resource/github-account/5920036> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2013-11-12T14:20:16+00:00"^^xsd:dateTime ;
+    sr:accountDescription """ML Engineer @zml \r
+ex-NLP Research Engineer @facebookresearch \r
+ex-ML Engineer @google\r
+ex-NLP Research Engineer @proxem"""^^xsd:string ;
+    sr:accountLocation "France"^^xsd:string ;
+    sr:accountName "Guillaume Wenzek"^^xsd:string ;
+    sr:followersCount 172 ;
+    sr:githubLogin "gwenzek" ;
+    sr:githubUserId 5920036 ;
+    sr:profileUrl "https://github.com/gwenzek"^^xsd:anyURI ;
+    sr:publicReposCount 93 .
+
+<https://semrepo.org/resource/github-account/59581465> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2020-01-06T20:33:10+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Santa Cruz, CA"^^xsd:string ;
+    sr:accountName "Alisha Maddy"^^xsd:string ;
+    sr:followersCount 5 ;
+    sr:githubLogin "am831" ;
+    sr:githubUserId 59581465 ;
+    sr:profileUrl "https://github.com/am831"^^xsd:anyURI ;
+    sr:publicReposCount 13 .
+
+<https://semrepo.org/resource/github-account/61328285> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.linkedin.com/in/michael-gschwind-3704222/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2020-02-21T18:01:08+00:00"^^xsd:dateTime ;
+    sr:accountDescription "https://en.wikipedia.org/wiki/Michael_Gschwind"^^xsd:string ;
+    sr:accountLocation "Santa Clara, CA"^^xsd:string ;
+    sr:accountName "Michael Gschwind"^^xsd:string ;
+    sr:followersCount 41 ;
+    sr:githubLogin "mikekgfb" ;
+    sr:githubUserId 61328285 ;
+    sr:profileUrl "https://github.com/mikekgfb"^^xsd:anyURI ;
+    sr:publicReposCount 16 .
+
+<https://semrepo.org/resource/github-account/628467> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "http://www.pierreandrews.net"^^xsd:anyURI ;
+    sr:accountCreatedAt "2011-02-20T16:12:42+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Mountain View, CA, USA"^^xsd:string ;
+    sr:accountName "Pierre Andrews"^^xsd:string ;
+    sr:followersCount 99 ;
+    sr:githubLogin "Mortimerp9" ;
+    sr:githubUserId 628467 ;
+    sr:profileUrl "https://github.com/Mortimerp9"^^xsd:anyURI ;
+    sr:publicReposCount 34 .
+
+<https://semrepo.org/resource/github-account/6526592> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2014-01-28T16:40:34+00:00"^^xsd:dateTime ;
+    sr:accountName "Yunchao Yang"^^xsd:string ;
+    sr:followersCount 46 ;
+    sr:githubLogin "YunchaoYang" ;
+    sr:githubUserId 6526592 ;
+    sr:profileUrl "https://github.com/YunchaoYang"^^xsd:anyURI ;
+    sr:publicReposCount 87 .
+
+<https://semrepo.org/resource/github-account/66128494> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2020-05-29T14:39:03+00:00"^^xsd:dateTime ;
+    sr:accountName "Jean-Christophe Gagnon-Audet"^^xsd:string ;
+    sr:followersCount 16 ;
+    sr:githubLogin "jc-audet" ;
+    sr:githubUserId 66128494 ;
+    sr:profileUrl "https://github.com/jc-audet"^^xsd:anyURI ;
+    sr:publicReposCount 15 .
+
+<https://semrepo.org/resource/github-account/66643403> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2020-06-08T19:24:18+00:00"^^xsd:dateTime ;
+    sr:accountDescription "CS @ Caltech | Reasoning, Memory, Alignment @fairinternal @facebookresearch"^^xsd:string ;
+    sr:accountLocation "Seattle"^^xsd:string ;
+    sr:accountName "Enoch Luk"^^xsd:string ;
+    sr:followersCount 3 ;
+    sr:githubLogin "enochcluk" ;
+    sr:githubUserId 66643403 ;
+    sr:profileUrl "https://github.com/enochcluk"^^xsd:anyURI ;
+    sr:publicReposCount 11 .
+
+<https://semrepo.org/resource/github-account/69287011> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2020-08-06T04:04:32+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Dare to understand"^^xsd:string ;
+    sr:accountName "Gerardo Moreno"^^xsd:string ;
+    sr:followersCount 24 ;
+    sr:githubLogin "gziz" ;
+    sr:githubUserId 69287011 ;
+    sr:profileUrl "https://github.com/gziz"^^xsd:anyURI ;
+    sr:publicReposCount 69 .
+
+<https://semrepo.org/resource/github-account/70196> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "http://mshvartsman.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2009-04-03T17:33:07+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Scientist @ FAIR (Meta). Theoretical unification and tool-building are my jams."^^xsd:string ;
+    sr:accountLocation "Seattle, WA"^^xsd:string ;
+    sr:accountName "Michael Shvartsman"^^xsd:string ;
+    sr:followersCount 25 ;
+    sr:githubLogin "mshvartsman" ;
+    sr:githubUserId 70196 ;
+    sr:profileUrl "https://github.com/mshvartsman"^^xsd:anyURI ;
+    sr:publicReposCount 42 .
+
+<https://semrepo.org/resource/github-account/7022920> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2014-03-21T14:12:10+00:00"^^xsd:dateTime ;
+    sr:accountDescription """Founder@Stealth |  \r
+ex-Research Engineer in FAIR, interested in real-time video generation, multimodal LLM, AI agents"""^^xsd:string ;
+    sr:accountLocation "Menlo Park, CA"^^xsd:string ;
+    sr:accountName "Ning"^^xsd:string ;
+    sr:followersCount 162 ;
+    sr:githubLogin "cndn" ;
+    sr:githubUserId 7022920 ;
+    sr:profileUrl "https://github.com/cndn"^^xsd:anyURI ;
+    sr:publicReposCount 29 .
+
+<https://semrepo.org/resource/github-account/7280004> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "elbayadm.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-04-13T12:08:01+00:00"^^xsd:dateTime ;
+    sr:accountDescription "AI Research Scientist"^^xsd:string ;
+    sr:accountLocation "San Francisco Bay Area"^^xsd:string ;
+    sr:accountName "Maha Elbayad"^^xsd:string ;
+    sr:followersCount 257 ;
+    sr:githubLogin "elbayadm" ;
+    sr:githubUserId 7280004 ;
+    sr:profileUrl "https://github.com/elbayadm"^^xsd:anyURI ;
+    sr:publicReposCount 10 .
+
+<https://semrepo.org/resource/github-account/73017975> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2020-10-17T09:07:01+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Engineer at FAIR"^^xsd:string ;
+    sr:accountName "Kevin Heffernan"^^xsd:string ;
+    sr:followersCount 7 ;
+    sr:githubLogin "heffernankevin" ;
+    sr:githubUserId 73017975 ;
+    sr:profileUrl "https://github.com/heffernankevin"^^xsd:anyURI ;
+    sr:publicReposCount 3 .
+
+<https://semrepo.org/resource/github-account/8022651> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2014-06-30T04:38:15+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Natural language & speech processing researcher"^^xsd:string ;
+    sr:accountName "iamyuanchung"^^xsd:string ;
+    sr:followersCount 111 ;
+    sr:githubLogin "iamyuanchung" ;
+    sr:githubUserId 8022651 ;
+    sr:profileUrl "https://github.com/iamyuanchung"^^xsd:anyURI ;
+    sr:publicReposCount 17 .
+
+<https://semrepo.org/resource/github-account/81714784> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2021-03-31T20:41:57+00:00"^^xsd:dateTime ;
+    sr:accountName "Eric Brown"^^xsd:string ;
+    sr:followersCount 7 ;
+    sr:githubLogin "PeanutButterRat" ;
+    sr:githubUserId 81714784 ;
+    sr:profileUrl "https://github.com/PeanutButterRat"^^xsd:anyURI ;
+    sr:publicReposCount 23 .
+
+<https://semrepo.org/resource/github-account/8310727> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "http://canbalioglu.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-07-30T14:10:06+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Engineer at FAIR. Previously PyTorch at Meta."^^xsd:string ;
+    sr:accountLocation "New York, NY"^^xsd:string ;
+    sr:accountName "Can Balioglu"^^xsd:string ;
+    sr:followersCount 95 ;
+    sr:githubLogin "cbalioglu" ;
+    sr:githubUserId 8310727 ;
+    sr:profileUrl "https://github.com/cbalioglu"^^xsd:anyURI ;
+    sr:publicReposCount 6 .
+
+<https://semrepo.org/resource/github-account/8642136> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "daviddale.me"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-09-03T13:06:29+00:00"^^xsd:dateTime ;
+    sr:accountDescription "NLP research engineer"^^xsd:string ;
+    sr:accountLocation "Paris"^^xsd:string ;
+    sr:accountName "David Dale"^^xsd:string ;
+    sr:followersCount 293 ;
+    sr:githubLogin "avidale" ;
+    sr:githubUserId 8642136 ;
+    sr:profileUrl "https://github.com/avidale"^^xsd:anyURI ;
+    sr:publicReposCount 87 .
+
+<https://semrepo.org/resource/github-account/8983713> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://stackoverflow.com/users/2236185"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-10-01T11:29:05+00:00"^^xsd:dateTime ;
+    sr:accountName "Oren Amsalem"^^xsd:string ;
+    sr:followersCount 40 ;
+    sr:githubLogin "orena1" ;
+    sr:githubUserId 8983713 ;
+    sr:profileUrl "https://github.com/orena1"^^xsd:anyURI ;
+    sr:publicReposCount 73 .
+
+<https://semrepo.org/resource/github-account/9363632> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2014-10-23T08:11:57+00:00"^^xsd:dateTime ;
+    sr:accountDescription "AI System Performance Engineer"^^xsd:string ;
+    sr:accountLocation "NYC"^^xsd:string ;
+    sr:accountName "Alexander Erben"^^xsd:string ;
+    sr:followersCount 44 ;
+    sr:githubLogin "cirquit" ;
+    sr:githubUserId 9363632 ;
+    sr:profileUrl "https://github.com/cirquit"^^xsd:anyURI ;
+    sr:publicReposCount 57 .
+
+<https://semrepo.org/resource/github-account/98116068> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "andrewnakamoto.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2022-01-20T17:37:22+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Computer Science at the University of Washington | Meta FAIR | DubHacks"^^xsd:string ;
+    sr:accountName "Andrew Nakamoto"^^xsd:string ;
+    sr:followersCount 5 ;
+    sr:githubLogin "asn1814" ;
+    sr:githubUserId 98116068 ;
+    sr:profileUrl "https://github.com/asn1814"^^xsd:anyURI ;
+    sr:publicReposCount 10 .
+

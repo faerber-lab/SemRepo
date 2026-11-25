@@ -1,0 +1,71 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/contribution/1000709d646c813a> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/9333013> .
+
+<https://semrepo.org/resource/contribution/22097913058d17d2> a sr:Contribution ;
+    sr:commitCount 30 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/23361418> .
+
+<https://semrepo.org/resource/contribution/7b642276bce28697> a sr:Contribution ;
+    sr:commitCount 53 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/10849005> .
+
+<https://semrepo.org/resource/contribution/dff4d1a8a9f5c442> a sr:Contribution ;
+    sr:commitCount 13 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/53952143> .
+
+<https://semrepo.org/resource/github-account/10849005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2015-02-04T13:12:46+00:00"^^xsd:dateTime ;
+    sr:accountDescription "A learner."^^xsd:string ;
+    sr:accountName "Yuankai Wu"^^xsd:string ;
+    sr:followersCount 135 ;
+    sr:githubLogin "Kaimaoge" ;
+    sr:githubUserId 10849005 ;
+    sr:profileUrl "https://github.com/Kaimaoge"^^xsd:anyURI ;
+    sr:publicReposCount 43 .
+
+<https://semrepo.org/resource/github-account/23361418> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://zhuangdingyi.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2016-11-09T15:15:36+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Urban computing, MIT Transit Lab"^^xsd:string ;
+    sr:accountLocation "Cambridge, MA"^^xsd:string ;
+    sr:accountName "Zhuang Dingyi"^^xsd:string ;
+    sr:followersCount 71 ;
+    sr:githubLogin "ZhuangDingyi" ;
+    sr:githubUserId 23361418 ;
+    sr:profileUrl "https://github.com/ZhuangDingyi"^^xsd:anyURI ;
+    sr:publicReposCount 41 .
+
+<https://semrepo.org/resource/github-account/53952143> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://mengyinglei.github.io"^^xsd:anyURI ;
+    sr:accountCreatedAt "2019-08-09T19:00:14+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Montreal, Canada"^^xsd:string ;
+    sr:accountName "Mengying Lei"^^xsd:string ;
+    sr:followersCount 7 ;
+    sr:githubLogin "MengyingLei" ;
+    sr:githubUserId 53952143 ;
+    sr:profileUrl "https://github.com/MengyingLei"^^xsd:anyURI ;
+    sr:publicReposCount 5 .
+
+<https://semrepo.org/resource/github-account/9333013> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.mcgill.ca/civil/lijun-sun"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-10-21T07:57:31+00:00"^^xsd:dateTime ;
+    sr:accountLocation "Montreal"^^xsd:string ;
+    sr:accountName "Lijun Sun"^^xsd:string ;
+    sr:followersCount 186 ;
+    sr:githubLogin "lijunsun" ;
+    sr:githubUserId 9333013 ;
+    sr:profileUrl "https://github.com/lijunsun"^^xsd:anyURI ;
+    sr:publicReposCount 38 .
+

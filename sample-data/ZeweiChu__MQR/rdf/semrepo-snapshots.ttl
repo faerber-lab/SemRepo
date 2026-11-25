@@ -1,0 +1,29 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/2027005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ZeweiChu" ;
+    sr:githubUserId 2027005 ;
+    sr:profileUrl "https://github.com/ZeweiChu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository-snapshot/222162300/2026-11-18T21:10:29.001542+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-18T21:10:29.001542+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "master" ;
+    sr:forksCount 2 ;
+    sr:fullName "ZeweiChu/MQR" ;
+    sr:isFork false ;
+    sr:lastCommitAt "2019-11-24T07:34:07+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 1 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/2027005> ;
+    sr:pushedAt "2019-11-24T07:34:15+00:00"^^xsd:dateTime ;
+    sr:repositoryName "MQR" ;
+    sr:sizeKb 681 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/222162300> ;
+    sr:starsCount 20 ;
+    sr:updatedAt "2024-06-27T23:02:45+00:00"^^xsd:dateTime ;
+    sr:watchersCount 2 .
+
+<https://semrepo.org/resource/repository/222162300> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/222162300/2026-11-18T21:10:29.001542+00:00> .
+

@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/004fd65205f1c0f9> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/imavijit/detect-it/issues"^^xsd:anyURI ;
+    sr:collectionSource "185001_190000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T22:12:46.384242+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/178486964> .
+
+<https://semrepo.org/resource/collection-activity/3a109fdd8ed4be6c> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/imavijit/detect-it/languages"^^xsd:anyURI ;
+    sr:collectionSource "185001_190000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T22:12:46.130103+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/178486964> .
+
+<https://semrepo.org/resource/collection-activity/ce334151a74503a6> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/imavijit/detect-it/contributors"^^xsd:anyURI ;
+    sr:collectionSource "185001_190000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T22:12:46.675967+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/178486964> .
+
+<https://semrepo.org/resource/source-repository-link/4d20c05910df3096> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/imavijit/detect-it"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/imavijit/detect_it"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Renamed ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/178486964> .
+
+<https://semrepo.org/resource/repository/178486964> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/imavijit/detect-it"^^xsd:anyURI ;
+    sr:createdAt "2019-03-29T23:17:18+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 178486964 .
+

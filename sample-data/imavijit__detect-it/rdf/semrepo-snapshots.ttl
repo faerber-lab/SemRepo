@@ -1,0 +1,34 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/45468002> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "imavijit" ;
+    sr:githubUserId 45468002 ;
+    sr:profileUrl "https://github.com/imavijit"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/jupyter-notebook> a sr:ProgrammingLanguage ;
+    sr:languageName "Jupyter Notebook" .
+
+<https://semrepo.org/resource/repository-snapshot/178486964/2026-11-20T22:12:45.739047+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-20T22:12:45.739047+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "master" ;
+    sr:description "1.Face Detection.  2.Object Detection" ;
+    sr:forksCount 0 ;
+    sr:fullName "imavijit/detect-it" ;
+    sr:isFork false ;
+    sr:lastCommitAt "2019-11-01T18:22:22+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 0 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/45468002> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/jupyter-notebook> ;
+    sr:pushedAt "2019-11-01T18:22:23+00:00"^^xsd:dateTime ;
+    sr:repositoryName "detect-it" ;
+    sr:sizeKb 7861 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/178486964> ;
+    sr:starsCount 0 ;
+    sr:updatedAt "2020-06-12T15:04:11+00:00"^^xsd:dateTime ;
+    sr:watchersCount 0 .
+
+<https://semrepo.org/resource/repository/178486964> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/178486964/2026-11-20T22:12:45.739047+00:00> .
+

@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/1b3171ec5031a61c> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Kaimaoge/IGNNK/languages"^^xsd:anyURI ;
+    sr:collectionSource "15001_20000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T01:29:42.080640+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/267995597> .
+
+<https://semrepo.org/resource/collection-activity/3b43ee996270f256> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Kaimaoge/IGNNK/contributors"^^xsd:anyURI ;
+    sr:collectionSource "15001_20000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T01:29:44.368774+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/267995597> .
+
+<https://semrepo.org/resource/collection-activity/e35bf28d109b9b59> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Kaimaoge/IGNNK/issues"^^xsd:anyURI ;
+    sr:collectionSource "15001_20000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T01:29:43.124280+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/267995597> .
+
+<https://semrepo.org/resource/source-repository-link/95981809942584a7> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/Kaimaoge/IGNNK"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/kaimaoge/ignnk"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/267995597> .
+
+<https://semrepo.org/resource/repository/267995597> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/Kaimaoge/IGNNK"^^xsd:anyURI ;
+    sr:createdAt "2020-05-30T02:35:28+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 267995597 .
+

@@ -1,0 +1,3 @@
+{"collection_timestamp": "2026-11-20T01:29:42.080640+00:00", "attempted_url": "https://api.github.com/repos/Kaimaoge/IGNNK/languages", "collection_source": "15001_20000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 267995597}
+{"collection_timestamp": "2026-11-20T01:29:43.124280+00:00", "attempted_url": "https://api.github.com/repos/Kaimaoge/IGNNK/issues", "collection_source": "15001_20000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 267995597}
+{"collection_timestamp": "2026-11-20T01:29:44.368774+00:00", "attempted_url": "https://api.github.com/repos/Kaimaoge/IGNNK/contributors", "collection_source": "15001_20000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 267995597}

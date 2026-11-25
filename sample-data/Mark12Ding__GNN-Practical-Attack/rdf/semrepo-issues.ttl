@@ -1,0 +1,58 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/48855254> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "likuanppd" ;
+    sr:githubUserId 48855254 ;
+    sr:profileUrl "https://github.com/likuanppd"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/857988273> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/305300008> ;
+    sr:githubIssueId 857988273 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/48855254> ;
+    sr:issueClosedAt "2021-04-14T16:14:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2021-04-14T15:02:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Evasion or poison?" ;
+    sr:issueUpdatedAt "2021-04-14T16:14:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/Mark12Ding/GNN-Practical-Attack/issues/1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/896812420> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/305300008> ;
+    sr:githubIssueId 896812420 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/37699153> ;
+    sr:issueClosedAt "2021-05-21T18:23:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2021-05-20T13:10:01+00:00"^^xsd:dateTime ;
+    sr:issueNumber 2 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "blackbox?" ;
+    sr:issueUpdatedAt "2021-05-21T18:23:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/Mark12Ding/GNN-Practical-Attack/issues/2"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/947006081> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/305300008> ;
+    sr:githubIssueId 947006081 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/37699153> ;
+    sr:issueClosedAt "2021-10-02T04:02:58+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2021-07-18T10:52:38+00:00"^^xsd:dateTime ;
+    sr:issueNumber 3 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "DOUBT ABOUT RWCS" ;
+    sr:issueUpdatedAt "2021-10-02T04:02:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/Mark12Ding/GNN-Practical-Attack/issues/3"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/37699153> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "gitdawn123" ;
+    sr:githubUserId 37699153 ;
+    sr:profileUrl "https://github.com/gitdawn123"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/305300008> sr:hasIssue <https://semrepo.org/resource/github-issue/857988273>,
+        <https://semrepo.org/resource/github-issue/896812420>,
+        <https://semrepo.org/resource/github-issue/947006081> .
+

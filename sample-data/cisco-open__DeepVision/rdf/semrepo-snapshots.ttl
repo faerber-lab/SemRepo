@@ -1,0 +1,38 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/95529662> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "cisco-open" ;
+    sr:githubUserId 95529662 ;
+    sr:profileUrl "https://github.com/cisco-open"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/repository-snapshot/604700080/2026-11-21T23:09:31.009330+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-21T23:09:31.009330+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:forksCount 11 ;
+    sr:fullName "cisco-open/DeepVision" ;
+    sr:hasLicense <https://spdx.org/licenses/Apache-2.0> ;
+    sr:isFork false ;
+    sr:lastCommitAt "2024-06-26T23:21:10+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 11 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/95529662> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2024-07-08T11:51:21+00:00"^^xsd:dateTime ;
+    sr:repositoryName "DeepVision" ;
+    sr:sizeKb 247586 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/604700080> ;
+    sr:starsCount 50 ;
+    sr:updatedAt "2025-11-14T05:09:37+00:00"^^xsd:dateTime ;
+    sr:watchersCount 6 .
+
+<https://semrepo.org/resource/repository/604700080> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/604700080/2026-11-21T23:09:31.009330+00:00> .
+
+<https://spdx.org/licenses/Apache-2.0> a sr:License ;
+    sr:licenseName "Apache License 2.0" ;
+    sr:spdxId "Apache-2.0" .
+

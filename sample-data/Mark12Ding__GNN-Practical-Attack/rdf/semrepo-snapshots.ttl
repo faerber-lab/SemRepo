@@ -1,0 +1,40 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/41252110> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Mark12Ding" ;
+    sr:githubUserId 41252110 ;
+    sr:profileUrl "https://github.com/Mark12Ding"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/repository-snapshot/305300008/2026-11-20T05:39:55.027776+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-20T05:39:55.027776+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "Code for Towards More Practical Adversarial Attacks on Graph Neural Networks (NeurIPS 2020)" ;
+    sr:forksCount 1 ;
+    sr:fullName "Mark12Ding/GNN-Practical-Attack" ;
+    sr:hasLicense <https://spdx.org/licenses/MIT> ;
+    sr:homepageUrl "https://arxiv.org/abs/2006.05057"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2021-11-13T07:15:32+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 0 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/41252110> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2021-11-13T07:15:32+00:00"^^xsd:dateTime ;
+    sr:repositoryName "GNN-Practical-Attack" ;
+    sr:sizeKb 11 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/305300008> ;
+    sr:starsCount 27 ;
+    sr:updatedAt "2026-03-20T11:50:10+00:00"^^xsd:dateTime ;
+    sr:watchersCount 3 .
+
+<https://semrepo.org/resource/repository/305300008> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/305300008/2026-11-20T05:39:55.027776+00:00> .
+
+<https://spdx.org/licenses/MIT> a sr:License ;
+    sr:licenseName "MIT License" ;
+    sr:spdxId "MIT" .
+

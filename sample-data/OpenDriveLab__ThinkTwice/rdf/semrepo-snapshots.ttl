@@ -1,0 +1,47 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/121048976> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "OpenDriveLab" ;
+    sr:githubUserId 121048976 ;
+    sr:profileUrl "https://github.com/OpenDriveLab"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-20T03:16:32.651649+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "[CVPR 2023] Pytorch implementation of ThinkTwice, a SOTA Decoder for End-to-end Autonomous Driving under BEV." ;
+    sr:forksCount 25 ;
+    sr:fullName "OpenDriveLab/ThinkTwice" ;
+    sr:hasLicense <https://spdx.org/licenses/Apache-2.0> ;
+    sr:hasTopic <https://semrepo.org/resource/topic/carla-simulator>,
+        <https://semrepo.org/resource/topic/end-to-end-autonomous-driving> ;
+    sr:isFork false ;
+    sr:lastCommitAt "2025-07-02T05:32:13+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 3 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/121048976> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2025-07-02T05:32:14+00:00"^^xsd:dateTime ;
+    sr:repositoryName "ThinkTwice" ;
+    sr:sizeKb 12651 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/615387590> ;
+    sr:starsCount 254 ;
+    sr:updatedAt "2026-11-05T06:35:55+00:00"^^xsd:dateTime ;
+    sr:watchersCount 9 .
+
+<https://semrepo.org/resource/repository/615387590> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> .
+
+<https://semrepo.org/resource/topic/carla-simulator> a sr:Topic ;
+    sr:topicName "carla-simulator" .
+
+<https://semrepo.org/resource/topic/end-to-end-autonomous-driving> a sr:Topic ;
+    sr:topicName "end-to-end-autonomous-driving" .
+
+<https://spdx.org/licenses/Apache-2.0> a sr:License ;
+    sr:licenseName "Apache License 2.0" ;
+    sr:spdxId "Apache-2.0" .
+

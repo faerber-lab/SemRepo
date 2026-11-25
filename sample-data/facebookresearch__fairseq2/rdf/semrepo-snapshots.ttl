@@ -1,0 +1,60 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/16943930> a sr:GitHubAccount,
+        sr:GitHubOrganisation ;
+    sr:githubLogin "facebookresearch" ;
+    sr:githubUserId 16943930 ;
+    sr:profileUrl "https://github.com/facebookresearch"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-21T17:29:37.467297+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "main" ;
+    sr:description "FAIR Sequence Modeling Toolkit 2" ;
+    sr:forksCount 147 ;
+    sr:fullName "facebookresearch/fairseq2" ;
+    sr:hasLicense <https://spdx.org/licenses/MIT> ;
+    sr:hasTopic <https://semrepo.org/resource/topic/artificial-intelligence>,
+        <https://semrepo.org/resource/topic/deep-learning>,
+        <https://semrepo.org/resource/topic/machine-learning>,
+        <https://semrepo.org/resource/topic/python>,
+        <https://semrepo.org/resource/topic/pytorch> ;
+    sr:homepageUrl "https://facebookresearch.github.io/fairseq2/"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2026-09-08T15:43:16+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 152 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/16943930> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2026-11-19T15:00:23+00:00"^^xsd:dateTime ;
+    sr:repositoryName "fairseq2" ;
+    sr:sizeKb 40893 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/581166973> ;
+    sr:starsCount 1153 ;
+    sr:updatedAt "2026-11-19T22:46:36+00:00"^^xsd:dateTime ;
+    sr:watchersCount 26 .
+
+<https://semrepo.org/resource/repository/581166973> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/581166973/2026-11-21T17:29:37.467297+00:00> .
+
+<https://semrepo.org/resource/topic/artificial-intelligence> a sr:Topic ;
+    sr:topicName "artificial-intelligence" .
+
+<https://semrepo.org/resource/topic/deep-learning> a sr:Topic ;
+    sr:topicName "deep-learning" .
+
+<https://semrepo.org/resource/topic/machine-learning> a sr:Topic ;
+    sr:topicName "machine-learning" .
+
+<https://semrepo.org/resource/topic/python> a sr:Topic ;
+    sr:topicName "python" .
+
+<https://semrepo.org/resource/topic/pytorch> a sr:Topic ;
+    sr:topicName "pytorch" .
+
+<https://spdx.org/licenses/MIT> a sr:License ;
+    sr:licenseName "MIT License" ;
+    sr:spdxId "MIT" .
+

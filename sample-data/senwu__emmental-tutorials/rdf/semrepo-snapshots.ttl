@@ -1,0 +1,40 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/5580008> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "senwu" ;
+    sr:githubUserId 5580008 ;
+    sr:profileUrl "https://github.com/senwu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-21T20:29:44.841148+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "master" ;
+    sr:description "A collection of simple tutorials for using Emmental." ;
+    sr:forksCount 8 ;
+    sr:fullName "senwu/emmental-tutorials" ;
+    sr:hasLicense <https://spdx.org/licenses/MIT> ;
+    sr:homepageUrl "https://github.com/SenWu/emmental"^^xsd:anyURI ;
+    sr:isFork false ;
+    sr:lastCommitAt "2021-09-09T22:39:10+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 1 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/5580008> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/python> ;
+    sr:pushedAt "2023-06-12T21:38:55+00:00"^^xsd:dateTime ;
+    sr:repositoryName "emmental-tutorials" ;
+    sr:sizeKb 422 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/182929051> ;
+    sr:starsCount 19 ;
+    sr:updatedAt "2025-04-29T11:48:07+00:00"^^xsd:dateTime ;
+    sr:watchersCount 4 .
+
+<https://semrepo.org/resource/repository/182929051> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> .
+
+<https://spdx.org/licenses/MIT> a sr:License ;
+    sr:licenseName "MIT License" ;
+    sr:spdxId "MIT" .
+

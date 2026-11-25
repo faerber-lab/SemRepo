@@ -1,0 +1,45 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/45705496> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dd-the-dd" ;
+    sr:githubUserId 45705496 ;
+    sr:profileUrl "https://github.com/dd-the-dd"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/53952143> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "MengyingLei" ;
+    sr:githubUserId 53952143 ;
+    sr:profileUrl "https://github.com/MengyingLei"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1511147869> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/267995597> ;
+    sr:githubIssueId 1511147869 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/53952143> ;
+    sr:issueClosedAt "2022-12-28T18:03:28+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2022-12-26T18:42:53+00:00"^^xsd:dateTime ;
+    sr:issueNumber 6 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Patch 1" ;
+    sr:issueUpdatedAt "2022-12-28T18:03:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/Kaimaoge/IGNNK/pull/6"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2022-12-28T18:03:28+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/1746999373> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/267995597> ;
+    sr:githubIssueId 1746999373 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/45705496> ;
+    sr:issueClosedAt "2023-06-08T03:30:59+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-08T03:04:00+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Small correction to make IGNNK_U_Central_missing.ipynb work" ;
+    sr:issueUpdatedAt "2023-06-08T03:32:46+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/Kaimaoge/IGNNK/pull/8"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/267995597> sr:hasIssue <https://semrepo.org/resource/github-issue/1511147869>,
+        <https://semrepo.org/resource/github-issue/1746999373> .
+

@@ -1,0 +1,43 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/13227702> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "cfoster0" ;
+    sr:githubUserId 13227702 ;
+    sr:profileUrl "https://github.com/cfoster0"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/8708249> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dakshvar22" ;
+    sr:githubUserId 8708249 ;
+    sr:profileUrl "https://github.com/dakshvar22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/527401173> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/222162300> ;
+    sr:githubIssueId 527401173 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/13227702> ;
+    sr:issueClosedAt "2019-11-24T07:35:03+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-11-22T20:31:57+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "License" ;
+    sr:issueUpdatedAt "2019-11-24T07:35:03+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ZeweiChu/MQR/issues/1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/549495627> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/222162300> ;
+    sr:githubIssueId 549495627 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8708249> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2020-01-14T11:10:14+00:00"^^xsd:dateTime ;
+    sr:issueNumber 2 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Baseline Models" ;
+    sr:issueUpdatedAt "2020-04-08T22:14:20+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/ZeweiChu/MQR/issues/2"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/222162300> sr:hasIssue <https://semrepo.org/resource/github-issue/527401173>,
+        <https://semrepo.org/resource/github-issue/549495627> .
+

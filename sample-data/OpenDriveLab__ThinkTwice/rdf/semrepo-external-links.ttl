@@ -1,0 +1,78 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/think-twice-before-driving-towards-scalable> dbpprop:area <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/miscellaneous>,
+        <https://linkedpaperswithcode.com/area/natural-language-processing>,
+        <https://linkedpaperswithcode.com/area/robots> ;
+    dcterms:creator <https://semopenalex.org/author/A5003904263>,
+        <https://semopenalex.org/author/A5007317446>,
+        <https://semopenalex.org/author/A5015322877>,
+        <https://semopenalex.org/author/A5037989560>,
+        <https://semopenalex.org/author/A5083095344>,
+        <https://semopenalex.org/author/A5087158377> ;
+    dcterms:date "2023-05-10"^^xsd:date ;
+    dcterms:title "Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/autonomous-driving>,
+        <https://linkedpaperswithcode.com/task/carla-longest6>,
+        <https://linkedpaperswithcode.com/task/decoder>,
+        <https://linkedpaperswithcode.com/task/position> .
+
+<https://semrepo.org/resource/external-link/07f7c556219ae14385c495bd8b990895017e64a4c23cdb22bbd67c216eb486a8> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/81464843> ;
+    sr:linkTarget "https://semopenalex.org/author/A5015322877"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/0fce6a0ade3df7510868404390176af1e8b4981e70fb84b6ea649eeeca12a1e1> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/615387590> ;
+    sr:linkTarget "https://semopenalex.org/work/W4386071585"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/94a018ef082df2995e0c226cb7f74349957c15b3b11b0c0d8a1ddc6a9c1910cb> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/615387590> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/think-twice-before-driving-towards-scalable"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/b6f092cd98958b0387ea619474dfd245c37ce1203ebde629c22285b22838342a> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/615387590> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/think-twice-before-driving-towards-scalable"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e136a40604b317a465374859b1092f9238b2acb5c1f0861a543d2712140eb726> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/615387590> ;
+    sr:linkTarget "https://semopenalex.org/work/W4386071585"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/ea40ba3d1ed6dee2f7af4cd900c012c3571e709e95dc1776129b78a071087571> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/615387590> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/opendrivelab/thinktwice"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/github-account/81464843> sr:hasExternalLink <https://semrepo.org/resource/external-link/07f7c556219ae14385c495bd8b990895017e64a4c23cdb22bbd67c216eb486a8> .
+
+<https://semrepo.org/resource/repository/615387590> sr:hasExternalLink <https://semrepo.org/resource/external-link/0fce6a0ade3df7510868404390176af1e8b4981e70fb84b6ea649eeeca12a1e1>,
+        <https://semrepo.org/resource/external-link/94a018ef082df2995e0c226cb7f74349957c15b3b11b0c0d8a1ddc6a9c1910cb>,
+        <https://semrepo.org/resource/external-link/b6f092cd98958b0387ea619474dfd245c37ce1203ebde629c22285b22838342a>,
+        <https://semrepo.org/resource/external-link/e136a40604b317a465374859b1092f9238b2acb5c1f0861a543d2712140eb726>,
+        <https://semrepo.org/resource/external-link/ea40ba3d1ed6dee2f7af4cd900c012c3571e709e95dc1776129b78a071087571> .
+

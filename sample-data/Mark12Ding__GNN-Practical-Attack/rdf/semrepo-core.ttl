@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/1193f540d94cf466> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Mark12Ding/GNN-Practical-Attack/languages"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T05:39:55.444027+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/305300008> .
+
+<https://semrepo.org/resource/collection-activity/ad550aef1a3fc783> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Mark12Ding/GNN-Practical-Attack/contributors"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T05:39:56.080965+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/305300008> .
+
+<https://semrepo.org/resource/collection-activity/bcaa415cb8533c7e> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/Mark12Ding/GNN-Practical-Attack/issues"^^xsd:anyURI ;
+    sr:collectionSource "155001_160000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T05:39:55.698037+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/305300008> .
+
+<https://semrepo.org/resource/source-repository-link/19dafa7f88c2fc5e> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/Mark12Ding/GNN-Practical-Attack"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/mark12ding/gnn-practical-attack"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/305300008> .
+
+<https://semrepo.org/resource/repository/305300008> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/Mark12Ding/GNN-Practical-Attack"^^xsd:anyURI ;
+    sr:createdAt "2020-10-19T07:33:36+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 305300008 .
+

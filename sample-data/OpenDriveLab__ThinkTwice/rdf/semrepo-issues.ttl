@@ -1,0 +1,401 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/100660685> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "SmashChen" ;
+    sr:githubUserId 100660685 ;
+    sr:profileUrl "https://github.com/SmashChen"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/113903215> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "SExpert12" ;
+    sr:githubUserId 113903215 ;
+    sr:profileUrl "https://github.com/SExpert12"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/136042849> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "rockstarsir" ;
+    sr:githubUserId 136042849 ;
+    sr:profileUrl "https://github.com/rockstarsir"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/35622094> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "raozhongyu" ;
+    sr:githubUserId 35622094 ;
+    sr:profileUrl "https://github.com/raozhongyu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/48327001> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "NielsRogge" ;
+    sr:githubUserId 48327001 ;
+    sr:profileUrl "https://github.com/NielsRogge"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/69887265> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "jeffxhsiao" ;
+    sr:githubUserId 69887265 ;
+    sr:profileUrl "https://github.com/jeffxhsiao"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/93561177> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "maojunyi5yu" ;
+    sr:githubUserId 93561177 ;
+    sr:profileUrl "https://github.com/maojunyi5yu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1740162896> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1740162896 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/93561177> ;
+    sr:issueClosedAt "2023-06-08T09:56:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 5 ;
+    sr:issueCreatedAt "2023-06-04T06:00:54+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "when I compile CUDA function for LSS from BEVDepth，it repears  the problem like followings:" ;
+    sr:issueUpdatedAt "2023-06-08T09:56:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1743726826> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1743726826 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/75369802> ;
+    sr:issueClosedAt "2023-06-08T09:43:00+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 11 ;
+    sr:issueCreatedAt "2023-06-06T12:08:01+00:00"^^xsd:dateTime ;
+    sr:issueNumber 2 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Does ThinkTwice have Evaluation on Carla Leaderboard?" ;
+    sr:issueUpdatedAt "2023-07-03T11:08:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/2"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1747170464> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1747170464 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/75369802> ;
+    sr:issueClosedAt "2023-07-23T10:00:19+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2023-06-08T06:27:57+00:00"^^xsd:dateTime ;
+    sr:issueNumber 3 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Eval error: Segmentation fault (core dumped)" ;
+    sr:issueUpdatedAt "2024-01-10T16:53:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/3"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1764517038> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1764517038 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/136042849> ;
+    sr:issueClosedAt "2023-06-23T14:18:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-06-20T02:33:09+00:00"^^xsd:dateTime ;
+    sr:issueNumber 4 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Research details" ;
+    sr:issueUpdatedAt "2023-06-23T14:18:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/4"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1785528574> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1785528574 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/50814697> ;
+    sr:issueClosedAt "2023-07-19T10:00:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2023-07-03T07:35:00+00:00"^^xsd:dateTime ;
+    sr:issueNumber 5 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Carla failed to start on remote server" ;
+    sr:issueUpdatedAt "2023-07-19T10:07:49+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/5"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1794893754> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1794893754 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/74858581> ;
+    sr:issueClosedAt "2023-07-08T11:37:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-07-08T11:08:08+00:00"^^xsd:dateTime ;
+    sr:issueNumber 6 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Question about the bounding box 3d visulization." ;
+    sr:issueUpdatedAt "2023-07-08T11:37:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/6"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1798522386> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1798522386 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/74858581> ;
+    sr:issueClosedAt "2023-07-23T10:00:13+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-07-11T09:33:07+00:00"^^xsd:dateTime ;
+    sr:issueNumber 7 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Error when collecting data" ;
+    sr:issueUpdatedAt "2023-07-23T10:00:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/7"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1809528398> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1809528398 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38905689> ;
+    sr:issueClosedAt "2023-07-18T09:37:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-07-18T09:21:47+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ImportError: cannot import name 'voxel_pooling_ext' " ;
+    sr:issueUpdatedAt "2023-07-18T09:37:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/8"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1813688052> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1813688052 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38905689> ;
+    sr:issueClosedAt "2023-07-21T01:02:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-07-20T10:43:10+00:00"^^xsd:dateTime ;
+    sr:issueNumber 9 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "data generation" ;
+    sr:issueUpdatedAt "2023-07-21T01:02:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/9"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1815337018> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1815337018 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/100660685> ;
+    sr:issueClosedAt "2023-07-23T10:00:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-07-21T07:50:19+00:00"^^xsd:dateTime ;
+    sr:issueNumber 10 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "More details on the Longest6 benchmark" ;
+    sr:issueUpdatedAt "2023-07-23T10:00:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/10"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1817022806> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1817022806 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38905689> ;
+    sr:issueClosedAt "2023-07-23T10:01:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-07-23T07:28:23+00:00"^^xsd:dateTime ;
+    sr:issueNumber 11 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "_get_3d_bbs" ;
+    sr:issueUpdatedAt "2023-07-23T10:01:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/11"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1817031397> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1817031397 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/50814697> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2023-07-23T08:00:20+00:00"^^xsd:dateTime ;
+    sr:issueNumber 12 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Performance gap in reproducing results" ;
+    sr:issueUpdatedAt "2024-03-12T04:29:05+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/12"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1818276607> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1818276607 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38905689> ;
+    sr:issueClosedAt "2023-07-25T01:22:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-07-24T12:01:08+00:00"^^xsd:dateTime ;
+    sr:issueNumber 13 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "'3d_bbs'" ;
+    sr:issueUpdatedAt "2023-07-25T01:22:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/13"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1850991033> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1850991033 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38905689> ;
+    sr:issueClosedAt "2023-08-23T07:26:37+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2023-08-15T07:00:00+00:00"^^xsd:dateTime ;
+    sr:issueNumber 14 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "speeds of other vehicles" ;
+    sr:issueUpdatedAt "2023-08-23T07:26:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/14"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1914566955> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1914566955 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/146151118> ;
+    sr:issueClosedAt "2023-10-21T12:24:26+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2023-09-27T02:16:39+00:00"^^xsd:dateTime ;
+    sr:issueNumber 15 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "The versions of the nvidia gpu, driver, cuda, cudnn? " ;
+    sr:issueUpdatedAt "2023-10-21T12:24:26+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/15"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1955469293> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 1955469293 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/146151118> ;
+    sr:issueClosedAt "2023-12-08T07:03:23+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2023-10-21T12:23:10+00:00"^^xsd:dateTime ;
+    sr:issueNumber 16 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "questions about LIDAR2CAM" ;
+    sr:issueUpdatedAt "2023-12-08T07:03:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/16"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2028264020> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2028264020 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/109917206> ;
+    sr:issueClosedAt "2023-12-11T01:12:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2023-12-06T10:48:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 17 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Question about .register_module() function" ;
+    sr:issueUpdatedAt "2023-12-11T01:12:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/17"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2166664305> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2166664305 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/69887265> ;
+    sr:issueClosedAt "2024-03-05T11:10:24+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2024-03-04T11:54:56+00:00"^^xsd:dateTime ;
+    sr:issueNumber 18 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "KeyError: 'BENCHMARK'" ;
+    sr:issueUpdatedAt "2024-03-05T11:10:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/18"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2177251410> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2177251410 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/35622094> ;
+    sr:issueClosedAt "2024-03-15T07:12:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-03-09T14:44:18+00:00"^^xsd:dateTime ;
+    sr:issueNumber 19 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "the inference time" ;
+    sr:issueUpdatedAt "2024-03-15T07:12:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/19"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2204872819> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2204872819 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/109917206> ;
+    sr:issueClosedAt "2024-04-01T05:14:08+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2024-03-25T04:39:45+00:00"^^xsd:dateTime ;
+    sr:issueNumber 20 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How to set parameters of transform.py?" ;
+    sr:issueUpdatedAt "2024-04-01T05:14:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/20"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2237001118> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2237001118 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/109917206> ;
+    sr:issueClosedAt "2024-04-21T09:01:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2024-04-11T06:27:38+00:00"^^xsd:dateTime ;
+    sr:issueNumber 21 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "About collect images for calibration." ;
+    sr:issueUpdatedAt "2024-04-21T09:01:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/21"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2314421939> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 2314421939 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/113903215> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-05-24T05:36:06+00:00"^^xsd:dateTime ;
+    sr:issueNumber 22 ;
+    sr:issueState "open" ;
+    sr:issueTitle "data collection" ;
+    sr:issueUpdatedAt "2024-05-24T05:36:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/5699479880> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/615387590> ;
+    sr:githubIssueId 5699479880 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/48327001> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-10-04T12:55:19+00:00"^^xsd:dateTime ;
+    sr:issueNumber 23 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Verify evals on Papers with Code" ;
+    sr:issueUpdatedAt "2026-10-04T12:55:19+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/OpenDriveLab/ThinkTwice/issues/23"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/146151118> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "lsrrrrrrrrr" ;
+    sr:githubUserId 146151118 ;
+    sr:profileUrl "https://github.com/lsrrrrrrrrr"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/50814697> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ShangGL123" ;
+    sr:githubUserId 50814697 ;
+    sr:profileUrl "https://github.com/ShangGL123"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/74858581> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "exiawsh" ;
+    sr:githubUserId 74858581 ;
+    sr:profileUrl "https://github.com/exiawsh"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/75369802> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Naive-Bayes" ;
+    sr:githubUserId 75369802 ;
+    sr:profileUrl "https://github.com/Naive-Bayes"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/109917206> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "xanhug" ;
+    sr:githubUserId 109917206 ;
+    sr:profileUrl "https://github.com/xanhug"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/38905689> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "a1wj1" ;
+    sr:githubUserId 38905689 ;
+    sr:profileUrl "https://github.com/a1wj1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/615387590> sr:hasIssue <https://semrepo.org/resource/github-issue/1740162896>,
+        <https://semrepo.org/resource/github-issue/1743726826>,
+        <https://semrepo.org/resource/github-issue/1747170464>,
+        <https://semrepo.org/resource/github-issue/1764517038>,
+        <https://semrepo.org/resource/github-issue/1785528574>,
+        <https://semrepo.org/resource/github-issue/1794893754>,
+        <https://semrepo.org/resource/github-issue/1798522386>,
+        <https://semrepo.org/resource/github-issue/1809528398>,
+        <https://semrepo.org/resource/github-issue/1813688052>,
+        <https://semrepo.org/resource/github-issue/1815337018>,
+        <https://semrepo.org/resource/github-issue/1817022806>,
+        <https://semrepo.org/resource/github-issue/1817031397>,
+        <https://semrepo.org/resource/github-issue/1818276607>,
+        <https://semrepo.org/resource/github-issue/1850991033>,
+        <https://semrepo.org/resource/github-issue/1914566955>,
+        <https://semrepo.org/resource/github-issue/1955469293>,
+        <https://semrepo.org/resource/github-issue/2028264020>,
+        <https://semrepo.org/resource/github-issue/2166664305>,
+        <https://semrepo.org/resource/github-issue/2177251410>,
+        <https://semrepo.org/resource/github-issue/2204872819>,
+        <https://semrepo.org/resource/github-issue/2237001118>,
+        <https://semrepo.org/resource/github-issue/2314421939>,
+        <https://semrepo.org/resource/github-issue/5699479880> .
+

@@ -1,0 +1,67 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/language-usage/25560517ad828104> a sr:LanguageUsage ;
+    sr:languageBytes 21645 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/shell> .
+
+<https://semrepo.org/resource/language-usage/5742b11427f17072> a sr:LanguageUsage ;
+    sr:languageBytes 25297 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/makefile> .
+
+<https://semrepo.org/resource/language-usage/64749ad20fc881cb> a sr:LanguageUsage ;
+    sr:languageBytes 99487 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/cmake> .
+
+<https://semrepo.org/resource/language-usage/87173b9efd67f80b> a sr:LanguageUsage ;
+    sr:languageBytes 284087 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/cuda> .
+
+<https://semrepo.org/resource/language-usage/9d9bf9ef31346876> a sr:LanguageUsage ;
+    sr:languageBytes 32089 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/matlab> .
+
+<https://semrepo.org/resource/language-usage/aadd1626e8514d99> a sr:LanguageUsage ;
+    sr:languageBytes 3534149 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/c++> .
+
+<https://semrepo.org/resource/language-usage/c34b232b70ac2b84> a sr:LanguageUsage ;
+    sr:languageBytes 2521 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/dockerfile> .
+
+<https://semrepo.org/resource/language-usage/e0e9e155b0f481c4> a sr:LanguageUsage ;
+    sr:languageBytes 398744 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/102554381/2026-11-20T04:34:56.101744+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/programming-language/c++> a sr:ProgrammingLanguage ;
+    sr:languageName "C++" .
+
+<https://semrepo.org/resource/programming-language/cmake> a sr:ProgrammingLanguage ;
+    sr:languageName "CMake" .
+
+<https://semrepo.org/resource/programming-language/cuda> a sr:ProgrammingLanguage ;
+    sr:languageName "Cuda" .
+
+<https://semrepo.org/resource/programming-language/dockerfile> a sr:ProgrammingLanguage ;
+    sr:languageName "Dockerfile" .
+
+<https://semrepo.org/resource/programming-language/makefile> a sr:ProgrammingLanguage ;
+    sr:languageName "Makefile" .
+
+<https://semrepo.org/resource/programming-language/matlab> a sr:ProgrammingLanguage ;
+    sr:languageName "MATLAB" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/programming-language/shell> a sr:ProgrammingLanguage ;
+    sr:languageName "Shell" .
+

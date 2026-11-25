@@ -1,0 +1,48 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/chexnet-radiologist-level-pneumonia-detection> dbpprop:area <https://linkedpaperswithcode.com/area/medical> ;
+    dcterms:creator <https://semopenalex.org/author/A5001094226>,
+        <https://semopenalex.org/author/A5013976422>,
+        <https://semopenalex.org/author/A5021952938>,
+        <https://semopenalex.org/author/A5023259221>,
+        <https://semopenalex.org/author/A5038969629>,
+        <https://semopenalex.org/author/A5039154483>,
+        <https://semopenalex.org/author/A5066266556>,
+        <https://semopenalex.org/author/A5069543871>,
+        <https://semopenalex.org/author/A5074585380>,
+        <https://semopenalex.org/author/A5084812990> ;
+    dcterms:date "2017-11-14"^^xsd:date ;
+    dcterms:title "CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/pneumonia-detection> .
+
+<https://semrepo.org/resource/external-link/7dc932a488e63f0d2c11227fa2dbdc2123dabf5449d2211bab9870df6a81840b> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/182929051> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/chexnet-radiologist-level-pneumonia-detection"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/b7a5dd609243e9ee179e8aef0503b9a77f886d7a18fcb58c65a7ab4f3c66a18a> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/182929051> ;
+    sr:linkTarget "https://semopenalex.org/work/W4300485340"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/d1ba21ead5b3ee54ffcad7ac71a5e84d037205ad505804b9fc4d953e1533e5dc> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/182929051> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/senwu/emmental-tutorials"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/repository/182929051> sr:hasExternalLink <https://semrepo.org/resource/external-link/7dc932a488e63f0d2c11227fa2dbdc2123dabf5449d2211bab9870df6a81840b>,
+        <https://semrepo.org/resource/external-link/b7a5dd609243e9ee179e8aef0503b9a77f886d7a18fcb58c65a7ab4f3c66a18a>,
+        <https://semrepo.org/resource/external-link/d1ba21ead5b3ee54ffcad7ac71a5e84d037205ad505804b9fc4d953e1533e5dc> .
+

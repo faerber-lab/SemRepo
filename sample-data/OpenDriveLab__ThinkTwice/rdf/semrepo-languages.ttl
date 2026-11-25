@@ -1,0 +1,59 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/language-usage/365e41ec14c812ab> a sr:LanguageUsage ;
+    sr:languageBytes 113592 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/xslt> .
+
+<https://semrepo.org/resource/language-usage/41572957abf68912> a sr:LanguageUsage ;
+    sr:languageBytes 1646360 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/48bbee3b0b8fb9f2> a sr:LanguageUsage ;
+    sr:languageBytes 5378 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/shell> .
+
+<https://semrepo.org/resource/language-usage/701e110e5a9e0f50> a sr:LanguageUsage ;
+    sr:languageBytes 2112 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/c++> .
+
+<https://semrepo.org/resource/language-usage/7389634c1fde6518> a sr:LanguageUsage ;
+    sr:languageBytes 2548 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/cuda> .
+
+<https://semrepo.org/resource/language-usage/c066d814dce67950> a sr:LanguageUsage ;
+    sr:languageBytes 2306 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/dockerfile> .
+
+<https://semrepo.org/resource/language-usage/ced45299cd848fbc> a sr:LanguageUsage ;
+    sr:languageBytes 2197 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/css> .
+
+<https://semrepo.org/resource/programming-language/c++> a sr:ProgrammingLanguage ;
+    sr:languageName "C++" .
+
+<https://semrepo.org/resource/programming-language/css> a sr:ProgrammingLanguage ;
+    sr:languageName "CSS" .
+
+<https://semrepo.org/resource/programming-language/cuda> a sr:ProgrammingLanguage ;
+    sr:languageName "Cuda" .
+
+<https://semrepo.org/resource/programming-language/dockerfile> a sr:ProgrammingLanguage ;
+    sr:languageName "Dockerfile" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/programming-language/shell> a sr:ProgrammingLanguage ;
+    sr:languageName "Shell" .
+
+<https://semrepo.org/resource/programming-language/xslt> a sr:ProgrammingLanguage ;
+    sr:languageName "XSLT" .
+

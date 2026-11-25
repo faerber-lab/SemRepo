@@ -1,0 +1,79 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/energy-and-policy-considerations-for-deep> dcterms:creator <https://semopenalex.org/author/A5008354502>,
+        <https://semopenalex.org/author/A5051203366>,
+        <https://semopenalex.org/author/A5084241804> ;
+    dcterms:date "2019-06-05"^^xsd:date ;
+    dcterms:title "Energy and Policy Considerations for Deep Learning in NLP" .
+
+<https://linkedpaperswithcode.com/paper/show-your-work-improved-reporting-of> dcterms:creator <https://semopenalex.org/author/A5007903277>,
+        <https://semopenalex.org/author/A5008013895>,
+        <https://semopenalex.org/author/A5070767948>,
+        <https://semopenalex.org/author/A5075783850>,
+        <https://semopenalex.org/author/A5088517824> ;
+    dcterms:date "2019-09-06"^^xsd:date ;
+    dcterms:title "Show Your Work: Improved Reporting of Experimental Results" .
+
+<https://semrepo.org/resource/external-link/0ab6bac22b33588608ab12baca32d6d3914e75807e26489fc97396b1564c4d5d> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://semopenalex.org/work/W2970283086"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/2ca55f04b040384fd6ecb65927f275ee2b2db345af9eb2a77a2be2989f2c5bcc> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://semopenalex.org/work/W2963809228"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/575e8d3f145aec5ad1306c52bf06d9b7272a91158ed3449b85bfe128273051a9> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/derwenai/pytextrank"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/68b2ce82615354dfddf116e5f7d24e6f38ada85d256af1b65d37fc03489a3f46> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/show-your-work-improved-reporting-of"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/a6680a0422e7e0b978910f813e752eb5320651cc1c331ac64d72ca5eba79f591> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/ceteri/pytextrank"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/b2e5afc6eaa8b1abd3a79614733c63e62f62e7c527e1411ee5964d99c369d95f> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/Energy%20and%20Policy%20Considerations%20for%20Deep%20Learning%20in%20NLP"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/d372f4404b4eaa2c60b4aa57a4d8465bcadbd3b669c8223d1171fe5f2382fec8> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/69814684> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/energy-and-policy-considerations-for-deep"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/repository/69814684> sr:hasExternalLink <https://semrepo.org/resource/external-link/0ab6bac22b33588608ab12baca32d6d3914e75807e26489fc97396b1564c4d5d>,
+        <https://semrepo.org/resource/external-link/2ca55f04b040384fd6ecb65927f275ee2b2db345af9eb2a77a2be2989f2c5bcc>,
+        <https://semrepo.org/resource/external-link/575e8d3f145aec5ad1306c52bf06d9b7272a91158ed3449b85bfe128273051a9>,
+        <https://semrepo.org/resource/external-link/68b2ce82615354dfddf116e5f7d24e6f38ada85d256af1b65d37fc03489a3f46>,
+        <https://semrepo.org/resource/external-link/a6680a0422e7e0b978910f813e752eb5320651cc1c331ac64d72ca5eba79f591>,
+        <https://semrepo.org/resource/external-link/b2e5afc6eaa8b1abd3a79614733c63e62f62e7c527e1411ee5964d99c369d95f>,
+        <https://semrepo.org/resource/external-link/d372f4404b4eaa2c60b4aa57a4d8465bcadbd3b669c8223d1171fe5f2382fec8> .
+

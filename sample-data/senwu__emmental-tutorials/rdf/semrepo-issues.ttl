@@ -1,0 +1,24 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/47854670> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "msakthiganesh" ;
+    sr:githubUserId 47854670 ;
+    sr:profileUrl "https://github.com/msakthiganesh"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/500795626> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 500795626 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/47854670> ;
+    sr:issueClosedAt "2019-10-08T20:15:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2019-10-01T10:07:53+00:00"^^xsd:dateTime ;
+    sr:issueNumber 13 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Unable to run submit.py" ;
+    sr:issueUpdatedAt "2019-10-08T20:15:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/issues/13"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/182929051> sr:hasIssue <https://semrepo.org/resource/github-issue/500795626> .
+

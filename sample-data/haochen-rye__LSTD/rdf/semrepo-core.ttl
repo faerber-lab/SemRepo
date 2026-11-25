@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/a0809e52d45ad0df> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/haochen-rye/LSTD/issues"^^xsd:anyURI ;
+    sr:collectionSource "160001_165000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T04:34:56.727714+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/102554381> .
+
+<https://semrepo.org/resource/collection-activity/c45ef4d5de061dee> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/haochen-rye/LSTD/languages"^^xsd:anyURI ;
+    sr:collectionSource "160001_165000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-20T04:34:56.452908+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/102554381> .
+
+<https://semrepo.org/resource/collection-activity/db44aa33d398e995> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/haochen-rye/LSTD/contributors"^^xsd:anyURI ;
+    sr:collectionSource "160001_165000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-20T04:34:57.329373+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/102554381> .
+
+<https://semrepo.org/resource/source-repository-link/4d40066b3ad1b342> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/haochen-rye/LSTD"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/cassie94/lstd"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Transferred ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/102554381> .
+
+<https://semrepo.org/resource/repository/102554381> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/haochen-rye/LSTD"^^xsd:anyURI ;
+    sr:createdAt "2017-09-06T02:44:00+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 102554381 .
+

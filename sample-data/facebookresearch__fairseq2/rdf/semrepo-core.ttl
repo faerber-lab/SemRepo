@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/3d4e5481b357fb35> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/facebookresearch/fairseq2/contributors"^^xsd:anyURI ;
+    sr:collectionSource "45001_50000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T17:29:46.686410+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/581166973> .
+
+<https://semrepo.org/resource/collection-activity/5c4e755ba53f8ac3> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/facebookresearch/fairseq2/issues"^^xsd:anyURI ;
+    sr:collectionSource "45001_50000.pkl" ;
+    sr:collectionStatus sr:PartialSuccess ;
+    sr:collectionTimestamp "2026-11-21T17:29:38.138400+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/581166973> .
+
+<https://semrepo.org/resource/collection-activity/f6ba5d8f4db42d7a> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/facebookresearch/fairseq2/languages"^^xsd:anyURI ;
+    sr:collectionSource "45001_50000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T17:29:37.884055+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/581166973> .
+
+<https://semrepo.org/resource/source-repository-link/d5c867c68702d0eb> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/facebookresearch/fairseq2"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/facebookresearch/fairseq2"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/581166973> .
+
+<https://semrepo.org/resource/repository/581166973> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/facebookresearch/fairseq2"^^xsd:anyURI ;
+    sr:createdAt "2022-12-22T12:59:00+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 581166973 .
+

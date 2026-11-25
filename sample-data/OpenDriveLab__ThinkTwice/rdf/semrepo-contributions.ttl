@@ -1,0 +1,68 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/contribution/115770e78a4db356> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/9053054> .
+
+<https://semrepo.org/resource/contribution/291527948c6d8938> a sr:Contribution ;
+    sr:commitCount 1 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/39950156> .
+
+<https://semrepo.org/resource/contribution/3af2c9e5d34c0b5a> a sr:Contribution ;
+    sr:commitCount 10 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/81464843> .
+
+<https://semrepo.org/resource/contribution/c8527873e4b585a6> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/615387590/2026-11-20T03:16:32.651649+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/29263416> .
+
+<https://semrepo.org/resource/github-account/29263416> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2017-06-07T21:02:49+00:00"^^xsd:dateTime ;
+    sr:followersCount 49 ;
+    sr:githubLogin "faikit" ;
+    sr:githubUserId 29263416 ;
+    sr:profileUrl "https://github.com/faikit"^^xsd:anyURI ;
+    sr:publicReposCount 1 .
+
+<https://semrepo.org/resource/github-account/39950156> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2018-06-05T10:23:39+00:00"^^xsd:dateTime ;
+    sr:accountName "ilnehc"^^xsd:string ;
+    sr:followersCount 70 ;
+    sr:githubLogin "ilnehc" ;
+    sr:githubUserId 39950156 ;
+    sr:profileUrl "https://github.com/ilnehc"^^xsd:anyURI ;
+    sr:publicReposCount 6 .
+
+<https://semrepo.org/resource/github-account/81464843> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://jiaxiaosong1002.github.io/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2021-03-27T09:07:00+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Assitant Professor of Fudan University. BEng and PhD of Shanghai Jiao Tong University"^^xsd:string ;
+    sr:accountLocation "Shanghai, China"^^xsd:string ;
+    sr:accountName "Xiaosong Jia"^^xsd:string ;
+    sr:followersCount 176 ;
+    sr:githubLogin "jiaxiaosong1002" ;
+    sr:githubUserId 81464843 ;
+    sr:profileUrl "https://github.com/jiaxiaosong1002"^^xsd:anyURI ;
+    sr:publicReposCount 10 .
+
+<https://semrepo.org/resource/github-account/9053054> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "lihongyang.info"^^xsd:anyURI ;
+    sr:accountCreatedAt "2014-10-07T15:25:36+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Scientist @OpenDriveLab. A surfer in the vision ocean."^^xsd:string ;
+    sr:accountLocation "Hong Kong"^^xsd:string ;
+    sr:accountName "Hongyang Li"^^xsd:string ;
+    sr:followersCount 577 ;
+    sr:githubLogin "hli2020" ;
+    sr:githubUserId 9053054 ;
+    sr:profileUrl "https://github.com/hli2020"^^xsd:anyURI ;
+    sr:publicReposCount 49 .
+

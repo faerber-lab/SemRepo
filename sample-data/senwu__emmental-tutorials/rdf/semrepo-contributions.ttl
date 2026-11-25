@@ -1,0 +1,102 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/contribution/30c7a6cb66bb1616> a sr:Contribution ;
+    sr:commitCount 24 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/5819303> .
+
+<https://semrepo.org/resource/contribution/33e19b5f9fa8e599> a sr:Contribution ;
+    sr:commitCount 99 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/5580008> .
+
+<https://semrepo.org/resource/contribution/607b1d9ac4a8c4e6> a sr:Contribution ;
+    sr:commitCount 6 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/1495122> .
+
+<https://semrepo.org/resource/contribution/6cafda71d026245e> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/14251104> .
+
+<https://semrepo.org/resource/contribution/bf11d9a99af75ec9> a sr:Contribution ;
+    sr:commitCount 2 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/2036121> .
+
+<https://semrepo.org/resource/contribution/ff8f032a8cc0ddbe> a sr:Contribution ;
+    sr:commitCount 64 ;
+    sr:contributionToSnapshot <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:contributor <https://semrepo.org/resource/github-account/12646092> .
+
+<https://semrepo.org/resource/github-account/12646092> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://www.bradenhancock.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2015-05-28T15:33:54+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Research Partner @ Laude, Co-founder @ Snorkel AI"^^xsd:string ;
+    sr:accountLocation "Stanford, California"^^xsd:string ;
+    sr:accountName "Braden Hancock"^^xsd:string ;
+    sr:followersCount 76 ;
+    sr:githubLogin "bhancock8" ;
+    sr:githubUserId 12646092 ;
+    sr:profileUrl "https://github.com/bhancock8"^^xsd:anyURI ;
+    sr:publicReposCount 5 .
+
+<https://semrepo.org/resource/github-account/14251104> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2015-09-12T16:41:04+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Postdoc, Stanford CS"^^xsd:string ;
+    sr:accountName "Jared Dunnmon"^^xsd:string ;
+    sr:followersCount 22 ;
+    sr:githubLogin "jdunnmon" ;
+    sr:githubUserId 14251104 ;
+    sr:profileUrl "https://github.com/jdunnmon"^^xsd:anyURI ;
+    sr:publicReposCount 32 .
+
+<https://semrepo.org/resource/github-account/1495122> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "https://github.com/paroma"^^xsd:anyURI ;
+    sr:accountCreatedAt "2012-03-03T00:43:33+00:00"^^xsd:dateTime ;
+    sr:accountName "Paroma Varma"^^xsd:string ;
+    sr:followersCount 17 ;
+    sr:githubLogin "paroma" ;
+    sr:githubUserId 1495122 ;
+    sr:profileUrl "https://github.com/paroma"^^xsd:anyURI ;
+    sr:publicReposCount 12 .
+
+<https://semrepo.org/resource/github-account/2036121> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "http://www.neelguha.com/"^^xsd:anyURI ;
+    sr:accountCreatedAt "2012-07-24T19:24:09+00:00"^^xsd:dateTime ;
+    sr:accountDescription "Associate Professor, Columbia Law School."^^xsd:string ;
+    sr:accountLocation "New York City"^^xsd:string ;
+    sr:accountName "Neel Guha"^^xsd:string ;
+    sr:followersCount 86 ;
+    sr:githubLogin "neelguha" ;
+    sr:githubUserId 2036121 ;
+    sr:profileUrl "https://github.com/neelguha"^^xsd:anyURI ;
+    sr:publicReposCount 29 .
+
+<https://semrepo.org/resource/github-account/5580008> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountCreatedAt "2013-09-30T20:51:18+00:00"^^xsd:dateTime ;
+    sr:followersCount 29 ;
+    sr:githubLogin "senwu" ;
+    sr:githubUserId 5580008 ;
+    sr:profileUrl "https://github.com/senwu"^^xsd:anyURI ;
+    sr:publicReposCount 12 .
+
+<https://semrepo.org/resource/github-account/5819303> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:accountBlogUrl "vincentsc.com"^^xsd:anyURI ;
+    sr:accountCreatedAt "2013-10-31T02:51:17+00:00"^^xsd:dateTime ;
+    sr:accountLocation "San Francisco"^^xsd:string ;
+    sr:accountName "Vincent S Chen"^^xsd:string ;
+    sr:followersCount 132 ;
+    sr:githubLogin "vincentschen" ;
+    sr:githubUserId 5819303 ;
+    sr:profileUrl "https://github.com/vincentschen"^^xsd:anyURI ;
+    sr:publicReposCount 29 .
+

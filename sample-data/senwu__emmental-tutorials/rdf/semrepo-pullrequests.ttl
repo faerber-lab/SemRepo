@@ -1,0 +1,347 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/10575658> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "joshduf" ;
+    sr:githubUserId 10575658 ;
+    sr:profileUrl "https://github.com/joshduf"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/12646092> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "bhancock8" ;
+    sr:githubUserId 12646092 ;
+    sr:profileUrl "https://github.com/bhancock8"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/49699333> a sr:GitHubAccount,
+        sr:GitHubBot ;
+    sr:githubLogin "dependabot[bot]" ;
+    sr:githubUserId 49699333 ;
+    sr:profileUrl "https://github.com/dependabot[bot]"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/5819303> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "vincentschen" ;
+    sr:githubUserId 5819303 ;
+    sr:profileUrl "https://github.com/vincentschen"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/1753636235> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 1753636235 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/49699333> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2023-06-12T21:38:55+00:00"^^xsd:dateTime ;
+    sr:issueLabel "dependencies" ;
+    sr:issueNumber 22 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Bump transformers from 4.2.2 to 4.30.0 in /multilabel_classification" ;
+    sr:issueUpdatedAt "2023-06-12T21:38:57+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/22"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/441501484> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 441501484 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-05-08T00:39:51+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-05-08T00:39:46+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support slicing" ;
+    sr:issueUpdatedAt "2019-05-08T00:39:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/1"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-05-08T00:39:51+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/442859132> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 442859132 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/10575658> ;
+    sr:issueClosedAt "2019-05-10T19:22:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-05-10T19:15:19+00:00"^^xsd:dateTime ;
+    sr:issueNumber 2 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Fixes typo in requirements.txt " ;
+    sr:issueUpdatedAt "2019-05-10T19:22:07+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/2"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-05-10T19:22:01+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/452117012> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 452117012 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-04T17:26:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-04T17:25:45+00:00"^^xsd:dateTime ;
+    sr:issueNumber 3 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "add scripts" ;
+    sr:issueUpdatedAt "2019-06-04T17:26:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/3"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-04T17:26:31+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/452256417> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 452256417 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-20T09:01:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-04T23:53:05+00:00"^^xsd:dateTime ;
+    sr:issueNumber 4 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "add wsc and swag" ;
+    sr:issueUpdatedAt "2019-06-20T09:01:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/4"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/458892191> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 458892191 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-20T21:29:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-20T21:29:29+00:00"^^xsd:dateTime ;
+    sr:issueNumber 5 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Sen wsc" ;
+    sr:issueUpdatedAt "2019-06-20T21:29:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/5"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-20T21:29:36+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/459003903> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 459003903 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-21T04:39:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-21T04:36:01+00:00"^^xsd:dateTime ;
+    sr:issueNumber 6 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "add superglue application" ;
+    sr:issueUpdatedAt "2019-06-21T04:39:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/6"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-21T04:39:02+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/461206317> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 461206317 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-26T22:46:15+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-26T22:17:31+00:00"^^xsd:dateTime ;
+    sr:issueNumber 7 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "cleanup the tutorials " ;
+    sr:issueUpdatedAt "2019-06-26T22:48:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/7"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-26T22:46:15+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/461358304> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 461358304 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-27T07:24:47+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-27T07:15:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 8 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Cleanup" ;
+    sr:issueUpdatedAt "2019-06-27T07:24:50+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/8"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-27T07:24:47+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/462134654> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 462134654 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-28T17:49:10+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-28T17:23:41+00:00"^^xsd:dateTime ;
+    sr:issueNumber 9 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Swag" ;
+    sr:issueUpdatedAt "2019-06-28T17:49:13+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/9"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-28T17:49:10+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/462143691> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 462143691 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/12646092> ;
+    sr:issueClosedAt "2019-06-28T17:54:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-28T17:49:40+00:00"^^xsd:dateTime ;
+    sr:issueNumber 10 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Update README" ;
+    sr:issueUpdatedAt "2019-06-28T17:54:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/10"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-28T17:54:31+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/462160270> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 462160270 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5819303> ;
+    sr:issueClosedAt "2019-06-29T01:33:26+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-28T18:37:14+00:00"^^xsd:dateTime ;
+    sr:issueNumber 11 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Cleanup run_superglue.sh" ;
+    sr:issueUpdatedAt "2019-06-29T01:33:29+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/11"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-29T01:33:25+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/462196671> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 462196671 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2019-06-28T21:56:28+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2019-06-28T20:30:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 12 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Pretraining info" ;
+    sr:issueUpdatedAt "2019-06-28T21:56:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/12"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2019-06-28T21:56:28+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/573430181> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 573430181 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-02-29T23:27:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-02-29T23:27:17+00:00"^^xsd:dateTime ;
+    sr:issueNumber 14 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Hotfix" ;
+    sr:issueUpdatedAt "2020-02-29T23:27:26+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/14"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-02-29T23:27:22+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/573471171> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 573471171 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-03-01T03:32:55+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-03-01T03:32:47+00:00"^^xsd:dateTime ;
+    sr:issueNumber 15 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "da init" ;
+    sr:issueUpdatedAt "2020-03-01T03:32:55+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/15"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-03-01T03:32:54+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/573647560> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 573647560 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-03-02T00:12:23+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-03-02T00:11:57+00:00"^^xsd:dateTime ;
+    sr:issueNumber 16 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Data augmentation" ;
+    sr:issueUpdatedAt "2020-03-02T00:12:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/16"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-03-02T00:12:23+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/573788409> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 573788409 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-03-02T08:07:18+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-03-02T08:07:12+00:00"^^xsd:dateTime ;
+    sr:issueNumber 17 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Data augmentation" ;
+    sr:issueUpdatedAt "2020-03-02T08:07:21+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/17"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-03-02T08:07:18+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/581594239> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 581594239 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-03-17T10:21:20+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-03-15T09:19:41+00:00"^^xsd:dateTime ;
+    sr:issueNumber 18 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "update chexnet" ;
+    sr:issueUpdatedAt "2020-03-17T10:21:25+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/18"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-03-17T10:21:20+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/601788264> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 601788264 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2020-04-17T08:13:58+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2020-04-17T08:13:50+00:00"^^xsd:dateTime ;
+    sr:issueNumber 19 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Text classification" ;
+    sr:issueUpdatedAt "2020-04-17T08:14:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/19"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2020-04-17T08:13:58+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/992515177> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 992515177 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2021-09-09T18:35:09+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2021-09-09T18:32:30+00:00"^^xsd:dateTime ;
+    sr:issueNumber 20 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Multilabel" ;
+    sr:issueUpdatedAt "2021-09-09T18:35:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/20"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2021-09-09T18:35:09+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-issue/992519902> a sr:PullRequest ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/182929051> ;
+    sr:githubIssueId 992519902 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/5580008> ;
+    sr:issueClosedAt "2021-09-09T22:39:10+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2021-09-09T18:39:02+00:00"^^xsd:dateTime ;
+    sr:issueNumber 21 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "cleanup and resolve dep" ;
+    sr:issueUpdatedAt "2021-09-09T22:39:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/senwu/emmental-tutorials/pull/21"^^xsd:anyURI ;
+    sr:pullRequestMergedAt "2021-09-09T22:39:10+00:00"^^xsd:dateTime .
+
+<https://semrepo.org/resource/github-account/5580008> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "senwu" ;
+    sr:githubUserId 5580008 ;
+    sr:profileUrl "https://github.com/senwu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/182929051> sr:hasIssue <https://semrepo.org/resource/github-issue/1753636235>,
+        <https://semrepo.org/resource/github-issue/441501484>,
+        <https://semrepo.org/resource/github-issue/442859132>,
+        <https://semrepo.org/resource/github-issue/452117012>,
+        <https://semrepo.org/resource/github-issue/452256417>,
+        <https://semrepo.org/resource/github-issue/458892191>,
+        <https://semrepo.org/resource/github-issue/459003903>,
+        <https://semrepo.org/resource/github-issue/461206317>,
+        <https://semrepo.org/resource/github-issue/461358304>,
+        <https://semrepo.org/resource/github-issue/462134654>,
+        <https://semrepo.org/resource/github-issue/462143691>,
+        <https://semrepo.org/resource/github-issue/462160270>,
+        <https://semrepo.org/resource/github-issue/462196671>,
+        <https://semrepo.org/resource/github-issue/573430181>,
+        <https://semrepo.org/resource/github-issue/573471171>,
+        <https://semrepo.org/resource/github-issue/573647560>,
+        <https://semrepo.org/resource/github-issue/573788409>,
+        <https://semrepo.org/resource/github-issue/581594239>,
+        <https://semrepo.org/resource/github-issue/601788264>,
+        <https://semrepo.org/resource/github-issue/992515177>,
+        <https://semrepo.org/resource/github-issue/992519902> .
+

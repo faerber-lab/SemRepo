@@ -1,0 +1,89 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/how-to-ask-better-questions-a-large-scale> dbpprop:area <https://linkedpaperswithcode.com/area/natural-language-processing> ;
+    dcterms:creator <https://semopenalex.org/author/A5014855689>,
+        <https://semopenalex.org/author/A5032735177>,
+        <https://semopenalex.org/author/A5048379858>,
+        <https://semopenalex.org/author/A5059905309>,
+        <https://semopenalex.org/author/A5062204841>,
+        <https://semopenalex.org/author/A5070933659>,
+        <https://semopenalex.org/author/A5081022650> ;
+    dcterms:date "2019-11-21"^^xsd:date ;
+    dcterms:title "How to Ask Better Questions? A Large-Scale Multi-Domain Dataset for Rewriting Ill-Formed Questions" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/question-rewriting> .
+
+<https://semrepo.org/resource/external-link/0633257e4c0ac7090ae47651d0028a8bed75a7d2c5207b5ff7873ff0779186c0> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/2027005> ;
+    sr:linkTarget "https://semopenalex.org/author/A5059905309"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/59d0a0dfb8bfb922a97748773669dfa6dee486a1615f3a45f30075e7b5250604> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/how-to-ask-better-questions-a-large-scale"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/5a23a3db9ee0dc4cde398d39e2facc4f1ffe070c78e79c4588583102cc35b35c> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://semopenalex.org/work/W2997854847"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/777a8b613e839716e8b143d9d942fa3ae19b7d46b37e49bfcacdf5c7d68142d7> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/ZeweiChu/MQR"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/8fd2ae8ca424738df085f920bd2c261492a6f36381dba9b25dcfeba096f84c6a> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/How%20to%20Ask%20Better%20Questions%3F%20A%20Large-Scale%20Multi-Domain%20Dataset%20for%20Rewriting%20Ill-Formed%20Questions"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e26d6434e9494fb980a3bd960c49085b894420226564089a368db5d502cc98ea> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/zeweichu/mqr"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/ec8928eb9f600af1b1d3e23b2bc2284334ca83b1790181cffb51c7e72e426151> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://semopenalex.org/work/W2997854847"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/f65fe005a3a00a2fb8e230762b68a2b2def3128e7382dd4851071d71f1b60b8c> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/222162300> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/how-to-ask-better-questions-a-large-scale"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/github-account/2027005> sr:hasExternalLink <https://semrepo.org/resource/external-link/0633257e4c0ac7090ae47651d0028a8bed75a7d2c5207b5ff7873ff0779186c0> .
+
+<https://semrepo.org/resource/repository/222162300> sr:hasExternalLink <https://semrepo.org/resource/external-link/59d0a0dfb8bfb922a97748773669dfa6dee486a1615f3a45f30075e7b5250604>,
+        <https://semrepo.org/resource/external-link/5a23a3db9ee0dc4cde398d39e2facc4f1ffe070c78e79c4588583102cc35b35c>,
+        <https://semrepo.org/resource/external-link/777a8b613e839716e8b143d9d942fa3ae19b7d46b37e49bfcacdf5c7d68142d7>,
+        <https://semrepo.org/resource/external-link/8fd2ae8ca424738df085f920bd2c261492a6f36381dba9b25dcfeba096f84c6a>,
+        <https://semrepo.org/resource/external-link/e26d6434e9494fb980a3bd960c49085b894420226564089a368db5d502cc98ea>,
+        <https://semrepo.org/resource/external-link/ec8928eb9f600af1b1d3e23b2bc2284334ca83b1790181cffb51c7e72e426151>,
+        <https://semrepo.org/resource/external-link/f65fe005a3a00a2fb8e230762b68a2b2def3128e7382dd4851071d71f1b60b8c> .
+

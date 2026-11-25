@@ -1,0 +1,2320 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/102214148> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zydingg" ;
+    sr:githubUserId 102214148 ;
+    sr:profileUrl "https://github.com/zydingg"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1050316> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "alvations" ;
+    sr:githubUserId 1050316 ;
+    sr:profileUrl "https://github.com/alvations"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1181780> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "tnixon" ;
+    sr:githubUserId 1181780 ;
+    sr:profileUrl "https://github.com/tnixon"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1321193> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shagunsodhani" ;
+    sr:githubUserId 1321193 ;
+    sr:profileUrl "https://github.com/shagunsodhani"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/13274230> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "mdhk" ;
+    sr:githubUserId 13274230 ;
+    sr:profileUrl "https://github.com/mdhk"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/13608681> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dtsaras" ;
+    sr:githubUserId 13608681 ;
+    sr:profileUrl "https://github.com/dtsaras"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/146056373> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "RRThivyan" ;
+    sr:githubUserId 146056373 ;
+    sr:profileUrl "https://github.com/RRThivyan"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/14888881> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "boldorider4" ;
+    sr:githubUserId 14888881 ;
+    sr:profileUrl "https://github.com/boldorider4"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/171189686> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "syleshfb" ;
+    sr:githubUserId 171189686 ;
+    sr:profileUrl "https://github.com/syleshfb"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/175167787> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dmehta-huro" ;
+    sr:githubUserId 175167787 ;
+    sr:profileUrl "https://github.com/dmehta-huro"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/22338175> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "alihejazi97" ;
+    sr:githubUserId 22338175 ;
+    sr:profileUrl "https://github.com/alihejazi97"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/2296140> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "mduppes" ;
+    sr:githubUserId 2296140 ;
+    sr:profileUrl "https://github.com/mduppes"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/23389404> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "julianzaidi" ;
+    sr:githubUserId 23389404 ;
+    sr:profileUrl "https://github.com/julianzaidi"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26126169> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "LittlePea13" ;
+    sr:githubUserId 26126169 ;
+    sr:profileUrl "https://github.com/LittlePea13"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26164540> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Getmany1" ;
+    sr:githubUserId 26164540 ;
+    sr:profileUrl "https://github.com/Getmany1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/26849652> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "dtometzki" ;
+    sr:githubUserId 26849652 ;
+    sr:profileUrl "https://github.com/dtometzki"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/29166725> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Mikezz1" ;
+    sr:githubUserId 29166725 ;
+    sr:profileUrl "https://github.com/Mikezz1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/33866538> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "0de554K" ;
+    sr:githubUserId 33866538 ;
+    sr:profileUrl "https://github.com/0de554K"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/38261014> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "csaiedu" ;
+    sr:githubUserId 38261014 ;
+    sr:profileUrl "https://github.com/csaiedu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/3894293> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "taikai-zz" ;
+    sr:githubUserId 3894293 ;
+    sr:profileUrl "https://github.com/taikai-zz"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/45254807> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "KricejJanezMartin" ;
+    sr:githubUserId 45254807 ;
+    sr:profileUrl "https://github.com/KricejJanezMartin"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/46468492> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zhhao1" ;
+    sr:githubUserId 46468492 ;
+    sr:profileUrl "https://github.com/zhhao1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/4791204> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "lukasschmit" ;
+    sr:githubUserId 4791204 ;
+    sr:profileUrl "https://github.com/lukasschmit"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/497937> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "artemru" ;
+    sr:githubUserId 497937 ;
+    sr:profileUrl "https://github.com/artemru"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/52132569> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "shashi-23" ;
+    sr:githubUserId 52132569 ;
+    sr:profileUrl "https://github.com/shashi-23"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/63768126> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "jasonrichdarmawan" ;
+    sr:githubUserId 63768126 ;
+    sr:profileUrl "https://github.com/jasonrichdarmawan"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/655866> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "colesbury" ;
+    sr:githubUserId 655866 ;
+    sr:profileUrl "https://github.com/colesbury"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/66128494> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "jc-audet" ;
+    sr:githubUserId 66128494 ;
+    sr:profileUrl "https://github.com/jc-audet"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/74015838> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "veselinve" ;
+    sr:githubUserId 74015838 ;
+    sr:profileUrl "https://github.com/veselinve"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/75596885> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ElinLiu0" ;
+    sr:githubUserId 75596885 ;
+    sr:profileUrl "https://github.com/ElinLiu0"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/81933585> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sleepingcat4" ;
+    sr:githubUserId 81933585 ;
+    sr:profileUrl "https://github.com/sleepingcat4"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/83660586> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "nitishpandey04" ;
+    sr:githubUserId 83660586 ;
+    sr:profileUrl "https://github.com/nitishpandey04"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/88963347> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "lotushk95" ;
+    sr:githubUserId 88963347 ;
+    sr:profileUrl "https://github.com/lotushk95"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/93338362> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ZhaoningYu1996" ;
+    sr:githubUserId 93338362 ;
+    sr:profileUrl "https://github.com/ZhaoningYu1996"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/9455629> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "skywindy" ;
+    sr:githubUserId 9455629 ;
+    sr:profileUrl "https://github.com/skywindy"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2337117009> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2337117009 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/9455629> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-06-06T01:27:02+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 569 ;
+    sr:issueState "open" ;
+    sr:issueTitle "When I compiled the fairseq2n native source code, an error occurred" ;
+    sr:issueUpdatedAt "2024-06-06T01:27:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/569"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2342693501> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2342693501 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3894293> ;
+    sr:issueClosedAt "2024-06-13T19:33:44+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2024-06-10T02:18:57+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 583 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "AMD compilation error" ;
+    sr:issueUpdatedAt "2024-06-13T19:33:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/583"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2363964406> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2363964406 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/33866538> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-06-20T09:24:31+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 600 ;
+    sr:issueState "open" ;
+    sr:issueTitle "fairseq2n is incompatible with torch 2.3.0" ;
+    sr:issueUpdatedAt "2025-06-02T21:12:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/600"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2365891224> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2365891224 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/171189686> ;
+    sr:issueClosedAt "2024-06-26T11:54:14+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-06-21T07:17:30+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 604 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Unexpected behavior when using repeat() with sample()/round_robin()" ;
+    sr:issueUpdatedAt "2024-06-26T11:54:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/604"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2391203709> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2391203709 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/37080003> ;
+    sr:issueClosedAt "2024-07-05T23:37:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-04T16:43:38+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 629 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "CLI crashes when executed without arguments" ;
+    sr:issueUpdatedAt "2024-07-05T23:37:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/629"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2395869708> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2395869708 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1451293> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2024-07-08T14:55:00+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 640 ;
+    sr:issueState "open" ;
+    sr:issueTitle "[LayerSkip] Per-Layer Dropout Rate Configuration" ;
+    sr:issueUpdatedAt "2024-12-17T04:24:09+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/640"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2396092154> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2396092154 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1451293> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-08T16:41:31+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 641 ;
+    sr:issueState "open" ;
+    sr:issueTitle "[LayerSkip] Early Exit Loss" ;
+    sr:issueUpdatedAt "2024-07-08T16:41:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/641"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2396124945> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2396124945 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1451293> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-08T17:00:18+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 642 ;
+    sr:issueState "open" ;
+    sr:issueTitle "[LayerSkip] Self-Speculative Decoding" ;
+    sr:issueUpdatedAt "2024-07-08T17:00:18+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/642"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2406197054> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2406197054 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/22338175> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-12T19:17:54+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 661 ;
+    sr:issueState "open" ;
+    sr:issueTitle "load an Audio with fairseq2.data.AudioDecoder with specific offset and duration" ;
+    sr:issueUpdatedAt "2024-07-12T19:23:09+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/661"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2415985559> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2415985559 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/46468492> ;
+    sr:issueClosedAt "2024-12-19T22:40:00+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2024-07-18T10:19:49+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation" ;
+    sr:issueNumber 682 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "documentation and training recipes" ;
+    sr:issueUpdatedAt "2024-12-19T22:40:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/682"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2416176669> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2416176669 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/497937> ;
+    sr:issueClosedAt "2024-07-23T22:00:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-18T12:02:19+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 685 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "add without_repeatition option to DataPipeline.round_robin and DataPipeline.sample methods" ;
+    sr:issueUpdatedAt "2024-07-23T22:00:31+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/685"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2417369527> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2417369527 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/37080003> ;
+    sr:issueClosedAt "2024-07-30T10:29:59+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-07-18T20:48:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 689 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Introduce CLI Interface `eval` for Model Evaluation" ;
+    sr:issueUpdatedAt "2024-07-30T10:29:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/689"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2432391665> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2432391665 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1451293> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-07-26T14:41:22+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 707 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Create fairseq2 LM Evaluation Harness Wrapper" ;
+    sr:issueUpdatedAt "2025-09-17T12:50:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/707"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2466209762> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2466209762 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/23389404> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2024-08-14T15:43:13+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 745 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Fairseq 0.2.1 - No wheels available for PyTorch 2.3.* and 2.4.*" ;
+    sr:issueUpdatedAt "2024-12-04T06:43:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/745"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2487291101> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2487291101 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14888881> ;
+    sr:issueClosedAt "2024-12-09T18:45:18+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-08-26T16:42:03+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 769 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Which commit corresponds to the PyPi 0.2.1 release?" ;
+    sr:issueUpdatedAt "2024-12-10T10:48:05+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/769"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2523055385> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2523055385 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1050316> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-09-12T18:17:27+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 783 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Dockerfile and/or Docker image " ;
+    sr:issueUpdatedAt "2024-09-12T18:17:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/783"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2529137500> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2529137500 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/175167787> ;
+    sr:issueClosedAt "2024-09-17T18:11:32+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-09-16T18:10:21+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 786 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Cannot install fairseq2 on WSL (versions have conflicting dependencies)" ;
+    sr:issueUpdatedAt "2024-09-17T18:11:32+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/786"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2562701354> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2562701354 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1321193> ;
+    sr:issueClosedAt "2024-10-02T22:29:25+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2024-10-02T21:56:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 832 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Compile a matmul + reduction op in vector quantizer to avoid excess memory usage." ;
+    sr:issueUpdatedAt "2024-11-15T18:04:59+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/832"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2592468801> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2592468801 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2024-11-22T18:52:11+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-10-16T16:46:31+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 839 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support checksum in AssetDownloadManager" ;
+    sr:issueUpdatedAt "2024-11-22T18:52:11+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/839"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2619397227> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2619397227 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/52132569> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-10-28T19:50:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 842 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Build Failure When Running cmake --build build" ;
+    sr:issueUpdatedAt "2024-12-09T10:38:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/842"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2638045039> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2638045039 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2024-11-26T15:10:08+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-06T13:05:13+00:00"^^xsd:dateTime ;
+    sr:issueNumber 848 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add GSM8K recipe examples" ;
+    sr:issueUpdatedAt "2024-11-26T15:10:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/848"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2650229224> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2650229224 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81714784> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-11T19:41:43+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 852 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add Sophia optimizer" ;
+    sr:issueUpdatedAt "2024-11-11T19:41:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/852"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2681806734> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2681806734 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/145143067> ;
+    sr:issueClosedAt "2024-12-19T22:41:07+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2024-11-22T04:59:01+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 855 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "No matching distribution found for fairseq2n<=0.3.0,>=0.3.0.dev0" ;
+    sr:issueUpdatedAt "2024-12-19T22:41:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/855"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2692197930> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2692197930 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81714784> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-25T20:46:22+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 858 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add LoRA+ support" ;
+    sr:issueUpdatedAt "2024-11-29T19:24:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/858"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2692210934> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2692210934 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81714784> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-25T20:53:08+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 859 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add LoRA-FA support" ;
+    sr:issueUpdatedAt "2024-11-29T19:24:21+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/859"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2705961600> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2705961600 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81714784> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-29T19:24:05+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 864 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add VeRA support" ;
+    sr:issueUpdatedAt "2024-11-29T19:24:05+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/864"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2708115111> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2708115111 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81714784> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-11-30T22:07:47+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 865 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Integrity check for tokenizer downloads uses the wrong checksum field" ;
+    sr:issueUpdatedAt "2024-11-30T22:22:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/865"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2718734274> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2718734274 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/4791204> ;
+    sr:issueClosedAt "2024-12-13T12:37:17+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2024-12-04T20:33:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 869 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "No wheels available for torch 2.5 (readme is incorrect and has 404 wheel URLs)" ;
+    sr:issueUpdatedAt "2024-12-13T12:37:17+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/869"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2737550661> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2737550661 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/83660586> ;
+    sr:issueClosedAt "2024-12-13T12:36:46+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2024-12-13T06:37:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 893 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "fairseq2 installation issue: ImportError: cannot import name 'default_asset_store' from 'fairseq2.assets'" ;
+    sr:issueUpdatedAt "2024-12-13T12:36:46+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/893"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2742133511> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2742133511 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/38261014> ;
+    sr:issueClosedAt "2024-12-17T11:05:03+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2024-12-16T11:34:52+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 915 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "cannot import name 'default_asset_store' from 'fairseq2.assets'" ;
+    sr:issueUpdatedAt "2024-12-17T11:06:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/915"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2747099037> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2747099037 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/145143067> ;
+    sr:issueClosedAt "2024-12-19T16:50:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 6 ;
+    sr:issueCreatedAt "2024-12-18T08:10:15+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 923 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Issue with fairseq2 lm instruction_finetune on version 0.3.0.dev202412020149+g2ab8245.cu121" ;
+    sr:issueUpdatedAt "2024-12-26T10:50:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/923"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2757386120> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2757386120 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26849652> ;
+    sr:issueClosedAt "2024-12-25T19:43:27+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2024-12-24T08:11:11+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 937 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "cannot import name 'load_nllb_tokenizer' from 'fairseq2.models.nllb'" ;
+    sr:issueUpdatedAt "2025-01-17T07:50:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/937"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2762255882> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2762255882 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/145143067> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2024-12-29T13:37:56+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 939 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Instruct/original/tokenizer.model' cannot be opened. third-party/sentencepiece/src/sentencepiece_processor.cc(1101) [model_proto->ParseFromArray(serialized.data(), serialized.size())]" ;
+    sr:issueUpdatedAt "2024-12-29T13:37:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/939"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2777617901> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2777617901 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14329963> ;
+    sr:issueClosedAt "2025-01-16T16:05:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 7 ;
+    sr:issueCreatedAt "2025-01-09T11:55:03+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 960 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "--dump-config errors" ;
+    sr:issueUpdatedAt "2025-01-16T16:05:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/960"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2780767730> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2780767730 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14329963> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-01-10T18:01:52+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation" ;
+    sr:issueNumber 964 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Quick start and Getting started documentation issue" ;
+    sr:issueUpdatedAt "2025-01-14T13:28:20+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/964"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2785169870> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2785169870 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/66128494> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-01-13T19:41:28+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 966 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Enable unsupervised speech dataloading" ;
+    sr:issueUpdatedAt "2025-01-13T19:41:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/966"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2790422309> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2790422309 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14329963> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2025-01-15T17:22:53+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 969 ;
+    sr:issueState "open" ;
+    sr:issueTitle "How to fine-tune NLLB-200 model?" ;
+    sr:issueUpdatedAt "2025-01-21T09:19:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/969"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2790487945> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2790487945 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/10395792> ;
+    sr:issueClosedAt "2025-01-15T22:37:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-01-15T17:56:21+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 970 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "llama convert_checkpoint fails due to malformed json" ;
+    sr:issueUpdatedAt "2025-01-15T22:37:32+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/970"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2790645860> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2790645860 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/10395792> ;
+    sr:issueClosedAt "2025-01-15T22:37:15+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-01-15T19:16:01+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 971 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Incorrect model config for llama3_2_3b" ;
+    sr:issueUpdatedAt "2025-01-15T22:37:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/971"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2792537904> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2792537904 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/14329963> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-01-16T12:04:08+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 976 ;
+    sr:issueState "open" ;
+    sr:issueTitle "CUDA out of memory in mt training task" ;
+    sr:issueUpdatedAt "2025-01-16T12:04:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/976"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2808418099> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2808418099 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/102214148> ;
+    sr:issueClosedAt "2025-01-24T05:07:00+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-01-24T03:34:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 983 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "fairseq2.assets.download_manager.AssetDownloadError: The download of the etox dataset has failed. See nested exception for details." ;
+    sr:issueUpdatedAt "2025-01-24T05:07:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/983"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2811469201> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2811469201 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2025-02-10T14:24:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-01-26T11:16:32+00:00"^^xsd:dateTime ;
+    sr:issueNumber 992 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[doc] add e2e dpo tutorial" ;
+    sr:issueUpdatedAt "2025-02-10T14:24:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/992"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2835430158> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2835430158 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/18662774> ;
+    sr:issueClosedAt "2025-02-10T19:47:57+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-02-06T12:42:25+00:00"^^xsd:dateTime ;
+    sr:issueNumber 997 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Additional option in fairseq2 BLEU computation" ;
+    sr:issueUpdatedAt "2025-02-10T19:47:57+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/997"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2851024927> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2851024927 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8642136> ;
+    sr:issueClosedAt "2025-02-14T08:50:34+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2025-02-13T13:19:12+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1016 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "`fairseq2 lm generate` cannot load a checkpoint produced by `fairseq2 lm instruction_finetune`" ;
+    sr:issueUpdatedAt "2025-02-14T08:50:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1016"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2859051177> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2859051177 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/75596885> ;
+    sr:issueClosedAt "2025-02-20T07:57:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-02-18T00:57:29+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1036 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "How do i migrate from fairseq to fairseq2?" ;
+    sr:issueUpdatedAt "2025-02-20T07:57:03+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1036"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2865763038> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2865763038 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/81933585> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-02-20T10:38:20+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1054 ;
+    sr:issueState "open" ;
+    sr:issueTitle "torchaudio compilation error for fairseq2 0,4.0" ;
+    sr:issueUpdatedAt "2026-05-05T09:53:29+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1054"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2875591442> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2875591442 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/18662774> ;
+    sr:issueClosedAt "2025-03-12T22:00:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-02-24T16:48:35+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1064 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Llama 3.2 1B tied weights" ;
+    sr:issueUpdatedAt "2025-03-12T22:00:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1064"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2899555415> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2899555415 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/73017975> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-03-06T07:10:21+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "generation" ;
+    sr:issueNumber 1078 ;
+    sr:issueState "open" ;
+    sr:issueTitle "SamplingSequenceGenerator not respecting `max_gen_len`" ;
+    sr:issueUpdatedAt "2025-09-22T12:47:56+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1078"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2903715036> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2903715036 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/93338362> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-03-07T18:58:57+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1079 ;
+    sr:issueState "open" ;
+    sr:issueTitle "OSError: fairseq2 requires libsndfile. Since you are in a Conda environment, use `conda install -c conda-forge libsndfile==1.0.31` to install it." ;
+    sr:issueUpdatedAt "2025-11-17T09:35:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1079"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2952766070> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2952766070 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/29166725> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-03-27T12:14:23+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1095 ;
+    sr:issueState "open" ;
+    sr:issueTitle "asr recipes" ;
+    sr:issueUpdatedAt "2025-03-27T12:14:30+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1095"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2969238640> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2969238640 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/73017975> ;
+    sr:issueClosedAt "2025-07-17T15:01:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-04-03T11:16:41+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1102 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "LLaMA 3.2 3B: Tied weights missing" ;
+    sr:issueUpdatedAt "2025-07-17T15:01:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1102"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/2969618044> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 2969618044 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8642136> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-04-03T13:35:58+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "data pipeline" ;
+    sr:issueNumber 1103 ;
+    sr:issueState "open" ;
+    sr:issueTitle "`dynamic_bucket` Python signature seems to be wrong" ;
+    sr:issueUpdatedAt "2025-09-17T13:31:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1103"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3012318278> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3012318278 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/1181780> ;
+    sr:issueClosedAt "2025-04-25T18:38:01+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2025-04-22T23:13:19+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1134 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "fairseq2 0.3.0rc1 no longer available" ;
+    sr:issueUpdatedAt "2025-04-25T18:38:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1134"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3024268450> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3024268450 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/131954708> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-04-28T09:12:27+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1151 ;
+    sr:issueState "open" ;
+    sr:issueTitle "How to use mt cli to train nllb model with multiple GPUs" ;
+    sr:issueUpdatedAt "2025-04-28T09:12:27+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1151"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3024876802> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3024876802 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/131954708> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-04-28T13:06:19+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1152 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Does Training with SSL objectives support?" ;
+    sr:issueUpdatedAt "2025-04-28T13:06:19+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1152"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3037777560> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3037777560 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/146056373> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-05-04T04:54:31+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1162 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Seamlessm4t calling FileAssetMetadataProvider from fairseq assets" ;
+    sr:issueUpdatedAt "2025-09-06T02:55:25+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1162"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3218831494> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3218831494 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/13608681> ;
+    sr:issueClosedAt "2025-07-13T05:00:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-07-10T10:45:27+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1226 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "The nightlies for PyTorch 2.7 are not available." ;
+    sr:issueUpdatedAt "2025-07-13T05:00:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1226"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3276920745> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3276920745 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/88963347> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-07-30T12:45:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1238 ;
+    sr:issueState "open" ;
+    sr:issueTitle "How to register original tokenizer" ;
+    sr:issueUpdatedAt "2025-07-30T14:13:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1238"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3366658324> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3366658324 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26164540> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-08-29T12:09:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1264 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Request: ROCm Support for fairseq2 (PyTorch ROCm builds)" ;
+    sr:issueUpdatedAt "2025-08-29T12:09:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1264"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3376280623> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3376280623 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8642136> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-02T14:26:24+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling",
+        "training" ;
+    sr:issueNumber 1266 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add a Llama4 (text-only) fine-tuning recipe" ;
+    sr:issueUpdatedAt "2025-09-05T16:13:25+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1266"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3388001616> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3388001616 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-29T16:42:44+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-05T15:44:07+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "training" ;
+    sr:issueNumber 1276 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support multiple learning rates in recipes" ;
+    sr:issueUpdatedAt "2025-09-29T16:42:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1276"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3388025776> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3388025776 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-12T13:15:35+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-05T15:51:52+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "training" ;
+    sr:issueNumber 1277 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Extend CheckpointManager to preserve full checkpoint only for the last save." ;
+    sr:issueUpdatedAt "2025-09-12T13:15:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1277"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3388039170> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3388039170 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-17T12:50:38+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-05T15:55:30+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "eval" ;
+    sr:issueNumber 1278 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add an LM eval harness recipe" ;
+    sr:issueUpdatedAt "2025-09-17T12:50:39+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1278"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3388058523> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3388058523 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-09-05T16:00:33+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1279 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Experiment with expandable_segments" ;
+    sr:issueUpdatedAt "2025-10-09T11:28:57+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1279"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402092749> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402092749 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-12T12:26:43+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T11:32:40+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1290 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support rewind and fork in wandb recorder" ;
+    sr:issueUpdatedAt "2025-09-12T12:26:43+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1290"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402097867> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402097867 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T11:34:20+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "training" ;
+    sr:issueNumber 1291 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Attempt to support S3 in CheckpointManager" ;
+    sr:issueUpdatedAt "2025-10-06T17:19:20+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1291"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402102119> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402102119 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T11:35:47+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "training" ;
+    sr:issueNumber 1292 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Attempt to support checkpoint compression" ;
+    sr:issueUpdatedAt "2025-09-10T11:36:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1292"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402111276> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402111276 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T11:38:45+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1293 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Improve the implementation of recipe and asset configuration merger" ;
+    sr:issueUpdatedAt "2025-10-06T16:55:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1293"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402519704> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402519704 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-06T17:02:49+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T13:33:56+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1294 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Extend documentation of gangs" ;
+    sr:issueUpdatedAt "2025-10-06T17:02:50+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1294"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3402521967> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3402521967 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-08T22:26:44+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-10T13:34:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1295 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Document recipe configuration fields" ;
+    sr:issueUpdatedAt "2025-10-08T22:26:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1295"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3406808086> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3406808086 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2025-09-16T15:39:11+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-11T14:23:49+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation" ;
+    sr:issueNumber 1300 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[doc] Hub (dataset, tokenizer, model)" ;
+    sr:issueUpdatedAt "2025-09-16T15:39:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1300"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3406883218> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3406883218 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2026-03-19T16:15:08+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2025-09-11T14:41:40+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1301 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "HuggingFace model/tokenizer loader" ;
+    sr:issueUpdatedAt "2026-03-19T16:15:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1301"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3406900783> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3406900783 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-11T14:46:28+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1302 ;
+    sr:issueState "open" ;
+    sr:issueTitle "[uv] Adding more supports w/ uv" ;
+    sr:issueUpdatedAt "2025-10-06T17:05:46+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1302"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3410660331> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3410660331 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2025-09-15T13:22:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-12T14:08:53+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation" ;
+    sr:issueNumber 1303 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[doc] llama tokenizer" ;
+    sr:issueUpdatedAt "2025-09-15T13:22:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1303"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3411785588> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3411785588 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-09-12T19:56:07+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1304 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Finish the migration of all LM recipes to v0.5" ;
+    sr:issueUpdatedAt "2025-11-04T17:29:18+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1304"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3417915519> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3417915519 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-15T13:12:32+00:00"^^xsd:dateTime ;
+    sr:issueLabel "data pipeline",
+        "enhancement" ;
+    sr:issueNumber 1307 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Extend the pack operator to support PO recipes" ;
+    sr:issueUpdatedAt "2025-09-15T13:12:48+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1307"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3418236676> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3418236676 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3266543> ;
+    sr:issueClosedAt "2025-10-06T18:00:23+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-15T14:30:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1308 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Llama 4 Scout (rebase)" ;
+    sr:issueUpdatedAt "2025-10-06T18:00:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1308"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3418262403> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3418262403 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3266543> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-15T14:36:59+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1309 ;
+    sr:issueState "open" ;
+    sr:issueTitle "OPT (rebase)" ;
+    sr:issueUpdatedAt "2025-09-19T23:31:00+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1309"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3418343205> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3418343205 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/21251345> ;
+    sr:issueClosedAt "2025-09-23T13:23:45+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-15T14:56:02+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1310 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "[uv + ci] integrate major dependencies to test backward compatibility" ;
+    sr:issueUpdatedAt "2025-09-23T13:23:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1310"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3418354778> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3418354778 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-15T14:58:48+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1311 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Annotate non-stable APIs in the codebase" ;
+    sr:issueUpdatedAt "2025-10-08T22:23:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1311"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3419008955> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3419008955 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-15T18:16:07+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "modeling" ;
+    sr:issueNumber 1312 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Bring back support for loading legacy fairseq2 checkpoints" ;
+    sr:issueUpdatedAt "2025-09-22T16:43:34+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1312"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3423136131> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3423136131 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/9363632> ;
+    sr:issueClosedAt "2025-09-22T17:31:12+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-09-16T17:23:23+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1315 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Add checkpoint consolidation cmd program and integrate into fs2 CI" ;
+    sr:issueUpdatedAt "2025-09-22T17:31:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1315"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3426362945> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3426362945 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-19T22:59:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-17T13:38:09+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1316 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Support multiple parameter groups in recipe LR factories" ;
+    sr:issueUpdatedAt "2025-09-19T22:59:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1316"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3426366161> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3426366161 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-17T13:39:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-17T13:39:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1317 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Extend metric recorders to support list of values" ;
+    sr:issueUpdatedAt "2025-09-17T13:39:32+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1317"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3426373130> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3426373130 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-23T20:27:12+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-17T13:41:03+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1318 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Extend ObjectValidator to support composite objects" ;
+    sr:issueUpdatedAt "2025-09-23T20:27:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1318"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3431822176> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3431822176 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-18T20:10:11+00:00"^^xsd:dateTime ;
+    sr:issueLabel "modeling" ;
+    sr:issueNumber 1321 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Review LLaMA-4 Scout PR" ;
+    sr:issueUpdatedAt "2025-09-22T16:30:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1321"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3441876503> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3441876503 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-07T20:29:04+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-22T16:55:17+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1325 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Improve model sharding APIs" ;
+    sr:issueUpdatedAt "2025-10-07T20:29:04+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1325"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3444790712> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3444790712 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-23T10:59:24+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1327 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Expose a high-level standalone function for CLI parsing APIs" ;
+    sr:issueUpdatedAt "2025-10-21T14:12:03+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1327"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3448057027> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3448057027 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/63768126> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2025-09-24T07:16:42+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1331 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Breaking change from 0.4 to 0.5, where is fairseq2.data.text.tokenizers.TextTokenizer?" ;
+    sr:issueUpdatedAt "2025-09-24T19:02:09+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1331"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3451339829> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3451339829 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-29T14:58:31+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-25T00:08:56+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1333 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Document the gang APIs" ;
+    sr:issueUpdatedAt "2025-09-29T14:58:32+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1333"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3459200363> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3459200363 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/176961616> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-26T21:43:17+00:00"^^xsd:dateTime ;
+    sr:issueLabel "data pipeline",
+        "enhancement" ;
+    sr:issueNumber 1335 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add Basic building blocks for custom collators" ;
+    sr:issueUpdatedAt "2025-09-26T22:17:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1335"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3464583191> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3464583191 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-29T18:03:41+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-29T11:42:04+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1336 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Improve pdb post-mortem debugging" ;
+    sr:issueUpdatedAt "2025-09-29T18:03:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1336"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3466033170> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3466033170 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-09-29T19:13:47+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-09-29T18:02:40+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug",
+        "training" ;
+    sr:issueNumber 1338 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Investigate FSDP1 checkpoint resume error" ;
+    sr:issueUpdatedAt "2025-09-29T19:13:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1338"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3471150869> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3471150869 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-09-30T21:41:10+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling",
+        "training" ;
+    sr:issueNumber 1343 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Introduce support for context parallelism" ;
+    sr:issueUpdatedAt "2025-10-08T22:27:10+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1343"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3473397814> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3473397814 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/26126169> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2025-10-01T12:40:07+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1346 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Attempted unscale_ but _scale is None after resuming training." ;
+    sr:issueUpdatedAt "2025-10-02T10:59:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1346"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3481589654> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3481589654 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-06T19:17:32+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-03T15:45:23+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1348 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Revise shard dimension specification in ModelCheckpointLoader" ;
+    sr:issueUpdatedAt "2025-10-06T19:17:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1348"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3481870126> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3481870126 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/2296140> ;
+    sr:issueClosedAt "2025-11-04T01:37:09+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-03T17:15:26+00:00"^^xsd:dateTime ;
+    sr:issueLabel "asset",
+        "enhancement" ;
+    sr:issueNumber 1350 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Improve error messaging when model checkpoint loading fails" ;
+    sr:issueUpdatedAt "2025-11-04T01:37:10+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1350"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3491096072> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3491096072 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-07T11:28:35+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1353 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Update LLaMA 4 to use the new sharding API" ;
+    sr:issueUpdatedAt "2025-10-08T22:22:22+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1353"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3491105276> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3491105276 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-08T00:00:11+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-07T11:31:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation" ;
+    sr:issueNumber 1354 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Update README and CHANGELOG for v0.6" ;
+    sr:issueUpdatedAt "2025-10-08T00:00:11+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1354"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497062745> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497062745 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T22:25:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1358 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Document fairseq2.runtime.dependency" ;
+    sr:issueUpdatedAt "2025-11-14T23:25:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1358"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497064213> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497064213 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 2 ;
+    sr:issueCreatedAt "2025-10-08T22:25:46+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1359 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Document fairseq2.recipe" ;
+    sr:issueUpdatedAt "2025-11-04T00:15:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1359"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497064932> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497064932 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T22:26:14+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1360 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Document fairseq2.metrics" ;
+    sr:issueUpdatedAt "2025-10-21T18:44:41+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1360"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497174432> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497174432 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T23:28:36+00:00"^^xsd:dateTime ;
+    sr:issueLabel "data pipeline",
+        "enhancement" ;
+    sr:issueNumber 1361 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Implement a generic version of DataReader that supports any iterable" ;
+    sr:issueUpdatedAt "2025-10-08T23:28:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1361"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497177729> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497177729 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-16T19:07:23+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T23:30:16+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1362 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Handle OSError and GangError exceptions in RecipeRunner" ;
+    sr:issueUpdatedAt "2025-10-16T19:07:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1362"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497183626> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497183626 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueClosedAt "2025-10-14T23:16:22+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T23:33:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "recipe" ;
+    sr:issueNumber 1363 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Introduce a register_recipe_assets helper function" ;
+    sr:issueUpdatedAt "2025-10-14T23:16:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1363"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3497187513> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3497187513 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-08T23:36:49+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1364 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Introduce support for Qwen Omni models" ;
+    sr:issueUpdatedAt "2025-10-08T23:36:49+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1364"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3498751699> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3498751699 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-09T11:26:10+00:00"^^xsd:dateTime ;
+    sr:issueLabel "documentation",
+        "enhancement" ;
+    sr:issueNumber 1365 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Document fairseq2.assets" ;
+    sr:issueUpdatedAt "2025-10-09T11:26:11+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1365"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3499650560> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3499650560 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-09T15:34:25+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1367 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add a --no-rich CLI flag" ;
+    sr:issueUpdatedAt "2025-10-09T15:34:39+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1367"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3522232605> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3522232605 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-16T14:46:37+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "modeling" ;
+    sr:issueNumber 1380 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Support tensor parallel tied embedding/project" ;
+    sr:issueUpdatedAt "2025-10-16T14:46:37+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1380"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3527761547> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3527761547 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-17T22:53:34+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1385 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Support overriding model asset checkpoint via `model.path`" ;
+    sr:issueUpdatedAt "2025-10-17T22:53:35+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1385"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3533186549> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3533186549 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-20T16:54:11+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "infra" ;
+    sr:issueNumber 1387 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Check end-of-life version of deprecated features" ;
+    sr:issueUpdatedAt "2025-10-20T16:54:11+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1387"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3537741076> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3537741076 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/3266543> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-21T18:39:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1391 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add a default CPU stat tracker" ;
+    sr:issueUpdatedAt "2025-10-21T18:40:28+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1391"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3570973250> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3570973250 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-30T14:07:09+00:00"^^xsd:dateTime ;
+    sr:issueLabel "recipe" ;
+    sr:issueNumber 1397 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Deprecate RecipeModel" ;
+    sr:issueUpdatedAt "2025-10-30T14:07:09+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1397"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3570978564> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3570978564 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8310727> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-10-30T14:08:14+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement",
+        "recipe" ;
+    sr:issueNumber 1398 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Improve interop between Gang and PG/DeviceMesh" ;
+    sr:issueUpdatedAt "2025-10-30T14:08:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1398"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3582965138> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3582965138 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueClosedAt "2026-03-18T20:32:30+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-11-03T17:06:39+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1402 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Implement OLMO2/3 models support in Fairseq2" ;
+    sr:issueUpdatedAt "2026-03-18T20:32:30+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1402"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3597411054> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3597411054 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/176961616> ;
+    sr:issueClosedAt "2025-11-06T23:55:06+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-11-06T20:01:41+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1411 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Silent wrong CER computation may be going on in WerMetric" ;
+    sr:issueUpdatedAt "2025-11-06T23:55:06+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1411"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3644591037> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3644591037 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/655866> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-11-19T22:08:23+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1453 ;
+    sr:issueState "open" ;
+    sr:issueTitle "fairseq2 breaks / will break with PyTorch nightlies" ;
+    sr:issueUpdatedAt "2025-11-19T22:08:23+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1453"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3675278783> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3675278783 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8642136> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2025-11-28T15:32:50+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1469 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Feature request: make tokenizers map between characters and tokens" ;
+    sr:issueUpdatedAt "2025-11-28T15:32:50+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1469"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3684800728> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3684800728 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/23104500> ;
+    sr:issueClosedAt "2025-12-02T15:01:36+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2025-12-02T08:55:14+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1472 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Dataloader sampling with `allow_repeats=False` can suddenly stop iterations earlier" ;
+    sr:issueUpdatedAt "2025-12-02T15:01:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1472"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3768567308> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3768567308 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/176961616> ;
+    sr:issueCommentCount 4 ;
+    sr:issueCreatedAt "2025-12-29T23:49:40+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1481 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Different batch sizes result in large numerical differences in transformer models" ;
+    sr:issueUpdatedAt "2026-01-02T16:19:14+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1481"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3786651662> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3786651662 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/44269389> ;
+    sr:issueCommentCount 3 ;
+    sr:issueCreatedAt "2026-01-06T21:50:41+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1482 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Improve FBCode workflow (ease and automation)" ;
+    sr:issueUpdatedAt "2026-01-08T00:38:36+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1482"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3786685620> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3786685620 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/44269389> ;
+    sr:issueCommentCount 1 ;
+    sr:issueCreatedAt "2026-01-06T22:06:06+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1483 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Improve fbpkg integration" ;
+    sr:issueUpdatedAt "2026-01-08T00:39:47+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1483"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3822027175> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3822027175 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/8642136> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-01-16T13:26:33+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1485 ;
+    sr:issueState "open" ;
+    sr:issueTitle "NCCL timeouts when reading or writing HF checkpoints for 70B Llama model during multinode training" ;
+    sr:issueUpdatedAt "2026-01-16T13:26:33+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1485"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3823849845> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3823849845 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/9363632> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-01-16T22:15:39+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1486 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Iterating through asset cards fails when unrelated asset is broken" ;
+    sr:issueUpdatedAt "2026-01-16T22:15:42+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1486"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3845681283> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3845681283 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/131954708> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-01-23T03:41:01+00:00"^^xsd:dateTime ;
+    sr:issueLabel "question" ;
+    sr:issueNumber 1487 ;
+    sr:issueState "open" ;
+    sr:issueTitle "The new version update lacks training documentation for machine learning." ;
+    sr:issueUpdatedAt "2026-01-23T03:41:01+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1487"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/3994242280> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 3994242280 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/131954708> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-02-26T09:05:44+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1493 ;
+    sr:issueState "open" ;
+    sr:issueTitle "The new version update lacks training documentation for machine learning(NLLB)." ;
+    sr:issueUpdatedAt "2026-02-26T09:05:44+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1493"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4042320505> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4042320505 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/74015838> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-08T22:24:51+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1494 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add the Windows native support i want to try the   omnilingual-asr" ;
+    sr:issueUpdatedAt "2026-03-08T22:24:51+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1494"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4108810460> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4108810460 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-20T16:25:19+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1497 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Add support for Qwen3.5 model" ;
+    sr:issueUpdatedAt "2026-06-05T17:19:42+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1497"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4119585003> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4119585003 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/13274230> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-23T09:44:38+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1498 ;
+    sr:issueState "open" ;
+    sr:issueTitle "HuBERT pre-training recipe" ;
+    sr:issueUpdatedAt "2026-03-23T09:44:38+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1498"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4124371076> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4124371076 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-23T23:56:12+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1499 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Support FlashAttention4" ;
+    sr:issueUpdatedAt "2026-03-23T23:56:12+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1499"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4171826367> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4171826367 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/23104500> ;
+    sr:issueClosedAt "2026-04-01T10:57:24+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-03-30T15:44:46+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1504 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "ParquetFragmentLoader cannot recover from transient ACCESS_DENIED on s3 data" ;
+    sr:issueUpdatedAt "2026-04-01T10:57:24+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1504"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4197352507> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4197352507 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueClosedAt "2026-04-11T14:23:02+00:00"^^xsd:dateTime ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-04-02T22:51:35+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1505 ;
+    sr:issueState "closed" ;
+    sr:issueTitle "Version update" ;
+    sr:issueUpdatedAt "2026-04-11T14:23:02+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1505"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4524574028> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4524574028 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-05-26T13:39:23+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1513 ;
+    sr:issueState "open" ;
+    sr:issueTitle "Support Nemotron-3-Nano-Omni in fairseq2" ;
+    sr:issueUpdatedAt "2026-06-05T17:19:16+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1513"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4598748352> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4598748352 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-06-05T17:18:08+00:00"^^xsd:dateTime ;
+    sr:issueLabel "bug" ;
+    sr:issueNumber 1517 ;
+    sr:issueState "open" ;
+    sr:issueTitle "attribute ValueError in llama3 models export" ;
+    sr:issueUpdatedAt "2026-07-20T19:46:58+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1517"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4598776918> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4598776918 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/6526592> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-06-05T17:22:45+00:00"^^xsd:dateTime ;
+    sr:issueLabel "enhancement" ;
+    sr:issueNumber 1518 ;
+    sr:issueState "open" ;
+    sr:issueTitle "keep up torch version" ;
+    sr:issueUpdatedAt "2026-06-05T17:22:45+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1518"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-issue/4836033869> a sr:Issue ;
+    sr:belongsToRepository <https://semrepo.org/resource/repository/581166973> ;
+    sr:githubIssueId 4836033869 ;
+    sr:issueAuthor <https://semrepo.org/resource/github-account/45254807> ;
+    sr:issueCommentCount 0 ;
+    sr:issueCreatedAt "2026-07-08T09:11:08+00:00"^^xsd:dateTime ;
+    sr:issueNumber 1520 ;
+    sr:issueState "open" ;
+    sr:issueTitle "fair.pkg.atmeta.com serving expired TLS certificate — breaks pip install" ;
+    sr:issueUpdatedAt "2026-07-08T09:11:08+00:00"^^xsd:dateTime ;
+    sr:issueUrl "https://github.com/facebookresearch/fairseq2/issues/1520"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/10395792> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ycxuyingchen" ;
+    sr:githubUserId 10395792 ;
+    sr:profileUrl "https://github.com/ycxuyingchen"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/18662774> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "pa-dqn" ;
+    sr:githubUserId 18662774 ;
+    sr:profileUrl "https://github.com/pa-dqn"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/23104500> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "caciolai" ;
+    sr:githubUserId 23104500 ;
+    sr:profileUrl "https://github.com/caciolai"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/37080003> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "ahmedsaed" ;
+    sr:githubUserId 37080003 ;
+    sr:profileUrl "https://github.com/ahmedsaed"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/44269389> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "rsyue" ;
+    sr:githubUserId 44269389 ;
+    sr:profileUrl "https://github.com/rsyue"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/73017975> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "heffernankevin" ;
+    sr:githubUserId 73017975 ;
+    sr:profileUrl "https://github.com/heffernankevin"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/9363632> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "cirquit" ;
+    sr:githubUserId 9363632 ;
+    sr:profileUrl "https://github.com/cirquit"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/145143067> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "sunrise224" ;
+    sr:githubUserId 145143067 ;
+    sr:profileUrl "https://github.com/sunrise224"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/176961616> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "gilkeren1" ;
+    sr:githubUserId 176961616 ;
+    sr:profileUrl "https://github.com/gilkeren1"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/3266543> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "MartinGleize" ;
+    sr:githubUserId 3266543 ;
+    sr:profileUrl "https://github.com/MartinGleize"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/131954708> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "hui-li-xf" ;
+    sr:githubUserId 131954708 ;
+    sr:profileUrl "https://github.com/hui-li-xf"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/14329963> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "epiniguin" ;
+    sr:githubUserId 14329963 ;
+    sr:profileUrl "https://github.com/epiniguin"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/1451293> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "mostafaelhoushi" ;
+    sr:githubUserId 1451293 ;
+    sr:profileUrl "https://github.com/mostafaelhoushi"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/81714784> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "PeanutButterRat" ;
+    sr:githubUserId 81714784 ;
+    sr:profileUrl "https://github.com/PeanutButterRat"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/8642136> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "avidale" ;
+    sr:githubUserId 8642136 ;
+    sr:profileUrl "https://github.com/avidale"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/21251345> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "zyaoj" ;
+    sr:githubUserId 21251345 ;
+    sr:profileUrl "https://github.com/zyaoj"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/6526592> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "YunchaoYang" ;
+    sr:githubUserId 6526592 ;
+    sr:profileUrl "https://github.com/YunchaoYang"^^xsd:anyURI .
+
+<https://semrepo.org/resource/github-account/8310727> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "cbalioglu" ;
+    sr:githubUserId 8310727 ;
+    sr:profileUrl "https://github.com/cbalioglu"^^xsd:anyURI .
+
+<https://semrepo.org/resource/repository/581166973> sr:hasIssue <https://semrepo.org/resource/github-issue/2337117009>,
+        <https://semrepo.org/resource/github-issue/2342693501>,
+        <https://semrepo.org/resource/github-issue/2363964406>,
+        <https://semrepo.org/resource/github-issue/2365891224>,
+        <https://semrepo.org/resource/github-issue/2391203709>,
+        <https://semrepo.org/resource/github-issue/2395869708>,
+        <https://semrepo.org/resource/github-issue/2396092154>,
+        <https://semrepo.org/resource/github-issue/2396124945>,
+        <https://semrepo.org/resource/github-issue/2406197054>,
+        <https://semrepo.org/resource/github-issue/2415985559>,
+        <https://semrepo.org/resource/github-issue/2416176669>,
+        <https://semrepo.org/resource/github-issue/2417369527>,
+        <https://semrepo.org/resource/github-issue/2432391665>,
+        <https://semrepo.org/resource/github-issue/2466209762>,
+        <https://semrepo.org/resource/github-issue/2487291101>,
+        <https://semrepo.org/resource/github-issue/2523055385>,
+        <https://semrepo.org/resource/github-issue/2529137500>,
+        <https://semrepo.org/resource/github-issue/2562701354>,
+        <https://semrepo.org/resource/github-issue/2592468801>,
+        <https://semrepo.org/resource/github-issue/2619397227>,
+        <https://semrepo.org/resource/github-issue/2638045039>,
+        <https://semrepo.org/resource/github-issue/2650229224>,
+        <https://semrepo.org/resource/github-issue/2681806734>,
+        <https://semrepo.org/resource/github-issue/2692197930>,
+        <https://semrepo.org/resource/github-issue/2692210934>,
+        <https://semrepo.org/resource/github-issue/2705961600>,
+        <https://semrepo.org/resource/github-issue/2708115111>,
+        <https://semrepo.org/resource/github-issue/2718734274>,
+        <https://semrepo.org/resource/github-issue/2737550661>,
+        <https://semrepo.org/resource/github-issue/2742133511>,
+        <https://semrepo.org/resource/github-issue/2747099037>,
+        <https://semrepo.org/resource/github-issue/2757386120>,
+        <https://semrepo.org/resource/github-issue/2762255882>,
+        <https://semrepo.org/resource/github-issue/2777617901>,
+        <https://semrepo.org/resource/github-issue/2780767730>,
+        <https://semrepo.org/resource/github-issue/2785169870>,
+        <https://semrepo.org/resource/github-issue/2790422309>,
+        <https://semrepo.org/resource/github-issue/2790487945>,
+        <https://semrepo.org/resource/github-issue/2790645860>,
+        <https://semrepo.org/resource/github-issue/2792537904>,
+        <https://semrepo.org/resource/github-issue/2808418099>,
+        <https://semrepo.org/resource/github-issue/2811469201>,
+        <https://semrepo.org/resource/github-issue/2835430158>,
+        <https://semrepo.org/resource/github-issue/2851024927>,
+        <https://semrepo.org/resource/github-issue/2859051177>,
+        <https://semrepo.org/resource/github-issue/2865763038>,
+        <https://semrepo.org/resource/github-issue/2875591442>,
+        <https://semrepo.org/resource/github-issue/2899555415>,
+        <https://semrepo.org/resource/github-issue/2903715036>,
+        <https://semrepo.org/resource/github-issue/2952766070>,
+        <https://semrepo.org/resource/github-issue/2969238640>,
+        <https://semrepo.org/resource/github-issue/2969618044>,
+        <https://semrepo.org/resource/github-issue/3012318278>,
+        <https://semrepo.org/resource/github-issue/3024268450>,
+        <https://semrepo.org/resource/github-issue/3024876802>,
+        <https://semrepo.org/resource/github-issue/3037777560>,
+        <https://semrepo.org/resource/github-issue/3218831494>,
+        <https://semrepo.org/resource/github-issue/3276920745>,
+        <https://semrepo.org/resource/github-issue/3366658324>,
+        <https://semrepo.org/resource/github-issue/3376280623>,
+        <https://semrepo.org/resource/github-issue/3388001616>,
+        <https://semrepo.org/resource/github-issue/3388025776>,
+        <https://semrepo.org/resource/github-issue/3388039170>,
+        <https://semrepo.org/resource/github-issue/3388058523>,
+        <https://semrepo.org/resource/github-issue/3402092749>,
+        <https://semrepo.org/resource/github-issue/3402097867>,
+        <https://semrepo.org/resource/github-issue/3402102119>,
+        <https://semrepo.org/resource/github-issue/3402111276>,
+        <https://semrepo.org/resource/github-issue/3402519704>,
+        <https://semrepo.org/resource/github-issue/3402521967>,
+        <https://semrepo.org/resource/github-issue/3406808086>,
+        <https://semrepo.org/resource/github-issue/3406883218>,
+        <https://semrepo.org/resource/github-issue/3406900783>,
+        <https://semrepo.org/resource/github-issue/3410660331>,
+        <https://semrepo.org/resource/github-issue/3411785588>,
+        <https://semrepo.org/resource/github-issue/3417915519>,
+        <https://semrepo.org/resource/github-issue/3418236676>,
+        <https://semrepo.org/resource/github-issue/3418262403>,
+        <https://semrepo.org/resource/github-issue/3418343205>,
+        <https://semrepo.org/resource/github-issue/3418354778>,
+        <https://semrepo.org/resource/github-issue/3419008955>,
+        <https://semrepo.org/resource/github-issue/3423136131>,
+        <https://semrepo.org/resource/github-issue/3426362945>,
+        <https://semrepo.org/resource/github-issue/3426366161>,
+        <https://semrepo.org/resource/github-issue/3426373130>,
+        <https://semrepo.org/resource/github-issue/3431822176>,
+        <https://semrepo.org/resource/github-issue/3441876503>,
+        <https://semrepo.org/resource/github-issue/3444790712>,
+        <https://semrepo.org/resource/github-issue/3448057027>,
+        <https://semrepo.org/resource/github-issue/3451339829>,
+        <https://semrepo.org/resource/github-issue/3459200363>,
+        <https://semrepo.org/resource/github-issue/3464583191>,
+        <https://semrepo.org/resource/github-issue/3466033170>,
+        <https://semrepo.org/resource/github-issue/3471150869>,
+        <https://semrepo.org/resource/github-issue/3473397814>,
+        <https://semrepo.org/resource/github-issue/3481589654>,
+        <https://semrepo.org/resource/github-issue/3481870126>,
+        <https://semrepo.org/resource/github-issue/3491096072>,
+        <https://semrepo.org/resource/github-issue/3491105276>,
+        <https://semrepo.org/resource/github-issue/3497062745>,
+        <https://semrepo.org/resource/github-issue/3497064213>,
+        <https://semrepo.org/resource/github-issue/3497064932>,
+        <https://semrepo.org/resource/github-issue/3497174432>,
+        <https://semrepo.org/resource/github-issue/3497177729>,
+        <https://semrepo.org/resource/github-issue/3497183626>,
+        <https://semrepo.org/resource/github-issue/3497187513>,
+        <https://semrepo.org/resource/github-issue/3498751699>,
+        <https://semrepo.org/resource/github-issue/3499650560>,
+        <https://semrepo.org/resource/github-issue/3522232605>,
+        <https://semrepo.org/resource/github-issue/3527761547>,
+        <https://semrepo.org/resource/github-issue/3533186549>,
+        <https://semrepo.org/resource/github-issue/3537741076>,
+        <https://semrepo.org/resource/github-issue/3570973250>,
+        <https://semrepo.org/resource/github-issue/3570978564>,
+        <https://semrepo.org/resource/github-issue/3582965138>,
+        <https://semrepo.org/resource/github-issue/3597411054>,
+        <https://semrepo.org/resource/github-issue/3644591037>,
+        <https://semrepo.org/resource/github-issue/3675278783>,
+        <https://semrepo.org/resource/github-issue/3684800728>,
+        <https://semrepo.org/resource/github-issue/3768567308>,
+        <https://semrepo.org/resource/github-issue/3786651662>,
+        <https://semrepo.org/resource/github-issue/3786685620>,
+        <https://semrepo.org/resource/github-issue/3822027175>,
+        <https://semrepo.org/resource/github-issue/3823849845>,
+        <https://semrepo.org/resource/github-issue/3845681283>,
+        <https://semrepo.org/resource/github-issue/3994242280>,
+        <https://semrepo.org/resource/github-issue/4042320505>,
+        <https://semrepo.org/resource/github-issue/4108810460>,
+        <https://semrepo.org/resource/github-issue/4119585003>,
+        <https://semrepo.org/resource/github-issue/4124371076>,
+        <https://semrepo.org/resource/github-issue/4171826367>,
+        <https://semrepo.org/resource/github-issue/4197352507>,
+        <https://semrepo.org/resource/github-issue/4524574028>,
+        <https://semrepo.org/resource/github-issue/4598748352>,
+        <https://semrepo.org/resource/github-issue/4598776918>,
+        <https://semrepo.org/resource/github-issue/4836033869> .
+

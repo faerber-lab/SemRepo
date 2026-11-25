@@ -1,0 +1,33 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/github-account/10849005> a sr:GitHubAccount,
+        sr:GitHubUser ;
+    sr:githubLogin "Kaimaoge" ;
+    sr:githubUserId 10849005 ;
+    sr:profileUrl "https://github.com/Kaimaoge"^^xsd:anyURI .
+
+<https://semrepo.org/resource/programming-language/jupyter-notebook> a sr:ProgrammingLanguage ;
+    sr:languageName "Jupyter Notebook" .
+
+<https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> a sr:RepositorySnapshot ;
+    sr:archived false ;
+    sr:collectedAt "2026-11-20T01:29:40.733862+00:00"^^xsd:dateTime ;
+    sr:defaultBranch "master" ;
+    sr:forksCount 33 ;
+    sr:fullName "Kaimaoge/IGNNK" ;
+    sr:isFork false ;
+    sr:lastCommitAt "2022-12-28T18:03:27+00:00"^^xsd:dateTime ;
+    sr:openIssuesCount 5 ;
+    sr:ownerAccount <https://semrepo.org/resource/github-account/10849005> ;
+    sr:primaryLanguage <https://semrepo.org/resource/programming-language/jupyter-notebook> ;
+    sr:pushedAt "2023-06-08T03:04:00+00:00"^^xsd:dateTime ;
+    sr:repositoryName "IGNNK" ;
+    sr:sizeKb 156796 ;
+    sr:snapshotOf <https://semrepo.org/resource/repository/267995597> ;
+    sr:starsCount 132 ;
+    sr:updatedAt "2026-11-16T09:41:46+00:00"^^xsd:dateTime ;
+    sr:watchersCount 3 .
+
+<https://semrepo.org/resource/repository/267995597> sr:hasSnapshot <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> .
+

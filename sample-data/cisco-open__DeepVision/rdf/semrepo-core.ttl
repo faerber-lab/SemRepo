@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/collection-activity/a05dc1d44eea472a> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/cisco-open/DeepVision/contributors"^^xsd:anyURI ;
+    sr:collectionSource "55001_60000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T23:09:32.425038+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/604700080> .
+
+<https://semrepo.org/resource/collection-activity/c2a31e4c9fa36ed5> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/cisco-open/DeepVision/issues"^^xsd:anyURI ;
+    sr:collectionSource "55001_60000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T23:09:31.630437+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/604700080> .
+
+<https://semrepo.org/resource/collection-activity/eca5d0a1f0e866d0> a sr:CollectionActivity ;
+    sr:attemptedUrl "https://api.github.com/repos/cisco-open/DeepVision/languages"^^xsd:anyURI ;
+    sr:collectionSource "55001_60000.pkl" ;
+    sr:collectionStatus sr:Success ;
+    sr:collectionTimestamp "2026-11-21T23:09:31.388312+00:00"^^xsd:dateTime ;
+    sr:resultedInRepository <https://semrepo.org/resource/repository/604700080> .
+
+<https://semrepo.org/resource/source-repository-link/aa59246783669bdb> a sr:SourceRepositoryLink ;
+    sr:finalResolvedUrl "https://github.com/cisco-open/DeepVision"^^xsd:anyURI ;
+    sr:originalRepositoryUrl "https://github.com/cisco-open/deepvision"^^xsd:anyURI ;
+    sr:resolutionStatus sr:Resolved ;
+    sr:resolvedRepository <https://semrepo.org/resource/repository/604700080> .
+
+<https://semrepo.org/resource/repository/604700080> a sr:Repository ;
+    sr:canonicalUrl "https://github.com/cisco-open/DeepVision"^^xsd:anyURI ;
+    sr:createdAt "2023-02-21T15:58:22+00:00"^^xsd:dateTime ;
+    sr:githubRepositoryId 604700080 .
+

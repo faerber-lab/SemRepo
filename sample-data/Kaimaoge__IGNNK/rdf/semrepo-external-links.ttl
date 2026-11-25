@@ -1,0 +1,160 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/diffusion-convolutional-recurrent-neural> dbpprop:area <https://linkedpaperswithcode.com/area/natural-language-processing>,
+        <https://linkedpaperswithcode.com/area/time-series> ;
+    dcterms:creator <https://semopenalex.org/author/A5012068017>,
+        <https://semopenalex.org/author/A5027731521>,
+        <https://semopenalex.org/author/A5057778679>,
+        <https://semopenalex.org/author/A5060499485> ;
+    dcterms:date "2017-07-06"^^xsd:date ;
+    dcterms:title "Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/decoder>,
+        <https://linkedpaperswithcode.com/task/multivariate-time-series-forecasting>,
+        <https://linkedpaperswithcode.com/task/spatio-temporal-forecasting>,
+        <https://linkedpaperswithcode.com/task/time-series>,
+        <https://linkedpaperswithcode.com/task/time-series-forecasting>,
+        <https://linkedpaperswithcode.com/task/time-series-prediction>,
+        <https://linkedpaperswithcode.com/task/traffic-prediction> .
+
+<https://linkedpaperswithcode.com/paper/graph-attention-networks> dbpprop:area <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/graphs>,
+        <https://linkedpaperswithcode.com/area/miscellaneous>,
+        <https://linkedpaperswithcode.com/area/natural-language-processing>,
+        <https://linkedpaperswithcode.com/area/reasoning>,
+        <https://linkedpaperswithcode.com/area/time-series> ;
+    dcterms:creator <https://semopenalex.org/author/A5008869927>,
+        <https://semopenalex.org/author/A5064868620>,
+        <https://semopenalex.org/author/A5069420168>,
+        <https://semopenalex.org/author/A5080039924>,
+        <https://semopenalex.org/author/A5086198262> ;
+    dcterms:date "2017-10-30"^^xsd:date ;
+    dcterms:title "Graph Attention Networks" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/document-classification>,
+        <https://linkedpaperswithcode.com/task/graph-attention>,
+        <https://linkedpaperswithcode.com/task/graph-classification>,
+        <https://linkedpaperswithcode.com/task/graph-embedding>,
+        <https://linkedpaperswithcode.com/task/graph-regression>,
+        <https://linkedpaperswithcode.com/task/heterogeneous-node-classification>,
+        <https://linkedpaperswithcode.com/task/link-prediction>,
+        <https://linkedpaperswithcode.com/task/node-classification>,
+        <https://linkedpaperswithcode.com/task/node-classification-on-non-homophilic>,
+        <https://linkedpaperswithcode.com/task/node-property-prediction>,
+        <https://linkedpaperswithcode.com/task/question-answering>,
+        <https://linkedpaperswithcode.com/task/skeleton-based-action-recognition> .
+
+<https://linkedpaperswithcode.com/paper/inductive-graph-neural-networks-for> dbpprop:area <https://linkedpaperswithcode.com/area/graphs>,
+        <https://linkedpaperswithcode.com/area/time-series> ;
+    dcterms:creator <https://semopenalex.org/author/A5027933499>,
+        <https://semopenalex.org/author/A5041516110> ;
+    dcterms:date "2020-06-13"^^xsd:date ;
+    dcterms:title "Inductive Graph Neural Networks for Spatiotemporal Kriging" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/graph-neural-network>,
+        <https://linkedpaperswithcode.com/task/time-series>,
+        <https://linkedpaperswithcode.com/task/time-series-1>,
+        <https://linkedpaperswithcode.com/task/time-series-forecasting> .
+
+<https://semrepo.org/resource/external-link/0351e671540eec16bc58c7110250f8d34f1b06f73d003002ccc01552145ed547> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://semopenalex.org/work/W3174686248"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/2f74ea909948c7f9c3b55207fcc1a03277dafbcca77908fccc01d123f15ce893> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://semopenalex.org/work/W3174686248"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/3e3ef3bf6a30b361a2b35c369e03de864004f4f6df11d72430939d6a404e861b> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/kaimaoge/ignnk"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/415a8174460e8e769e7296ceceb0a60a05f5e521c6cea3634eb43532037b8f9b> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/23361418> ;
+    sr:linkTarget "https://semopenalex.org/author/A5027933499"^^xsd:anyURI ;
+    sr:linkingMethod "reversed-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/48d5742232d69f0312de4b08eab13df21e68093c5dffcb0a494d3644e2a43088> a sr:ExternalLink ;
+    sr:confidenceScore 1.0 ;
+    sr:linkRelationType "same person as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/github-account/9333013> ;
+    sr:linkTarget "https://semopenalex.org/author/A5041516110"^^xsd:anyURI ;
+    sr:linkingMethod "exact-name-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/59dbc37bd9214925061913c1c2534164f7d6f826b8c0d6efc032129b8eecf549> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://semopenalex.org/work/W4297733535"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/7b0370e182bf4622641c1d90e5be32550ea20b46b80051cd7905bf11fad6d5d3> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/inductive-graph-neural-networks-for"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/80986b1b37ad0ca1a059ba83e7da461c66015562b689100a9adf5422b218a56e> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://semopenalex.org/work/W2963358464"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/91b43d8bffdf814f766079b038b81c83fca32f9f5f2e83cecd0763d90e40507b> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/diffusion-convolutional-recurrent-neural"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/a46b4730cb84eac1354d3d68b1b8906e3481d843ba92b41901008bbae726110a> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/graph-attention-networks"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/fe12ec2a6d45d46276ca1aa82dc11fb0935bcdc8d8d052aa68c013671a5308ae> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/267995597> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/inductive-graph-neural-networks-for"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/github-account/23361418> sr:hasExternalLink <https://semrepo.org/resource/external-link/415a8174460e8e769e7296ceceb0a60a05f5e521c6cea3634eb43532037b8f9b> .
+
+<https://semrepo.org/resource/github-account/9333013> sr:hasExternalLink <https://semrepo.org/resource/external-link/48d5742232d69f0312de4b08eab13df21e68093c5dffcb0a494d3644e2a43088> .
+
+<https://semrepo.org/resource/repository/267995597> sr:hasExternalLink <https://semrepo.org/resource/external-link/0351e671540eec16bc58c7110250f8d34f1b06f73d003002ccc01552145ed547>,
+        <https://semrepo.org/resource/external-link/2f74ea909948c7f9c3b55207fcc1a03277dafbcca77908fccc01d123f15ce893>,
+        <https://semrepo.org/resource/external-link/3e3ef3bf6a30b361a2b35c369e03de864004f4f6df11d72430939d6a404e861b>,
+        <https://semrepo.org/resource/external-link/59dbc37bd9214925061913c1c2534164f7d6f826b8c0d6efc032129b8eecf549>,
+        <https://semrepo.org/resource/external-link/7b0370e182bf4622641c1d90e5be32550ea20b46b80051cd7905bf11fad6d5d3>,
+        <https://semrepo.org/resource/external-link/80986b1b37ad0ca1a059ba83e7da461c66015562b689100a9adf5422b218a56e>,
+        <https://semrepo.org/resource/external-link/91b43d8bffdf814f766079b038b81c83fca32f9f5f2e83cecd0763d90e40507b>,
+        <https://semrepo.org/resource/external-link/a46b4730cb84eac1354d3d68b1b8906e3481d843ba92b41901008bbae726110a>,
+        <https://semrepo.org/resource/external-link/fe12ec2a6d45d46276ca1aa82dc11fb0935bcdc8d8d052aa68c013671a5308ae> .
+

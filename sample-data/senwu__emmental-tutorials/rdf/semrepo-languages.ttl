@@ -1,0 +1,27 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/language-usage/4acab10c4ac03193> a sr:LanguageUsage ;
+    sr:languageBytes 383 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/makefile> .
+
+<https://semrepo.org/resource/language-usage/bc0c78786f63d774> a sr:LanguageUsage ;
+    sr:languageBytes 257217 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/c9548f998afd4b05> a sr:LanguageUsage ;
+    sr:languageBytes 14251 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/182929051/2026-11-21T20:29:44.841148+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/shell> .
+
+<https://semrepo.org/resource/programming-language/makefile> a sr:ProgrammingLanguage ;
+    sr:languageName "Makefile" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+
+<https://semrepo.org/resource/programming-language/shell> a sr:ProgrammingLanguage ;
+    sr:languageName "Shell" .
+

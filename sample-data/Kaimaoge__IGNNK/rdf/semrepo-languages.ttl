@@ -1,0 +1,35 @@
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semrepo.org/resource/language-usage/04080e722824a386> a sr:LanguageUsage ;
+    sr:languageBytes 564 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/m> .
+
+<https://semrepo.org/resource/language-usage/13b685c8c2c56398> a sr:LanguageUsage ;
+    sr:languageBytes 22648 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/matlab> .
+
+<https://semrepo.org/resource/language-usage/892bd2e4e638fe5c> a sr:LanguageUsage ;
+    sr:languageBytes 63415 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/python> .
+
+<https://semrepo.org/resource/language-usage/f31b489d144ffb36> a sr:LanguageUsage ;
+    sr:languageBytes 4074064 ;
+    sr:languageUsageIn <https://semrepo.org/resource/repository-snapshot/267995597/2026-11-20T01:29:40.733862+00:00> ;
+    sr:programmingLanguage <https://semrepo.org/resource/programming-language/jupyter-notebook> .
+
+<https://semrepo.org/resource/programming-language/jupyter-notebook> a sr:ProgrammingLanguage ;
+    sr:languageName "Jupyter Notebook" .
+
+<https://semrepo.org/resource/programming-language/m> a sr:ProgrammingLanguage ;
+    sr:languageName "M" .
+
+<https://semrepo.org/resource/programming-language/matlab> a sr:ProgrammingLanguage ;
+    sr:languageName "MATLAB" .
+
+<https://semrepo.org/resource/programming-language/python> a sr:ProgrammingLanguage ;
+    sr:languageName "Python" .
+

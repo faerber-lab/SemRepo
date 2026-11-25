@@ -1,0 +1,3 @@
+{"collection_timestamp": "2026-11-20T04:34:56.452908+00:00", "attempted_url": "https://api.github.com/repos/haochen-rye/LSTD/languages", "collection_source": "160001_165000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 102554381}
+{"collection_timestamp": "2026-11-20T04:34:56.727714+00:00", "attempted_url": "https://api.github.com/repos/haochen-rye/LSTD/issues", "collection_source": "160001_165000.pkl", "collection_status": "Success", "resulted_in_repository_github_id": 102554381}
+{"collection_timestamp": "2026-11-20T04:34:57.329373+00:00", "attempted_url": "https://api.github.com/repos/haochen-rye/LSTD/contributors", "collection_source": "160001_165000.pkl", "collection_status": "PartialSuccess", "resulted_in_repository_github_id": 102554381}

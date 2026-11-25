@@ -1,0 +1,72 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/mistral-7b> dbpprop:area <https://linkedpaperswithcode.com/area/computer-code>,
+        <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/medical>,
+        <https://linkedpaperswithcode.com/area/methodology>,
+        <https://linkedpaperswithcode.com/area/miscellaneous>,
+        <https://linkedpaperswithcode.com/area/natural-language-processing>,
+        <https://linkedpaperswithcode.com/area/reasoning>,
+        <https://linkedpaperswithcode.com/area/speech> ;
+    dcterms:creator <https://semopenalex.org/author/A5001689321>,
+        <https://semopenalex.org/author/A5012897368>,
+        <https://semopenalex.org/author/A5016223957>,
+        <https://semopenalex.org/author/A5050998809>,
+        <https://semopenalex.org/author/A5054371148>,
+        <https://semopenalex.org/author/A5061952014>,
+        <https://semopenalex.org/author/A5066603292>,
+        <https://semopenalex.org/author/A5067991583>,
+        <https://semopenalex.org/author/A5083358660>,
+        <https://semopenalex.org/author/A5084553837>,
+        <https://semopenalex.org/author/A5084957527>,
+        <https://semopenalex.org/author/A5090457109>,
+        <https://semopenalex.org/author/A5093047938>,
+        <https://semopenalex.org/author/A5093047939>,
+        <https://semopenalex.org/author/A5093047940> ;
+    dcterms:date "2023-10-10"^^xsd:date ;
+    dcterms:title "Mistral 7B" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/arithmetic-reasoning>,
+        <https://linkedpaperswithcode.com/task/chatbot>,
+        <https://linkedpaperswithcode.com/task/code-generation>,
+        <https://linkedpaperswithcode.com/task/common-sense-reasoning>,
+        <https://linkedpaperswithcode.com/task/language-modelling>,
+        <https://linkedpaperswithcode.com/task/math>,
+        <https://linkedpaperswithcode.com/task/math-word-problem-solving>,
+        <https://linkedpaperswithcode.com/task/mathematical-reasoning>,
+        <https://linkedpaperswithcode.com/task/multi-task-language-understanding>,
+        <https://linkedpaperswithcode.com/task/question-answering>,
+        <https://linkedpaperswithcode.com/task/sentence-completion>,
+        <https://linkedpaperswithcode.com/task/world-knowledge>,
+        <https://linkedpaperswithcode.com/task/zeroshot-video-question-answer> .
+
+<https://semrepo.org/resource/external-link/2c386c299b895f1694bec21c775a22285ee0d3ef875fab49b707d272b1cf80e3> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/581166973> ;
+    sr:linkTarget "https://semopenalex.org/work/W4387561528"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/8ac488944dd6c4e16ea431dc199afcbc28d7dd49654eb4cd763e013ab606073a> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/581166973> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/facebookresearch/fairseq2"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e6648ad5ece678e60cccc0cc9ca9d8893a2400839cd4506bfc0262843e61246e> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/581166973> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/mistral-7b"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/repository/581166973> sr:hasExternalLink <https://semrepo.org/resource/external-link/2c386c299b895f1694bec21c775a22285ee0d3ef875fab49b707d272b1cf80e3>,
+        <https://semrepo.org/resource/external-link/8ac488944dd6c4e16ea431dc199afcbc28d7dd49654eb4cd763e013ab606073a>,
+        <https://semrepo.org/resource/external-link/e6648ad5ece678e60cccc0cc9ca9d8893a2400839cd4506bfc0262843e61246e> .
+

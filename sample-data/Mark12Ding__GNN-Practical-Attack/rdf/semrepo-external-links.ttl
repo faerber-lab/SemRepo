@@ -1,0 +1,105 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lpwc: <https://linkedpaperswithcode.com/property/> .
+@prefix sr: <https://semrepo.org/ontology/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkedpaperswithcode.com/paper/adversarial-attack-on-graph-neural-networks> dbpprop:area <https://linkedpaperswithcode.com/area/adversarial>,
+        <https://linkedpaperswithcode.com/area/computer-vision> ;
+    dcterms:creator <https://semopenalex.org/author/A5048955398>,
+        <https://semopenalex.org/author/A5054337132>,
+        <https://semopenalex.org/author/A5068374815> ;
+    dcterms:date "2021-06-21"^^xsd:date ;
+    dcterms:title "Adversarial Attack on Graph Neural Networks as An Influence Maximization Problem" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/adversarial-attack> .
+
+<https://linkedpaperswithcode.com/paper/black-box-adversarial-attacks-on-graph-neural> dbpprop:area <https://linkedpaperswithcode.com/area/adversarial>,
+        <https://linkedpaperswithcode.com/area/audio>,
+        <https://linkedpaperswithcode.com/area/computer-code>,
+        <https://linkedpaperswithcode.com/area/computer-vision>,
+        <https://linkedpaperswithcode.com/area/graphs>,
+        <https://linkedpaperswithcode.com/area/medical>,
+        <https://linkedpaperswithcode.com/area/methodology>,
+        <https://linkedpaperswithcode.com/area/miscellaneous>,
+        <https://linkedpaperswithcode.com/area/natural-language-processing>,
+        <https://linkedpaperswithcode.com/area/reasoning>,
+        <https://linkedpaperswithcode.com/area/time-series> ;
+    dcterms:creator <https://semopenalex.org/author/A5013238521>,
+        <https://semopenalex.org/author/A5048955398>,
+        <https://semopenalex.org/author/A5089063294> ;
+    dcterms:date "2020-06-09"^^xsd:date ;
+    dcterms:title "Towards More Practical Adversarial Attacks on Graph Neural Networks" ;
+    lpwc:hasTask <https://linkedpaperswithcode.com/task/classification>,
+        <https://linkedpaperswithcode.com/task/classification-1> .
+
+<https://semrepo.org/resource/external-link/20ea234f7b3abaec457faab629f928ba1f47d0909df62e08303f0f8f4f195c90> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/adversarial-attack-on-graph-neural-networks"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository false ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/4969fd3d34b08c293d878d165ab4ac019c9c42d2c6cab8b915aabe3286948599> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://semopenalex.org/work/W3175511223"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/91d4c9d8951bd50f62ec1e95597c790f4a64740cd0c4b9aa0a10f1be59d618ba> a sr:ExternalLink ;
+    sr:linkRelationType "same software as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "http://w3id.org/mlsea/pwc/software/Adversarial%20Attack%20on%20Graph%20Neural%20Networks%20as%20An%20Influence%20Maximization%20Problem"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "MLSea"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/bfb7b2510979fbe0c69d89c5582fd8eb33e1d80e2981c0adcd5cc9d8793bb3b6> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://semopenalex.org/work/W3105626348"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/d9892dc6cb1dbde0d6c1324a2a8c69ce4327bf83ceac826ba94d6cc84f5eccee> a sr:ExternalLink ;
+    sr:linkRelationType "official implementation of"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/black-box-adversarial-attacks-on-graph-neural"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-official-repository"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e3f72dc8ccd6c461595660d968f0ba593a4861579bdd31bc4dfa9d3768392ffe> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://semopenalex.org/work/W3105626348"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-paper-owl-sameAs"^^xsd:string ;
+    sr:targetKnowledgeGraph "SemOpenAlex"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e643e38eac4bf2d1c78cc4487f3c080c9ef8c33923a6bed415b3938f580db9c3> a sr:ExternalLink ;
+    sr:linkRelationType "same repository as"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/repository/github.com/mark12ding/gnn-practical-attack"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-repository-url-match"^^xsd:string ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/external-link/e6bb1ea1ece99965ff476c8a86b033da539f214baf9423c43c44cf9ecc9c7419> a sr:ExternalLink ;
+    sr:linkRelationType "repository referenced by"^^xsd:string ;
+    sr:linkSource <https://semrepo.org/resource/repository/305300008> ;
+    sr:linkTarget "https://linkedpaperswithcode.com/paper/black-box-adversarial-attacks-on-graph-neural"^^xsd:anyURI ;
+    sr:linkingMethod "lpwc-curated-repository-reference"^^xsd:string ;
+    sr:paperMentionsRepository true ;
+    sr:repositoryMentionsPaper true ;
+    sr:targetKnowledgeGraph "LPWC"^^xsd:string .
+
+<https://semrepo.org/resource/repository/305300008> sr:hasExternalLink <https://semrepo.org/resource/external-link/20ea234f7b3abaec457faab629f928ba1f47d0909df62e08303f0f8f4f195c90>,
+        <https://semrepo.org/resource/external-link/4969fd3d34b08c293d878d165ab4ac019c9c42d2c6cab8b915aabe3286948599>,
+        <https://semrepo.org/resource/external-link/91d4c9d8951bd50f62ec1e95597c790f4a64740cd0c4b9aa0a10f1be59d618ba>,
+        <https://semrepo.org/resource/external-link/bfb7b2510979fbe0c69d89c5582fd8eb33e1d80e2981c0adcd5cc9d8793bb3b6>,
+        <https://semrepo.org/resource/external-link/d9892dc6cb1dbde0d6c1324a2a8c69ce4327bf83ceac826ba94d6cc84f5eccee>,
+        <https://semrepo.org/resource/external-link/e3f72dc8ccd6c461595660d968f0ba593a4861579bdd31bc4dfa9d3768392ffe>,
+        <https://semrepo.org/resource/external-link/e643e38eac4bf2d1c78cc4487f3c080c9ef8c33923a6bed415b3938f580db9c3>,
+        <https://semrepo.org/resource/external-link/e6bb1ea1ece99965ff476c8a86b033da539f214baf9423c43c44cf9ecc9c7419> .
+
