@@ -65,11 +65,11 @@ pip install -r requirements.txt
 Ensure you are using Python 3.10 or higher. The pipeline then follows the following steps:
 
 - **Repository and Metadata Harvesting**  
-  We collect repository data and metadata using dedicated [scripts](./crawling-gitHub-metadata). An overview of the crawled dataset is available in [JSON format](./assets/khuangaf_awesome-chart-understanding.json).  
-  To extract libraries and dependencies used in the code, we utilize [scripts](./extract-libraries-from-code) that clone each repository and parse source files to identify imported packages.
+  We collect repository data and metadata using dedicated [scripts](./src/crawling-gitHub-metadata). An overview of the crawled dataset is available in [JSON format](./assets/khuangaf_awesome-chart-understanding.json).  
+  To extract libraries and dependencies used in the code, we utilize [scripts](./src/extract-libraries-from-code) that clone each repository and parse source files to identify imported packages.
 
 - **RDF Knowledge Graph Construction and Linking**  
-  We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs using the provided [scripts](./making-repo-metadata-kg).
+  We construct the RDF knowledge graph and interlink it with external scholarly knowledge graphs using the provided [scripts](./src/making-repo-metadata-kg).
 
 - **RDF Knowledge Graph Validation**  
   To validate the structural consistency of the knowledge graph, run the queries here: [missing properties checks](./assets/val-missingprop.sparql) and [datatypes checks](./assets/val-missingprop.sparql). These checks targeted various aspects of structural consistency, i.e., missing required properties, invalid or unexpected datatypes.
@@ -89,13 +89,14 @@ We demonstrate and evaluate the utility of SemRepo through the following:
 
 ## Repository Structure
 
-- `/usecase` — SemRepo use cases i.e., reproducibility analysis
-- `/ontologies` — OWL ontology and VoID files
 - `/CQs` — competency questions
-- `/crawling-gitHub-metadata` — github crawling 
-- `/extract-libraries-from-code` — code dependencies and libraries harvesting
-- `/making-repo-metadata-kg` — kg construction and interlinking
-- `/assets` — figures 
+- `/assets` — figures and other assets
+- `/ontologies` — OWL ontology and VoID files
+- `/src` — source code
+  - `/crawling-gitHub-metadata` — github crawling 
+  - `/extract-libraries-from-code` — code dependencies and libraries harvesting
+  - `/making-repo-metadata-kg` — kg construction and interlinking
+- `/usecase` — SemRepo use cases i.e., reproducibility analysis
 - requirements.txt
 
 ## License
