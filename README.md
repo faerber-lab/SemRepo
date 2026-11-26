@@ -57,11 +57,11 @@ See the detailed construction pipeline in [/src](./src).
 
 ### RDF Triple Store Setup
 
-To explore the knowledge graph and query the data using SPARQL, the RDF data needs to be loaded into an RDF triple store. After downloading the full RDF dumps, extract the archive and load the RDF data into an RDF triple store. We provide setup examples for loading the graph into [Openlink Virtuoso RDF triple store](https://virtuoso.openlinksw.com/), see the setup here at [zb-virtuoso](./zb-virtuoso) directory.
+To explore the knowledge graph and query the data using SPARQL, the RDF data needs to be loaded into an RDF triple store. After downloading the full RDF dumps, extract the archive and load the RDF data into an RDF triple store. We provide setup examples for loading the graph into [Openlink Virtuoso RDF triple store](https://virtuoso.openlinksw.com/), see the detailed setup in [virtuoso](./virtuoso).
 
 ### Data Validation
 
-To validate the structural consistency of the knowledge graph, run the queries here: [src/evaluation/](./src/evaluation/). These checks targeted various aspects of structural consistency, such as missing required properties, invalid or unexpected datatypes, and inconsistent class assignments.
+_to be updated._ To validate the syntactistructural consistency of the knowledge graph, run the queries here: [src/evaluation/](./src/evaluation/). These checks targeted various aspects of structural consistency, such as missing required properties, invalid or unexpected datatypes, and inconsistent class assignments. 
 
 Additionally, the coverage and validity was evaluated using [N] competency questions (CQs) defined by expert to assess the graph's core retrieval and relational capabilities. For each CQ, a SPARQL query was executed, and the results were manually compared with the expected answers. See the CQs and their SPARQL queries here: [cqs-queries](./cqs-queries)
 
