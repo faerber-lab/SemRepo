@@ -108,3 +108,26 @@ def test_export_sample_is_complete_scrubbed_and_valid(tmp_path):
     assert len((one / "jsonl" / "issues.jsonl").read_text().splitlines()) == 2
     assert (one / "rdf" / "semrepo-core.ttl").exists()
     assert "o__one" in (tmp_path / "sample" / "README.md").read_text()
+
+
+def test_export_ntriples_shows_triples_shared_by_collections(tmp_path):
+    """Summing triples per file counts shared triples (e.g. a paper's metadata) once per
+    collection; the N-Triples export lets `sort -u` count the distinct triples."""
+    from export_ntriples import main as export_nt
+    from generate_rdf_with_linking import generate_rdf
+    paper = {"lpwc_paper_uri": f"{L}paper/shared", "repository_relations": ["hasOfficialRepository"],
+             "title": "A shared paper", "authors": []}
+    for col, rid in (("a", 1), ("b", 2)):
+        d = tmp_path / "publish" / col
+        _write(d / "repositories.jsonl", [{"github_repository_id": rid, "canonical_url": f"https://github.com/o/r{rid}"}])
+        _write(d / "external-links.jsonl", [{"github_repository_id": rid, "lpwc_repository_matches": [
+            {"lpwc_repository_uri": f"{L}repository/r{rid}", "mlsea_software_uris": [], "papers": [paper]}]}])
+        generate_rdf(d, tmp_path / "rdf" / col)
+
+    export_nt([str(tmp_path / "rdf"), str(tmp_path / "nt")])
+
+    lines = [l for f in sorted((tmp_path / "nt").glob("*.nt")) for l in f.read_text().splitlines() if l.strip()]
+    summed = json.loads((tmp_path / "nt" / "export-summary.json").read_text())["triples_summed_over_files"]
+    assert len(lines) == summed
+    assert len(set(lines)) < summed                      # the shared paper's triples appear in both collections
+    assert any("A shared paper" in l for l in lines)
