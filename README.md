@@ -30,13 +30,15 @@
 
 Following Linked Open Data and FAIR best practices, SemRepo provides machine-readable ontology and dataset metadata descriptions:
 
-- [SemRepo Ontology (OWL)](./ontologies/SemRepo-ontology.owl)
-- [VoID Description](./ontologies/VoID.ttl) — dataset statistics, interlinks, and access points
-- [DCAT Metadata Description](./ontologies/SemRepo-DCAT.ttl) — dataset catalog and distribution metadata
+- [SemRepo Ontology (OWL)](./ontologies/semrepo-v2.ttl)
+- [DCAT + VoID + PROV-O Description](./data/semrepov2-dcat-void-prov.ttl) — A DCAT + VoID dataset metadata file with PROV-O provenance and full ETL pipeline documentation
 
 ![Knowledge Graph Schema](https://raw.githubusercontent.com/faerber-lab/SemRepo/main/assets/kg-schema.png)
 
 ## Key Statistics
+
+The following statistics are reported as of November 2026. 
+
 - **Repository**: 197,566  
 - **Issues**: 2,609,510  
 - **Organization**: 12,879  
@@ -49,33 +51,35 @@ Following Linked Open Data and FAIR best practices, SemRepo provides machine-rea
 - **Linkage to SemOpenAlex**: 11,867
 - **Linkage to MLSea**: 148,185.... (and more)
 
-_* as of April 2026, core classes only_
-
 ## Construction and Validation Pipeline
 
 See the detailed construction pipeline in [/src](./src).
 
-## Example Usage
+### RDF Triple Store Setup
 
-We demonstrate and evaluate the utility of SemRepo through the following:
+To explore the knowledge graph and query the data using SPARQL, the RDF data needs to be loaded into an RDF triple store. After downloading the full RDF dumps, extract the archive and load the RDF data into an RDF triple store. We provide setup examples for loading the graph into [Openlink Virtuoso RDF triple store](https://virtuoso.openlinksw.com/), see the setup here at [zb-virtuoso](./zb-virtuoso) directory.
 
-- **[Reproducibility and Sustainability Analysis Use Case](./usecase-examples)**  
-  We conduct an empirical reproducibility auditing study on a sample of 20,000 repositories from SemRepo linked to scientific publications. All resources for this use case are available in the [`usecase-examples`](./usecase-examples) directory.
+### Data Validation
 
-- **[Competency Questions (CQs)](./cqs-queries)**  
-  We formulate competency questions based on expert knowledge from researchers and software engineers working with scientific software ecosystems and scholarly analytics workflows.
-  
-- **[Additional SPARQL Query Examples](./cqs-queries/queries/)**  
-  A collection of additional SPARQL query examples.
+To validate the structural consistency of the knowledge graph, run the queries here: [src/evaluation/](./src/evaluation/). These checks targeted various aspects of structural consistency, such as missing required properties, invalid or unexpected datatypes, and inconsistent class assignments.
+
+Additionally, the coverage and validity was evaluated using [N] competency questions (CQs) defined by expert to assess the graph's core retrieval and relational capabilities. For each CQ, a SPARQL query was executed, and the results were manually compared with the expected answers. See the CQs and their SPARQL queries here: [cqs-queries](./cqs-queries)
+
+## Query and Usage Examples
+
+We provide SPARQL query examples for exploring the knowledge graph; refer to [cqs-queries](./cqs-queries).
 
 ## Repository Structure
 
-- `/usecase-examples` — SemRepo use case examples
-- `/ontologies` — Ontology and machine-readable data description files 
+- `/assets` — figures and other materials
 - `/cqs-queries` — competency questions and query examples
-- `/src-v1` — Source code for previous version of SemRepo 
+- `/ontologies` — Ontology and machine-readable data description files 
+- `/src-v1` — Source code for previous version of SemRepo
+- sample-data
 - `/src` — Complete implementation source code and documentation
 - `/assets` — figures and other materials
+- `/usecase-examples` — figures and other materials
+- `/virtuoso` – Docker settings for the Virtuoso triple store.
 - requirements.txt
 
 ## License
@@ -84,7 +88,7 @@ We demonstrate and evaluate the utility of SemRepo through the following:
 - **Ontology**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 - **Source Code**: [MIT License](https://opensource.org/licenses/MIT)
 
-SemRepo is released under the CC0 license to maximize reuse and interoperability; users are nevertheless encouraged to cite the associated publication and dataset, see [Citation](#citation)).
+SemRepo-V2 is released under the CC0 license to maximize reuse and interoperability; users are nevertheless encouraged to cite the associated publication and dataset, see [Citation](#citation)).
 
 ## FAIR, Sustainability, and Ethical Compliance
 
@@ -96,36 +100,11 @@ See details: [Open Science & Compliance Overview](https://semrepo.org/index.php/
 
 ## Citation
 
-If you use SemRepo, please cite the paper (_currently the preprint version; will be updated upon acceptance_):
-
-```bibtex
-@misc{semrepo,
-      title={SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem}, 
-      author={Abdul Rafay and Yuni Susanti and David Lamprecht and Michael Färber},
-      year={2026},
-      eprint={2605.13310},
-      archivePrefix={arXiv},
-      primaryClass={cs.DL},
-      url={https://arxiv.org/abs/2605.13310}, 
-}
-```
-
-and/or the dataset:
-```bibtex
-@dataset{semrepoData,
-  author= {Rafay, Abdul and Susanti, Yuni and Lamprecht, David and Färber, Michael},
-  title        = {SemRepo: A Knowledge Graph for Research Software and Its Scholarly Ecosystem},
-  month        = apr,
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20084784},
-  url          = {https://doi.org/10.5281/zenodo.20084784},
-}
-```
+_to be added_
 
 ## Maintenance
 
-SemRepo follows a versioned release cycle with periodic updates (anually, subject on resource availability), with each release announced via project website and Github. 
+SemRepo-V2 follows a versioned release cycle with periodic updates (anually, subject on resource availability), with each release announced via project website and Github. 
 
 SemRepo is maintained by the [Faerber Lab Research Group](https://faerber-lab.github.io/) at ScaDS.AI, TU Dresden.  
 📧 Contact: [michael.faerber@tu-dresden.de](mailto:michael.faerber@tu-dresden.de)
