@@ -10,9 +10,7 @@ This example demonstrates how to set up the SemRepo-V2 using [Virtuoso](https://
 
 Download the RDF dump (.ttl) of the SemRepo-V2 from [Zenodo](https://doi.org/10.x/zenodo.x). For testing, we also provide a small sample subset data at [toLoad/](./toLoad) or [sample-data](../sample-data/) directory.
 
-Make sure the RDF data is placed in the correct local directory; in the example [docker-compose](./virtuoso/docker-compose.yml) below, files must be located in ```/local/toLoad```, 
-
-and mounted inside the container as:
+Make sure the RDF data is placed in the correct local directory; in the example [docker-compose](./virtuoso/docker-compose.yml) below, files must be located in ```/local/toLoad``` and mounted inside the container as:
 
 ```yaml
 - /local/toLoad:/opt/virtuoso-opensource/database/toLoad
@@ -27,14 +25,14 @@ The password, ports, container name, etc. can be adjusted from the docker-compos
 
 ### Uploading Data (.bash script)
 
-We prepare a .bash script [`load_data.sh`](./load_data.sh) to automate the data upload. Adjust the local directory containing the RDF file:
+We prepare a .bash script [`load_data.sh`](./load_data.sh) to automate the data upload. Adjust the local directory containing the RDF file and container name (should be the same as in the docker-compose file):
 
 ```
 CONTAINER_NAME="semrepov2"
 HOST_LOAD_DIR="/local/semrepov2/toLoad" # Host path (where the folders exist locally)
 ```
 
-Make sure that the file is executable ```chmod +x load_data.sh``` and then run:
+Make sure the file is executable ```chmod +x load_data.sh```, and then run:
 
 ```bash
  ./load_data.sh
@@ -70,8 +68,19 @@ Connected to OpenLink Virtuoso
 Driver: 07.20.3242 OpenLink Virtuoso ODBC Driver
 SQL> 
 ```
+
+Depending on the file size, loading may take several minutes. Keep the terminal open until the process is complete. In the meantime, you can monitor the loading progress by checking the status of the files:
+
+```sparql
+SELECT
+    ll_state,
+    COUNT(*) AS files
+FROM DB.DBA.LOAD_LIST
+GROUP BY ll_state;
+```
+
 #### Monitoring Upload Progress
-Depending on file size, loading may take several minutes. You can monitor whether RDF loading is working properly by observing changes in the database file size.
+You can also monitor whether RDF loading is working properly by observing changes in the database file size.
 
 Open a shell inside the container:
 
