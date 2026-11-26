@@ -9,7 +9,11 @@ Usage:
         [--precision score-result.json] [--triples] [--workers 3]
 
 Writes <output dir>/statistics.json and <output dir>/statistics.md.
---triples parses every Turtle file to count triples (slow: the whole RDF is read once).
+--triples parses every Turtle file and sums the triples per file (slow: the whole RDF
+is read once). This also checks that every file parses. The sum counts a triple
+once per file it appears in; triples about resources shared by several
+collections are repeated, so the number of distinct triples (what a triple
+store holds) is lower -- count it with src/export_ntriples.py and `sort -u`.
 --precision uses the per-stratum precision of the manual sample to estimate
 the precision of the published contributor -> author links on the full data.
 """
@@ -29,7 +33,7 @@ from sample_contributor_matches import stratum
 # SemRepo v1 (Zenodo RDF dump of 2025-05-11, as published in the v1 paper);
 # source: src/docs/current-statistics-comparison.csv
 V1 = {
-    "triples": 82_078_636,
+    "triples": 82_078_636,      # compare with the distinct count of the v2 release (export_ntriples.py)
     "repositories": 197_566,
     "mlsea_links": 148_186,
     "github_soa_author_links": 11_867,      # persons linked to a SemOpenAlex author
@@ -172,7 +176,7 @@ def triple_statistics(rdf_root: Path, workers: int) -> dict:
     with ProcessPoolExecutor(max_workers=workers) as pool:
         for counts in pool.map(_count_triples, [str(c) for c in _collections(rdf_root)]):
             by_file.update(counts)
-    return {"triples": sum(by_file.values()), "triples_by_file": dict(sorted(by_file.items()))}
+    return {"triples_summed_over_files": sum(by_file.values()), "triples_by_file": dict(sorted(by_file.items()))}
 
 
 def to_markdown(s: dict) -> str:
@@ -213,7 +217,6 @@ def main(argv: list[str]) -> None:
         totals = json.loads(summary.read_text())["totals"]
         stats["v1_vs_v2"] = {
             f"{k} (v1 / v2)": f"{V1[k]:,} / {v:,}" for k, v in {
-                "triples": stats.get("rdf", {}).get("triples"),
                 "repositories": stats["repositories"]["repositories"],
                 # v1 counts persons linked to SemOpenAlex (one link per person); v2 counts one
                 # link per repository, contributor and author, so persons are compared

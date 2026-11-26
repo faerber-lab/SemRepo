@@ -175,7 +175,8 @@ Computed directly from the published data with `src/compute_statistics.py`
 
 | Item | Count |
 |---|---|
-| **Triples** | **78,304,508** |
+| **Triples (distinct)** | **71,570,940** |
+| Triples summed over the 280 files | 78,304,508 |
 | … issues / pull requests / external links | 26,809,547 / 23,526,453 / 10,209,432 |
 | … contributions / snapshots / core / languages | 5,447,678 / 5,322,084 / 5,272,438 / 1,716,876 |
 | Repositories | 190,072 |
@@ -196,6 +197,14 @@ Computed directly from the published data with `src/compute_statistics.py`
 | … distinct GitHub accounts / distinct SemOpenAlex authors | 37,609 / 37,903 |
 | Programming languages | 481 |
 
+The 6,733,568 triples counted more than once are about resources that are
+referenced from several collections and written into each of them: GitHub
+accounts (type, user id, login, profile URL; ~1.14 million repetitions each for
+id, login and URL), LPWC papers (authors, tasks, research areas, title, date),
+topics, programming languages and GitHub account → SemOpenAlex author links.
+The repeated triples are identical, so loading all files into one graph keeps
+each of them once.
+
 Most frequent primary languages: Python (114,806), Jupyter Notebook (30,267),
 C++ (7,745), MATLAB (6,142), R (4,438).
 
@@ -208,7 +217,7 @@ medical (24,380), computer code (17,289), adversarial (14,929), graphs
 
 | Item | v1 (RDF dump 2025-05-11) | v2 |
 |---|---|---|
-| Triples | 82,078,636 | 78,304,508 |
+| Triples | 82,078,636 | 71,570,940 |
 | Repositories | 197,566 | 190,072 |
 | Persons / accounts linked to SemOpenAlex authors | 11,867 | 37,609 |
 | Issues (v1: `hasIssue` usages; v2: typed issues and pull requests) | 2,609,510 | 3,278,320 |
@@ -232,7 +241,11 @@ links are produced by the linking script.
   Every bug in §7 has a regression test that fails on the old code and passes
   on the fix.
 - **Syntactic validity:** all 280 Turtle files (40 collections × 7) were
-  parsed with RDFLib without errors when counting the triples (§5.3).
+  parsed with RDFLib without errors when counting the triples (§5.3), and the
+  whole release was loaded into a Virtuoso triple store without errors.
+- **Distinct triples:** the release was exported to N-Triples
+  (`src/export_ntriples.py`) and the distinct lines counted with
+  `sort | uniq`: 71,570,940, the same number the Virtuoso graph reports.
 - **SHACL:** every collection of the published RDF is validated against
   `ontologies/semrepo-v2-shapes.ttl` (pySHACL, with the ontology). The
   pipeline writes a `shacl-report.txt` for any non-conforming collection.
@@ -302,6 +315,7 @@ read and every violation type traced to its cause (§7, issues 6, 7, 9, 10).
 | 9 | 23,100 SHACL `sh:class :Repository` violations in 39 of 40 collections: after dedup, source-repository-links and collection activities pointed to repositories written to another collection, which per-collection validation cannot see | SHACL on the full data (first RDF run) | provenance records are written to the collection that owns the repository, so every collection is self-contained; regression test |
 | 10 | 19 SHACL violations on `issueAuthor`: GitHub also has the account type "Mannequin" (10 issues/PRs; accounts imported from other platforms). The code types unknown accounts as generic `sr:GitHubAccount`, but the shapes accepted only User/Organisation/Bot | SHACL on the full data (first RDF run) | shapes accept `sr:GitHubAccount` for account-valued properties, plus a shape that validates generic accounts |
 | 11 | Sequential RDF build: 1,268 min wall-clock for 273 min CPU | first RDF run | parallel build (`--workers`), generation and validation time recorded per collection: 84 min with 3 workers |
+| 12 | The first triple count (78,304,508) summed the triples per file; triples about resources shared by several collections were counted once per collection | comparison with the triple count of the Virtuoso graph (71,570,940) | distinct count over an N-Triples export (`src/export_ntriples.py`); the statistics script now reports the sum as `triples_summed_over_files` (§5.3) |
 
 ---
 

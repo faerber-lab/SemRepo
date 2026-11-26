@@ -88,7 +88,7 @@ def test_statistics_main_writes_json_and_markdown_with_triples(tmp_path):
         generate_rdf(publish / col, tmp_path / "rdf" / col)
     compute_statistics.main([str(publish), str(tmp_path / "rdf"), str(tmp_path / "out"), "--triples", "--workers", "2"])
     stats = json.loads((tmp_path / "out" / "statistics.json").read_text())
-    assert stats["rdf"]["triples"] > 0
+    assert stats["rdf"]["triples_summed_over_files"] > 0
     assert "| distinct_papers | 2 |" in (tmp_path / "out" / "statistics.md").read_text()
 
 
