@@ -1,0 +1,18 @@
+services: 
+  virtuoso:
+    image: openlink/virtuoso-opensource-7
+    container_name: semrepov2
+    ports:
+      - "8890:8890"        # Virtuoso SPARQL endpoint and UI
+      - "1111:1111"        # SQL/ODBC
+    environment:
+      - DBA_PASSWORD=dba   # to change in production
+      - SPARQL_UPDATE=true
+      - VIRT_Parameters_DirsAllowed=.,/data,/opt/virtuoso-opensource/database/toLoad
+    volumes:
+      - ./virtuoso.ini:/opt/virtuoso-opensource/database/virtuoso.ini
+      - /home/yunisusan/semrepov2/toLoad:/opt/virtuoso-opensource/database/toLoad
+      - virtuoso_data:/opt/virtuoso-opensource/database
+
+volumes:
+  virtuoso_data:
