@@ -1,0 +1,26 @@
+## "Which GitHub contributors are also authors of publications associated with a repository?"
+
+PREFIX sr: <https://semrepo.org/ontology/v2#>
+
+SELECT DISTINCT
+    ?contributor
+    ?githubLogin
+    ?githubUserId
+    ?githubURL
+    ?linkTarget
+    ?relationship
+WHERE {
+    ?externalLink a sr:ExternalLink ;
+        sr:linkSource ?contributor ;
+        sr:linkTarget ?linkTarget ;
+        sr:linkRelationType ?relationship .
+
+    FILTER(STR(?relationship) = "same person as")
+
+    OPTIONAL {
+        ?contributor sr:githubLogin ?githubLogin ;
+                     sr:githubUserId ?githubUserId ;
+                     sr:profileUrl ?githubURL .
+    }
+}
+LIMIT 100
