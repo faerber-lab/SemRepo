@@ -1,6 +1,6 @@
-# "Which repositories are associated with a scientific publication?"
 PREFIX sr: <https://semrepo.org/ontology/v2#>
 
+# "Which repositories are associated with a scientific publication?"
 SELECT DISTINCT
     ?repositoryId
     ?repositoryURL
