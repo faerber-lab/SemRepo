@@ -881,8 +881,28 @@
     "status": "fully answerable",
     "executionStatus": "executed"
   },
-  {
+   {
     "id": "CQ-46",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which repositories have experienced ownership transfers, and what were the previous and new owners with transfer dates?",
+    "requires": [
+      "RepositorySnapshot",
+      "ownerAccount",
+      "historical ownership events and transfer dates"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "observed owner account",
+      "previous owner",
+      "new owner",
+      "transfer date"
+    ],
+    "queryFile": "CQ-46.sparql",
+    "status": "partially answerable",
+    "executionStatus": "executed"
+  },
+  {
+    "id": "CQ-47",
     "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which repositories are linked to publications across multiple scholarly knowledge graphs?",
     "requires": [
@@ -897,8 +917,29 @@
       "distinct knowledge graphs",
       "number of knowledge graphs"
     ],
-    "queryFile": "CQ-46.sparql",
+    "queryFile": "CQ-47.sparql",
     "status": "fully answerable",
     "executionStatus": "executed"
   },
+  {
+    "id": "CQ-48",
+    "category": "Scholarly Relationships and Ecosystem",
+    "naturalLanguageQuestion": "How are repositories used in scholarly publications (e.g., introduced, evaluated, used, or described)?",
+    "requires": [
+      "repository",
+      "external links",
+      "publication identifiers",
+      "link relation type"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "publication identifier",
+      "relationship"
+    ],
+    "queryFile": "CQ-48.sparql",
+    "status": "partially answerable",
+    "executionStatus": "executed"
+  },
+
 ]
