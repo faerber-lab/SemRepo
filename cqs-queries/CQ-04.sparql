@@ -1,0 +1,27 @@
+## "Which repositories are linked to publications across multiple scholarly knowledge graphs?"
+PREFIX sr: <https://semrepo.org/ontology/v2#>
+
+SELECT
+    ?repository
+    ?repositoryId
+    ?repositoryURL
+    (COUNT(DISTINCT ?targetKnowledgeGraph) AS ?knowledgeGraphCount)
+    (GROUP_CONCAT(DISTINCT ?targetKnowledgeGraph; separator=", ") AS ?knowledgeGraphs)
+    (GROUP_CONCAT(DISTINCT STR(?linkTarget); separator=", ") AS ?publications)
+WHERE {
+    ?externalLink a sr:ExternalLink ;
+        sr:linkSource ?repository ;
+        sr:linkTarget ?linkTarget ;
+        sr:targetKnowledgeGraph ?targetKnowledgeGraph .
+
+    OPTIONAL {
+        ?repository sr:githubRepositoryId ?repositoryId .
+    }
+
+    OPTIONAL {
+        ?repository sr:canonicalUrl ?repositoryURL .
+    }
+}
+GROUP BY ?repository ?repositoryId ?repositoryURL
+HAVING (COUNT(DISTINCT ?targetKnowledgeGraph) > 1)
+LIMIT 100
