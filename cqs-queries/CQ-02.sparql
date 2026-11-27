@@ -1,0 +1,26 @@
+## "Which repositories are identified as official implementations of a scientific publication?"
+PREFIX sr: <https://semrepo.org/ontology/v2#>
+
+SELECT DISTINCT
+    ?repository
+    ?repositoryId
+    ?repositoryURL
+    ?linkTarget
+    ?relationship
+WHERE {
+    ?externalLink a sr:ExternalLink ;
+        sr:linkSource ?repository ;
+        sr:linkTarget ?linkTarget ;
+        sr:linkRelationType ?relationship .
+
+    FILTER(STR(?relationship) = "official implementation of")
+
+    OPTIONAL {
+        ?repository sr:githubRepositoryId ?repositoryId .
+    }
+
+    OPTIONAL {
+        ?repository sr:canonicalUrl ?repositoryURL .
+    }
+}
+LIMIT 100
