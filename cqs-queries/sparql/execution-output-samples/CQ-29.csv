@@ -1,0 +1,21 @@
+"pullRequest","title","url","mergedAt"
+"https://semrepo.org/resource/github-issue/2959557333","Travis Script Fixes and Worker Dockerfile build from scratch in produ…","https://github.com/Cloud-CV/EvalAI/pull/4538",2025-03-31T06:09:51Z
+"https://semrepo.org/resource/github-issue/2959741663","compatible with transformers version 4.50","https://github.com/intel/neural-compressor/pull/2159",2025-04-01T09:32:43Z
+"https://semrepo.org/resource/github-issue/2959819861","Backend: Add ordering by id in challenge admin","https://github.com/Cloud-CV/EvalAI/pull/4540",2025-03-31T15:22:15Z
+"https://semrepo.org/resource/github-issue/2959920053","Foxtrot","https://github.com/logsem/clutch/pull/49",2025-03-31T09:56:49Z
+"https://semrepo.org/resource/github-issue/296037722","correct batch_size in output_shape and remove a redundant method","https://github.com/cleverhans-lab/cleverhans/pull/360",2018-02-12T13:00:23Z
+"https://semrepo.org/resource/github-issue/2960547795","Merging main","https://github.com/igmhub/picca/pull/1095",2025-03-31T13:42:54Z
+"https://semrepo.org/resource/github-issue/2960549998","[bump minor] Covariance fix for the P1D Y1 measurement","https://github.com/igmhub/picca/pull/1096",2025-04-18T14:53:32Z
+"https://semrepo.org/resource/github-issue/2960936129","tickets/SP-2093: Change default pre-night nights from 2 to 3","https://github.com/lsst/rubin_sim/pull/454",2025-04-02T20:23:33Z
+"https://semrepo.org/resource/github-issue/2961206374","[GConstruct/GSProcessing] Allow GConstruct accept GSProcessing Config","https://github.com/awslabs/graphstorm/pull/1230",2025-04-10T07:42:11Z
+"https://semrepo.org/resource/github-issue/2961545242","tickets/SP-2094: Fix and expand version metadata in pre-night briefing archive","https://github.com/lsst/rubin_sim/pull/455",2025-04-02T20:47:44Z
+"https://semrepo.org/resource/github-issue/2961583861","add yolov12 to UL model list","https://github.com/mikel-brostrom/boxmot/pull/1889",2025-03-31T21:09:39Z
+"https://semrepo.org/resource/github-issue/2961591975","upgrade","https://github.com/mikel-brostrom/boxmot/pull/1890",2025-03-31T21:17:59Z
+"https://semrepo.org/resource/github-issue/2961605913","upgrade setuptools","https://github.com/mikel-brostrom/boxmot/pull/1891",2025-03-31T21:25:22Z
+"https://semrepo.org/resource/github-issue/2961620583","Py312 in ci","https://github.com/mikel-brostrom/boxmot/pull/1892",2025-03-31T21:49:10Z
+"https://semrepo.org/resource/github-issue/2961735865","Frontend: Update stats on homepage","https://github.com/Cloud-CV/EvalAI/pull/4547",2025-04-01T04:54:40Z
+"https://semrepo.org/resource/github-issue/2961822770","Change decoder output definition so that focal loss does not require setting num_classes to 1.","https://github.com/awslabs/graphstorm/pull/1231",2025-04-03T16:43:43Z
+"https://semrepo.org/resource/github-issue/2962260077","build(deps): bump poetry from 2.1.1 to 2.1.2 in /.github/workflows","https://github.com/21cmfast/21cmEMU/pull/290",2025-04-03T11:28:12Z
+"https://semrepo.org/resource/github-issue/2962261503","SP-2099: gather_summaries reads run_name per metric from resultsDb","https://github.com/lsst/rubin_sim/pull/456",2025-04-01T20:48:36Z
+"https://semrepo.org/resource/github-issue/2962280144","build(deps): bump fsspec from 2024.6.1 to 2025.3.0","https://github.com/21cmfast/21cmEMU/pull/291",2025-04-03T11:29:41Z
+"https://semrepo.org/resource/github-issue/2962280536","build(deps-dev): bump coverage from 7.5.4 to 7.6.1","https://github.com/21cmfast/21cmEMU/pull/292",2025-04-16T12:10:37Z
