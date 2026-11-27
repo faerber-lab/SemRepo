@@ -1,0 +1,16 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-07: Which repositories have the largest number of forks in their latest snapshots?
+SELECT ?repository ?snapshot ?forksCount ?collectedAt WHERE {
+  ?repository :hasSnapshot ?snapshot .
+  ?snapshot :forksCount ?forksCount ; :collectedAt ?collectedAt .
+  FILTER NOT EXISTS {
+    ?repository :hasSnapshot ?newer .
+    ?newer :collectedAt ?newerAt .
+    FILTER (?newerAt > ?collectedAt)
+  }
+} ORDER BY DESC(?forksCount)

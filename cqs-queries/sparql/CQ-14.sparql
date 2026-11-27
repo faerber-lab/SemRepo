@@ -1,0 +1,15 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-14: What public profile information is recorded for each GitHub account?
+SELECT ?account ?login ?name ?bio ?location ?profileUrl WHERE {
+  ?account a :GitHubAccount .
+  OPTIONAL { ?account :githubLogin ?login }
+  OPTIONAL { ?account :accountName ?name }
+  OPTIONAL { ?account :accountDescription ?bio }
+  OPTIONAL { ?account :accountLocation ?location }
+  OPTIONAL { ?account :profileUrl ?profileUrl }
+}

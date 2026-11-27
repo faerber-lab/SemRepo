@@ -1,0 +1,14 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-04: What repository name, full name, description and homepage URL were recorded in each snapshot?
+SELECT ?snapshot ?repositoryName ?fullName ?description ?homepageUrl WHERE {
+  ?snapshot a :RepositorySnapshot .
+  OPTIONAL { ?snapshot :repositoryName ?repositoryName }
+  OPTIONAL { ?snapshot :fullName ?fullName }
+  OPTIONAL { ?snapshot :description ?description }
+  OPTIONAL { ?snapshot :homepageUrl ?homepageUrl }
+}

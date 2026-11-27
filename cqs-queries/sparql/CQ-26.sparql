@@ -1,0 +1,13 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-26: Which issues and pull requests belong to each repository?
+SELECT ?repository ?issue ?number ?title ?url WHERE {
+  ?repository :hasIssue ?issue .
+  OPTIONAL { ?issue :issueNumber ?number }
+  OPTIONAL { ?issue :issueTitle ?title }
+  OPTIONAL { ?issue :issueUrl ?url }
+}

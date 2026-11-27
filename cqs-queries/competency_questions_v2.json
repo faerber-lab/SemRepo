@@ -1,0 +1,1009 @@
+[
+  {
+    "id": "CQ-01",
+    "category": "Core Repository Retrieval",
+    "naturalLanguageQuestion": "Which repositories are recorded in SemRepo, together with their stable GitHub identifiers and canonical URLs?",
+    "requires": [
+      "Repository",
+      "githubRepositoryId",
+      "canonicalUrl"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "GitHub repository ID",
+      "canonical URL"
+    ],
+    "queryFile": "sparql/CQ-01.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-02",
+    "category": "Core Repository Retrieval",
+    "naturalLanguageQuestion": "Which repository snapshots belong to each repository, and when were they collected?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "hasSnapshot",
+      "collectedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "collection timestamp"
+    ],
+    "queryFile": "sparql/CQ-02.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-03",
+    "category": "Core Repository Retrieval",
+    "naturalLanguageQuestion": "What is the latest available snapshot for each repository?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "hasSnapshot",
+      "collectedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "latest snapshot IRI",
+      "latest collection timestamp"
+    ],
+    "queryFile": "sparql/CQ-03.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-04",
+    "category": "Core Repository Retrieval",
+    "naturalLanguageQuestion": "What repository name, full name, description and homepage URL were recorded in each snapshot?",
+    "requires": [
+      "RepositorySnapshot",
+      "repositoryName",
+      "fullName",
+      "description",
+      "homepageUrl"
+    ],
+    "expectedOutput": [
+      "snapshot IRI",
+      "repository name",
+      "full name",
+      "description",
+      "homepage URL"
+    ],
+    "queryFile": "sparql/CQ-04.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-05",
+    "category": "Core Repository Retrieval",
+    "naturalLanguageQuestion": "Which repositories are archived, and what was their archived status at snapshot time?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "hasSnapshot",
+      "archived"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "archived flag",
+      "collection timestamp"
+    ],
+    "queryFile": "sparql/CQ-05.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-06",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories have the highest star counts in their latest snapshots?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "starsCount",
+      "collectedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "star count",
+      "snapshot timestamp"
+    ],
+    "queryFile": "sparql/CQ-06.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-07",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories have the largest number of forks in their latest snapshots?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "forksCount",
+      "collectedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "fork count",
+      "snapshot timestamp"
+    ],
+    "queryFile": "sparql/CQ-07.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-08",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories have the highest number of open issues and pull requests?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "openIssuesCount"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "open issues count"
+    ],
+    "queryFile": "sparql/CQ-08.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-09",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories have been pushed to most recently?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "pushedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "pushed-at timestamp"
+    ],
+    "queryFile": "sparql/CQ-09.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-10",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories have not received a push for more than one year relative to a supplied cutoff date?",
+    "requires": [
+      "RepositorySnapshot",
+      "pushedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "last pushed timestamp"
+    ],
+    "queryFile": "sparql/CQ-10.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-11",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "How do star counts for a repository change across its collected snapshots?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "hasSnapshot",
+      "starsCount",
+      "collectedAt"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot timestamps",
+      "star counts"
+    ],
+    "queryFile": "sparql/CQ-11.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-12",
+    "category": "Repository Activity and Popularity",
+    "naturalLanguageQuestion": "Which repositories are forks, and what are their recorded sizes?",
+    "requires": [
+      "RepositorySnapshot",
+      "isFork",
+      "sizeKb"
+    ],
+    "expectedOutput": [
+      "snapshot IRI",
+      "fork flag",
+      "size in KB"
+    ],
+    "queryFile": "sparql/CQ-12.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-13",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "Which GitHub accounts own repositories in each snapshot?",
+    "requires": [
+      "RepositorySnapshot",
+      "ownerAccount",
+      "GitHubAccount",
+      "githubLogin"
+    ],
+    "expectedOutput": [
+      "snapshot IRI",
+      "account IRI",
+      "GitHub login",
+      "account type"
+    ],
+    "queryFile": "sparql/CQ-13.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-14",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "What public profile information is recorded for each GitHub account?",
+    "requires": [
+      "GitHubAccount",
+      "githubLogin",
+      "accountName",
+      "accountDescription",
+      "accountLocation",
+      "profileUrl"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "login",
+      "display name",
+      "description",
+      "location",
+      "profile URL"
+    ],
+    "queryFile": "sparql/CQ-14.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-15",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "Which GitHub accounts have the largest follower counts?",
+    "requires": [
+      "GitHubAccount",
+      "followersCount"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "GitHub login",
+      "follower count"
+    ],
+    "queryFile": "sparql/CQ-15.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-16",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "Which GitHub accounts have the largest number of public repositories?",
+    "requires": [
+      "GitHubAccount",
+      "publicReposCount"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "GitHub login",
+      "public repository count"
+    ],
+    "queryFile": "sparql/CQ-16.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-17",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "Which accounts have contributed commits to repository snapshots?",
+    "requires": [
+      "Contribution",
+      "contributor",
+      "contributionToSnapshot",
+      "commitCount"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "snapshot IRI",
+      "commit count"
+    ],
+    "queryFile": "sparql/CQ-17.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-18",
+    "category": "Accounts and Ownership",
+    "naturalLanguageQuestion": "Which contributors have the highest recorded commit counts?",
+    "requires": [
+      "Contribution",
+      "contributor",
+      "commitCount"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "GitHub login",
+      "total recorded commits"
+    ],
+    "queryFile": "sparql/CQ-18.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-19",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which programming languages are used in each repository snapshot, and how many bytes are attributed to each?",
+    "requires": [
+      "LanguageUsage",
+      "languageUsageIn",
+      "programmingLanguage",
+      "languageName",
+      "languageBytes"
+    ],
+    "expectedOutput": [
+      "snapshot IRI",
+      "language IRI",
+      "language name",
+      "bytes"
+    ],
+    "queryFile": "sparql/CQ-19.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-20",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "What primary programming language did GitHub report for each repository snapshot?",
+    "requires": [
+      "RepositorySnapshot",
+      "primaryLanguage",
+      "ProgrammingLanguage",
+      "languageName"
+    ],
+    "expectedOutput": [
+      "snapshot IRI",
+      "primary language IRI",
+      "language name"
+    ],
+    "queryFile": "sparql/CQ-20.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-21",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which repositories are associated with a given programming language?",
+    "requires": [
+      "Repository",
+      "RepositorySnapshot",
+      "hasSnapshot",
+      "primaryLanguage",
+      "languageName"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "language name"
+    ],
+    "queryFile": "sparql/CQ-21.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-22",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which repositories have a detected software license, and what SPDX identifier does it have?",
+    "requires": [
+      "RepositorySnapshot",
+      "hasLicense",
+      "License",
+      "spdxId",
+      "licenseName"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "SPDX identifier",
+      "license name"
+    ],
+    "queryFile": "sparql/CQ-22.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-23",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which repositories have no detected license in their recorded snapshots?",
+    "requires": [
+      "RepositorySnapshot",
+      "hasLicense"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI"
+    ],
+    "queryFile": "sparql/CQ-23.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-24",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which topics are assigned to each repository snapshot?",
+    "requires": [
+      "RepositorySnapshot",
+      "hasTopic",
+      "Topic",
+      "topicName"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "snapshot IRI",
+      "topic IRI",
+      "topic name"
+    ],
+    "queryFile": "sparql/CQ-24.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-25",
+    "category": "Languages, Licenses and Topics",
+    "naturalLanguageQuestion": "Which topics are most frequently assigned across repository snapshots?",
+    "requires": [
+      "RepositorySnapshot",
+      "hasTopic",
+      "Topic",
+      "topicName"
+    ],
+    "expectedOutput": [
+      "topic name",
+      "number of snapshots using the topic"
+    ],
+    "queryFile": "sparql/CQ-25.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-26",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Which issues and pull requests belong to each repository?",
+    "requires": [
+      "Repository",
+      "hasIssue",
+      "Issue",
+      "issueNumber",
+      "issueTitle",
+      "issueUrl"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "issue IRI",
+      "issue number",
+      "title",
+      "URL"
+    ],
+    "queryFile": "sparql/CQ-26.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-27",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Which issues and pull requests are currently recorded as open?",
+    "requires": [
+      "Issue",
+      "issueState",
+      "issueNumber",
+      "issueTitle"
+    ],
+    "expectedOutput": [
+      "issue IRI",
+      "issue number",
+      "title",
+      "state"
+    ],
+    "queryFile": "sparql/CQ-27.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-28",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Who authored each issue or pull request?",
+    "requires": [
+      "Issue",
+      "issueAuthor",
+      "GitHubAccount",
+      "githubLogin"
+    ],
+    "expectedOutput": [
+      "issue IRI",
+      "author account IRI",
+      "GitHub login"
+    ],
+    "queryFile": "sparql/CQ-28.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-29",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Which pull requests have been merged, and when were they merged?",
+    "requires": [
+      "PullRequest",
+      "pullRequestMergedAt",
+      "issueTitle",
+      "issueUrl"
+    ],
+    "expectedOutput": [
+      "pull request IRI",
+      "title",
+      "URL",
+      "merged timestamp"
+    ],
+    "queryFile": "sparql/CQ-29.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-30",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Which issues or pull requests have the most comments?",
+    "requires": [
+      "Issue",
+      "issueCommentCount",
+      "issueTitle"
+    ],
+    "expectedOutput": [
+      "issue IRI",
+      "title",
+      "comment count"
+    ],
+    "queryFile": "sparql/CQ-30.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-31",
+    "category": "Issues and Pull Requests",
+    "naturalLanguageQuestion": "Which labels are attached to issues and pull requests?",
+    "requires": [
+      "Issue",
+      "issueLabel",
+      "issueTitle"
+    ],
+    "expectedOutput": [
+      "issue IRI",
+      "title",
+      "label"
+    ],
+    "queryFile": "sparql/CQ-31.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-32",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "Which repositories are linked to entities in external knowledge graphs?",
+    "requires": [
+      "Repository",
+      "hasExternalLink",
+      "ExternalLink",
+      "linkTarget",
+      "targetKnowledgeGraph"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "external target IRI",
+      "target knowledge graph"
+    ],
+    "queryFile": "sparql/CQ-32.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-33",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "Which GitHub accounts are linked to entities in external knowledge graphs?",
+    "requires": [
+      "GitHubAccount",
+      "hasExternalLink",
+      "ExternalLink",
+      "linkTarget",
+      "targetKnowledgeGraph"
+    ],
+    "expectedOutput": [
+      "account IRI",
+      "external target IRI",
+      "target knowledge graph"
+    ],
+    "queryFile": "sparql/CQ-33.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-34",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "What relation type and linking method were recorded for each external link?",
+    "requires": [
+      "ExternalLink",
+      "linkRelationType",
+      "linkingMethod",
+      "targetKnowledgeGraph",
+      "linkTarget"
+    ],
+    "expectedOutput": [
+      "external link IRI",
+      "relation type",
+      "linking method",
+      "target knowledge graph",
+      "target IRI"
+    ],
+    "queryFile": "sparql/CQ-34.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-35",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "Which external links have confidence scores above a selected threshold?",
+    "requires": [
+      "ExternalLink",
+      "confidenceScore",
+      "linkTarget"
+    ],
+    "expectedOutput": [
+      "external link IRI",
+      "confidence score",
+      "target IRI"
+    ],
+    "queryFile": "sparql/CQ-35.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-36",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "Which repository-paper links are supported by the paper mentioning the repository?",
+    "requires": [
+      "ExternalLink",
+      "paperMentionsRepository",
+      "linkTarget",
+      "targetKnowledgeGraph"
+    ],
+    "expectedOutput": [
+      "external link IRI",
+      "target IRI",
+      "target knowledge graph",
+      "paper-mentions-repository evidence"
+    ],
+    "queryFile": "sparql/CQ-36.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-37",
+    "category": "External Scholarly Links",
+    "naturalLanguageQuestion": "Which repository-paper links are supported by the repository mentioning the paper?",
+    "requires": [
+      "ExternalLink",
+      "repositoryMentionsPaper",
+      "linkTarget",
+      "targetKnowledgeGraph"
+    ],
+    "expectedOutput": [
+      "external link IRI",
+      "target IRI",
+      "target knowledge graph",
+      "repository-mentions-paper evidence"
+    ],
+    "queryFile": "sparql/CQ-37.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-38",
+    "category": "Collection and Resolution Provenance",
+    "naturalLanguageQuestion": "Which collection activities were attempted, and what URL and source were used?",
+    "requires": [
+      "CollectionActivity",
+      "attemptedUrl",
+      "collectionSource",
+      "collectionTimestamp"
+    ],
+    "expectedOutput": [
+      "activity IRI",
+      "attempted URL",
+      "collection source",
+      "timestamp"
+    ],
+    "queryFile": "sparql/CQ-38.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-39",
+    "category": "Collection and Resolution Provenance",
+    "naturalLanguageQuestion": "What was the outcome of each collection activity?",
+    "requires": [
+      "CollectionActivity",
+      "collectionStatus",
+      "CollectionStatus",
+      "collectionTimestamp"
+    ],
+    "expectedOutput": [
+      "activity IRI",
+      "collection status",
+      "timestamp"
+    ],
+    "queryFile": "sparql/CQ-39.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-40",
+    "category": "Collection and Resolution Provenance",
+    "naturalLanguageQuestion": "Which successful collection activities resulted in a repository?",
+    "requires": [
+      "CollectionActivity",
+      "collectionStatus",
+      "resultedInRepository",
+      "Success"
+    ],
+    "expectedOutput": [
+      "activity IRI",
+      "repository IRI",
+      "timestamp"
+    ],
+    "queryFile": "sparql/CQ-40.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-41",
+    "category": "Collection and Resolution Provenance",
+    "naturalLanguageQuestion": "How were originally recorded repository URLs resolved, including redirects and resolution status?",
+    "requires": [
+      "SourceRepositoryLink",
+      "originalRepositoryUrl",
+      "finalResolvedUrl",
+      "resolutionStatus",
+      "resolvedRepository"
+    ],
+    "expectedOutput": [
+      "source-link IRI",
+      "original URL",
+      "final resolved URL",
+      "resolution status",
+      "resolved repository IRI"
+    ],
+    "queryFile": "sparql/CQ-41.sparql",
+    "status": "fully answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-42",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which scientific publications are associated with each repository, including publication title, DOI, authors and publication year?",
+    "requires": [
+      "Repository",
+      "ExternalLink",
+      "linkTarget",
+      "targetKnowledgeGraph",
+      "publication title (not modeled)",
+      "DOI (not modeled)",
+      "authors (not modeled)",
+      "publication year (not modeled)"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "external target IRI",
+      "knowledge graph",
+      "publication title",
+      "DOI",
+      "authors",
+      "publication year"
+    ],
+    "queryFile": "sparql/CQ-42.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-43",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which repositories are the official implementations of scientific papers, and what paper titles and DOIs identify those papers?",
+    "requires": [
+      "Repository",
+      "ExternalLink",
+      "linkRelationType",
+      "linkTarget",
+      "paper title and DOI (not modeled)"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "link relation type",
+      "target IRI",
+      "paper title",
+      "DOI"
+    ],
+    "queryFile": "sparql/CQ-43.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-44",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which GitHub contributors are the same people as scholarly authors, with their author identifiers and publication records?",
+    "requires": [
+      "GitHubAccount",
+      "ExternalLink",
+      "linkTarget",
+      "targetKnowledgeGraph",
+      "author identity and publication records (not modeled)"
+    ],
+    "expectedOutput": [
+      "GitHub account IRI",
+      "GitHub login",
+      "external target IRI",
+      "author identifier",
+      "publication records"
+    ],
+    "queryFile": "sparql/CQ-44.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-45",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which repositories have received code contributions from each contributor over time, including per-contribution timestamps?",
+    "requires": [
+      "Contribution",
+      "contributor",
+      "contributionToSnapshot",
+      "commitCount",
+      "contribution timestamp (not modeled)"
+    ],
+    "expectedOutput": [
+      "contributor IRI",
+      "repository IRI",
+      "snapshot timestamp",
+      "commit count",
+      "contribution timestamp"
+    ],
+    "queryFile": "sparql/CQ-45.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-46",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which pull requests were reviewed, who reviewed them, and what review decisions were made?",
+    "requires": [
+      "PullRequest",
+      "reviewer (not modeled)",
+      "review decision (not modeled)",
+      "pullRequestMergedAt"
+    ],
+    "expectedOutput": [
+      "pull request IRI",
+      "reviewer account",
+      "review state",
+      "review timestamp"
+    ],
+    "queryFile": "sparql/CQ-46.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-47",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which issues and pull requests were assigned to each GitHub account?",
+    "requires": [
+      "Issue",
+      "assignee relationship (not modeled)",
+      "issueAuthor"
+    ],
+    "expectedOutput": [
+      "issue IRI",
+      "title",
+      "assignee account"
+    ],
+    "queryFile": "sparql/CQ-47.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-48",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which repositories depend on or import other repositories, and what dependency versions are used?",
+    "requires": [
+      "Repository",
+      "dependency relationship (not modeled)",
+      "dependency version (not modeled)"
+    ],
+    "expectedOutput": [
+      "source repository",
+      "dependency repository",
+      "dependency version"
+    ],
+    "queryFile": "sparql/CQ-48.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-49",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which repositories have experienced ownership transfers, and what were the previous and new owners with transfer dates?",
+    "requires": [
+      "RepositorySnapshot",
+      "ownerAccount",
+      "historical ownership events and transfer dates (not modeled)"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "observed owner account",
+      "previous owner",
+      "new owner",
+      "transfer date"
+    ],
+    "queryFile": "sparql/CQ-49.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-50",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "Which repositories have been inactive, and what was the date of their last commit on any branch?",
+    "requires": [
+      "RepositorySnapshot",
+      "pushedAt",
+      "lastCommitAt",
+      "branch-specific commit history (not modeled)"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "pushed-at proxy",
+      "default-branch last commit timestamp",
+      "branch-level last commit dates"
+    ],
+    "queryFile": "sparql/CQ-50.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  },
+  {
+    "id": "CQ-51",
+    "category": "Schema Gap / Partial",
+    "naturalLanguageQuestion": "What is the citation impact of papers associated with repositories, including citation counts and citing publications?",
+    "requires": [
+      "ExternalLink",
+      "linkTarget",
+      "targetKnowledgeGraph",
+      "citation counts and citing works (not modeled)"
+    ],
+    "expectedOutput": [
+      "repository IRI",
+      "paper target IRI",
+      "knowledge graph",
+      "citation count",
+      "citing publication identifiers"
+    ],
+    "queryFile": "sparql/CQ-51.sparql",
+    "status": "partially answerable",
+    "executionStatus": "not executed"
+  }
+]

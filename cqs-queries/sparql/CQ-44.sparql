@@ -1,0 +1,13 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-44: Which GitHub contributors are the same people as scholarly authors, with their author identifiers and publication records?
+SELECT ?account ?login ?target ?knowledgeGraph WHERE {
+  ?account a :GitHubAccount ; :hasExternalLink ?link .
+  OPTIONAL { ?account :githubLogin ?login }
+  OPTIONAL { ?link :linkTarget ?target }
+  OPTIONAL { ?link :targetKnowledgeGraph ?knowledgeGraph }
+}

@@ -1,0 +1,12 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-29: Which pull requests have been merged, and when were they merged?
+SELECT ?pullRequest ?title ?url ?mergedAt WHERE {
+  ?pullRequest a :PullRequest ; :pullRequestMergedAt ?mergedAt .
+  OPTIONAL { ?pullRequest :issueTitle ?title }
+  OPTIONAL { ?pullRequest :issueUrl ?url }
+}

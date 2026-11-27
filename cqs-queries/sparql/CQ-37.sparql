@@ -1,0 +1,14 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-37: Which repository-paper links are supported by the repository mentioning the paper?
+SELECT ?repository ?link ?target ?kg ?evidence WHERE {
+  ?repository :hasExternalLink ?link .
+  ?link :repositoryMentionsPaper ?evidence .
+  FILTER (?evidence = true)
+  OPTIONAL { ?link :linkTarget ?target }
+  OPTIONAL { ?link :targetKnowledgeGraph ?kg }
+}

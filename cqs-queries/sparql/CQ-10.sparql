@@ -1,0 +1,12 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-10: Which repositories have not received a push for more than one year relative to a supplied cutoff date?
+SELECT ?repository ?snapshot ?pushedAt WHERE {
+  ?repository :hasSnapshot ?snapshot .
+  ?snapshot :pushedAt ?pushedAt .
+  FILTER (?pushedAt < "2025-11-27T00:00:00Z"^^xsd:dateTime)
+} ORDER BY ?pushedAt

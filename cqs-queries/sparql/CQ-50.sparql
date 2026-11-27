@@ -1,0 +1,12 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-50: Which repositories have been inactive, and what was the date of their last commit on any branch?
+SELECT ?repository ?snapshot ?pushedAt ?lastCommitAt WHERE {
+  ?repository :hasSnapshot ?snapshot .
+  OPTIONAL { ?snapshot :pushedAt ?pushedAt }
+  OPTIONAL { ?snapshot :lastCommitAt ?lastCommitAt }
+}

@@ -1,0 +1,14 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# CQ-41: How were originally recorded repository URLs resolved, including redirects and resolution status?
+SELECT ?sourceLink ?originalUrl ?finalUrl ?status ?repository WHERE {
+  ?sourceLink a :SourceRepositoryLink .
+  OPTIONAL { ?sourceLink :originalRepositoryUrl ?originalUrl }
+  OPTIONAL { ?sourceLink :finalResolvedUrl ?finalUrl }
+  OPTIONAL { ?sourceLink :resolutionStatus ?status }
+  OPTIONAL { ?sourceLink :resolvedRepository ?repository }
+}
