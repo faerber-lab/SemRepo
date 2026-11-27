@@ -920,26 +920,5 @@
     "queryFile": "CQ-47.sparql",
     "status": "fully answerable",
     "executionStatus": "executed"
-  },
-  {
-    "id": "CQ-48",
-    "category": "Scholarly Relationships and Ecosystem",
-    "naturalLanguageQuestion": "How are repositories used in scholarly publications (e.g., introduced, evaluated, used, or described)?",
-    "requires": [
-      "repository",
-      "external links",
-      "publication identifiers",
-      "link relation type"
-    ],
-    "expectedOutput": [
-      "repository identifier",
-      "repository URL",
-      "publication identifier",
-      "relationship"
-    ],
-    "queryFile": "CQ-48.sparql",
-    "status": "partially answerable",
-    "executionStatus": "executed"
-  },
-
+  }
 ]
