@@ -1,0 +1,24 @@
+# "Which repositories are associated with a scientific publication?"
+PREFIX sr: <https://semrepo.org/ontology/v2#>
+
+SELECT DISTINCT
+    ?repositoryId
+    ?repositoryURL
+    ?publicationIdentifier
+    ?linkRelationType
+    ?targetKnowledgeGraph
+WHERE {
+    ?repository a sr:Repository ;
+        sr:githubRepositoryId ?repositoryId ;
+        sr:canonicalUrl ?repositoryURL ;
+        sr:hasExternalLink ?externalLink .
+
+    ?externalLink a sr:ExternalLink ;
+        sr:linkSource ?repository ;
+        sr:linkTarget ?publicationIdentifier ;
+        sr:linkRelationType ?linkRelationType ;
+        sr:targetKnowledgeGraph ?targetKnowledgeGraph .
+
+    FILTER(CONTAINS(STR(?linkRelationType), "repository referenced by"))
+}
+LIMIT 100
