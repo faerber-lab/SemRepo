@@ -1,6 +1,6 @@
-## "Which repositories are identified as official implementations of a scientific publication?"
 PREFIX sr: <https://semrepo.org/ontology/v2#>
 
+## "Which repositories are identified as official implementations of a scientific publication?"
 SELECT DISTINCT
     ?repository
     ?repositoryId
