@@ -4,7 +4,6 @@ SemRepo-V2 is evaluated against 40 Competency Questions (CQs) designed to captur
 
 The complete set of 40 CQs along with their corresponding SPARQL queries are available in this directory.
 
-
 ## Contents
 - `competency_questions_v2.json`: structured CQ metadata.
 - `sparql/CQ-XX.sparql`: one standalone SPARQL query per CQ.
