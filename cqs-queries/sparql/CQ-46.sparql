@@ -1,0 +1,10 @@
+PREFIX : <https://semrepo.org/ontology/v2#>
+
+## Which repositories have experienced ownership transfers, and what were the previous and new owners with transfer dates?
+SELECT ?repository ?snapshot ?owner ?login ?collectedAt WHERE {
+  ?repository :hasSnapshot ?snapshot .
+  ?snapshot :ownerAccount ?owner .
+  OPTIONAL { ?owner :githubLogin ?login }
+  OPTIONAL { ?snapshot :collectedAt ?collectedAt }
+} ORDER BY ?repository ?collectedAt
+LIMIT 20
