@@ -99,7 +99,7 @@
   },
   {
     "id": "CQ-06",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have the highest star counts in their latest snapshots?",
     "requires": [
       "Repository",
@@ -119,7 +119,7 @@
   },
   {
     "id": "CQ-07",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have the largest number of forks in their latest snapshots?",
     "requires": [
       "Repository",
@@ -139,8 +139,8 @@
   },
   {
     "id": "CQ-08",
-    "category": "Repository Activity and Popularity",
-    "naturalLanguageQuestion": "Which repositories have the highest number of open issues and pull requests?",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which repositories have the highest number of open Software Analytics?",
     "requires": [
       "Repository",
       "RepositorySnapshot",
@@ -157,7 +157,7 @@
   },
   {
     "id": "CQ-09",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have been pushed to most recently?",
     "requires": [
       "Repository",
@@ -175,7 +175,7 @@
   },
   {
     "id": "CQ-10",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have not received a push for more than one year relative to a supplied cutoff date?",
     "requires": [
       "RepositorySnapshot",
@@ -192,7 +192,7 @@
   },
   {
     "id": "CQ-11",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "How do star counts for a repository change across its collected snapshots?",
     "requires": [
       "Repository",
@@ -212,7 +212,7 @@
   },
   {
     "id": "CQ-12",
-    "category": "Repository Activity and Popularity",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories are forks, and what are their recorded sizes?",
     "requires": [
       "RepositorySnapshot",
@@ -230,7 +230,7 @@
   },
   {
     "id": "CQ-13",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which GitHub accounts own repositories in each snapshot?",
     "requires": [
       "RepositorySnapshot",
@@ -250,7 +250,7 @@
   },
   {
     "id": "CQ-14",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "What public profile information is recorded for each GitHub account?",
     "requires": [
       "GitHubAccount",
@@ -274,7 +274,7 @@
   },
   {
     "id": "CQ-15",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which GitHub accounts have the largest follower counts?",
     "requires": [
       "GitHubAccount",
@@ -291,7 +291,7 @@
   },
   {
     "id": "CQ-16",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which GitHub accounts have the largest number of public repositories?",
     "requires": [
       "GitHubAccount",
@@ -308,7 +308,7 @@
   },
   {
     "id": "CQ-17",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which accounts have contributed commits to repository snapshots?",
     "requires": [
       "Contribution",
@@ -327,7 +327,7 @@
   },
   {
     "id": "CQ-18",
-    "category": "Accounts and Ownership",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which contributors have the highest recorded commit counts?",
     "requires": [
       "Contribution",
@@ -345,7 +345,7 @@
   },
   {
     "id": "CQ-19",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which programming languages are used in each repository snapshot, and how many bytes are attributed to each?",
     "requires": [
       "LanguageUsage",
@@ -366,7 +366,7 @@
   },
   {
     "id": "CQ-20",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "What primary programming language did GitHub report for each repository snapshot?",
     "requires": [
       "RepositorySnapshot",
@@ -385,7 +385,7 @@
   },
   {
     "id": "CQ-21",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories are associated with a given programming language?",
     "requires": [
       "Repository",
@@ -405,7 +405,7 @@
   },
   {
     "id": "CQ-22",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have a detected software license, and what SPDX identifier does it have?",
     "requires": [
       "RepositorySnapshot",
@@ -426,7 +426,7 @@
   },
   {
     "id": "CQ-23",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which repositories have no detected license in their recorded snapshots?",
     "requires": [
       "RepositorySnapshot",
@@ -442,7 +442,7 @@
   },
   {
     "id": "CQ-24",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which topics are assigned to each repository snapshot?",
     "requires": [
       "RepositorySnapshot",
@@ -462,7 +462,7 @@
   },
   {
     "id": "CQ-25",
-    "category": "Languages, Licenses and Topics",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which topics are most frequently assigned across repository snapshots?",
     "requires": [
       "RepositorySnapshot",
@@ -480,8 +480,8 @@
   },
   {
     "id": "CQ-26",
-    "category": "Issues and Pull Requests",
-    "naturalLanguageQuestion": "Which issues and pull requests belong to each repository?",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which Software Analytics belong to each repository?",
     "requires": [
       "Repository",
       "hasIssue",
@@ -503,8 +503,8 @@
   },
   {
     "id": "CQ-27",
-    "category": "Issues and Pull Requests",
-    "naturalLanguageQuestion": "Which issues and pull requests are currently recorded as open?",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which Software Analytics are currently recorded as open?",
     "requires": [
       "Issue",
       "issueState",
@@ -523,7 +523,7 @@
   },
   {
     "id": "CQ-28",
-    "category": "Issues and Pull Requests",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Who authored each issue or pull request?",
     "requires": [
       "Issue",
@@ -542,7 +542,7 @@
   },
   {
     "id": "CQ-29",
-    "category": "Issues and Pull Requests",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which pull requests have been merged, and when were they merged?",
     "requires": [
       "PullRequest",
@@ -562,7 +562,7 @@
   },
   {
     "id": "CQ-30",
-    "category": "Issues and Pull Requests",
+    "category": "Software Analytics",
     "naturalLanguageQuestion": "Which issues or pull requests have the most comments?",
     "requires": [
       "Issue",
@@ -580,8 +580,8 @@
   },
   {
     "id": "CQ-31",
-    "category": "Issues and Pull Requests",
-    "naturalLanguageQuestion": "Which labels are attached to issues and pull requests?",
+    "category": "Software Analytics",
+    "naturalLanguageQuestion": "Which labels are attached to Software Analytics?",
     "requires": [
       "Issue",
       "issueLabel",
@@ -598,7 +598,7 @@
   },
   {
     "id": "CQ-32",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which repositories are linked to entities in external knowledge graphs?",
     "requires": [
       "Repository",
@@ -618,7 +618,7 @@
   },
   {
     "id": "CQ-33",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which GitHub accounts are linked to entities in external knowledge graphs?",
     "requires": [
       "GitHubAccount",
@@ -638,7 +638,7 @@
   },
   {
     "id": "CQ-34",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "What relation type and linking method were recorded for each external link?",
     "requires": [
       "ExternalLink",
@@ -660,7 +660,7 @@
   },
   {
     "id": "CQ-35",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which external links have confidence scores above a selected threshold?",
     "requires": [
       "ExternalLink",
@@ -678,7 +678,7 @@
   },
   {
     "id": "CQ-36",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which repository-paper links are supported by the paper mentioning the repository?",
     "requires": [
       "ExternalLink",
@@ -698,7 +698,7 @@
   },
   {
     "id": "CQ-37",
-    "category": "External Scholarly Links",
+    "category": "External Scholarly Linking",
     "naturalLanguageQuestion": "Which repository-paper links are supported by the repository mentioning the paper?",
     "requires": [
       "ExternalLink",
@@ -798,22 +798,21 @@
   },
     {
     "id": "CQ-42",
-    "category": "Scholarly Relationship",
-    "naturalLanguageQuestion": "What is the citation impact of papers associated with repositories, including citation counts and citing publications?",
+    "category": "Scholarly Relationships and Ecosystem",
+    "naturalLanguageQuestion": "What is the citation impact of papers associated with repositories, including citation counts?",
     "requires": [
       "ExternalLink",
       "linkTarget",
       "targetKnowledgeGraph",
-      "citation counts and citing works (not modeled)"
+      "citation counts"
     ],
     "expectedOutput": [
       "repository IRI",
       "paper target IRI",
       "knowledge graph",
-      "citation count",
-      "citing publication identifiers"
+      "citation count"
     ],
-    "queryFile": "sparql/CQ-51.sparql",
+    "queryFile": "sparql/CQ-42.sparql",
     "status": "partially answerable",
     "executionStatus": "executed"
   }
