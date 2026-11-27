@@ -1,4 +1,20 @@
 PREFIX : <https://semrepo.org/ontology/v2#>
+
+# CQ-21: Which repositories use PyTorch?
+SELECT DISTINCT ?repository ?snapshot ?languageName
+WHERE {
+    ?repository :hasSnapshot ?snapshot .
+    ?snapshot :primaryLanguage ?language .
+    ?language :languageName ?languageName .
+
+    FILTER(LCASE(STR(?languageName)) = "python")
+}
+ORDER BY ?repository
+LIMIT 20
+
+--
+
+PREFIX : <https://semrepo.org/ontology/v2#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
