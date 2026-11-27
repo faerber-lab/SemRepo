@@ -1,7 +1,6 @@
-## "Which GitHub contributors are also authors of publications associated with a repository?"
-
 PREFIX sr: <https://semrepo.org/ontology/v2#>
 
+## "Which GitHub contributors are also authors of publications associated with a repository?"
 SELECT DISTINCT
     ?contributor
     ?githubLogin
