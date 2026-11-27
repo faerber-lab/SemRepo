@@ -796,8 +796,30 @@
     "status": "fully answerable",
     "executionStatus": "executed"
   },
-    {
+  {
     "id": "CQ-42",
+    "category": "Scholarly Relationships and Ecosystem",
+    "naturalLanguageQuestion": "Which repositories are associated with a scientific publication?",
+    "requires": [
+      "repository",
+      "external links",
+      "publication identifiers",
+      "link relation type",
+      "target knowledge graph"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "publication identifier",
+      "link relation type",
+      "target knowledge graph"
+    ],
+    "queryFile": "CQ-42.sparql",
+    "status": "fully answerable",
+    "executionStatus": "executed"
+  },
+    {
+    "id": "CQ-43",
     "category": "Scholarly Relationships and Ecosystem",
     "naturalLanguageQuestion": "What is the citation impact of papers associated with repositories, including citation counts?",
     "requires": [
@@ -812,8 +834,71 @@
       "knowledge graph",
       "citation count"
     ],
-    "queryFile": "sparql/CQ-42.sparql",
+    "queryFile": "sparql/CQ-43.sparql",
     "status": "partially answerable",
     "executionStatus": "executed"
-  }
+  },
+  {
+    "id": "CQ-44",
+    "category": "Scholarly Relationships and Ecosystem",
+    "naturalLanguageQuestion": "Which repositories are identified as official implementations of a scientific publication?",
+    "requires": [
+      "repository",
+      "external links",
+      "publication identifiers",
+      "link relation type"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "publication identifier",
+      "implementation relationship"
+    ],
+    "queryFile": "CQ-44.sparql",
+    "status": "fully answerable",
+    "executionStatus": "executed"
+  },
+  {
+    "id": "CQ-45",
+    "category": "Scholarly Relationships and Ecosystem",
+    "naturalLanguageQuestion": "Which GitHub contributors are also authors of publications associated with a repository?",
+    "requires": [
+      "repository",
+      "repository snapshots",
+      "contributions",
+      "contributor accounts",
+      "external scholarly links",
+      "publication authorship information"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "contributor account",
+      "contributor identity",
+      "publication identifier",
+      "author relationship"
+    ],
+    "queryFile": "CQ-45.sparql",
+    "status": "fully answerable",
+    "executionStatus": "executed"
+  },
+  {
+    "id": "CQ-46",
+    "category": "External Scholarly Linking",
+    "naturalLanguageQuestion": "Which repositories are linked to publications across multiple scholarly knowledge graphs?",
+    "requires": [
+      "repository",
+      "external links",
+      "target knowledge graph"
+    ],
+    "expectedOutput": [
+      "repository identifier",
+      "repository URL",
+      "linked publication identifiers",
+      "distinct knowledge graphs",
+      "number of knowledge graphs"
+    ],
+    "queryFile": "CQ-46.sparql",
+    "status": "fully answerable",
+    "executionStatus": "executed"
+  },
 ]
